@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* account
 # 
@@ -44,7 +44,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-18 09:52+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
@@ -209,7 +209,7 @@ msgstr "-> Näytä osittain täsmäytetyt kirjaukset"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid ""
-". The journal entries need to be computed by Odoo before being posted in "
+". The journal entries need to be computed by Godo before being posted in "
 "your company's currency."
 msgstr ""
 
@@ -3044,7 +3044,7 @@ msgstr "Ennen"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Godo S.A. "
 "responsibility."
 msgstr ""
 
@@ -4865,7 +4865,7 @@ msgstr "Päivämäärätila"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_financial_year_op__opening_date
 msgid ""
-"Date from which the accounting is managed in Odoo. It is the date of the "
+"Date from which the accounting is managed in Godo. It is the date of the "
 "opening entry."
 msgstr ""
 "Päivämäärä, josta alkaen kirjanpitoa hallinnoidaan Odoossa. Se on "
@@ -8405,7 +8405,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__inbound_payment_method_line_ids
 msgid ""
-"Manual: Get paid by any method outside of Odoo.\n"
+"Manual: Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
@@ -8414,8 +8414,8 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__outbound_payment_method_line_ids
 msgid ""
-"Manual: Pay by any method outside of Odoo.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Manual: Pay by any method outside of Godo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 msgstr ""
 
@@ -8423,9 +8423,9 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_payment__payment_method_line_id
 #: model:ir.model.fields,help:account.field_account_payment_register__payment_method_line_id
 msgid ""
-"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Manual: Pay or Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
@@ -9136,38 +9136,38 @@ msgstr "Lokakuu"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_line
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Godo allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoice(s)."
 msgstr ""
-"Odoo antaa sinun täsmäyttää tilioteriviin suoraan\n"
+"Godo antaa sinun täsmäyttää tilioteriviin suoraan\n"
 "                liittyvät myynti- tai ostolaskut."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_tree
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Godo allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoices."
 msgstr ""
-"Odoo antaa sinun täsmäyttää tilioteriviin suoraan\n"
+"Godo antaa sinun täsmäyttää tilioteriviin suoraan\n"
 "                liittyvät myynti- tai ostolaskut."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_customer
-msgid "Odoo helps you easily track all activities related to a customer."
+msgid "Godo helps you easily track all activities related to a customer."
 msgstr ""
-"Odoo auttaa sinua helposti seuraamaan kaikkia asiakkaaseen liittyviä toimia."
+"Godo auttaa sinua helposti seuraamaan kaikkia asiakkaaseen liittyviä toimia."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_supplier
-msgid "Odoo helps you easily track all activities related to a supplier."
+msgid "Godo helps you easily track all activities related to a supplier."
 msgstr ""
-"Odoo auttaa sinua helposti seuraamaan kaikkia toimittajaan liittyviä "
+"Godo auttaa sinua helposti seuraamaan kaikkia toimittajaan liittyviä "
 "toimintoja."
 
 #. module: account
@@ -11670,13 +11670,13 @@ msgid ""
 "\n"
 "Any file extension will be accepted.\n"
 "\n"
-"Only PDF and XML files will be interpreted by Odoo"
+"Only PDF and XML files will be interpreted by Godo"
 msgstr ""
 "Lähetä yksi erillinen sähköpostiviesti jokaiselle laskulle.\n"
 "\n"
 "Kaikki tiedostopäätteet hyväksytään.\n"
 "\n"
-"Odoo tulkitsee vain PDF- ja XML-tiedostoja"
+"Godo tulkitsee vain PDF- ja XML-tiedostoja"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.account_send_payment_receipt_by_email_action
@@ -14557,10 +14557,10 @@ msgstr "Tämä vienti kirjataan kirjauspäivänä: %(date)s"
 msgid ""
 "This option permanently removes any track of email after it's been sent, "
 "including from the Technical menu in the Settings, in order to preserve "
-"storage space of your Odoo database."
+"storage space of your Godo database."
 msgstr ""
 "Tämä vaihtoehto poistaa pysyvästi kaikki sähköpostiviestijäljet lähettämisen"
-" jälkeen, mukaan lukien Asetutusten Tekniset-valikosta Odoo-tietokannan "
+" jälkeen, mukaan lukien Asetutusten Tekniset-valikosta Godo-tietokannan "
 "tallennustilan säilyttämiseksi."
 
 #. module: account
@@ -15533,7 +15533,7 @@ msgstr "Valuuttana"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_tour_upload_bill
-msgid "With Odoo, you won't have to record bills manually"
+msgid "With Godo, you won't have to record bills manually"
 msgstr ""
 
 #. module: account
@@ -15582,9 +15582,9 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_journal__invoice_reference_model
 msgid ""
 "You can choose different models for each type of reference. The default one "
-"is the Odoo reference."
+"is the Godo reference."
 msgstr ""
-"Voit valita eri malleja kullekin viitetyypille. Oletusarvoisesti se on Odoo-"
+"Voit valita eri malleja kullekin viitetyypille. Oletusarvoisesti se on Godo-"
 "viite."
 
 #. module: account

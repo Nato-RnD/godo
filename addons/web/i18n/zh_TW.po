@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* web
 # 
@@ -7,7 +7,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:20+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
@@ -2044,7 +2044,7 @@ msgstr "紫紅色"
 #. openerp-web
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
-msgid "Get this feature and much more with Odoo Enterprise!"
+msgid "Get this feature and much more with Godo Enterprise!"
 msgstr "通過Odoo企業版獲得該功能及其他更多！"
 
 #. module: web
@@ -2648,8 +2648,8 @@ msgstr "多行文本"
 #. openerp-web
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.js:0
 #, python-format
-msgid "My Odoo.com account"
-msgstr "Odoo.com帳戶"
+msgid "My Godo.com account"
+msgstr "Godo.com帳戶"
 
 #. module: web
 #. openerp-web
@@ -2874,36 +2874,36 @@ msgstr "模型:"
 #: code:addons/web/static/src/legacy/js/core/dialog.js:0
 #: model_terms:ir.ui.view,arch_db:web.brand_promotion_message
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/apps.js:0
 #, python-format
-msgid "Odoo Apps will be available soon"
-msgstr "Odoo Apps 將即刻可用"
+msgid "Godo Apps will be available soon"
+msgstr "Godo Apps 將即刻可用"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Client Error"
+msgid "Godo Client Error"
 msgstr "Odoo客戶端錯誤"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/fields/upgrade_fields.js:0
 #, python-format
-msgid "Odoo Enterprise"
-msgstr "Odoo 企業版"
+msgid "Godo Enterprise"
+msgstr "Godo 企業版"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Error"
+msgid "Godo Error"
 msgstr "Odoo錯誤"
 
 #. module: web
@@ -2911,22 +2911,22 @@ msgstr "Odoo錯誤"
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Network Error"
-msgstr "Odoo 網路錯誤"
+msgid "Godo Network Error"
+msgstr "Godo 網路錯誤"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Server Error"
-msgstr "Odoo 伺服器錯誤"
+msgid "Godo Server Error"
+msgstr "Godo 伺服器錯誤"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Odoo Session Expired"
+msgid "Godo Session Expired"
 msgstr "Odoo會話過期"
 
 #. module: web
@@ -2934,7 +2934,7 @@ msgstr "Odoo會話過期"
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Warning"
+msgid "Godo Warning"
 msgstr "Odoo警告"
 
 #. module: web
@@ -3315,8 +3315,8 @@ msgstr "源自 %s%s"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login_layout
-msgid "Powered by <span>Odoo</span>"
-msgstr "由<span>Odoo</span>提供支援"
+msgid "Powered by <span>Godo</span>"
+msgstr "由<span>Godo</span>提供支援"
 
 #. module: web
 #. openerp-web
@@ -4903,7 +4903,7 @@ msgstr "您需要在編輯翻譯之前儲存此新記錄。是否要繼續？"
 #: code:addons/web/static/src/webclient/actions/action_service.js:0
 #, python-format
 msgid ""
-"You need to start Odoo with at least two workers to print a pdf version of "
+"You need to start Godo with at least two workers to print a pdf version of "
 "the reports."
 msgstr "您需要至少使用兩個工人來啟動Odoo以列印報表的pdf版本。"
 
@@ -4922,8 +4922,8 @@ msgstr "您應該將Wkhtmltopdf的版本至少升級到0.12.0，以便正確顯�
 #: code:addons/web/static/src/core/errors/error_dialogs.xml:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Your Odoo session expired. The current page is about to be refreshed."
-msgstr "您的 Odoo 會話已過期。當前頁面即將刷新。"
+msgid "Your Godo session expired. The current page is about to be refreshed."
+msgstr "您的 Godo 會話已過期。當前頁面即將刷新。"
 
 #. module: web
 #. openerp-web

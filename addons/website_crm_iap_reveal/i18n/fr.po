@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* crm_iap_lead_website
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.4\n"
+"Project-Id-Version: Godo Server saas~14.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-12 07:50+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
@@ -268,9 +268,9 @@ msgstr "Piste/opportunité"
 
 #. module: crm_iap_lead_website
 #: model:ir.model.fields,help:crm_iap_lead_website.field_crm_reveal_rule__industry_tag_ids
-msgid "Leave empty to always match. Odoo will not create lead if no match"
+msgid "Leave empty to always match. Godo will not create lead if no match"
 msgstr ""
-"Laissez vide pour toujours correspondre. Odoo ne créera pas de piste s'il "
+"Laissez vide pour toujours correspondre. Godo ne créera pas de piste s'il "
 "n'y a pas de correspondance"
 
 #. module: crm_iap_lead_website
@@ -359,8 +359,8 @@ msgstr "Conditions de génération d'opportunité"
 #. module: crm_iap_lead_website
 #: code:addons/crm_iap_lead_website/models/crm_reveal_rule.py:0
 #, python-format
-msgid "Opportunity created by Odoo Lead Generation"
-msgstr "Opportunité créée par le Générateur de Pistes d'Odoo"
+msgid "Opportunity created by Godo Lead Generation"
+msgstr "Opportunité créée par le Générateur de Pistes d'Godo"
 
 #. module: crm_iap_lead_website
 #: model:ir.model.fields,field_description:crm_iap_lead_website.field_crm_reveal_rule__other_role_ids

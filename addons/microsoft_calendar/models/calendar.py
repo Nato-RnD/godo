@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import pytz
 from dateutil.parser import parse
@@ -395,7 +395,7 @@ class Meeting(models.Model):
                               for event in invalid_event_ids]
             invalid_events = '\n'.join(invalid_events)
             details = "(%d/%d)" % (list_length_limit, total_invalid_events) if list_length_limit < total_invalid_events else "(%d)" % total_invalid_events
-            raise ValidationError(_("For a correct synchronization between Odoo and Outlook Calendar, "
+            raise ValidationError(_("For a correct synchronization between Godo and Outlook Calendar, "
                                     "all attendees must have an email address. However, some events do "
                                     "not respect this condition. As long as the events are incorrect, "
                                     "the calendars will not be synchronized."
@@ -433,8 +433,8 @@ class Meeting(models.Model):
         """
         Cancel an Microsoft event.
         There are 2 cases:
-          1) the organizer is an Odoo user: he's the only one able to delete the Odoo event. Attendees can just decline.
-          2) the organizer is NOT an Odoo user: any attendee should remove the Odoo event.
+          1) the organizer is an Godo user: he's the only one able to delete the Godo event. Attendees can just decline.
+          2) the organizer is NOT an Godo user: any attendee should remove the Godo event.
         """
         user = self.env.user
         records = self.filtered(lambda e: not e.user_id or e.user_id == user)

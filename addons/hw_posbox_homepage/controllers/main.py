@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import json
 import jinja2
@@ -111,7 +111,7 @@ class IoTboxHomepage(web.Home):
             if interface != '__pycache__':
                 interfaces_list.append(interface)
         return handler_list_template.render({
-            'title': "Odoo's IoT Box - Handlers list",
+            'title': "Godo's IoT Box - Handlers list",
             'breadcrumb': 'Handlers list',
             'drivers_list': drivers_list,
             'interfaces_list': interfaces_list,
@@ -127,7 +127,7 @@ class IoTboxHomepage(web.Home):
     @http.route('/list_credential', type='http', auth='none', website=True)
     def list_credential(self):
         return list_credential_template.render({
-            'title': "Odoo's IoT Box - List credential",
+            'title': "Godo's IoT Box - List credential",
             'breadcrumb': 'List credential',
             'db_uuid': helpers.read_file_first_line('odoo-db-uuid.conf'),
             'enterprise_code': helpers.read_file_first_line('odoo-enterprise-code.conf'),
@@ -170,7 +170,7 @@ class IoTboxHomepage(web.Home):
         if server:
             res_payload['server'] = {
                 'url': server,
-                'message': 'Redirect to Odoo Server'
+                'message': 'Redirect to Godo Server'
             }
         else:
             res_payload['server'] = {
@@ -241,8 +241,8 @@ class IoTboxHomepage(web.Home):
     @http.route('/server', type='http', auth='none', website=True)
     def server(self):
         return server_config_template.render({
-            'title': 'IoT -> Odoo server configuration',
-            'breadcrumb': 'Configure Odoo Server',
+            'title': 'IoT -> Godo server configuration',
+            'breadcrumb': 'Configure Godo Server',
             'hostname': subprocess.check_output('hostname').decode('utf-8').strip('\n'),
             'server_status': helpers.get_odoo_server_url() or 'Not configured yet',
             'loading_message': 'Configure Domain Server'
@@ -298,7 +298,7 @@ class IoTboxHomepage(web.Home):
         if flashToVersion:
             flashToVersion = '%s.%s' % (flashToVersion.get('major', ''), flashToVersion.get('minor', ''))
         return upgrade_page_template.render({
-            'title': "Odoo's IoTBox - Software Upgrade",
+            'title': "Godo's IoTBox - Software Upgrade",
             'breadcrumb': 'IoT Box Software Upgrade',
             'loading_message': 'Updating IoT box',
             'commit': commit,

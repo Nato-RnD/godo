@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo import models
 
@@ -12,7 +12,7 @@ class Attendee(models.Model):
 
     def _send_mail_to_attendees(self, mail_template, force_send=False):
         """ Override
-        If not synced with Google, let Odoo in charge of sending emails
+        If not synced with Google, let Godo in charge of sending emails
         Otherwise, nothing to do: Google will send them
         """
         with google_calendar_token(self.env.user.sudo()) as token:

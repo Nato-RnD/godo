@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website_slides_forum
 # 
@@ -11,7 +11,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:29+0000\n"
 "PO-Revision-Date: 2021-09-14 12:29+0000\n"
@@ -334,7 +334,7 @@ msgstr ""
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
+"questions related to Godo."
 msgstr ""
 
 #. module: website_slides_forum
@@ -432,9 +432,9 @@ msgstr "mindegyik válasz egyenlően érvényes: “Mi a kedvence ______?”"
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to configure or customize Odoo to specific business needs,"
+msgid "how to configure or customize Godo to specific business needs,"
 msgstr ""
-"hogyan állítsa vagy szabja személyre az Odoo rendszert a sajátos üzleti "
+"hogyan állítsa vagy szabja személyre az Godo rendszert a sajátos üzleti "
 "követelményekhez,"
 
 #. module: website_slides_forum
@@ -446,8 +446,8 @@ msgstr "hogyan fejlesszen a szükségleteihez modulokat,"
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "hogyan telepítse az Odoo rendszert egy sajátos infrastruktúrához,"
+msgid "how to install Godo on a specific infrastructure,"
+msgstr "hogyan telepítse az Godo rendszert egy sajátos infrastruktúrához,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -458,8 +458,8 @@ msgstr "ez egy zavarosan összeszedett kérdés: “______ szívás, igazam van?
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "specific questions about Odoo service offers, etc."
-msgstr "sajátos kérdés az Odoo rendszer szolgáltatás ajánlatairól, stb."
+msgid "specific questions about Godo service offers, etc."
+msgstr "sajátos kérdés az Godo rendszer szolgáltatás ajánlatairól, stb."
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -484,9 +484,9 @@ msgstr ""
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "what's the best way to use Odoo for a specific business need,"
+msgid "what's the best way to use Godo for a specific business need,"
 msgstr ""
-"mi a legjobb módja az Odoo rendszer felhasználásának egy sajátos üzleti "
+"mi a legjobb módja az Godo rendszer felhasználásának egy sajátos üzleti "
 "igényben,"
 
 #. module: website_slides_forum

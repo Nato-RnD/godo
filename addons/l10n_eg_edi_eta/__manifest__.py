@@ -9,7 +9,7 @@
        Special thanks to Plementus <info@plementus.com> for their help in developing this module.
     """,
     'author': 'odoo',
-    'website': 'https://www.odoo.com',
+    'website': 'https://smartlifevn.com',
     'category': 'account',
     'version': '0.1',
     'license': 'LGPL-3',

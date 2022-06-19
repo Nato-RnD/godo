@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* account
 # 
@@ -19,7 +19,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-18 09:52+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
@@ -185,9 +185,9 @@ msgstr "-> 查看部分已调节的分录"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid ""
-". The journal entries need to be computed by Odoo before being posted in "
+". The journal entries need to be computed by Godo before being posted in "
 "your company's currency."
-msgstr ". 日记帐分录需要由 Odoo 计算，然后才能以公司的币种过帐."
+msgstr ". 日记帐分录需要由 Godo 计算，然后才能以公司的币种过帐."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
@@ -3037,7 +3037,7 @@ msgstr "在之前"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Godo S.A. "
 "responsibility."
 msgstr "以下文字仅供参照建议, 不涉及本系统的相关责任."
 
@@ -4816,7 +4816,7 @@ msgstr "日期模式"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_financial_year_op__opening_date
 msgid ""
-"Date from which the accounting is managed in Odoo. It is the date of the "
+"Date from which the accounting is managed in Godo. It is the date of the "
 "opening entry."
 msgstr "会计在系统中管理的日期. 这是分录开始的日期."
 
@@ -8270,12 +8270,12 @@ msgstr "手动分录"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__inbound_payment_method_line_ids
 msgid ""
-"Manual: Get paid by any method outside of Odoo.\n"
+"Manual: Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"手动: 通过 Odoo 之外的任何方式获得报酬.\n"
+"手动: 通过 Godo 之外的任何方式获得报酬.\n"
 "付款收单行: 每个付款收单行都有自己的付款方式。借助合作夥伴在线购买或订阅时保存的支付令牌，请求在卡上/向卡进行交易.\n"
 "批次存款: 一次收集多张客户支票，产生批次存款并将其提交给您的银行。模块 account_batch_payment 是必要的.\n"
 "SEPA 直接借记: 由于您的合作夥伴授予您的授权，在 SEPA 区域获得付款。模块 account_sepa 是必要的.\n"
@@ -8283,28 +8283,28 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__outbound_payment_method_line_ids
 msgid ""
-"Manual: Pay by any method outside of Odoo.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Manual: Pay by any method outside of Godo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 msgstr ""
-"手动: 通过 Odoo 之外的任何方式支付.\n"
-"支票: 通过支票支付帐单并从 Odoo 打印.\n"
+"手动: 通过 Godo 之外的任何方式支付.\n"
+"支票: 通过支票支付帐单并从 Godo 打印.\n"
 "SEPA Credit Transfer:通过向您的银行提交 SEPA Credit Transfer 單據在 SEPA 区域付款。模块 account_sepa 是必要的.\n"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_payment__payment_method_line_id
 #: model:ir.model.fields,help:account.field_account_payment_register__payment_method_line_id
 msgid ""
-"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Manual: Pay or Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"手动：通过 Odoo 之外的任何方式支付或获得报酬。\n"
+"手动：通过 Godo 之外的任何方式支付或获得报酬。\n"
 "付款收单行：每个付款收单行都有自己的付款方式。 借助合作夥伴在线购买或订阅时保存的支付令牌，请求对卡进行交易。\n"
-"支票：通过支票支付账单并从 Odoo 打印。\n"
+"支票：通过支票支付账单并从 Godo 打印。\n"
 "批量存款：一次收集多张客户支票，生成批量存款并将其提交给您的银行。 模块 account_batch_payment 是必要的。\n"
 "SEPA Credit Transfer：通过向您的银行提交 SEPA Credit Transfer 單據在 SEPA 区域付款。 模块 account_sepa 是必要的。\n"
 "SEPA 直接借记：由于您的合作夥伴授予您的授权，在 SEPA 区域获得付款. 模块 account_sepa 是必要的.\n"
@@ -8999,35 +8999,35 @@ msgstr "十月"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_line
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Godo allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoice(s)."
 msgstr ""
-"Odoo 允许您直接将帐单明细与\n"
+"Godo 允许您直接将帐单明细与\n"
 "                 相关的销售或采购购买应收付凭单对帐调节."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_tree
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Godo allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoices."
 msgstr ""
-"Odoo 允许您直接将帐单明细与\n"
+"Godo 允许您直接将帐单明细与\n"
 "                 相关的销售或采购购买应收付凭单对帐调节."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_customer
-msgid "Odoo helps you easily track all activities related to a customer."
-msgstr "Odoo 帮助您轻松跟进与客户相关的所有活动."
+msgid "Godo helps you easily track all activities related to a customer."
+msgstr "Godo 帮助您轻松跟进与客户相关的所有活动."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_supplier
-msgid "Odoo helps you easily track all activities related to a supplier."
+msgid "Godo helps you easily track all activities related to a supplier."
 msgstr "Odoo帮助您轻松跟踪与供应商相关的所有活动."
 
 #. module: account
@@ -11486,13 +11486,13 @@ msgid ""
 "\n"
 "Any file extension will be accepted.\n"
 "\n"
-"Only PDF and XML files will be interpreted by Odoo"
+"Only PDF and XML files will be interpreted by Godo"
 msgstr ""
 "为每张凭单发送一封单独的电子邮件.\n"
 "\n"
 "任何單據扩展名都将被接受.\n"
 "\n"
-"Odoo 只会解译 PDF 和 XML 單據"
+"Godo 只会解译 PDF 和 XML 單據"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.account_send_payment_receipt_by_email_action
@@ -14196,8 +14196,8 @@ msgstr "此凭证将自动过帐于以下日期: %(date)s"
 msgid ""
 "This option permanently removes any track of email after it's been sent, "
 "including from the Technical menu in the Settings, in order to preserve "
-"storage space of your Odoo database."
-msgstr "此选项会在电子邮件发送后永久删除任何追踪，包括从设置中的技术选单中删除，以保留您的 Odoo 数据库的存储空间."
+"storage space of your Godo database."
+msgstr "此选项会在电子邮件发送后永久删除任何追踪，包括从设置中的技术选单中删除，以保留您的 Godo 数据库的存储空间."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account_template__chart_template_id
@@ -15125,8 +15125,8 @@ msgstr "使用币种"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_tour_upload_bill
-msgid "With Odoo, you won't have to record bills manually"
-msgstr "使用 Odoo，您无需手动记录帐单"
+msgid "With Godo, you won't have to record bills manually"
+msgstr "使用 Godo，您无需手动记录帐单"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_search
@@ -15169,8 +15169,8 @@ msgstr "您可以勾选此，标记日记帐项目正在与争议中的相关合
 #: model:ir.model.fields,help:account.field_account_journal__invoice_reference_model
 msgid ""
 "You can choose different models for each type of reference. The default one "
-"is the Odoo reference."
-msgstr "您可以为每种模型选择不同的参照. 默认值是 Odoo 参照."
+"is the Godo reference."
+msgstr "您可以为每种模型选择不同的参照. 默认值是 Godo 参照."
 
 #. module: account
 #: code:addons/account/models/account_journal.py:0

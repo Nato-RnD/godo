@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo.tests.common import TransactionCase
 
@@ -130,7 +130,7 @@ class TestWiseOperator(TransactionCase):
         delivery_order_wise2.action_assign()
         self.assertEqual(delivery_order_wise2.state, 'assigned')
 
-        # The operator is a wise guy and decides to do the opposite of what Odoo proposes.
+        # The operator is a wise guy and decides to do the opposite of what Godo proposes.
         # He uses the products reserved on picking 1 on picking 2 and vice versa
         move1 = delivery_order_wise1.move_lines[0]
         move2 = delivery_order_wise2.move_lines[0]

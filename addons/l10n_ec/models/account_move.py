@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo import fields, models, api
 from odoo.addons.l10n_ec.models.res_partner import verify_final_consumer

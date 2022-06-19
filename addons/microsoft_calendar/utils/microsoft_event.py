@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 from odoo.api import model
 from typing import Iterator, Mapping
 from collections import abc
@@ -7,7 +7,7 @@ from collections import abc
 
 class MicrosoftEvent(abc.Set):
     """This helper class holds the values of a Microsoft event.
-    Inspired by Odoo recordset, one instance can be a single Microsoft event or a
+    Inspired by Godo recordset, one instance can be a single Microsoft event or a
     (immutable) set of Microsoft events.
     All usual set operations are supported (union, intersection, etc).
 
@@ -61,7 +61,7 @@ class MicrosoftEvent(abc.Set):
         return self._odoo_id
 
     def _meta_odoo_id(self, microsoft_guid):
-        """Returns the Odoo id stored in the Microsoft Event metadata.
+        """Returns the Godo id stored in the Microsoft Event metadata.
         This id might not actually exists in the database.
         """
         if self.singleValueExtendedProperties:
@@ -86,8 +86,8 @@ class MicrosoftEvent(abc.Set):
         odoo_events = model_env.browse(_id for _id in unsure_odoo_ids if _id)
 
         # Extended properties are copied when splitting a recurrence Microsoft side.
-        # Hence, we may have two Microsoft recurrences linked to the same Odoo id.
-        # Therefore, we only consider Odoo records without microsoft id when trying
+        # Hence, we may have two Microsoft recurrences linked to the same Godo id.
+        # Therefore, we only consider Godo records without microsoft id when trying
         # to match events.
         o_ids = odoo_events.exists().filtered(lambda e: not e.microsoft_id).ids
         for e in self:
@@ -107,12 +107,12 @@ class MicrosoftEvent(abc.Set):
         return self.filter(lambda e: e.id in existing_microsoft_ids)
 
     def owner(self, env):
-        # Owner/organizer could be desynchronised between Microsoft and Odoo.
+        # Owner/organizer could be desynchronised between Microsoft and Godo.
         # Let userA, userB be two new users (never synced to Microsoft before).
-        # UserA creates an event in Odoo (he is the owner) but userB syncs first.
+        # UserA creates an event in Godo (he is the owner) but userB syncs first.
         # There is no way to insert the event into userA's calendar since we don't have
         # any authentication access. The event is therefore inserted into userB's calendar
-        # (he is the orginizer in Microsoft). The "real" owner (in Odoo) is stored as an
+        # (he is the orginizer in Microsoft). The "real" owner (in Godo) is stored as an
         # extended property. There is currently no support to "transfert" ownership when
         # userA syncs his calendar the first time.
         if self.singleValueExtendedProperties:
@@ -127,7 +127,7 @@ class MicrosoftEvent(abc.Set):
         elif self.isOrganizer:
             return env.user
         elif self.organizer and self.organizer.get('emailAddress') and self.organizer.get('emailAddress').get('address'):
-            # In Microsoft: 1 email = 1 user; but in Odoo several users might have the same email
+            # In Microsoft: 1 email = 1 user; but in Godo several users might have the same email
             return env['res.users'].search([('email', '=', self.organizer.get('emailAddress').get('address'))], limit=1)
         else:
             return env['res.users']

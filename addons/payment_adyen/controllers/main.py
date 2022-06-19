@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import base64
 import binascii
@@ -183,11 +183,11 @@ class AdyenController(http.Controller):
     def adyen_return_from_redirect(self, **data):
         """ Process the data returned by Adyen after redirection.
 
-        The route is flagged with `save_session=False` to prevent Odoo from assigning a new session
+        The route is flagged with `save_session=False` to prevent Godo from assigning a new session
         to the user if they are redirected to this route with a POST request. Indeed, as the session
         cookie is created without a `SameSite` attribute, some browsers that don't implement the
         recommended default `SameSite=Lax` behavior will not include the cookie in the redirection
-        request from the payment provider to Odoo. As the redirection to the '/payment/status' page
+        request from the payment provider to Godo. As the redirection to the '/payment/status' page
         will satisfy any specification of the `SameSite` attribute, the session of the user will be
         retrieved and with it the transaction which will be immediately post-processed.
 
@@ -201,7 +201,7 @@ class AdyenController(http.Controller):
 
         # Overwrite the operation to force the flow to 'redirect'. This is necessary because even
         # thought Adyen is implemented as a direct payment provider, it will redirect the user out
-        # of Odoo in some cases. For instance, when a 3DS1 authentication is required, or for
+        # of Godo in some cases. For instance, when a 3DS1 authentication is required, or for
         # special payment methods that are not handled by the drop-in (e.g. Sofort).
         tx_sudo.operation = 'online_redirect'
 

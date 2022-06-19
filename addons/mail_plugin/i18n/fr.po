@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mail_plugin
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -68,10 +68,10 @@ msgstr "Revenu annuel"
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
 msgid ""
-"Attachments could not be logged in Odoo because their total size exceeded "
+"Attachments could not be logged in Godo because their total size exceeded "
 "the allowed maximum."
 msgstr ""
-"Les pièces jointes n'ont pas pu être enregistrées dans Odoo car leur taille "
+"Les pièces jointes n'ont pas pu être enregistrées dans Godo car leur taille "
 "totale dépassait le maximum autorisé."
 
 #. module: mail_plugin
@@ -509,7 +509,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "No company linked to this contact could be enriched or found in Odoo"
+msgid "No company linked to this contact could be enriched or found in Godo"
 msgstr ""
 
 #. module: mail_plugin
@@ -558,14 +558,14 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Odoo Access Token"
+msgid "Godo Access Token"
 msgstr ""
 
 #. module: mail_plugin
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Odoo Server URL"
+msgid "Godo Server URL"
 msgstr ""
 
 #. module: mail_plugin
@@ -652,8 +652,8 @@ msgstr "Revenus"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Save in Odoo"
-msgstr "Sauver dans Odoo"
+msgid "Save in Godo"
+msgstr "Sauver dans Godo"
 
 #. module: mail_plugin
 #. openerp-web
@@ -687,8 +687,8 @@ msgstr "Rechercher dans la base de données"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "Search In Odoo"
-msgstr "Rechercher dans Odoo"
+msgid "Search In Godo"
+msgstr "Rechercher dans Godo"
 
 #. module: mail_plugin
 #. openerp-web
@@ -701,8 +701,8 @@ msgstr "Rechercher un contact"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "Search contact in Odoo..."
-msgstr "Recherche le contact dans Odoo..."
+msgid "Search contact in Godo..."
+msgstr "Recherche le contact dans Godo..."
 
 #. module: mail_plugin
 #. openerp-web
@@ -729,8 +729,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "This contact does not exist in the Odoo database."
-msgstr "Ce contact n'existe pas dans la base de données Odoo."
+msgid "This contact does not exist in the Godo database."
+msgstr "Ce contact n'existe pas dans la base de données Godo."
 
 #. module: mail_plugin
 #. openerp-web
@@ -751,10 +751,10 @@ msgstr "Ce partenaire n'existe pas"
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
 msgid ""
-"Warning: Attachments could not be logged in Odoo because their total size "
+"Warning: Attachments could not be logged in Godo because their total size "
 "exceeded the allowed maximum."
 msgstr ""
-"Avertissement : les pièces jointes n'ont pas pu être enregistrées dans Odoo "
+"Avertissement : les pièces jointes n'ont pas pu être enregistrées dans Godo "
 "car leur taille totale dépassait le maximum autorisé."
 
 #. module: mail_plugin
@@ -796,7 +796,7 @@ msgstr ""
 
 #. module: mail_plugin
 #: model_terms:ir.ui.view,arch_db:mail_plugin.app_auth
-msgid "access your Odoo database?"
+msgid "access your Godo database?"
 msgstr ""
 
 #. module: mail_plugin

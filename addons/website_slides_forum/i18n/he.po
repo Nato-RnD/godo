@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website_slides_forum
 # 
@@ -11,7 +11,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:29+0000\n"
 "PO-Revision-Date: 2021-09-14 12:29+0000\n"
@@ -350,7 +350,7 @@ msgstr "ראה את כל הקורסים"
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
+"questions related to Godo."
 msgstr ""
 
 #. module: website_slides_forum
@@ -461,8 +461,8 @@ msgstr "כל תשובה תקינה באותה מידה: \"מה ______ האהוב
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to configure or customize Odoo to specific business needs,"
-msgstr "כיצד להגדיר או להתאים אישית את Odoo לצרכים עסקיים מסוימים,"
+msgid "how to configure or customize Godo to specific business needs,"
+msgstr "כיצד להגדיר או להתאים אישית את Godo לצרכים עסקיים מסוימים,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -473,8 +473,8 @@ msgstr "כיצד לפתח מודולים לצרכים שלך,"
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "כיצד להתקין את Odoo בתשתית מסוימת,"
+msgid "how to install Godo on a specific infrastructure,"
+msgstr "כיצד להתקין את Godo בתשתית מסוימת,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -485,8 +485,8 @@ msgstr "זו התבכיינות שמוסוות כשאלה: \"____ מחורבן �
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "specific questions about Odoo service offers, etc."
-msgstr "שאלות ספציפיות לגבי הצעות שירות של Odoo וכו'."
+msgid "specific questions about Godo service offers, etc."
+msgstr "שאלות ספציפיות לגבי הצעות שירות של Godo וכו'."
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -507,8 +507,8 @@ msgstr "נשאלת שאלה פתוחה והיפותטית: \"מה אם ______ ה
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "what's the best way to use Odoo for a specific business need,"
-msgstr "מה הדרך הטובה ביותר להשתמש ב Odoo לצורך עסקי מסוים,"
+msgid "what's the best way to use Godo for a specific business need,"
+msgstr "מה הדרך הטובה ביותר להשתמש ב Godo לצורך עסקי מסוים,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0

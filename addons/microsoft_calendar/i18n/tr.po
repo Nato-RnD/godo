@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* microsoft_calendar
 # 
@@ -18,7 +18,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -175,8 +175,8 @@ msgstr "Sil"
 
 #. module: microsoft_calendar
 #: model:ir.model.fields.selection,name:microsoft_calendar.selection__microsoft_calendar_account_reset__delete_policy__delete_odoo
-msgid "Delete from Odoo"
-msgstr "Odoo'dan sil"
+msgid "Delete from Godo"
+msgstr "Godo'dan sil"
 
 #. module: microsoft_calendar
 #: model:ir.model.fields.selection,name:microsoft_calendar.selection__microsoft_calendar_account_reset__delete_policy__delete_both
@@ -202,11 +202,11 @@ msgstr "Olay Tekrarlama Kuralı"
 #: code:addons/microsoft_calendar/models/calendar.py:0
 #, python-format
 msgid ""
-"For a correct synchronization between Odoo and Outlook Calendar, all attendees must have an email address. However, some events do not respect this condition. As long as the events are incorrect, the calendars will not be synchronized.\n"
+"For a correct synchronization between Godo and Outlook Calendar, all attendees must have an email address. However, some events do not respect this condition. As long as the events are incorrect, the calendars will not be synchronized.\n"
 "Either update the events/attendees or archive these events %s:\n"
 "%s"
 msgstr ""
-"Odoo ve Outlook Calendar arasında doğru bir senkronizasyon için tüm katılımcıların bir e-posta adresine sahip olması gerekir. Ancak bazı olaylar bu koşula uymaz. Etkinlikler yanlış olduğu sürece takvimler senkronize edilmeyecektir.\n"
+"Godo ve Outlook Calendar arasında doğru bir senkronizasyon için tüm katılımcıların bir e-posta adresine sahip olması gerekir. Ancak bazı olaylar bu koşula uymaz. Etkinlikler yanlış olduğu sürece takvimler senkronize edilmeyecektir.\n"
 "Etkinlikleri/katılımcıları güncelleyin veya şu etkinlikleri %sarşivleyin:\n"
 "%s"
 

@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 def get_publishable_key(acquirer_sudo):
     """ Return the publishable key for Stripe.

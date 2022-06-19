@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* point_of_sale
 # 
@@ -24,7 +24,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-10 07:16+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -2483,8 +2483,8 @@ msgstr "ID"
 #. openerp-web
 #: code:addons/point_of_sale/static/src/js/Popups/ErrorTracebackPopup.js:0
 #, python-format
-msgid "IMPORTANT: Bug Report From Odoo Point Of Sale"
-msgstr "ЧУХАЛ: Odoo борлуулалтын цэгээс алдаа ирүүллээ"
+msgid "IMPORTANT: Bug Report From Godo Point Of Sale"
+msgstr "ЧУХАЛ: Godo борлуулалтын цэгээс алдаа ирүүллээ"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__proxy_ip
@@ -6298,19 +6298,19 @@ msgstr "Энэ бараа нь захиалагчийн төлбөрийн ба�
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__sequence_line_id
 msgid ""
-"This sequence is automatically created by Odoo but you can change it to "
+"This sequence is automatically created by Godo but you can change it to "
 "customize the reference numbers of your orders lines."
 msgstr ""
-"Энэ дугаарлалтыг Odoo автоматаар үүсгэсэн. Гэхдээ та хүсвэл өөрийн захиалгын"
+"Энэ дугаарлалтыг Godo автоматаар үүсгэсэн. Гэхдээ та хүсвэл өөрийн захиалгын"
 " мөрийн дугаарлалтын дүрмийг өөрчлөн тохируулж болно."
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__sequence_id
 msgid ""
-"This sequence is automatically created by Odoo but you can change it to "
+"This sequence is automatically created by Godo but you can change it to "
 "customize the reference numbers of your orders."
 msgstr ""
-"Энэ дугаарлалтыг Odoo автоматаар үүсгэсэн. Гэхдээ та хүсвэл өөрийн захиалгын"
+"Энэ дугаарлалтыг Godo автоматаар үүсгэсэн. Гэхдээ та хүсвэл өөрийн захиалгын"
 " дугаарлалтын дүрмийг өөрчлөн тохируулж болно."
 
 #. module: point_of_sale

@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo import _, fields, models
 from odoo.exceptions import UserError, ValidationError
@@ -37,7 +37,7 @@ class PaymentToken(models.Model):
                 method='POST'
             )
         except ValidationError:
-            pass  # Deactivating the token in Odoo is more important than in Adyen
+            pass  # Deactivating the token in Godo is more important than in Adyen
 
     def _handle_reactivation_request(self):
         """ Override of payment to raise an error informing that Adyen tokens cannot be restored.

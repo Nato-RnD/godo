@@ -186,7 +186,7 @@ class ThreadedWSGIServerReloadable(LoggingBaseWSGIServerMixIn, werkzeug.serving.
     # TODO: Remove this method as soon as either of the revision
     # - python/cpython@8b1f52b5a93403acd7d112cd1c1bc716b31a418a for Python 3.6,
     # - python/cpython@908082451382b8b3ba09ebba638db660edbf5d8e for Python 3.7,
-    # is included in all Python 3 releases installed on all operating systems supported by Odoo.
+    # is included in all Python 3 releases installed on all operating systems supported by Godo.
     # These revisions are included in Python from releases 3.6.8 and Python 3.7.2 respectively.
     def _handle_request_noblock(self):
         """
@@ -1318,7 +1318,7 @@ def start(preload=None, stop=False):
             # would be using malloc() concurrently [2].
             # Due to the python's GIL, this optimization have no effect on multithreaded python programs.
             # Unfortunately, a downside of creating one arena per cpu core is the increase of virtual memory
-            # which Odoo is based upon in order to limit the memory usage for threaded workers.
+            # which Godo is based upon in order to limit the memory usage for threaded workers.
             # On 32bit systems the default size of an arena is 512K while on 64bit systems it's 64M [3],
             # hence a threaded worker will quickly reach it's default memory soft limit upon concurrent requests.
             # We therefore set the maximum arenas allowed to 2 unless the MALLOC_ARENA_MAX env variable is set.

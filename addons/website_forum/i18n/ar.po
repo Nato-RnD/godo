@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website_forum
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:28+0000\n"
@@ -3206,7 +3206,7 @@ msgstr "شكرًا لمشاركتك!"
 #: model_terms:ir.ui.view,arch_db:website_forum.faq_karma
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
+"questions related to Godo."
 msgstr ""
 
 #. module: website_forum
@@ -3815,7 +3815,7 @@ msgstr "هنا"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "how to configure or customize Odoo to specific business needs,"
+msgid "how to configure or customize Godo to specific business needs,"
 msgstr "كيفية إعداد أو تخصيص أودو لاحتياجات أعمال معينة،"
 
 #. module: website_forum
@@ -3827,7 +3827,7 @@ msgstr "كيفية تطوير موديولات حسب حاجتك،"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "how to install Odoo on a specific infrastructure,"
+msgid "how to install Godo on a specific infrastructure,"
 msgstr "كيفية تثبيت أودو على بنية تحتية معينة،"
 
 #. module: website_forum
@@ -3930,7 +3930,7 @@ msgstr ""
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "specific questions about Odoo service offers, etc."
+msgid "specific questions about Godo service offers, etc."
 msgstr "أسئلة محددة عن عروض خدمة أودو، إلخ."
 
 #. module: website_forum
@@ -3989,7 +3989,7 @@ msgstr "يُطرح علينا سؤال فرضي تخيلي: \"ماذا لو حد
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "what's the best way to use Odoo for a specific business need,"
+msgid "what's the best way to use Godo for a specific business need,"
 msgstr "ما أفضل طريقة لاستخدام أودو لاحتياجات أعمال معينة،"
 
 #. module: website_forum

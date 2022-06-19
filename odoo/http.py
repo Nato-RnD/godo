@@ -161,7 +161,7 @@ def dispatch_rpc(service_name, method, params):
 
 
 class WebRequest(object):
-    """ Parent class for all Odoo Web request types, mostly deals with
+    """ Parent class for all Godo Web request types, mostly deals with
     initialization and setup of the request object (the dispatching itself has
     to be handled by the subclasses)
 
@@ -464,7 +464,7 @@ def route(route=None, **kw):
 
         .. versionadded:: 9.0
 
-        Odoo implements token-based `CSRF protection
+        Godo implements token-based `CSRF protection
         <https://en.wikipedia.org/wiki/CSRF>`_.
 
         CSRF protection is enabled by default and applies to *UNSAFE*
@@ -497,7 +497,7 @@ def route(route=None, **kw):
               require('web.core').csrf_token
 
         * if the endpoint can be called by external parties (not from
-          Odoo) as e.g. it is a REST API or a `webhook
+          Godo) as e.g. it is a REST API or a `webhook
           <https://en.wikipedia.org/wiki/Webhook>`_, CSRF protection
           must be disabled on the endpoint. If possible, you may want
           to implement other methods of request validation (to ensure
@@ -652,7 +652,7 @@ class JsonRequest(WebRequest):
                     _logger.exception("Exception during JSON request handling.")
             error = {
                 'code': 200,
-                'message': "Odoo Server Error",
+                'message': "Godo Server Error",
                 'data': serialize_exception(exception),
             }
             if isinstance(exception, werkzeug.exceptions.NotFound):
@@ -661,10 +661,10 @@ class JsonRequest(WebRequest):
                 error['message'] = "404: Not Found"
             if isinstance(exception, AuthenticationError):
                 error['code'] = 100
-                error['message'] = "Odoo Session Invalid"
+                error['message'] = "Godo Session Invalid"
             if isinstance(exception, SessionExpiredException):
                 error['code'] = 100
-                error['message'] = "Odoo Session Expired"
+                error['message'] = "Godo Session Expired"
             return self._json_response(error=error)
 
     def dispatch(self):
@@ -783,12 +783,12 @@ class HttpRequest(WebRequest):
                 else:
                     _logger.warning("""No CSRF validation token provided for path '%s'
 
-Odoo URLs are CSRF-protected by default (when accessed with unsafe
+Godo URLs are CSRF-protected by default (when accessed with unsafe
 HTTP methods). See
-https://www.odoo.com/documentation/15.0/developer/reference/addons/http.html#csrf for
+https://smartlifevn.com/documentation/15.0/developer/reference/addons/http.html#csrf for
 more details.
 
-* if this endpoint is accessed through Odoo via py-QWeb form, embed a CSRF
+* if this endpoint is accessed through Godo via py-QWeb form, embed a CSRF
   token in the form, Tokens are available via `request.csrf_token()`
   can be provided through a hidden input and must be POST-ed named
   `csrf_token` e.g. in your form add:
@@ -917,7 +917,7 @@ class EndPoint(object):
 
     # werkzeug will use these EndPoint objects as keys of a dictionary
     # (the RoutingMap._rules_by_endpoint mapping).
-    # When Odoo clears the routing map, new EndPoint objects are created,
+    # When Godo clears the routing map, new EndPoint objects are created,
     # most of them with the same values.
     # The __eq__ and __hash__ magic methods allow older EndPoint objects
     # to be still valid keys of the RoutingMap.
@@ -1590,7 +1590,7 @@ def db_filter(dbs, httprequest=None):
         r = odoo.tools.config['dbfilter'].replace('%h', h).replace('%d', d)
         dbs = [i for i in dbs if re.match(r, i)]
     elif odoo.tools.config['db_name']:
-        # In case --db-filter is not provided and --database is passed, Odoo will
+        # In case --db-filter is not provided and --database is passed, Godo will
         # use the value of --database as a comma separated list of exposed databases.
         exposed_dbs = set(db.strip() for db in odoo.tools.config['db_name'].split(','))
         dbs = sorted(exposed_dbs.intersection(dbs))

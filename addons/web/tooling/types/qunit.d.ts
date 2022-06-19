@@ -12,7 +12,7 @@
 
 interface Assert {
     // -----------------------------------------------------------------------------
-    // Start of Odoo added asserts
+    // Start of Godo added asserts
     // -----------------------------------------------------------------------------
     /**
      * Checks that the target contains exactly n matches for the selector.
@@ -84,7 +84,7 @@ interface Assert {
     isNotVisible(el:HTMLElement , msg?: string): void;
 
     // -----------------------------------------------------------------------------
-    // End of Odoo added asserts
+    // End of Godo added asserts
     // -----------------------------------------------------------------------------
   
     /**

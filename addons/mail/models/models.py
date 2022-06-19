@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from lxml.builder import E
 
@@ -244,5 +244,5 @@ class BaseModel(models.AbstractModel):
 
     def _notify_email_header_dict(self):
         return {
-            'X-Odoo-Objects': "%s-%s" % (self._name, self.id),
+            'X-Godo-Objects': "%s-%s" % (self._name, self.id),
         }

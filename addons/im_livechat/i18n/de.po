@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* im_livechat
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -619,11 +619,11 @@ msgstr "Erklären Sie Ihre Nachricht"
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
 msgid ""
-"For websites built with the Odoo CMS, go to Website &gt; Configuration &gt; "
+"For websites built with the Godo CMS, go to Website &gt; Configuration &gt; "
 "Settings and select the Website Live Chat Channel you want to add to your "
 "website."
 msgstr ""
-"Bei Websites, die mit dem Odoo CMS erstellt wurden, gehen Sie zu Website "
+"Bei Websites, die mit dem Godo CMS erstellt wurden, gehen Sie zu Website "
 "&gt; Konfiguration &gt; Einstellungen und wählen den Website-Live-Chat-Kanal"
 " aus, den Sie zu Ihrer Website hinzufügen möchten."
 
@@ -1046,8 +1046,8 @@ msgstr "OK"
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.livechat_email_template
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: im_livechat
 #. openerp-web
@@ -1115,10 +1115,10 @@ msgstr ""
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
 msgid ""
-"Operators that do not show any activity In Odoo for more than 30 minutes "
+"Operators that do not show any activity In Godo for more than 30 minutes "
 "will be considered as disconnected."
 msgstr ""
-"Anwender, die mehr als 30 Minuten lang keine Aktivität in Odoo aufweisen, "
+"Anwender, die mehr als 30 Minuten lang keine Aktivität in Godo aufweisen, "
 "werden als nicht verbunden betrachtet."
 
 #. module: im_livechat

@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website
 # 
@@ -26,7 +26,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-10 06:07+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
@@ -486,7 +486,7 @@ msgstr "50%"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_call_to_action
-msgid "50,000+ companies run Odoo to grow their businesses."
+msgid "50,000+ companies run Godo to grow their businesses."
 msgstr "超过50,000家公司使用Odoo来发展业务。"
 
 #. module: website
@@ -509,7 +509,7 @@ msgstr "80% 开发"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
-msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
+msgid "<b>50,000+ companies</b> run Godo to grow their businesses."
 msgstr "<b>50000+ 公司</b>使用Odoo发展其业务。"
 
 #. module: website
@@ -2631,7 +2631,7 @@ msgstr "更改图标"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
-"Change theme in a few clicks, and browse through Odoo's catalog of\n"
+"Change theme in a few clicks, and browse through Godo's catalog of\n"
 "                            ready-to-use themes available in our app store."
 msgstr ""
 "只需要单击几下就可以改变主题, 同时可以在我们的应用商店中\n"
@@ -4022,9 +4022,9 @@ msgstr "例如 https://www.mydomain.com"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
-"Easily design your own Odoo templates thanks to clean HTML\n"
+"Easily design your own Godo templates thanks to clean HTML\n"
 "                            structure and bootstrap CSS."
-msgstr "借助简单的 HTML 结构和 Bootstrap CSS，轻松设计您自己的 Odoo 模板。"
+msgstr "借助简单的 HTML 结构和 Bootstrap CSS，轻松设计您自己的 Godo 模板。"
 
 #. module: website
 #. openerp-web
@@ -4600,8 +4600,8 @@ msgstr "跟随我们"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "Follow your website traffic in Odoo."
-msgstr "用 Odoo 跟踪你的网站流量。"
+msgid "Follow your website traffic in Godo."
+msgstr "用 Godo 跟踪你的网站流量。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5031,8 +5031,8 @@ msgstr "汉堡包菜单"
 #. openerp-web
 #: code:addons/website/static/src/snippets/s_countdown/000.xml:0
 #, python-format
-msgid "Happy Odoo Anniversary!"
-msgstr "Odoo 周年快乐！"
+msgid "Happy Godo Anniversary!"
+msgstr "Godo 周年快乐！"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__has_social_default_image
@@ -5761,12 +5761,12 @@ msgstr "您似乎处于 debug=assets 模式，所有主题自定义选项都需�
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid ""
 "It appears your website is still using the old color system of\n"
-"            Odoo 13.0 in some places. We made sure it is still working but\n"
+"            Godo 13.0 in some places. We made sure it is still working but\n"
 "            we recommend you to try to use the new color system, which is\n"
 "            still customizable."
 msgstr ""
 "您的网站在某些地方似乎仍在使用旧的\n"
-" Odoo 13.0 颜色系统。我们确保它仍然有效，\n"
+" Godo 13.0 颜色系统。我们确保它仍然有效，\n"
 "但我们建议您尝试使用新的颜色系统，该系统仍可自定义。"
 
 #. module: website
@@ -6568,12 +6568,12 @@ msgstr "监控Google搜索结果数据"
 #. module: website
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_0
 msgid ""
-"Monitor your visitors while they are browsing your website with the Odoo "
+"Monitor your visitors while they are browsing your website with the Godo "
 "Social app. Engage with them in just a click using a live chat request or a "
 "push notification. If they have completed one of your forms, you can send "
 "them an SMS, or call them right away while they are browsing your website."
 msgstr ""
-"在访问者使用 Odoo "
+"在访问者使用 Godo "
 "社交应用程序浏览您的网站时监控他们。使用实时聊天请求或推送通知，只需单击一下即可与他们互动。如果他们填写了您的一份表格，您可以向他们发送短信，或在他们浏览您的网站时立即致电给他们。"
 
 #. module: website
@@ -7005,17 +7005,17 @@ msgstr "或"
 #: code:addons/website/static/src/components/configurator/configurator.xml:0
 #: code:addons/website/static/src/components/configurator/configurator.xml:0
 #, python-format
-msgid "Odoo Logo"
-msgstr "Odoo 徽标"
+msgid "Godo Logo"
+msgstr "Godo 徽标"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-msgid "Odoo Menu"
-msgstr "Odoo 菜单"
+msgid "Godo Menu"
+msgstr "Godo 菜单"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "Odoo Version"
+msgid "Godo Version"
 msgstr "Odoo版本"
 
 #. module: website
@@ -8250,11 +8250,11 @@ msgstr "搜索访客"
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_1
 msgid ""
 "Search in the media dialogue when you need photos to illustrate your "
-"website. Odoo's integration with Unsplash, featuring millions of royalty "
+"website. Godo's integration with Unsplash, featuring millions of royalty "
 "free and high quality photos, makes it possible for you to get the perfect "
 "picture, in just a few clicks."
 msgstr ""
-"当您需要照片来说明您的网站时，请在媒体对话中搜索。 Odoo 与 Unsplash "
+"当您需要照片来说明您的网站时，请在媒体对话中搜索。 Godo 与 Unsplash "
 "集成，拥有数百万张免版税和高质量的照片，让您只需点击几下即可获得完美的照片。"
 
 #. module: website
@@ -8572,8 +8572,8 @@ msgstr "已登录"
 msgid ""
 "Sitemap.xml: Help search engine crawlers to find out what pages are present "
 "and which have recently changed, and to crawl your site accordingly. This "
-"file is automatically generated by Odoo."
-msgstr "Sitemap.xml：帮助搜索引擎爬网程序找出存在哪些页面和最近更改过的页面，并相应地对您的网站进行爬网。此文件由 Odoo 自动生成。"
+"file is automatically generated by Godo."
+msgstr "Sitemap.xml：帮助搜索引擎爬网程序找出存在哪些页面和最近更改过的页面，并相应地对您的网站进行爬网。此文件由 Godo 自动生成。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_alert_options
@@ -9577,11 +9577,11 @@ msgstr "为了取得成功，您的内容需要对您的读者有用"
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_2
 msgid ""
 "To get more visitors, you should target keywords that are often searched in "
-"Google. With the built-in SEO tool, once you define a few keywords, Odoo "
+"Google. With the built-in SEO tool, once you define a few keywords, Godo "
 "will recommend you the best keywords to target. Then adapt your title and "
 "description accordingly to boost your traffic."
 msgstr ""
-"为了获得更多访问者，您应该定位在 Google 中经常搜索的关键字。借助内置的 SEO 工具，一旦您定义了几个关键字，Odoo "
+"为了获得更多访问者，您应该定位在 Google 中经常搜索的关键字。借助内置的 SEO 工具，一旦您定义了几个关键字，Godo "
 "就会向您推荐最佳的目标关键字。然后相应地调整您的标题和描述以增加您的流量。"
 
 #. module: website
@@ -11253,8 +11253,8 @@ msgstr "从Logo"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
-msgid "frontend_lang (Odoo)"
-msgstr "frontend_lang (Odoo)"
+msgid "frontend_lang (Godo)"
+msgstr "frontend_lang (Godo)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -11298,8 +11298,8 @@ msgstr "https://fonts.google.com/specimen/Roboto"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "https://www.odoo.com"
-msgstr "https://www.odoo.com"
+msgid "https://smartlifevn.com"
+msgstr "https://smartlifevn.com"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
@@ -11309,15 +11309,15 @@ msgstr "iPhone"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
 msgid ""
-"im_livechat_previous_operator_pid (Odoo)<br/>\n"
-"                                            utm_campaign (Odoo)<br/>\n"
-"                                            utm_source (Odoo)<br/>\n"
-"                                            utm_medium (Odoo)"
+"im_livechat_previous_operator_pid (Godo)<br/>\n"
+"                                            utm_campaign (Godo)<br/>\n"
+"                                            utm_source (Godo)<br/>\n"
+"                                            utm_medium (Godo)"
 msgstr ""
-"im_livechat_previous_operator_pid (Odoo)<br/>\n"
-"                                            utm_campaign (Odoo)<br/>\n"
-"                                            utm_source (Odoo)<br/>\n"
-"                                            utm_medium (Odoo)"
+"im_livechat_previous_operator_pid (Godo)<br/>\n"
+"                                            utm_campaign (Godo)<br/>\n"
+"                                            utm_source (Godo)<br/>\n"
+"                                            utm_medium (Godo)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -11356,7 +11356,7 @@ msgstr "通知客户"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "instance of Odoo, the"
+msgid "instance of Godo, the"
 msgstr "Odoo实例，"
 
 #. module: website
@@ -11482,8 +11482,8 @@ msgstr "分隔符, 分隔符"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
-msgid "session_id (Odoo)<br/>"
-msgstr "session_id (Odoo)<br/>"
+msgid "session_id (Godo)<br/>"
+msgstr "session_id (Godo)<br/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets

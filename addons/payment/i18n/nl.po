@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* payment
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-10 14:27+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -451,11 +451,11 @@ msgstr "Afvangen transactie"
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_acquirer__capture_manually
 msgid ""
-"Capture the amount from Odoo, when the delivery is completed.\n"
+"Capture the amount from Godo, when the delivery is completed.\n"
 "Use this if you want to charge your customers cards only when\n"
 "you are sure you can ship the goods to them."
 msgstr ""
-"Leg het bedrag vast van Odoo, wanneer de levering is voltooid.\n"
+"Leg het bedrag vast van Godo, wanneer de levering is voltooid.\n"
 "Gebruik dit als je je klantenkaarten alleen wilt opladen wanneer\n"
 "je zeker weet dat je de goederen naar hen kunt verzenden."
 
@@ -1163,8 +1163,8 @@ msgstr ""
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__module_to_buy
-msgid "Odoo Enterprise Module"
-msgstr "Odoo Enterprise module"
+msgid "Godo Enterprise Module"
+msgstr "Godo Enterprise module"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_transaction__operation__offline
@@ -2117,8 +2117,8 @@ msgstr "Ondersteund type restitutie"
 #. openerp-web
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
-msgid "Unable to contact the Odoo server."
-msgstr "Niet mogelijk om met de Odoo server contact op te nemen."
+msgid "Unable to contact the Godo server."
+msgstr "Niet mogelijk om met de Godo server contact op te nemen."
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_acquirer_form

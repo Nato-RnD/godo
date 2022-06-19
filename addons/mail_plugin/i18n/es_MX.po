@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mail_plugin
 # 
@@ -10,7 +10,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -68,10 +68,10 @@ msgstr "Ingresos anuales"
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
 msgid ""
-"Attachments could not be logged in Odoo because their total size exceeded "
+"Attachments could not be logged in Godo because their total size exceeded "
 "the allowed maximum."
 msgstr ""
-"Los archivos adjuntos no se pudieron cargar a Odoo porque el tamaño total "
+"Los archivos adjuntos no se pudieron cargar a Godo porque el tamaño total "
 "excedió el máximo permitido."
 
 #. module: mail_plugin
@@ -513,9 +513,9 @@ msgstr "No se pudo enriquecer ninguna empresa vinculada a este contacto"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "No company linked to this contact could be enriched or found in Odoo"
+msgid "No company linked to this contact could be enriched or found in Godo"
 msgstr ""
-"No se pudo enriquecer ni encontrar en Odoo ninguna empresa vinculada a este "
+"No se pudo enriquecer ni encontrar en Godo ninguna empresa vinculada a este "
 "contacto"
 
 #. module: mail_plugin
@@ -564,15 +564,15 @@ msgstr "No hay créditos suficientes para enriquecer"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Odoo Access Token"
+msgid "Godo Access Token"
 msgstr "Token de acceso Odo"
 
 #. module: mail_plugin
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Odoo Server URL"
-msgstr "URL de servidor Odoo"
+msgid "Godo Server URL"
+msgstr "URL de servidor Godo"
 
 #. module: mail_plugin
 #: model:ir.model.constraint,message:mail_plugin.constraint_res_partner_iap_unique_partner_id
@@ -660,7 +660,7 @@ msgstr "Ingresos"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Save in Odoo"
+msgid "Save in Godo"
 msgstr "Guardar en odoo"
 
 #. module: mail_plugin
@@ -688,7 +688,7 @@ msgstr "Buscar en la base de datos"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "Search In Odoo"
+msgid "Search In Godo"
 msgstr "Buscar en odoo"
 
 #. module: mail_plugin
@@ -702,8 +702,8 @@ msgstr "Buscar contacto"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "Search contact in Odoo..."
-msgstr "Buscar contacto en Odoo..."
+msgid "Search contact in Godo..."
+msgstr "Buscar contacto en Godo..."
 
 #. module: mail_plugin
 #. openerp-web
@@ -730,8 +730,8 @@ msgstr "Esta empresa no tiene dirección de correo y no se pudo enriquecer."
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "This contact does not exist in the Odoo database."
-msgstr "Este contacto no existe en la base de datos de Odoo."
+msgid "This contact does not exist in the Godo database."
+msgstr "Este contacto no existe en la base de datos de Godo."
 
 #. module: mail_plugin
 #. openerp-web
@@ -754,10 +754,10 @@ msgstr "Este partner no existe"
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
 msgid ""
-"Warning: Attachments could not be logged in Odoo because their total size "
+"Warning: Attachments could not be logged in Godo because their total size "
 "exceeded the allowed maximum."
 msgstr ""
-"Advertencia: Los archivos adjuntos no se pudieron cargar a Odoo porque el "
+"Advertencia: Los archivos adjuntos no se pudieron cargar a Godo porque el "
 "tamaño total excedió el máximo permitido."
 
 #. module: mail_plugin
@@ -802,8 +802,8 @@ msgstr "Tiene que especificar al menos el partner_id o el nombre y el correo"
 
 #. module: mail_plugin
 #: model_terms:ir.ui.view,arch_db:mail_plugin.app_auth
-msgid "access your Odoo database?"
-msgstr "¿Acceder a su base de datos de Odoo?"
+msgid "access your Godo database?"
+msgstr "¿Acceder a su base de datos de Godo?"
 
 #. module: mail_plugin
 #. openerp-web

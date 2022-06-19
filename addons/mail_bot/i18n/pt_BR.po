@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
 # 
@@ -7,7 +7,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -63,11 +63,11 @@ msgstr "Roteamento HTTP"
 #: code:addons/mail_bot/models/mail_channel.py:0
 #, python-format
 msgid ""
-"Hello,<br/>Odoo's chat helps employees collaborate efficiently. I'm here to "
+"Hello,<br/>Godo's chat helps employees collaborate efficiently. I'm here to "
 "help you discover its features.<br/><b>Try to send me an emoji</b> <span "
 "class=\"o_odoobot_command\">:)</span>"
 msgstr ""
-"Olá,<br/>O chat Odoo's ajuda na colaboração eficiente de funcionários. Estou"
+"Olá,<br/>O chat Godo's ajuda na colaboração eficiente de funcionários. Estou"
 " aqui para ajudá-lo a descobrir esses recursos.<br/><b>Tente me enviar um "
 "emoji</b> <span class=\"o_odoobot_command\">:)</span>"
 
@@ -83,11 +83,11 @@ msgstr "Hmmm..."
 msgid ""
 "I am a simple bot, but if that's a dog, he is the cutest 😊 "
 "<br/>Congratulations, you finished this tour. You can now <b>close this chat"
-" window</b>. Enjoy discovering Odoo."
+" window</b>. Enjoy discovering Godo."
 msgstr ""
 "Eu sou um simples bot, mas se é um cachorro, ele é o mais fofo 😊 Parabéns, "
 "você finalizou este tour. Você agora pode <b>fechar esta janela de "
-"conversa</b>. Divirta-se descobrindo Odoo."
+"conversa</b>. Divirta-se descobrindo Godo."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -224,8 +224,8 @@ msgstr "Para iniciar, tente enviar-me  um emoji :)"
 msgid ""
 "Unfortunately, I'm just a bot 😞 I don't understand! If you need help "
 "discovering our product, please check <a "
-"href=\"https://www.odoo.com/documentation\" target=\"_blank\">our "
-"documentation</a> or <a href=\"https://www.odoo.com/slides\" "
+"href=\"https://smartlifevn.com/documentation\" target=\"_blank\">our "
+"documentation</a> or <a href=\"https://smartlifevn.com/slides\" "
 "target=\"_blank\">our videos</a>."
 msgstr ""
 

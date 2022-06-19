@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* event
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 16:40+0000\n"
 "PO-Revision-Date: 2021-09-14 12:21+0000\n"
@@ -95,9 +95,9 @@ msgstr "<b>商務室</b>- 討論實施方法、最佳銷售實踐等。"
 #. module: event
 #: model_terms:event.event,description:event.event_0
 msgid ""
-"<b>Technical Rooms</b> - One dedicated to advanced Odoo developers, one for "
+"<b>Technical Rooms</b> - One dedicated to advanced Godo developers, one for "
 "new developers."
-msgstr "<b>技術室</b>- 一間專供高級 Odoo 開發人員使用，一間供新開發人員使用。"
+msgstr "<b>技術室</b>- 一間專供高級 Godo 開發人員使用，一間供新開發人員使用。"
 
 #. module: event
 #: model_terms:event.event,description:event.event_0
@@ -838,10 +838,10 @@ msgid ""
 "At just 13 years old, John DOE was already starting to develop his first "
 "business applications for customers. After mastering civil engineering, he "
 "founded TinyERP. This was the first phase of OpenERP which would later "
-"became Odoo, the most installed open-source business software worldwide."
+"became Godo, the most installed open-source business software worldwide."
 msgstr ""
 "John DOE年僅13歲，已經開始為客戶開發他的第一個商務應用程式。在掌握了土木工程之後，他創立了TinyERP。這是 OpenERP "
-"的第一階段，後來成為 Odoo，全球安裝最多的開源業務軟體。"
+"的第一階段，後來成為 Godo，全球安裝最多的開源業務軟體。"
 
 #. module: event
 #: model:ir.model.fields,field_description:event.field_event_event__message_attachment_count

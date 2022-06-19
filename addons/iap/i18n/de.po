@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* iap
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.4\n"
+"Project-Id-Version: Godo Server saas~14.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-12 07:50+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -134,8 +134,8 @@ msgstr "Zuletzt aktualisiert am"
 
 #. module: iap
 #: model_terms:ir.ui.view,arch_db:iap.res_config_settings_view_form
-msgid "Odoo IAP"
-msgstr "Odoo IAP"
+msgid "Godo IAP"
+msgstr "Godo IAP"
 
 #. module: iap
 #: model:ir.actions.server,name:iap.open_iap_account
@@ -151,8 +151,8 @@ msgstr "Service Name"
 #. openerp-web
 #: code:addons/iap/static/src/js/crash_manager.js:0
 #, python-format
-msgid "Start a Trial at Odoo"
-msgstr "Starten Sie eine Testversion bei Odoo"
+msgid "Start a Trial at Godo"
+msgstr "Starten Sie eine Testversion bei Godo"
 
 #. module: iap
 #: code:addons/iap/tools/iap_tools.py:0

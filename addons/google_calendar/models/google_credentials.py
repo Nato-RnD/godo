@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import logging
 import requests
@@ -24,7 +24,7 @@ class GoogleCredentials(models.Model):
     calendar_token = fields.Char('User token', copy=False, groups="base.group_system")
     calendar_token_validity = fields.Datetime('Token Validity', copy=False, groups="base.group_system")
     calendar_sync_token = fields.Char('Next Sync Token', copy=False, groups="base.group_system")
-    calendar_cal_id = fields.Char('Calendar ID', copy=False, help='Last Calendar ID who has been synchronized. If it is changed, we remove all links between GoogleID and Odoo Google Internal ID')
+    calendar_cal_id = fields.Char('Calendar ID', copy=False, help='Last Calendar ID who has been synchronized. If it is changed, we remove all links between GoogleID and Godo Google Internal ID')
     synchronization_stopped = fields.Boolean('Google Synchronization stopped', copy=False)
 
     def _set_auth_tokens(self, access_token, refresh_token, ttl):

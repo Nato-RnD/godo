@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 from traceback import format_exc
 
 from dbus.mainloop.glib import DBusGMainLoop
@@ -22,7 +22,7 @@ iot_devices = {}
 class Manager(Thread):
     def send_alldevices(self):
         """
-        This method send IoT Box and devices informations to Odoo database
+        This method send IoT Box and devices informations to Godo database
         """
         server = helpers.get_odoo_server_url()
         if server:
@@ -65,7 +65,7 @@ class Manager(Thread):
                 _logger.error('Could not reach configured server')
                 _logger.error('A error encountered : %s ' % e)
         else:
-            _logger.warning('Odoo server not set')
+            _logger.warning('Godo server not set')
 
     def run(self):
         """

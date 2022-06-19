@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mass_mailing
 # 
@@ -30,7 +30,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 17:39+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -182,8 +182,8 @@ msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_call_to_action
-msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
-msgstr "<b>50.000+ şirket</b> işlerini büyütmek için Odoo kullanıyor"
+msgid "<b>50,000+ companies</b> run Godo to grow their businesses."
+msgstr "<b>50.000+ şirket</b> işlerini büyütmek için Godo kullanıyor"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_alert
@@ -2818,7 +2818,7 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:mass_mailing.action_view_mass_mailing_lists
 msgid ""
 "No need to import mailing lists, you can send mailings to contacts saved in "
-"other Odoo apps."
+"other Godo apps."
 msgstr ""
 
 #. module: mass_mailing
@@ -2941,8 +2941,8 @@ msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.layout
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_image_text
@@ -3805,8 +3805,8 @@ msgstr "Teşekkür ederim! Geri bildiriminiz başarıyla gönderildi!"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_paragraph
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
-msgid "That way, Odoo evolves much faster than any other solution."
-msgstr "Odoo bu yolla, diğer çözümlere göre daha hızlı gelişir."
+msgid "That way, Godo evolves much faster than any other solution."
+msgstr "Godo bu yolla, diğer çözümlere göre daha hızlı gelişir."
 
 #. module: mass_mailing
 #: model:ir.model.constraint,message:mass_mailing.constraint_mailing_mailing_percentage_valid
@@ -3835,16 +3835,16 @@ msgstr ""
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_paragraph
 msgid ""
-"The open source model of Odoo has allowed us to leverage thousands of developers and\n"
+"The open source model of Godo has allowed us to leverage thousands of developers and\n"
 "                                business experts to build hundreds of apps in just a few years."
 msgstr ""
-"Odoo'nun açık kaynak modeli, binlerce geliştiriciye ve iş uzmanına sadece "
+"Godo'nun açık kaynak modeli, binlerce geliştiriciye ve iş uzmanına sadece "
 "birkaç yıl içinde yüzlerce uygulama oluşturmak için kullanmamıza izin verdi."
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
 msgid ""
-"The open source model of Odoo has allowed us to leverage thousands of developers and\n"
+"The open source model of Godo has allowed us to leverage thousands of developers and\n"
 "                    business experts to build hundreds of apps in just a few years."
 msgstr ""
 
@@ -3852,11 +3852,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_text_image
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_image
 msgid ""
-"The open source model of Odoo has allowed us to leverage thousands of "
+"The open source model of Godo has allowed us to leverage thousands of "
 "developers and business experts to build hundreds of apps in just a few "
 "years."
 msgstr ""
-"Odoo'nun açık kaynak modeli, binlerce geliştiriciye ve iş uzmanına sadece "
+"Godo'nun açık kaynak modeli, binlerce geliştiriciye ve iş uzmanına sadece "
 "birkaç yıl içinde yüzlerce uygulama oluşturmak için kullanmamıza izin verdi."
 
 #. module: mass_mailing
@@ -4116,16 +4116,16 @@ msgstr "Aboneliklerimi güncelle"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_paragraph
 msgid ""
-"Usability improvements made on Odoo will automatically apply to all\n"
+"Usability improvements made on Godo will automatically apply to all\n"
 "                                of our fully integrated apps."
 msgstr ""
-"Odoo üzerinde yapılan Kullanılabilirlik Geliştirmesi, otomatik olarak tam entegre uygulamalarımızla  \n"
+"Godo üzerinde yapılan Kullanılabilirlik Geliştirmesi, otomatik olarak tam entegre uygulamalarımızla  \n"
 "tümüne uygulanacaktır ve herkes için geçerli olacaktır."
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
 msgid ""
-"Usability improvements made on Odoo will automatically apply to all\n"
+"Usability improvements made on Godo will automatically apply to all\n"
 "                    of our fully integrated apps."
 msgstr ""
 
@@ -4144,11 +4144,11 @@ msgstr "Postalar için özel bir sunucu kullanın"
 #: model:ir.model.fields,help:mass_mailing.field_res_config_settings__mass_mailing_outgoing_mail_server
 #: model_terms:ir.ui.view,arch_db:mass_mailing.res_config_settings_view_form
 msgid ""
-"Use a specific mail server in priority. Otherwise Odoo relies on the first "
+"Use a specific mail server in priority. Otherwise Godo relies on the first "
 "outgoing mail server available (based on their sequencing) as it does for "
 "normal mails."
 msgstr ""
-"Öncelikli olarak belirli bir posta sunucusu kullanın. Aksi takdirde Odoo, "
+"Öncelikli olarak belirli bir posta sunucusu kullanın. Aksi takdirde Godo, "
 "normal postalarda olduğu gibi kullanılabilir ilk giden posta sunucusuna "
 "(sıralarına bağlı olarak) güvenir."
 
@@ -4316,16 +4316,16 @@ msgstr ""
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_paragraph
 msgid ""
-"With strong technical foundations, Odoo's framework is unique.\n"
+"With strong technical foundations, Godo's framework is unique.\n"
 "                                It provides top notch usability that scales across all apps."
 msgstr ""
-"Güçlü teknik alt yapısı ile, Odoo'nun yapısı benzersizdir.\n"
+"Güçlü teknik alt yapısı ile, Godo'nun yapısı benzersizdir.\n"
 "Tüm uygulamalar arasında ölçeklenen birinci sınıf kullanışlılık sağlar."
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
 msgid ""
-"With strong technical foundations, Odoo's framework is unique.\n"
+"With strong technical foundations, Godo's framework is unique.\n"
 "                    It provides top notch usability that scales across all apps."
 msgstr ""
 
@@ -4333,10 +4333,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_image
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_picture
 msgid ""
-"With strong technical foundations, Odoo's framework is unique. It provides "
+"With strong technical foundations, Godo's framework is unique. It provides "
 "<strong>top notch usability that scales across all apps</strong>."
 msgstr ""
-"Güçlü teknik alt yapısı ile, Odoo'nun yapısı benzersizdir. Tüm uygulamalar "
+"Güçlü teknik alt yapısı ile, Godo'nun yapısı benzersizdir. Tüm uygulamalar "
 "arasında <strong>ölçeklenen birinci sınıf kullanışlılık sağlar.</strong>."
 
 #. module: mass_mailing
@@ -4388,9 +4388,9 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:mass_mailing.action_view_mass_mailings_from_campaign
 msgid ""
 "You don't need to import your mailing lists, you can easily\n"
-"                send emails<br> to any contact saved in other Odoo apps."
+"                send emails<br> to any contact saved in other Godo apps."
 msgstr ""
-"Posta listelerinizi içe aktarmanıza gerek yoktur, diğer Odoo \n"
+"Posta listelerinizi içe aktarmanıza gerek yoktur, diğer Godo \n"
 "                uygulamalarında <br>kayıtlı herhangi bir kişiye kolayca e-posta gönderebilirsiniz"
 
 #. module: mass_mailing

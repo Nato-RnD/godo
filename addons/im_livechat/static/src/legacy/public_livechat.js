@@ -1323,7 +1323,7 @@ var ThreadTypingMixin = {
      * The choice of the members name for display is not random: it displays
      * the user that have been typing for the longest time. Also, this function
      * is hard-coded to display at most 2 partners. This limitation comes from
-     * how translation works in Odoo, for which unevaluated string cannot be
+     * how translation works in Godo, for which unevaluated string cannot be
      * translated.
      *
      * @returns {string} list of members that are typing something on the thread

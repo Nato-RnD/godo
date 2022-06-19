@@ -1,7 +1,7 @@
 /** @odoo-module alias=web.PivotController **/
 
     /**
-     * Odoo Pivot Table Controller
+     * Godo Pivot Table Controller
      *
      * This class is the Controller for the pivot table view.  It has to coordinate
      * the actions coming from the search view (through the update method), from

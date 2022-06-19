@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* point_of_sale
 # 
@@ -33,7 +33,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-10 07:16+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -2486,8 +2486,8 @@ msgstr "ID"
 #. openerp-web
 #: code:addons/point_of_sale/static/src/js/Popups/ErrorTracebackPopup.js:0
 #, python-format
-msgid "IMPORTANT: Bug Report From Odoo Point Of Sale"
-msgstr "ÖNEMLİ:Odoo Satış Noktasıdan Hata Raporu"
+msgid "IMPORTANT: Bug Report From Godo Point Of Sale"
+msgstr "ÖNEMLİ:Godo Satış Noktasıdan Hata Raporu"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__proxy_ip
@@ -6301,20 +6301,20 @@ msgstr "Bu ürün müşteri makbuzu üzerinde referans olarak kullanılır."
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__sequence_line_id
 msgid ""
-"This sequence is automatically created by Odoo but you can change it to "
+"This sequence is automatically created by Godo but you can change it to "
 "customize the reference numbers of your orders lines."
 msgstr ""
-"Bu satır Odoo tarafından otomatik olarak oluşturulur ancak sipariş "
+"Bu satır Godo tarafından otomatik olarak oluşturulur ancak sipariş "
 "satırlarınızın referans numaralarının özelleştirmek için bunu "
 "değiştirebilirsiniz."
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__sequence_id
 msgid ""
-"This sequence is automatically created by Odoo but you can change it to "
+"This sequence is automatically created by Godo but you can change it to "
 "customize the reference numbers of your orders."
 msgstr ""
-"Sıralama Odoo tarafından otomatik olarak oluşturulmaktadır ancak "
+"Sıralama Godo tarafından otomatik olarak oluşturulmaktadır ancak "
 "siparişlerinizin referans numaralarını özelleştirmek için "
 "değiştirebilirsiniz."
 

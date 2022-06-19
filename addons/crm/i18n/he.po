@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* crm
 # 
@@ -24,7 +24,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-05 10:53+0000\n"
 "PO-Revision-Date: 2021-09-14 12:21+0000\n"
@@ -183,7 +183,7 @@ msgstr ""
 #: code:addons/crm/models/crm_team.py:0
 #, python-format
 msgid ""
-"<p>As you don't belong to any Sales Team, Odoo opens the first one by "
+"<p>As you don't belong to any Sales Team, Godo opens the first one by "
 "default.</p>"
 msgstr ""
 "<p>מכיוון שאינך משתייך לאף צוות מכירות, המערכת פותחת את הראשון כברירת "
@@ -322,7 +322,7 @@ msgid ""
 "                        <div>\n"
 "                            Hi <t t-out=\"object.partner_id and object.partner_id.name or ''\">Deco Addict</t>,<br/><br/>\n"
 "                            Welcome to <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t>.\n"
-"                            It's great to meet you! Now that you're on board, you'll discover what <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t> has to offer. My name is <t t-out=\"object.user_id.name or ''\">Marc Demo</t> and I'll help you get the most out of Odoo. Could we plan a quick demo soon?<br/>\n"
+"                            It's great to meet you! Now that you're on board, you'll discover what <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t> has to offer. My name is <t t-out=\"object.user_id.name or ''\">Marc Demo</t> and I'll help you get the most out of Godo. Could we plan a quick demo soon?<br/>\n"
 "                            Feel free to reach out at any time!<br/><br/>\n"
 "                            Best,<br/>\n"
 "                            <t t-if=\"object.user_id\">\n"
@@ -360,7 +360,7 @@ msgid ""
 "</td></tr>\n"
 "<!-- POWERED BY -->\n"
 "<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
-"    Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;utm_medium=email\" style=\"color: #875A7B;\">Odoo</a>\n"
+"    Powered by <a target=\"_blank\" href=\"https://smartlifevn.com?utm_source=db&amp;utm_medium=email\" style=\"color: #875A7B;\">Godo</a>\n"
 "</td></tr>\n"
 "</table>\n"
 "        "
@@ -432,7 +432,7 @@ msgstr ""
 "</td></tr>\n"
 "<!-- מנוהל ע\"י-->\n"
 "<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
-"מנוהל ע\"י<a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;utm_medium=email\" style=\"color: #875A7B;\">Odoo</a>\n"
+"מנוהל ע\"י<a target=\"_blank\" href=\"https://smartlifevn.com?utm_source=db&amp;utm_medium=email\" style=\"color: #875A7B;\">Godo</a>\n"
 "</td></tr>\n"
 "</table>"
 
@@ -1225,7 +1225,7 @@ msgstr ""
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_4
 msgid ""
 "Did you know you can search a company by name or VAT number to instantly "
-"fill in all its data? Odoo autocompletes everything for you: logo, address, "
+"fill in all its data? Godo autocompletes everything for you: logo, address, "
 "company size, business information, social media accounts, etc."
 msgstr ""
 "האם ידעת שאתה יכול לחפש חברה לפי שם או מספר מע\"מ כדי למלא באופן מיידי את כל"
@@ -1236,7 +1236,7 @@ msgstr ""
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_5
 msgid ""
 "Did you know you can turn a list of opportunities into a map view, using the"
-" top-right map icon? A lot of screens in Odoo can be turned into a map: "
+" top-right map icon? A lot of screens in Godo can be turned into a map: "
 "tasks, contacts, delivery orders, etc."
 msgstr ""
 "האם ידעת שאתה יכול להפוך את רשימת ההזדמנויות לתצוגת מפה באמצעות סמל המפה "
@@ -2544,21 +2544,21 @@ msgstr "מספר ההודעות שלא נקראו"
 #. module: crm
 #: model_terms:ir.actions.act_window,help:crm.crm_case_form_view_salesteams_opportunity
 msgid ""
-"Odoo helps you keep track of your sales pipeline to follow\n"
+"Godo helps you keep track of your sales pipeline to follow\n"
 "                    up potential sales and better forecast your future revenues."
 msgstr ""
-"Odoo עוזר לך לעקוב אחר צינור פעילות המכירות שלך\n"
+"Godo עוזר לך לעקוב אחר צינור פעילות המכירות שלך\n"
 "                    ואחר מכירות פוטנציאליות ולחזות טוב יותר את הכנסותיך העתידיות."
 
 #. module: crm
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_2
 msgid ""
-"Odoo's artificial intelligence engine predicts the success rate of each "
+"Godo's artificial intelligence engine predicts the success rate of each "
 "opportunity based on your history. You can always update the success rate "
-"manually, but if you let Odoo do the job the score is updated while the "
+"manually, but if you let Godo do the job the score is updated while the "
 "opportunity moves forward in your sales cycle."
 msgstr ""
-"מנוע AI של Odoo מנבא את אחוזי ההצלחה של כל הזדמנות בהתבסס על ההיסטוריה שלך. "
+"מנוע AI של Godo מנבא את אחוזי ההצלחה של כל הזדמנות בהתבסס על ההיסטוריה שלך. "
 "אתה תמיד יכול לעדכן את אחוזי ההצלחה באופן ידני, אך אם אתה נותן לאודו לבצע את"
 " העבודה הציון מתעדכן בזמן שההזדמנות נעה קדימה במחזור המכירות שלך."
 
@@ -3343,11 +3343,11 @@ msgstr ""
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team__alias_model_id
 msgid ""
-"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+"The model (Godo Document Kind) to which this alias corresponds. Any incoming"
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
-"המודל (סוג מסמך Odoo) שאליו הכינוי הזה תואם. כל דוא\"ל נכנס שלא יענה לרשומה "
+"המודל (סוג מסמך Godo) שאליו הכינוי הזה תואם. כל דוא\"ל נכנס שלא יענה לרשומה "
 "קיימת יביא ליצירת רשומה חדשה של מודל זה (למשל משימת פרויקט)"
 
 #. module: crm
@@ -3493,7 +3493,7 @@ msgstr "טיפ: המרת מיילים להזדמנויות"
 #. module: crm
 #: model:digest.tip,name:crm.digest_tip_crm_1
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_1
-msgid "Tip: Did you know Odoo has built-in lead mining?"
+msgid "Tip: Did you know Godo has built-in lead mining?"
 msgstr "טיפ: האם ידעת שהמערכת עוסקת ב Lead-Mining?"
 
 #. module: crm
@@ -3882,8 +3882,8 @@ msgstr "למשל: יקר מדי"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
-msgid "e.g. https://www.odoo.com"
-msgstr "למשל: https://www.odoo.com"
+msgid "e.g. https://smartlifevn.com"
+msgstr "למשל: https://smartlifevn.com"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form

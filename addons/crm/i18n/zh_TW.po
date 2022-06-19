@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* crm
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-05 10:53+0000\n"
 "PO-Revision-Date: 2021-09-14 12:21+0000\n"
@@ -166,9 +166,9 @@ msgstr ""
 #: code:addons/crm/models/crm_team.py:0
 #, python-format
 msgid ""
-"<p>As you don't belong to any Sales Team, Odoo opens the first one by "
+"<p>As you don't belong to any Sales Team, Godo opens the first one by "
 "default.</p>"
-msgstr "<p>由於您不屬於任何銷售團隊，Odoo 預設使用第一個</p>"
+msgstr "<p>由於您不屬於任何銷售團隊，Godo 預設使用第一個</p>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_kanban_view_leads
@@ -303,7 +303,7 @@ msgid ""
 "                        <div>\n"
 "                            Hi <t t-out=\"object.partner_id and object.partner_id.name or ''\">Deco Addict</t>,<br/><br/>\n"
 "                            Welcome to <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t>.\n"
-"                            It's great to meet you! Now that you're on board, you'll discover what <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t> has to offer. My name is <t t-out=\"object.user_id.name or ''\">Marc Demo</t> and I'll help you get the most out of Odoo. Could we plan a quick demo soon?<br/>\n"
+"                            It's great to meet you! Now that you're on board, you'll discover what <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t> has to offer. My name is <t t-out=\"object.user_id.name or ''\">Marc Demo</t> and I'll help you get the most out of Godo. Could we plan a quick demo soon?<br/>\n"
 "                            Feel free to reach out at any time!<br/><br/>\n"
 "                            Best,<br/>\n"
 "                            <t t-if=\"object.user_id\">\n"
@@ -341,7 +341,7 @@ msgid ""
 "</td></tr>\n"
 "<!-- POWERED BY -->\n"
 "<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
-"    Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;utm_medium=email\" style=\"color: #875A7B;\">Odoo</a>\n"
+"    Powered by <a target=\"_blank\" href=\"https://smartlifevn.com?utm_source=db&amp;utm_medium=email\" style=\"color: #875A7B;\">Godo</a>\n"
 "</td></tr>\n"
 "</table>\n"
 "        "
@@ -1127,18 +1127,18 @@ msgstr "您是否知道發送給銷售團隊別名的電子郵件會在您的商
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_4
 msgid ""
 "Did you know you can search a company by name or VAT number to instantly "
-"fill in all its data? Odoo autocompletes everything for you: logo, address, "
+"fill in all its data? Godo autocompletes everything for you: logo, address, "
 "company size, business information, social media accounts, etc."
 msgstr ""
-"您知道嗎，您可以通過名稱或增值稅號搜索公司以立即填寫其所有資料？ Odoo 會為您自動完成所有內容：徽標、地址、公司規模、商業資訊、社交媒體帳戶等。"
+"您知道嗎，您可以通過名稱或增值稅號搜索公司以立即填寫其所有資料？ Godo 會為您自動完成所有內容：徽標、地址、公司規模、商業資訊、社交媒體帳戶等。"
 
 #. module: crm
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_5
 msgid ""
 "Did you know you can turn a list of opportunities into a map view, using the"
-" top-right map icon? A lot of screens in Odoo can be turned into a map: "
+" top-right map icon? A lot of screens in Godo can be turned into a map: "
 "tasks, contacts, delivery orders, etc."
-msgstr "您是否知道可以使用右上角的地圖圖示將商機列表轉換為地圖視圖？ Odoo 中的很多屏幕都可以變成地圖：任務、聯絡人、送貨單等。"
+msgstr "您是否知道可以使用右上角的地圖圖示將商機列表轉換為地圖視圖？ Godo 中的很多屏幕都可以變成地圖：任務、聯絡人、送貨單等。"
 
 #. module: crm
 #: model:ir.model,name:crm.model_digest_digest
@@ -2400,7 +2400,7 @@ msgstr "未讀訊息的數量"
 #. module: crm
 #: model_terms:ir.actions.act_window,help:crm.crm_case_form_view_salesteams_opportunity
 msgid ""
-"Odoo helps you keep track of your sales pipeline to follow\n"
+"Godo helps you keep track of your sales pipeline to follow\n"
 "                    up potential sales and better forecast your future revenues."
 msgstr ""
 "Odoo幫助您追蹤\n"
@@ -2409,12 +2409,12 @@ msgstr ""
 #. module: crm
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_2
 msgid ""
-"Odoo's artificial intelligence engine predicts the success rate of each "
+"Godo's artificial intelligence engine predicts the success rate of each "
 "opportunity based on your history. You can always update the success rate "
-"manually, but if you let Odoo do the job the score is updated while the "
+"manually, but if you let Godo do the job the score is updated while the "
 "opportunity moves forward in your sales cycle."
 msgstr ""
-"Odoo 的人工智能引擎根據您的歷史預測每個商機的成功率。您始終可以手動更新成功率，但如果您讓 Odoo "
+"Godo 的人工智能引擎根據您的歷史預測每個商機的成功率。您始終可以手動更新成功率，但如果您讓 Godo "
 "來完成這項工作，則當商機在您的銷售週期中向前推進時，分數就會更新。"
 
 #. module: crm
@@ -3187,7 +3187,7 @@ msgstr "與此渠道相關聯的電子信件地址。收到的新電子信件會
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team__alias_model_id
 msgid ""
-"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+"The model (Godo Document Kind) to which this alias corresponds. Any incoming"
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
@@ -3327,8 +3327,8 @@ msgstr "提示：將收到的電子郵件轉換為商機"
 #. module: crm
 #: model:digest.tip,name:crm.digest_tip_crm_1
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_1
-msgid "Tip: Did you know Odoo has built-in lead mining?"
-msgstr "提示：您知道 Odoo 具有內置的潛在商機挖掘功能嗎？"
+msgid "Tip: Did you know Godo has built-in lead mining?"
+msgstr "提示：您知道 Godo 具有內置的潛在商機挖掘功能嗎？"
 
 #. module: crm
 #: model:digest.tip,name:crm.digest_tip_crm_4
@@ -3706,8 +3706,8 @@ msgstr "例如.太貴了"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
-msgid "e.g. https://www.odoo.com"
-msgstr "例如：https://www.odoo.com"
+msgid "e.g. https://smartlifevn.com"
+msgstr "例如：https://smartlifevn.com"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form

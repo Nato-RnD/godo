@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* account
 # 
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-18 09:52+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
@@ -178,10 +178,10 @@ msgstr "-> Ver entradas parcialmente reconciliadas."
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid ""
-". The journal entries need to be computed by Odoo before being posted in "
+". The journal entries need to be computed by Godo before being posted in "
 "your company's currency."
 msgstr ""
-". O Odoo necessita calcular o lançamento contábil antes de lançar na moeda "
+". O Godo necessita calcular o lançamento contábil antes de lançar na moeda "
 "de sua empresa."
 
 #. module: account
@@ -3028,7 +3028,7 @@ msgstr "Antes"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Godo S.A. "
 "responsibility."
 msgstr ""
 
@@ -4852,10 +4852,10 @@ msgstr "Modo Data"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_financial_year_op__opening_date
 msgid ""
-"Date from which the accounting is managed in Odoo. It is the date of the "
+"Date from which the accounting is managed in Godo. It is the date of the "
 "opening entry."
 msgstr ""
-"Data em que a contabilidade é gerenciada pelo Odoo. Esta é a data da "
+"Data em que a contabilidade é gerenciada pelo Godo. Esta é a data da "
 "primeira entrada."
 
 #. module: account
@@ -8408,7 +8408,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__inbound_payment_method_line_ids
 msgid ""
-"Manual: Get paid by any method outside of Odoo.\n"
+"Manual: Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
@@ -8417,8 +8417,8 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__outbound_payment_method_line_ids
 msgid ""
-"Manual: Pay by any method outside of Odoo.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Manual: Pay by any method outside of Godo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 msgstr ""
 
@@ -8426,9 +8426,9 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_payment__payment_method_line_id
 #: model:ir.model.fields,help:account.field_account_payment_register__payment_method_line_id
 msgid ""
-"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Manual: Pay or Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
@@ -9143,39 +9143,39 @@ msgstr "Outubro"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_line
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Godo allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoice(s)."
 msgstr ""
-"Odoo permite que você reconcilie uma linha de extrato diretamente com\n"
+"Godo permite que você reconcilie uma linha de extrato diretamente com\n"
 "                a fatura(s) de venda ou compra relacionada ."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_tree
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Godo allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoices."
 msgstr ""
-"Odoo permite que você reconcilie uma linha de extrato diretamente com\n"
+"Godo permite que você reconcilie uma linha de extrato diretamente com\n"
 "                as faturas de venda ou compra relacionadas."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_customer
-msgid "Odoo helps you easily track all activities related to a customer."
+msgid "Godo helps you easily track all activities related to a customer."
 msgstr ""
-"Odoo ajuda você a rastrear facilmente todas as atividades relacionadas a um "
+"Godo ajuda você a rastrear facilmente todas as atividades relacionadas a um "
 "cliente."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_supplier
-msgid "Odoo helps you easily track all activities related to a supplier."
+msgid "Godo helps you easily track all activities related to a supplier."
 msgstr ""
-"Odoo ajuda você a rastrear facilmente todas as atividades relacionadas a um "
+"Godo ajuda você a rastrear facilmente todas as atividades relacionadas a um "
 "fornecedor."
 
 #. module: account
@@ -11711,13 +11711,13 @@ msgid ""
 "\n"
 "Any file extension will be accepted.\n"
 "\n"
-"Only PDF and XML files will be interpreted by Odoo"
+"Only PDF and XML files will be interpreted by Godo"
 msgstr ""
 "Envie um e-mail separado para cada fatura.\n"
 "\n"
 "Qualquer extensão de arquivo será aceita.\n"
 "\n"
-"Apenas arquivos PDF e XML serão interpretados pelo Odoo"
+"Apenas arquivos PDF e XML serão interpretados pelo Godo"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.account_send_payment_receipt_by_email_action
@@ -14621,11 +14621,11 @@ msgstr "Este movimento será lançado na data contábil: %(date)s"
 msgid ""
 "This option permanently removes any track of email after it's been sent, "
 "including from the Technical menu in the Settings, in order to preserve "
-"storage space of your Odoo database."
+"storage space of your Godo database."
 msgstr ""
 "Esta opção remove permanentemente qualquer trilha de e-mail após o seu "
 "envio, incluindo a partir do menu Técnico nas Definições, a fim de preservar"
-" o espaço de armazenamento de seu banco de dados Odoo."
+" o espaço de armazenamento de seu banco de dados Godo."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account_template__chart_template_id
@@ -15602,7 +15602,7 @@ msgstr "com moeda"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_tour_upload_bill
-msgid "With Odoo, you won't have to record bills manually"
+msgid "With Godo, you won't have to record bills manually"
 msgstr ""
 
 #. module: account
@@ -15651,10 +15651,10 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_journal__invoice_reference_model
 msgid ""
 "You can choose different models for each type of reference. The default one "
-"is the Odoo reference."
+"is the Godo reference."
 msgstr ""
 "Você pode escolher modelos diferentes para cada tipo de referência. O padrão"
-" é a referência Odoo."
+" é a referência Godo."
 
 #. module: account
 #: code:addons/account/models/account_journal.py:0

@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* point_of_sale
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~12.5\n"
+"Project-Id-Version: Godo Server saas~12.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-27 09:10+0000\n"
 "PO-Revision-Date: 2019-08-26 09:12+0000\n"
@@ -1869,8 +1869,8 @@ msgstr "ID"
 #. openerp-web
 #: code:addons/point_of_sale/static/src/js/popups.js:0
 #, python-format
-msgid "IMPORTANT: Bug Report From Odoo Point Of Sale"
-msgstr "VIKTIG: Feilrapport fra Odoo Kassasystem"
+msgid "IMPORTANT: Bug Report From Godo Point Of Sale"
+msgstr "VIKTIG: Feilrapport fra Godo Kassasystem"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__proxy_ip
@@ -2489,8 +2489,8 @@ msgstr "Antall uleste meldinger"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.customer_facing_display_html
 #: model_terms:pos.config,customer_facing_display_html:point_of_sale.pos_config_main
-msgid "Odoo Logo"
-msgstr "Odoo-logo"
+msgid "Godo Logo"
+msgstr "Godo-logo"
 
 #. module: point_of_sale
 #. openerp-web
@@ -4593,19 +4593,19 @@ msgstr "Dette produktet brukes som referanse på kundekvitteringer."
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__sequence_line_id
 msgid ""
-"This sequence is automatically created by Odoo but you can change it to "
+"This sequence is automatically created by Godo but you can change it to "
 "customize the reference numbers of your orders lines."
 msgstr ""
-"Denne sekvensen er automatisk opprettet av Odoo, men du kan endre den for å "
+"Denne sekvensen er automatisk opprettet av Godo, men du kan endre den for å "
 "tilpasse referansenummer for ordrelinjer."
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__sequence_id
 msgid ""
-"This sequence is automatically created by Odoo but you can change it to "
+"This sequence is automatically created by Godo but you can change it to "
 "customize the reference numbers of your orders."
 msgstr ""
-"Denne sekvensen er automatisk opprettet av Odoo, men du kan endre den for å "
+"Denne sekvensen er automatisk opprettet av Godo, men du kan endre den for å "
 "tilpasse referansenummer for ordrer."
 
 #. module: point_of_sale

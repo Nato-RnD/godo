@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import logging
 from hashlib import new as hashnew
@@ -69,7 +69,7 @@ class PaymentAcquirer(models.Model):
 
         :param dict values: The values used to generate the signature
         :param bool incoming: Whether the signature must be generated for an incoming (Ogone to
-                              Odoo) or outgoing (Odoo to Ogone) communication.
+                              Godo) or outgoing (Godo to Ogone) communication.
         :param bool format_keys: Whether the keys must be formatted as uppercase, dot-separated
                                  strings to comply with Ogone APIs. This must be used when the keys
                                  are formatted as underscore-separated strings to be compliant with

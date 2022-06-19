@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website_slides_forum
 # 
@@ -10,7 +10,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:29+0000\n"
 "PO-Revision-Date: 2021-09-14 12:29+0000\n"
@@ -359,10 +359,10 @@ msgstr ""
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
+"questions related to Godo."
 msgstr ""
 "Cílem tohoto webu je vytvořit relevantní znalostní základnu, která by "
-"odpovídala na otázky týkající se Odoo."
+"odpovídala na otázky týkající se Godo."
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -470,9 +470,9 @@ msgstr "každá odpověď je stejně platná: “Jaké je vaše oblíbené _____
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to configure or customize Odoo to specific business needs,"
+msgid "how to configure or customize Godo to specific business needs,"
 msgstr ""
-"jak konfigurovat nebo přizpůsobit Odoo specifickým podnikovým potřebám,"
+"jak konfigurovat nebo přizpůsobit Godo specifickým podnikovým potřebám,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -483,8 +483,8 @@ msgstr "jak vyvíjet moduly pro vlastní potřebu,"
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "jak nainstalovat Odoo na konkrétní infrastrukturu,"
+msgid "how to install Godo on a specific infrastructure,"
+msgstr "jak nainstalovat Godo na konkrétní infrastrukturu,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -496,7 +496,7 @@ msgstr ""
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "specific questions about Odoo service offers, etc."
+msgid "specific questions about Godo service offers, etc."
 msgstr ""
 
 #. module: website_slides_forum
@@ -520,8 +520,8 @@ msgstr "dostáváme otevřenou hypotetickou otázku: „Co kdyby se ______ stalo
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "what's the best way to use Odoo for a specific business need,"
-msgstr "jaký je nejlepší způsob použití Odoo pro konkrétní obchodní potřeby,"
+msgid "what's the best way to use Godo for a specific business need,"
+msgstr "jaký je nejlepší způsob použití Godo pro konkrétní obchodní potřeby,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
-"""The Odoo API module defines Odoo Environments and method decorators.
+"""The Godo API module defines Godo Environments and method decorators.
 
 .. todo:: Document this module
 """
@@ -481,7 +481,7 @@ class Environment(Mapping):
     @classproperty
     def envs(cls):
         raise NotImplementedError(
-            "Since Odoo 15.0, Environment.envs no longer works; "
+            "Since Godo 15.0, Environment.envs no longer works; "
             "use cr.transaction or env.transaction instead."
         )
 
@@ -489,7 +489,7 @@ class Environment(Mapping):
     @contextmanager
     def manage(cls):
         warnings.warn(
-            "Since Odoo 15.0, Environment.manage() is useless.",
+            "Since Godo 15.0, Environment.manage() is useless.",
             DeprecationWarning, stacklevel=2,
         )
         yield
@@ -699,7 +699,7 @@ class Environment(Mapping):
             computations and updates) upon exception.
         """
         warnings.warn(
-            "Since Odoo 15.0, use cr.savepoint() instead of env.clear_upon_failure().",
+            "Since Godo 15.0, use cr.savepoint() instead of env.clear_upon_failure().",
             DeprecationWarning, stacklevel=2,
         )
         return self.cr.savepoint()

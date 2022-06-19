@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import odoo.tests
 
@@ -17,7 +17,7 @@ class TestWebsiteCrm(odoo.tests.HttpCase):
         self.assertEqual(len(record), 1)
         self.assertEqual(record.contact_name, 'John Smith')
         self.assertEqual(record.email_from, 'john@smith.com')
-        self.assertEqual(record.partner_name, 'Odoo S.A.')
+        self.assertEqual(record.partner_name, 'Godo S.A.')
 
     def test_catch_logged_partner_info_tour(self):
         user_login = 'admin'

@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* base_setup
 # 
@@ -15,7 +15,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:20+0000\n"
@@ -385,8 +385,8 @@ msgstr "Введите email-адрес"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Extract and analyze Odoo data from Google Spreadsheet"
-msgstr "Извлечь и проанализировать данные Odoo из Google Spreadsheet"
+msgid "Extract and analyze Godo data from Google Spreadsheet"
+msgstr "Извлечь и проанализировать данные Godo из Google Spreadsheet"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -574,15 +574,15 @@ msgstr "OAuth Авторизация"
 #. openerp-web
 #: code:addons/base_setup/static/src/xml/res_config_edition.xml:0
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: base_setup
 #. openerp-web
 #: code:addons/base_setup/static/src/xml/res_config_edition.xml:0
 #, python-format
-msgid "Odoo S.A."
-msgstr "Odoo S.A."
+msgid "Godo S.A."
+msgstr "Godo S.A."
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -705,8 +705,8 @@ msgstr "Использовать внешние аутентификационн
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Use external pads in Odoo Notes"
-msgstr "Используйте внешние доски в Odoo Notes"
+msgid "Use external pads in Godo Notes"
+msgstr "Используйте внешние доски в Godo Notes"
 
 #. module: base_setup
 #: model:ir.model,name:base_setup.model_res_users
@@ -717,11 +717,11 @@ msgstr "Пользователи"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"When populating your address book, Odoo provides a list of matching "
+"When populating your address book, Godo provides a list of matching "
 "companies. When selecting one item, the company data and logo are auto-"
 "filled."
 msgstr ""
-"При заполнении адресной книги Odoo находит информацию о компаниях. При "
+"При заполнении адресной книги Godo находит информацию о компаниях. При "
 "выборе подходящей компании ее данные и логотип заполняются автоматически."
 
 #. module: base_setup

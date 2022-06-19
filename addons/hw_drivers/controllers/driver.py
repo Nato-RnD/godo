@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from base64 import b64decode
 import json
@@ -69,10 +69,10 @@ class DriverController(http.Controller):
     @http.route('/hw_drivers/box/connect', type='http', auth='none', cors='*', csrf=False, save_session=False)
     def connect_box(self, token):
         """
-        This route is called when we want that a IoT Box will be connected to a Odoo DB
+        This route is called when we want that a IoT Box will be connected to a Godo DB
         token is a base 64 encoded string and have 2 argument separate by |
         1 - url of odoo DB
-        2 - token. This token will be compared to the token of Odoo. He have 1 hour lifetime
+        2 - token. This token will be compared to the token of Godo. He have 1 hour lifetime
         """
         server = helpers.get_odoo_server_url()
         image = get_resource_path('hw_drivers', 'static/img', 'False.jpg')

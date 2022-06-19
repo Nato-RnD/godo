@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* point_of_sale
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-10 07:16+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -2428,7 +2428,7 @@ msgstr "ID"
 #. openerp-web
 #: code:addons/point_of_sale/static/src/js/Popups/ErrorTracebackPopup.js:0
 #, python-format
-msgid "IMPORTANT: Bug Report From Odoo Point Of Sale"
+msgid "IMPORTANT: Bug Report From Godo Point Of Sale"
 msgstr "重要:來自Odoo POS的問題報告"
 
 #. module: point_of_sale
@@ -6168,14 +6168,14 @@ msgstr "本產品用作客戶收據之編碼。"
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__sequence_line_id
 msgid ""
-"This sequence is automatically created by Odoo but you can change it to "
+"This sequence is automatically created by Godo but you can change it to "
 "customize the reference numbers of your orders lines."
-msgstr "此序列由 Odoo 自動建立，但您可以進行更改以自訂訂單明細的編碼。"
+msgstr "此序列由 Godo 自動建立，但您可以進行更改以自訂訂單明細的編碼。"
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__sequence_id
 msgid ""
-"This sequence is automatically created by Odoo but you can change it to "
+"This sequence is automatically created by Godo but you can change it to "
 "customize the reference numbers of your orders."
 msgstr "這個序列號是由Odoo自動產生的，不過您可以把它改為自己定義訂單的序列號。"
 

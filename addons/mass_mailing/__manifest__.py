@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Email Marketing',
@@ -7,7 +7,7 @@
     'description': "",
     'version': '2.5',
     'sequence': 60,
-    'website': 'https://www.odoo.com/app/email-marketing',
+    'website': 'https://smartlifevn.com/app/email-marketing',
     'category': 'Marketing/Email Marketing',
     'depends': [
         'contacts',

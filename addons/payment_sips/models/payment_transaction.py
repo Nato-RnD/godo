@@ -1,5 +1,5 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-# Original Copyright 2015 Eezee-It, modified and maintained by Odoo.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
+# Original Copyright 2015 Eezee-It, modified and maintained by Godo.
 
 import json
 import logging

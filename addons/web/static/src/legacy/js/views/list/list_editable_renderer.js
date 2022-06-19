@@ -7,7 +7,7 @@
  * file simply 'includes' the basic ListRenderer to add all the necessary
  * behaviors to enable editing records.
  *
- * Unlike Odoo v10 and before, this list renderer is independant from the form
+ * Unlike Godo v10 and before, this list renderer is independant from the form
  * view. It uses the same widgets, but the code is totally stand alone.
  */
 import core from 'web.core';

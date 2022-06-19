@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo import models
 from stdnum import luhn
@@ -9,14 +9,14 @@ class AccountMove(models.Model):
     _inherit = "account.move"
 
     def _get_invoice_reference_no_invoice(self):
-        """ This computes the reference based on the Odoo format.
+        """ This computes the reference based on the Godo format.
             We calculat reference using invoice number and
             partner id and added control digit at last.
         """
         return self._get_kid_number()
 
     def _get_invoice_reference_no_partner(self):
-        """ This computes the reference based on the Odoo format.
+        """ This computes the reference based on the Godo format.
             We calculat reference using invoice number and
             partner id and added control digit at last.
         """

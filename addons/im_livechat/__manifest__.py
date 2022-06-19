@@ -6,7 +6,7 @@
     'summary': 'Chat with your website visitors',
     'category': 'Website/Live Chat',
     'complexity': 'easy',
-    'website': 'https://www.odoo.com/app/live-chat',
+    'website': 'https://smartlifevn.com/app/live-chat',
     'description':
         """
 Live Chat Support
@@ -64,12 +64,12 @@ Help your customers with this chat, and analyse their feedback.
         'web.assets_qweb': [
             'im_livechat/static/src/components/*/*.xml',
         ],
-        # Bundle of External Librairies of the Livechat (Odoo + required modules)
+        # Bundle of External Librairies of the Livechat (Godo + required modules)
         'im_livechat.external_lib': [
             # Momentjs
             'web/static/lib/moment/moment.js',
             'web/static/lib/luxon/luxon.js',
-            # Odoo minimal lib
+            # Godo minimal lib
             'web/static/lib/underscore/underscore.js',
             'web/static/lib/underscore.string/lib/underscore.string.js',
             # jQuery
@@ -79,7 +79,7 @@ Help your customers with this chat, and analyse their feedback.
             'web/static/lib/jquery.ba-bbq/jquery.ba-bbq.js',
             # Qweb2 lib
             'web/static/lib/qweb/qweb2.js',
-            # Odoo JS Framework
+            # Godo JS Framework
             'web/static/lib/owl/owl.js',
             'web/static/src/legacy/js/promise_extension.js',
             'web/static/src/boot.js',

@@ -1,10 +1,10 @@
 {
     'name': "Egypt - Accounting",
     'description': """
-This is the base module to manage the accounting chart for Egypt in Odoo.
+This is the base module to manage the accounting chart for Egypt in Godo.
 ==============================================================================
     """,
-    'author': "Odoo SA",
+    'author': "Godo SA",
     'category': 'Accounting/Localizations/Account Charts',
     'version': '1.0',
     'depends': ['account','l10n_multilang'],

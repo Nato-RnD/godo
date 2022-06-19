@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo.addons.base.models.res_users import is_selection_groups, get_selection_groups
 from odoo.tests.common import TransactionCase, Form, tagged

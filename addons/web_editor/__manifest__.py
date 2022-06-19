@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Web Editor',
     'category': 'Hidden',
     'description': """
-Odoo Web Editor widget.
+Godo Web Editor widget.
 ==========================
 
 """,

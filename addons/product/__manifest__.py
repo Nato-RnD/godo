@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Products & Pricelists',
@@ -7,7 +7,7 @@
     'category': 'Sales/Sales',
     'depends': ['base', 'mail', 'uom'],
     'description': """
-This is the base module for managing products and pricelists in Odoo.
+This is the base module for managing products and pricelists in Godo.
 ========================================================================
 
 Products support variants, different pricing methods, vendors information,

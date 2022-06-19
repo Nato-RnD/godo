@@ -1,10 +1,10 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* hr
 # 
 # Translators:
 # Pornvibool Tippayawat <pornvibool.t@gmail.com>, 2021
-# Odoo Thaidev <odoothaidev@gmail.com>, 2021
+# Godo Thaidev <odoothaidev@gmail.com>, 2021
 # Martin Trigaux, 2021
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2021
 # surapas haemaprasertsuk <surapas@gmail.com>, 2021
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:22+0000\n"
@@ -1999,22 +1999,22 @@ msgstr "จํานวนข้อความที่ยังไม่ได
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_tree_action
 msgid ""
-"Odoo's department structure is used to manage all documents\n"
+"Godo's department structure is used to manage all documents\n"
 "                    related to employees by departments: expenses, timesheets,\n"
 "                    leaves, recruitments, etc."
 msgstr ""
-"โครงสร้างแผนกของ Odoo ใช้สำหรับจัดการเอกสารทั้งหมด\n"
+"โครงสร้างแผนกของ Godo ใช้สำหรับจัดการเอกสารทั้งหมด\n"
 "                    ที่เกี่ยวข้องกับพนักงานตามแผนก เช่น ค่าใช้จ่าย ใบบันทึกเวลา\n"
 "                    การลา การรับสมัคร และอื่น ๆ "
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_kanban_action
 msgid ""
-"Odoo's department structure is used to manage all documents\n"
+"Godo's department structure is used to manage all documents\n"
 "                related to employees by departments: expenses, timesheets,\n"
 "                time off, recruitments, etc."
 msgstr ""
-"โครงสร้างแผนกของ Odoo ใช้สำหรับจัดการเอกสารทั้งหมด\n"
+"โครงสร้างแผนกของ Godo ใช้สำหรับจัดการเอกสารทั้งหมด\n"
 "                ที่เกี่ยวข้องกับพนักงานตามแผนก เช่น ค่าใช้จ่าย ใบบันทึกเวลา,\n"
 "                การลา การรับสมัคร และอื่น ๆ "
 
@@ -2931,22 +2931,22 @@ msgstr "หม้าย"
 #: model_terms:ir.actions.act_window,help:hr.act_employee_from_department
 #: model_terms:ir.actions.act_window,help:hr.hr_employee_public_action
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the Godo employee screen, you\n"
 "                can easily find all the information you need for each person;\n"
 "                contact data, job position, availability, etc."
 msgstr ""
-"เพียงแค่ชั่วพริบตาบนหน้าจอพนักงานของ Odoo คุณก็จะ\n"
+"เพียงแค่ชั่วพริบตาบนหน้าจอพนักงานของ Godo คุณก็จะ\n"
 "                สามารถค้นหาข้อมูลทั้งหมดที่คุณต้องการสำหรับแต่ละบุคคลได้อย่างง่ายดาย\n"
 "                ข้อมูลการติดต่อ ตำแหน่งงาน ความพร้อม และอื่น ๆ "
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.open_view_employee_list_my
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the Godo employee screen, you\n"
 "               can easily find all the information you need for each person;\n"
 "               contact data, job position, availability, etc."
 msgstr ""
-"เพียงชั่วพริบตาบนหน้าจอพนักงานของ Odoo คุณก็จะ\n"
+"เพียงชั่วพริบตาบนหน้าจอพนักงานของ Godo คุณก็จะ\n"
 "               สามารถค้นหาข้อมูลทั้งหมดที่คุณต้องการสำหรับแต่ล่ะบุคคลได้อย่างง่ายดาย\n"
 "               ข้อมูลการติดต่อ ตำแหน่งงาน ความพร้อม และอื่น ๆ "
 

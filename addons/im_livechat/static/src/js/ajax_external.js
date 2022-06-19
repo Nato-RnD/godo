@@ -3,9 +3,9 @@
 import ajax from 'web.ajax';
 
 /**
-  * This file should be used in the context of an external widget loading (e.g: live chat in a non-Odoo website)
+  * This file should be used in the context of an external widget loading (e.g: live chat in a non-Godo website)
   * It overrides the 'loadJS' method that is supposed to load additional scripts, based on a relative URL (e.g: '/web/webclient/locale/en_US')
-  * As we're not in an Odoo website context, the calls will not work, and we avoid a 404 request.
+  * As we're not in an Godo website context, the calls will not work, and we avoid a 404 request.
   */
 ajax.loadJS = function (url) {
     console.log('Tried to load the following script on an external website: ' + url);

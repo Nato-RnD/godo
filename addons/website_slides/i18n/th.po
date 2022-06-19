@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website_slides
 # 
@@ -6,12 +6,12 @@
 # Martin Trigaux, 2021
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2021
 # gsong <gsong2014@foxmail.com>, 2021
-# Odoo Thaidev <odoothaidev@gmail.com>, 2021
+# Godo Thaidev <odoothaidev@gmail.com>, 2021
 # Wichanon Jamwutthipreecha, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-05 10:53+0000\n"
 "PO-Revision-Date: 2021-09-14 12:29+0000\n"
@@ -3864,15 +3864,15 @@ msgstr "จำนวนของคำถาม"
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.mail_notification_channel_invite
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: website_slides
 #: model_terms:slide.slide,html_content:website_slides.slide_slide_demo_1_4
 #: model_terms:slide.slide,html_content:website_slides.slide_slide_demo_2_1
 #: model_terms:slide.slide,html_content:website_slides.slide_slide_demo_4_0
-msgid "Odoo • Image and Text"
-msgstr "Odoo • ภาพและข้อความ"
+msgid "Godo • Image and Text"
+msgstr "Godo • ภาพและข้อความ"
 
 #. module: website_slides
 #: model:res.groups,name:website_slides.group_website_slides_officer
@@ -5862,16 +5862,16 @@ msgstr "เช่น วิทยาการคอมพิวเตอร์�
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.view_slide_slide_form
-msgid "e.g. How to grow your business with Odoo?"
-msgstr "เช่น จะทำให้ธุรกิจของคุณเติบโตด้วย Odoo ได้อย่างไร?"
+msgid "e.g. How to grow your business with Godo?"
+msgstr "เช่น จะทำให้ธุรกิจของคุณเติบโตด้วย Godo ได้อย่างไร?"
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.view_slide_slide_form
 msgid ""
-"e.g. In this video, we'll give you the keys on how Odoo can help you to grow"
+"e.g. In this video, we'll give you the keys on how Godo can help you to grow"
 " your business. At the end, we'll propose you a quiz to test your knowledge."
 msgstr ""
-"เช่น ในวิดีโอนี้ เราจะให้กุญแจแก่คุณเกี่ยวกับวิธีที่ Odoo "
+"เช่น ในวิดีโอนี้ เราจะให้กุญแจแก่คุณเกี่ยวกับวิธีที่ Godo "
 "สามารถช่วยให้คุณเติบโตทางธุรกิจได้ ในตอนท้าย "
 "เราจะมีแบบทดสอบเพื่อทดสอบความรู้ของคุณอีกด้วย"
 
@@ -5889,8 +5889,8 @@ msgstr "เช่น ระดับของคุณ"
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.view_slide_slide_form
-msgid "e.g. https://www.odoo.com"
-msgstr "เช่น https://www.odoo.com"
+msgid "e.g. https://smartlifevn.com"
+msgstr "เช่น https://smartlifevn.com"
 
 #. module: website_slides
 #: model:ir.ui.menu,name:website_slides.website_slides_menu_root

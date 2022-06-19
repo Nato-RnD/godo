@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* account
 # 
@@ -31,7 +31,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-18 09:52+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
@@ -197,10 +197,10 @@ msgstr "-> Veure les entrades conciliades parcialment"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid ""
-". The journal entries need to be computed by Odoo before being posted in "
+". The journal entries need to be computed by Godo before being posted in "
 "your company's currency."
 msgstr ""
-". Odoo ha de calcular les entrades del diari abans de publicar-les a la "
+". Godo ha de calcular les entrades del diari abans de publicar-les a la "
 "moneda de la seva empresa."
 
 #. module: account
@@ -3174,11 +3174,11 @@ msgstr "Abans"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Godo S.A. "
 "responsibility."
 msgstr ""
 "El text següent serveix com a suggeriment i no implica la responsabilitat "
-"d'Odoo S.A."
+"d'Godo S.A."
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__bank_bic
@@ -5007,10 +5007,10 @@ msgstr "Mode de data"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_financial_year_op__opening_date
 msgid ""
-"Date from which the accounting is managed in Odoo. It is the date of the "
+"Date from which the accounting is managed in Godo. It is the date of the "
 "opening entry."
 msgstr ""
-"Data a partir de la qual es gestiona la comptabilitat a Odoo. És la data de "
+"Data a partir de la qual es gestiona la comptabilitat a Godo. És la data de "
 "l'entrada d'obertura."
 
 #. module: account
@@ -8615,12 +8615,12 @@ msgstr "Entrada manual"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__inbound_payment_method_line_ids
 msgid ""
-"Manual: Get paid by any method outside of Odoo.\n"
+"Manual: Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"Manual: Rebeu pagaments per qualsevol mètode fora d'Odoo.\n"
+"Manual: Rebeu pagaments per qualsevol mètode fora d'Godo.\n"
 "Mètode de pagament: cada adquirent de pagament té el seu propi mètode de pagament. Sol·liciteu una transacció en/a una targeta gràcies a un token de pagament guardat pel soci en comprar o subscriure's en línia.\n"
 "Dipòsit per lots: coure diversos xecs de clients alhora generant i enviant un dipòsit per lots al banc. El mòdul account_batch_payment és necessari.\n"
 "Dèbit Directe SEPA: Rep pagaments a la zona SEPA gràcies a un mandat que t'haurà atorgat el teu soci. Mòdul account_sepa és necessari.\n"
@@ -8628,28 +8628,28 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__outbound_payment_method_line_ids
 msgid ""
-"Manual: Pay by any method outside of Odoo.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Manual: Pay by any method outside of Godo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 msgstr ""
-"Manual: Pagueu per qualsevol mètode fora d'Odoo.\n"
-"Xec: pagueu factures amb xec i imprimiu-lo des d'Odoo.\n"
+"Manual: Pagueu per qualsevol mètode fora d'Godo.\n"
+"Xec: pagueu factures amb xec i imprimiu-lo des d'Godo.\n"
 "Transferència de crèdit SEPA: pagueu a la zona SEPA enviant un fitxer de transferència de crèdit SEPA al vostre banc. Mòdul account_sepa és necessari.\n"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_payment__payment_method_line_id
 #: model:ir.model.fields,help:account.field_account_payment_register__payment_method_line_id
 msgid ""
-"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Manual: Pay or Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"Manual: pagueu o rebeu pagaments per qualsevol mètode fora d'Odoo.\n"
+"Manual: pagueu o rebeu pagaments per qualsevol mètode fora d'Godo.\n"
 "Mètode de pagament: cada mètode de pagament té el seu propi mètode de pagament. Sol·liciteu una transacció en/a una targeta gràcies a un token de pagament guardat pel soci en comprar o subscriure's en línia.\n"
-"Xec: pagueu factures amb xec i imprimiu-lo des d'Odoo.\n"
+"Xec: pagueu factures amb xec i imprimiu-lo des d'Godo.\n"
 "Dipòsit per lots: coure diversos xecs de clients alhora generant i enviant un dipòsit per lots al banc. El mòdul account_batch_payment és necessari.\n"
 "Transferència de crèdit SEPA: pagueu a la zona SEPA enviant un fitxer de transferència de crèdit SEPA al vostre banc. Mòdul account_sepa és necessari.\n"
 "Dèbit Directe SEPA: Rep pagaments a la zona SEPA gràcies a un mandat que t'haurà atorgat el teu soci. Mòdul account_sepa és necessari.\n"
@@ -9364,39 +9364,39 @@ msgstr "Octubre"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_line
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Godo allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoice(s)."
 msgstr ""
-"Odoo us permet conciliar una línia d'extracte directament\n"
+"Godo us permet conciliar una línia d'extracte directament\n"
 "                amb les factures de venda o compra relacionade(s)."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_tree
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Godo allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoices."
 msgstr ""
-"Odoo us permet reconciliar directament una línia de declaracions amb\n"
+"Godo us permet reconciliar directament una línia de declaracions amb\n"
 "                La venda o compra d'invoices relacionades."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_customer
-msgid "Odoo helps you easily track all activities related to a customer."
+msgid "Godo helps you easily track all activities related to a customer."
 msgstr ""
-"Odoo us ajuda fàcilment a seguir totes les activitats relacionades amb un "
+"Godo us ajuda fàcilment a seguir totes les activitats relacionades amb un "
 "client."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_supplier
-msgid "Odoo helps you easily track all activities related to a supplier."
+msgid "Godo helps you easily track all activities related to a supplier."
 msgstr ""
-"Odoo us ajuda fàcilment a seguir totes les activitats relacionades amb un "
+"Godo us ajuda fàcilment a seguir totes les activitats relacionades amb un "
 "proveïdor."
 
 #. module: account
@@ -11937,13 +11937,13 @@ msgid ""
 "\n"
 "Any file extension will be accepted.\n"
 "\n"
-"Only PDF and XML files will be interpreted by Odoo"
+"Only PDF and XML files will be interpreted by Godo"
 msgstr ""
 "Envia un correu electrònic separat per a cada factura.\n"
 "\n"
 "Qualsevol extensió del fitxer serà acceptada.\n"
 "\n"
-"Només s' interpretaran fitxers PDF i XML per Odoo"
+"Només s' interpretaran fitxers PDF i XML per Godo"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.account_send_payment_receipt_by_email_action
@@ -14948,7 +14948,7 @@ msgstr "Aquest moviment es publicarà en la data comptable: %(date)s"
 msgid ""
 "This option permanently removes any track of email after it's been sent, "
 "including from the Technical menu in the Settings, in order to preserve "
-"storage space of your Odoo database."
+"storage space of your Godo database."
 msgstr ""
 "Aquesta opció elimina permanentment qualsevol pista de correu electrònic "
 "després que s' hagi enviat, incloent- hi el menú tècnic en el menú "
@@ -15934,8 +15934,8 @@ msgstr "Mostra divisa"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_tour_upload_bill
-msgid "With Odoo, you won't have to record bills manually"
-msgstr "Amb el Odoo, no haureu de gravar manualment factures"
+msgid "With Godo, you won't have to record bills manually"
+msgstr "Amb el Godo, no haureu de gravar manualment factures"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_search
@@ -15986,10 +15986,10 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_journal__invoice_reference_model
 msgid ""
 "You can choose different models for each type of reference. The default one "
-"is the Odoo reference."
+"is the Godo reference."
 msgstr ""
 "Podeu escollir diferents models per a cada tipus de referència. El per "
-"omissió és la referència Odoo."
+"omissió és la referència Godo."
 
 #. module: account
 #: code:addons/account/models/account_journal.py:0

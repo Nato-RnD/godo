@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 # Copyright (c) 2019 - Blanco Martín & Asociados. https://www.bmya.cl
 {
     'name': 'Chile - Accounting',
@@ -9,7 +9,7 @@ Chilean accounting chart and tax localization.
 Plan contable chileno e impuestos de acuerdo a disposiciones vigentes
     """,
     'author': 'Blanco Martín & Asociados',
-    'website': 'https://www.odoo.com/documentation/15.0/applications/finance/accounting/fiscal_localizations/localizations/chile.html',
+    'website': 'https://smartlifevn.com/documentation/15.0/applications/finance/accounting/fiscal_localizations/localizations/chile.html',
     'category': 'Accounting/Localizations/Account Charts',
     'depends': [
         'contacts',

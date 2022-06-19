@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Egypt ETA Hardware Driver',
     'category': 'Accounting/Accounting',
-    'website': 'https://www.odoo.com',
+    'website': 'https://smartlifevn.com',
     'summary': 'Egypt ETA Hardware Driver',
     'description': """
 Egypt ETA Hardware Driver
 =======================
 
-This module allows Odoo to digitally sign invoices using an USB key approved by the egyptian government
+This module allows Godo to digitally sign invoices using an USB key approved by the egyptian government
 
 Special thanks to Plementus <info@plementus.com> for their help in developing this module.
 

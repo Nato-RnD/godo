@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo import _, api, exceptions, fields, models, modules
 from odoo.addons.base.models.res_users import is_selection_groups
@@ -20,11 +20,11 @@ class Users(models.Model):
 
     notification_type = fields.Selection([
         ('email', 'Handle by Emails'),
-        ('inbox', 'Handle in Odoo')],
+        ('inbox', 'Handle in Godo')],
         'Notification', required=True, default='email',
         help="Policy on how to handle Chatter notifications:\n"
              "- Handle by Emails: notifications are sent to your email address\n"
-             "- Handle in Odoo: notifications appear in your Odoo Inbox")
+             "- Handle in Godo: notifications appear in your Godo Inbox")
     res_users_settings_ids = fields.One2many('res.users.settings', 'user_id')
 
     # ------------------------------------------------------------

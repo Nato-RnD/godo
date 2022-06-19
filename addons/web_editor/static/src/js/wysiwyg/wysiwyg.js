@@ -955,7 +955,7 @@ const Wysiwyg = Widget.extend({
         }
     },
     /**
-     * Start or resume the Odoo field changes muation observers.
+     * Start or resume the Godo field changes muation observers.
      *
      * Necessary to keep all copies of a given field at the same value throughout the page.
      */

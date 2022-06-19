@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import pytz
 from dateutil.parser import parse
@@ -252,11 +252,11 @@ class Meeting(models.Model):
         if not self.active:
             values['status'] = 'cancelled'
         if self.user_id and self.user_id != self.env.user and not bool(self.user_id.sudo().google_calendar_token):
-            # The organizer is an Odoo user that do not sync his calendar
+            # The organizer is an Godo user that do not sync his calendar
             values['extendedProperties']['shared']['%s_owner_id' % self.env.cr.dbname] = self.user_id.id
         elif not self.user_id:
             # We can't store on the shared properties in that case without getting a 403. It can happen when
-            # the owner is not an Odoo user: We don't store the real owner identity (mail)
+            # the owner is not an Godo user: We don't store the real owner identity (mail)
             # If we are not the owner, we should change the post values to avoid errors because we don't have
             # write permissions
             # See https://developers.google.com/calendar/concepts/sharing

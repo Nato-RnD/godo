@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* web
 # 
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:20+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
@@ -2066,8 +2066,8 @@ msgstr "Morado"
 #. openerp-web
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
-msgid "Get this feature and much more with Odoo Enterprise!"
-msgstr "Obtenga esa funcionalidad y muchas más con Odoo Enterprise!"
+msgid "Get this feature and much more with Godo Enterprise!"
+msgstr "Obtenga esa funcionalidad y muchas más con Godo Enterprise!"
 
 #. module: web
 #. openerp-web
@@ -2684,8 +2684,8 @@ msgstr "Texto de líneas múltiples"
 #. openerp-web
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.js:0
 #, python-format
-msgid "My Odoo.com account"
-msgstr "Mi cuenta Odoo.com"
+msgid "My Godo.com account"
+msgstr "Mi cuenta Godo.com"
 
 #. module: web
 #. openerp-web
@@ -2912,68 +2912,68 @@ msgstr "Objeto:"
 #: code:addons/web/static/src/legacy/js/core/dialog.js:0
 #: model_terms:ir.ui.view,arch_db:web.brand_promotion_message
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/apps.js:0
 #, python-format
-msgid "Odoo Apps will be available soon"
-msgstr "Odoo Apps estará disponible en breve"
+msgid "Godo Apps will be available soon"
+msgstr "Godo Apps estará disponible en breve"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Client Error"
-msgstr "Error del cliente de Odoo"
+msgid "Godo Client Error"
+msgstr "Error del cliente de Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/fields/upgrade_fields.js:0
 #, python-format
-msgid "Odoo Enterprise"
-msgstr "Odoo Enterprise"
+msgid "Godo Enterprise"
+msgstr "Godo Enterprise"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Error"
-msgstr "Error de Odoo"
+msgid "Godo Error"
+msgstr "Error de Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Network Error"
-msgstr "Error de red de Odoo"
+msgid "Godo Network Error"
+msgstr "Error de red de Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Server Error"
-msgstr "Error de servidor de Odoo"
+msgid "Godo Server Error"
+msgstr "Error de servidor de Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Odoo Session Expired"
-msgstr "Sesión de Odoo expirada"
+msgid "Godo Session Expired"
+msgstr "Sesión de Godo expirada"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Warning"
-msgstr "Advertencia de Odoo"
+msgid "Godo Warning"
+msgstr "Advertencia de Godo"
 
 #. module: web
 #. openerp-web
@@ -3369,8 +3369,8 @@ msgstr "Con tecnología de %s%s"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login_layout
-msgid "Powered by <span>Odoo</span>"
-msgstr "Respaldado por <span>Odoo</span>"
+msgid "Powered by <span>Godo</span>"
+msgstr "Respaldado por <span>Godo</span>"
 
 #. module: web
 #. openerp-web
@@ -4978,10 +4978,10 @@ msgstr ""
 #: code:addons/web/static/src/webclient/actions/action_service.js:0
 #, python-format
 msgid ""
-"You need to start Odoo with at least two workers to print a pdf version of "
+"You need to start Godo with at least two workers to print a pdf version of "
 "the reports."
 msgstr ""
-"Necesita iniciar Odoo con al menos dos trabajadores para imprimir una "
+"Necesita iniciar Godo con al menos dos trabajadores para imprimir una "
 "versión pdf de los informes."
 
 #. module: web
@@ -5002,8 +5002,8 @@ msgstr ""
 #: code:addons/web/static/src/core/errors/error_dialogs.xml:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Your Odoo session expired. The current page is about to be refreshed."
-msgstr "Su sesión de Odoo expiró. Se actualizará la página actual."
+msgid "Your Godo session expired. The current page is about to be refreshed."
+msgstr "Su sesión de Godo expiró. Se actualizará la página actual."
 
 #. module: web
 #. openerp-web

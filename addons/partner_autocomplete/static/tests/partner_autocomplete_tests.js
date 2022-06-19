@@ -36,7 +36,7 @@ odoo.define('partner_autocomplete.tests', function (require) {
     }
 
     var suggestions = [{
-        name: "Odoo",
+        name: "Godo",
         website: "odoo.com",
         domain: "odoo.com",
         logo: "odoo.com/logo.png",
@@ -101,7 +101,7 @@ odoo.define('partner_autocomplete.tests', function (require) {
                 state_id: false,
                 partner_gid: 1,
                 website: "odoo.com",
-                comment: "Comment on Odoo",
+                comment: "Comment on Godo",
                 street: "40 Chaussée de Namur",
                 city: "Ramillies",
                 zip: "1367",
@@ -231,7 +231,7 @@ odoo.define('partner_autocomplete.tests', function (require) {
 
             await testUtils.dom.click($dropdown.find("a").first());
             $input = form.$(".o_field_partner_autocomplete > input");
-            assert.strictEqual($input.val(), "Odoo", "Input value should have been updated to \"Odoo\"");
+            assert.strictEqual($input.val(), "Godo", "Input value should have been updated to \"Godo\"");
             assert.strictEqual(form.$("input.o_field_widget").val(), "odoo.com", "website value should have been updated to \"odoo.com\"");
 
             _compareResultFields(assert, form, fields, createData);
@@ -312,7 +312,7 @@ odoo.define('partner_autocomplete.tests', function (require) {
             await testUtils.dom.click($dropdown.find("a").first());
 
             $input = form.$(".o_field_partner_autocomplete > input");
-            assert.strictEqual($input.val(), "Odoo", "Input value should have been updated to \"Odoo\"");
+            assert.strictEqual($input.val(), "Godo", "Input value should have been updated to \"Godo\"");
 
             _compareResultFields(assert, form, fields, createData);
             await testUtils.nextTick();
@@ -326,7 +326,7 @@ odoo.define('partner_autocomplete.tests', function (require) {
             await testUtils.dom.click($dropdown.find("a").first());
 
             $input = form.$(".o_field_partner_autocomplete > input");
-            assert.strictEqual($input.val(), "Odoo", "Input value should have been updated to \"Odoo\"");
+            assert.strictEqual($input.val(), "Godo", "Input value should have been updated to \"Godo\"");
 
             _compareResultFields(assert, form, fields, createData);
 

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Argentina - Accounting',
     'icon': '/base/static/img/country_flags/ar.png',
@@ -33,7 +33,7 @@ Demo data for testing:
   * Gritti (Monotributo)
   * Cerro Castor. IVA Liberado in Zona Franca
   * Expresso (Cliente del Exterior)
-  * Odoo (Proveedor del Exterior)
+  * Godo (Proveedor del Exterior)
 
 Highlights:
 

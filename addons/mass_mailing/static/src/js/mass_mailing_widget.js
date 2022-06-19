@@ -532,7 +532,7 @@ var MassMailingFieldHtml = FieldHtml.extend({
             selectTheme(e);
             this._addEditorMessages();
             // Wait the next tick because some mutation have to be processed by
-            // the Odoo editor before resetting the history.
+            // the Godo editor before resetting the history.
             setTimeout(() => {
                 this.wysiwyg.historyReset();
             }, 0);

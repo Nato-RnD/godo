@@ -1,16 +1,16 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* product
 # 
 # Translators:
 # Martin Trigaux, 2021
 # Yenthe Van Ginneken <yenthespam@gmail.com>, 2021
-# Odoo Experts Consultants <consultants@odooexperts.nl>, 2021
+# Godo Experts Consultants <consultants@odooexperts.nl>, 2021
 # Erwin van der Ploeg <erwin@odooexperts.nl>, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:25+0000\n"
@@ -3410,8 +3410,8 @@ msgstr "Bijv. lampen"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
-msgid "e.g. Odoo Enterprise Subscription"
-msgstr "Bijv. Odoo Enterprise Abonnement"
+msgid "e.g. Godo Enterprise Subscription"
+msgstr "Bijv. Godo Enterprise Abonnement"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view

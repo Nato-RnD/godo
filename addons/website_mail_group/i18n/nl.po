@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website_mail_group
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:29+0000\n"
 "PO-Revision-Date: 2021-09-14 12:28+0000\n"
@@ -29,7 +29,7 @@ msgstr "<span class=\"o_stat_text\">Ga naar <br/>Website</span>"
 #. module: website_mail_group
 #: model_terms:ir.ui.view,arch_db:website_mail_group.s_group_options
 msgid "Create a public discussion group in your backend"
-msgstr "Maak een openbare discussiegroep aan in Odoo"
+msgstr "Maak een openbare discussiegroep aan in Godo"
 
 #. module: website_mail_group
 #: model:ir.ui.menu,name:website_mail_group.mail_group_menu_website_root

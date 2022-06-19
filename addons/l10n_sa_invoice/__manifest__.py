@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'K.S.A - Invoice',
     'version': '1.0.0',
-    'author': 'Odoo S.A.',
+    'author': 'Godo S.A.',
     'category': 'Accounting/Localizations',
     'license': 'LGPL-3',
     'description': """

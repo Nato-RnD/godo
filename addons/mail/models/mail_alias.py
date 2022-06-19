@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import ast
 import re
@@ -16,8 +16,8 @@ dot_atom_text = re.compile(r"^%s+(\.%s+)*$" % (atext, atext))
 
 
 class Alias(models.Model):
-    """A Mail Alias is a mapping of an email address with a given Odoo Document
-       model. It is used by Odoo's mail gateway when processing incoming emails
+    """A Mail Alias is a mapping of an email address with a given Godo Document
+       model. It is used by Godo's mail gateway when processing incoming emails
        sent to the system. If the recipient address (To) of the message matches
        a Mail Alias, the message will be either processed following the rules
        of that alias. If the message is a reply it will be attached to the
@@ -26,7 +26,7 @@ class Alias(models.Model):
 
        This is meant to be used in combination with a catch-all email configuration
        on the company's mail server, so that as soon as a new mail.alias is
-       created, it becomes immediately usable and Odoo will accept email for it.
+       created, it becomes immediately usable and Godo will accept email for it.
      """
     _name = 'mail.alias'
     _description = "Email Aliases"
@@ -35,7 +35,7 @@ class Alias(models.Model):
 
     alias_name = fields.Char('Alias Name', copy=False, help="The name of the email alias, e.g. 'jobs' if you want to catch emails for <jobs@example.odoo.com>")
     alias_model_id = fields.Many2one('ir.model', 'Aliased Model', required=True, ondelete="cascade",
-                                     help="The model (Odoo Document Kind) to which this alias "
+                                     help="The model (Godo Document Kind) to which this alias "
                                           "corresponds. Any incoming email that does not reply to an "
                                           "existing record will cause the creation of a new record "
                                           "of this model (e.g. a Project Task)",

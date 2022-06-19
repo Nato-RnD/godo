@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import itertools
 import random
@@ -52,7 +52,7 @@ class MailBot(models.AbstractModel):
             elif odoobot_state == 'onboarding_attachement' and values.get("attachment_ids"):
                 self.env.user.odoobot_state = "idle"
                 self.env.user.odoobot_failed = False
-                return _("I am a simple bot, but if that's a dog, he is the cutest 😊 <br/>Congratulations, you finished this tour. You can now <b>close this chat window</b>. Enjoy discovering Odoo.")
+                return _("I am a simple bot, but if that's a dog, he is the cutest 😊 <br/>Congratulations, you finished this tour. You can now <b>close this chat window</b>. Enjoy discovering Godo.")
             elif odoobot_state in (False, "idle", "not_initialized") and (_('start the tour') in body.lower()):
                 self.env.user.odoobot_state = "onboarding_emoji"
                 return _("To start, try to send me an emoji :)")
@@ -64,8 +64,8 @@ class MailBot(models.AbstractModel):
             # help message
             elif self._is_help_requested(body) or odoobot_state == 'idle':
                 return _("Unfortunately, I'm just a bot 😞 I don't understand! If you need help discovering our product, please check "
-                         "<a href=\"https://www.odoo.com/documentation\" target=\"_blank\">our documentation</a> or "
-                         "<a href=\"https://www.odoo.com/slides\" target=\"_blank\">our videos</a>.")
+                         "<a href=\"https://smartlifevn.com/documentation\" target=\"_blank\">our documentation</a> or "
+                         "<a href=\"https://smartlifevn.com/slides\" target=\"_blank\">our videos</a>.")
             else:
                 # repeat question
                 if odoobot_state == 'onboarding_emoji':

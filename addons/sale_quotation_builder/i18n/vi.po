@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* sale_quotation_builder
 # 
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:29+0000\n"
 "PO-Revision-Date: 2021-09-14 12:26+0000\n"
@@ -302,13 +302,13 @@ msgstr "Mô tả Website"
 #. module: sale_quotation_builder
 #: model_terms:sale.order.template,website_description:sale_quotation_builder.sale_order_template_default
 msgid ""
-"You can <strong>set a description per product</strong>. Odoo will\n"
+"You can <strong>set a description per product</strong>. Godo will\n"
 "                        automatically create a quotation using the descriptions\n"
 "                        of all products in the proposal. The table of content\n"
 "                        on the left is generated automatically using the styles you\n"
 "                        used in your description (heading 1, heading 2, ...)"
 msgstr ""
-"Bạn có thể <strong>thiết lập mô tả cho từng sản phẩm</strong>. Odoo sẽ tự động\n"
+"Bạn có thể <strong>thiết lập mô tả cho từng sản phẩm</strong>. Godo sẽ tự động\n"
 "                        tạo một báo giá sử dụng mô tả của các sản phẩm ở trong báo\n"
 "                        giá. Mục lục ở bên trái được tạo tự động sử dụng các kiểu\n"
 "                        mà bạn đã sử dụng ở trong mô tả của bạn (heading 1, heading 2, ...)"

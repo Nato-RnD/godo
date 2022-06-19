@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* stock
 # 
@@ -32,7 +32,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:18+0000\n"
 "PO-Revision-Date: 2021-09-14 12:26+0000\n"
@@ -1228,9 +1228,9 @@ msgstr "Planlanan tarihten önce"
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Godo S.A. "
 "responsibility."
-msgstr "Aşağıdaki metin bir öneridir ve Odoo S.A.'yı sorumlu kılmaz."
+msgstr "Aşağıdaki metin bir öneridir ve Godo S.A.'yı sorumlu kılmaz."
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__res_partner__picking_warn__block
@@ -2140,10 +2140,10 @@ msgstr "Öntanımlı depo izleme rotası"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_orderpoint
 msgid ""
-"Define a minimum stock rule so that Odoo creates automatically requests for "
+"Define a minimum stock rule so that Godo creates automatically requests for "
 "quotations or confirmed manufacturing orders to resupply your stock."
 msgstr ""
-"Odoo'nun otomatik olarak teklif talebi ve teyit edilen üretim emirlerini "
+"Godo'nun otomatik olarak teklif talebi ve teyit edilen üretim emirlerini "
 "oluşturarak stoğunuzu tamamlaması için minimum stok kuralı tanımlayın."
 
 #. module: stock
@@ -2155,14 +2155,14 @@ msgstr "Yeni bir depo tanımla"
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
 "Define your locations to reflect your warehouse structure and\n"
-"            organization. Odoo is able to manage physical locations\n"
+"            organization. Godo is able to manage physical locations\n"
 "            (warehouses, shelves, bin, etc), partner locations (customers,\n"
 "            vendors) and virtual locations which are the counterpart of\n"
 "            the stock operations like the manufacturing orders\n"
 "            consumptions, inventories, etc."
 msgstr ""
 "Deponuzu yapısını ve düzeninin yansıtacak konumları\n"
-"                tanımlayın. Odoo fiziksel konumları (depolar, raflar,\n"
+"                tanımlayın. Godo fiziksel konumları (depolar, raflar,\n"
 "                kutular, vb.), iş ortağı konumları (müşteriler, tedarikçiler)\n"
 "                ve stok işlemlerinin benzeri olan üretim emirleri\n"
 "                harcamaları, sayımlar vb. gibi sanal konumları\n"
@@ -2641,12 +2641,12 @@ msgstr "Sipariş tamamlanmadan önce müşteriye e-posta gönderilir."
 #. module: stock
 #: model_terms:digest.tip,tip_description:stock.digest_tip_stock_0
 msgid ""
-"Enjoy a quick-paced experience with the Odoo barcode app. It is blazing fast"
+"Enjoy a quick-paced experience with the Godo barcode app. It is blazing fast"
 " and works even without a stable internet connection. It supports all flows:"
 " inventory adjustments, batch picking, moving lots or pallets, low inventory"
 " checks, etc. Go to the \"Apps\" menu to activate the barcode interface."
 msgstr ""
-"Odoo barkod uygulamasıyla hızlı tempolu bir deneyimin keyfini çıkarın. "
+"Godo barkod uygulamasıyla hızlı tempolu bir deneyimin keyfini çıkarın. "
 "Hızlıdır ve sabit bir internet bağlantısı olmadan bile çalışır. Tüm akışları"
 " destekler: envanter ayarlamaları, toplu toplama, parti veya paletler "
 "taşıma, düşük stok kontrolleri, vb. Barkod arayüzünü etkinleştirmek için "
@@ -2673,15 +2673,15 @@ msgstr "Hata"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
-"Every stock operation in Odoo moves the products from one\n"
+"Every stock operation in Godo moves the products from one\n"
 "            location to another one.  For instance, if you receive products\n"
-"            from a vendor, Odoo will move products from the Vendor\n"
+"            from a vendor, Godo will move products from the Vendor\n"
 "            location to the Stock location. Each report can be performed on\n"
 "            physical, partner or virtual locations."
 msgstr ""
-"Odoo'da her stok işlemi ürünleri bir konumdan diğerine\n"
+"Godo'da her stok işlemi ürünleri bir konumdan diğerine\n"
 "                taşır.  Örneğin, eğer bir tedarikçiden ürün alırsanız\n"
-"                Odoo ürünleri Tedarikçi konumundan Stok konumuna\n"
+"                Godo ürünleri Tedarikçi konumundan Stok konumuna\n"
 "                taşıyacaktır. Her rapor fiziksel, iş ortağı ya da sanal\n"
 "                konumlarda yapılabilir."
 
@@ -3282,11 +3282,11 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking__show_reserved
 #: model:ir.model.fields,help:stock.field_stock_picking_type__show_reserved
 msgid ""
-"If this checkbox is ticked, Odoo will automatically pre-fill the detailed "
+"If this checkbox is ticked, Godo will automatically pre-fill the detailed "
 "operations with the corresponding products, locations and lot/serial "
 "numbers."
 msgstr ""
-"Bu onay kutusu işaretlenirse, Odoo ilgili ürünler, konumlar ve lot / seri "
+"Bu onay kutusu işaretlenirse, Godo ilgili ürünler, konumlar ve lot / seri "
 "numaraları gibi ayrıntılı işlemleri otomatik olarak önceden doldurur."
 
 #. module: stock
@@ -8906,7 +8906,7 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_min_qty
 msgid ""
 "When the virtual stock goes below the Min Quantity specified for this field,"
-" Odoo generates a procurement to bring the forecasted quantity to the Max "
+" Godo generates a procurement to bring the forecasted quantity to the Max "
 "Quantity."
 msgstr ""
 "Kullanılabilir (Öngörülen) stok miktarı Minimum Miktar'ın altına düştüğünde "
@@ -8915,7 +8915,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_max_qty
 msgid ""
-"When the virtual stock goes below the Min Quantity, Odoo generates a "
+"When the virtual stock goes below the Min Quantity, Godo generates a "
 "procurement to bring the forecasted quantity to the Quantity specified as "
 "Max Quantity."
 msgstr ""
@@ -9257,10 +9257,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
 msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will process all the quantities."
+"<i>apply</i> Godo will process all the quantities."
 msgstr ""
 " Henüz <i> işlenen </i> miktarları kaydetmediniz <i>uygula</i> 'ya "
-"tıkladığınızda Odoo tüm miktarları işleyecektir."
+"tıkladığınızda Godo tüm miktarları işleyecektir."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import werkzeug
 
@@ -40,7 +40,7 @@ class MockLinkTracker(common.BaseCase):
 
         self.assertLinkShortenedHtml(
             message.body,
-            ('url0', 'http://www.odoo.com',  True),
+            ('url0', 'http://smartlifevn.com',  True),
             {'utm_campaign': self.utm_c.name, 'utm_medium': self.utm_m.name}
         )
         """
@@ -60,7 +60,7 @@ class MockLinkTracker(common.BaseCase):
 
         self.assertLinkShortenedText(
             message.body,
-            ('http://www.odoo.com',  True),
+            ('http://smartlifevn.com',  True),
             {'utm_campaign': self.utm_c.name, 'utm_medium': self.utm_m.name}
         )
         """

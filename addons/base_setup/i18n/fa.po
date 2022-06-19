@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* base_setup
 # 
@@ -14,7 +14,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:20+0000\n"
@@ -372,8 +372,8 @@ msgstr "نشانی ایمیل وارد کن"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Extract and analyze Odoo data from Google Spreadsheet"
-msgstr "داده های Odoo را از صفحه گسترده Google استخراج و تجزیه و تحلیل کنید"
+msgid "Extract and analyze Godo data from Google Spreadsheet"
+msgstr "داده های Godo را از صفحه گسترده Google استخراج و تجزیه و تحلیل کنید"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -561,14 +561,14 @@ msgstr "احراز هویت OAuth"
 #. openerp-web
 #: code:addons/base_setup/static/src/xml/res_config_edition.xml:0
 #, python-format
-msgid "Odoo"
+msgid "Godo"
 msgstr "اودوو"
 
 #. module: base_setup
 #. openerp-web
 #: code:addons/base_setup/static/src/xml/res_config_edition.xml:0
 #, python-format
-msgid "Odoo S.A."
+msgid "Godo S.A."
 msgstr "سایت اودوو "
 
 #. module: base_setup
@@ -690,7 +690,7 @@ msgstr "از ارائه دهندگان احراز هویت خارجی استفا
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Use external pads in Odoo Notes"
+msgid "Use external pads in Godo Notes"
 msgstr "استفاده از پدهای خارجی در یادداشت اودو"
 
 #. module: base_setup
@@ -702,11 +702,11 @@ msgstr "کاربران"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"When populating your address book, Odoo provides a list of matching "
+"When populating your address book, Godo provides a list of matching "
 "companies. When selecting one item, the company data and logo are auto-"
 "filled."
 msgstr ""
-"Odoo هنگام جمع آوری دفترچه آدرس ، لیستی از شرکتهای منطبق را ارائه می دهد. "
+"Godo هنگام جمع آوری دفترچه آدرس ، لیستی از شرکتهای منطبق را ارائه می دهد. "
 "هنگام انتخاب یک مورد ، داده های شرکت و آرم به طور خودکار پر می شوند."
 
 #. module: base_setup

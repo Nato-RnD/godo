@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Inventory',
     'version': '1.1',
     'summary': 'Manage your stock and logistics activities',
     'description': "",
-    'website': 'https://www.odoo.com/app/inventory',
+    'website': 'https://smartlifevn.com/app/inventory',
     'depends': ['product', 'barcodes', 'digest'],
     'category': 'Inventory/Inventory',
     'sequence': 25,

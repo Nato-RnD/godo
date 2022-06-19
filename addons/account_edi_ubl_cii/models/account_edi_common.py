@@ -402,7 +402,7 @@ class AccountEdiCommon(models.AbstractModel):
                 "item price discount" which is different from the usual allow_charge_amount
                 gross_unit_price (BT-148) - rebate (BT-147) = net_unit_price (BT-146)
 
-        In Odoo, we obtain:
+        In Godo, we obtain:
         (1) = price_unit  =  gross_price_unit / basis_qty  =  (net_price_unit + rebate) / basis_qty
         (2) = quantity  =  billed_qty
         (3) = discount (converted into a percentage)  =  100 * (1 - price_subtotal / (billed_qty * price_unit))
@@ -417,7 +417,7 @@ class AccountEdiCommon(models.AbstractModel):
         UBL ROUNDING: "the result of Item line net
             amount = ((Item net price (BT-146)÷Item price base quantity (BT-149))×(Invoiced Quantity (BT-129))
         must be rounded to two decimals, and the allowance/charge amounts are also rounded separately."
-        It is not possible to do it in Odoo.
+        It is not possible to do it in Godo.
 
         :params tree
         :params xpath_dict dict: {

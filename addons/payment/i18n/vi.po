@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* payment
 # 
@@ -17,7 +17,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:20+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -458,11 +458,11 @@ msgstr "Ghi giao dịch"
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_acquirer__capture_manually
 msgid ""
-"Capture the amount from Odoo, when the delivery is completed.\n"
+"Capture the amount from Godo, when the delivery is completed.\n"
 "Use this if you want to charge your customers cards only when\n"
 "you are sure you can ship the goods to them."
 msgstr ""
-"Ghi nhận số tiền từ Odoo, khi giao hàng hoàn tất.\n"
+"Ghi nhận số tiền từ Godo, khi giao hàng hoàn tất.\n"
 "Dùng tính năng này nếu bạn muốn tính phí khách hàng chỉ khi\n"
 "bạn chắc chắn có thể giao hàng cho họ."
 
@@ -1165,8 +1165,8 @@ msgstr ""
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer__module_to_buy
-msgid "Odoo Enterprise Module"
-msgstr "Mô-đun Odoo Enterprise"
+msgid "Godo Enterprise Module"
+msgstr "Mô-đun Godo Enterprise"
 
 #. module: payment
 #: model:ir.model.fields.selection,name:payment.selection__payment_transaction__operation__offline
@@ -2073,8 +2073,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
-msgid "Unable to contact the Odoo server."
-msgstr "Không thể kết nối với máy chủ Odoo."
+msgid "Unable to contact the Godo server."
+msgstr "Không thể kết nối với máy chủ Godo."
 
 #. module: payment
 #: model_terms:ir.ui.view,arch_db:payment.payment_acquirer_form

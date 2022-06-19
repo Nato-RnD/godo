@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'OdooBot',
@@ -7,7 +7,7 @@
     'category': 'Productivity/Discuss',
     'summary': 'Add OdooBot in discussions',
     'description': "",
-    'website': 'https://www.odoo.com/app/discuss',
+    'website': 'https://smartlifevn.com/app/discuss',
     'depends': ['mail'],
     'auto_install': True,
     'installable': True,

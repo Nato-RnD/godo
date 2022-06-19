@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import pytz
 from datetime import datetime, date
@@ -986,7 +986,7 @@ class TestSyncGoogle2Odoo(TestSyncGoogle):
     @patch_api
     def test_several_attendee_have_the_same_mail(self):
         """
-        In google, One mail = One attendee but on Odoo, some partners could share the same mail
+        In google, One mail = One attendee but on Godo, some partners could share the same mail
         This test checks that the deletion of such attendee has no harm: all attendee but the given mail are deleted.
         """
         partner1 = self.env['res.partner'].create({

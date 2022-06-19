@@ -753,7 +753,7 @@ var FieldDateRange = InputField.extend({
         var changedEndDate = picker.endDate;
         if (this.isDateField) {
             // In date mode, the library will give moment object of start and end date having
-            // time at 00:00:00. So, Odoo will consider it as UTC. To fix this added browser
+            // time at 00:00:00. So, Godo will consider it as UTC. To fix this added browser
             // timezone offset in dates to get a correct selected date.
             changedStartDate = picker.startDate.add(session.getTZOffset(picker.startDate), 'minutes');
             changedEndDate = picker.endDate.startOf('day').add(session.getTZOffset(picker.endDate), 'minutes');

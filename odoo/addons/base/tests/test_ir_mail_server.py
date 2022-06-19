@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from unittest.mock import patch
 
@@ -134,7 +134,7 @@ class TestIrMailServer(TransactionCase, MockSmtplibCase):
         self.assertEqual(mail_server, self.server_notification, 'Should take the notification email')
         self.assertEqual(mail_from, 'notifications@test.com')
 
-        # remove the notifications email to simulate a mis-configured Odoo database
+        # remove the notifications email to simulate a mis-configured Godo database
         # so we do not have the choice, we have to spoof the FROM
         # (otherwise we can not send the email)
         self.env['ir.config_parameter'].sudo().set_param('mail.catchall.domain', False)

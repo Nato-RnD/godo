@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* payment_stripe
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-22 14:45+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -45,11 +45,11 @@ msgstr "Отримайте ваш секретний та публічний к�
 #: model:ir.model.fields,help:payment_stripe.field_payment_acquirer__stripe_webhook_secret
 msgid ""
 "If a webhook is enabled on your Stripe account, this signing secret must be "
-"set to authenticate the messages sent from Stripe to Odoo."
+"set to authenticate the messages sent from Stripe to Godo."
 msgstr ""
 "Якщо вебхук увімкнено у вашому обліковому записі Stripe, цей секрет підпису "
 "має бути встановлений для автентифікації повідомлень, надісланих від Stripe "
-"до Odoo."
+"до Godo."
 
 #. module: payment_stripe
 #: code:addons/payment_stripe/models/payment_transaction.py:0

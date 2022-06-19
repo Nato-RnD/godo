@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Israel - Accounting',
     'version': '1.0',
     'category': 'Accounting/Localizations/Account Charts',
     'description': """
-This is the latest basic Israelian localisation necessary to run Odoo in Israel:
+This is the latest basic Israelian localisation necessary to run Godo in Israel:
 ================================================================================
 
 This module consists of:
@@ -14,7 +14,7 @@ This module consists of:
  - Taxes and tax report
  - Multiple Fiscal positions
  """,
-    'website': 'http://www.odoo.com/accounting',
+    'website': 'http://smartlifevn.com/accounting',
     'depends': ['l10n_multilang'],
     'data': [
         'data/account_chart_template_data.xml',

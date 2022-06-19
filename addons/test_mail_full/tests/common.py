@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo.addons.phone_validation.tools import phone_validation
 from odoo.addons.mass_mailing_sms.tests.common import MassSMSCommon
@@ -19,7 +19,7 @@ class TestMailFullCommon(TestMassMailCommon, MassSMSCommon):
             'mailing_model_id': cls.env['ir.model']._get('mail.test.sms').id,
             'mailing_type': 'sms',
             'mailing_domain': '%s' % repr([('name', 'ilike', 'MassSMSTest')]),
-            'body_plaintext': 'Dear {{object.display_name}} this is a mass SMS with two links http://www.odoo.com/smstest and http://www.odoo.com/smstest/{{object.id}}',
+            'body_plaintext': 'Dear {{object.display_name}} this is a mass SMS with two links http://smartlifevn.com/smstest and http://smartlifevn.com/smstest/{{object.id}}',
             'sms_force_send': True,
             'sms_allow_unsubscribe': True,
         })

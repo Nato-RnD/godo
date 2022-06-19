@@ -2,7 +2,7 @@
 
 /**
  * The Controller class is the class coordinating the model and the renderer.
- * It is the C in MVC, and is what was formerly known in Odoo as a View.
+ * It is the C in MVC, and is what was formerly known in Godo as a View.
  *
  * Its role is to listen to events bubbling up from the model/renderer, and call
  * the appropriate methods if necessary.  It also render control panel buttons,
@@ -546,7 +546,7 @@ var AbstractController = mvc.Controller.extend(ActionMixin, {
         }
     },
     /**
-     * When an Odoo event arrives requesting a record to be opened, this method
+     * When an Godo event arrives requesting a record to be opened, this method
      * gets the res_id, and request a switch view in the appropriate mode
      *
      * Note: this method seems wrong, it relies on the model being a basic model,

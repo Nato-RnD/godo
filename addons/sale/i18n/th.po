@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* sale
 # 
@@ -9,7 +9,7 @@
 # Amin Cheloh <nineamin@hotmail.com>, 2021
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2021
 # Pornvibool Tippayawat <pornvibool.t@gmail.com>, 2021
-# Odoo Thaidev <odoothaidev@gmail.com>, 2021
+# Godo Thaidev <odoothaidev@gmail.com>, 2021
 # Krisa C, 2021
 # Wichanon Jamwutthipreecha, 2022
 # Martin Trigaux, 2022
@@ -17,7 +17,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:20+0000\n"
 "PO-Revision-Date: 2021-09-14 12:26+0000\n"
@@ -1014,10 +1014,10 @@ msgstr ""
 #. module: sale
 #: model_terms:ir.actions.act_window,help:sale.action_orders_upselling
 msgid ""
-"As an example, if you sell pre-paid hours of services, Odoo recommends you\n"
+"As an example, if you sell pre-paid hours of services, Godo recommends you\n"
 "                to sell extra hours when all ordered hours have been consumed."
 msgstr ""
-"ตัวอย่างเช่น หากคุณขายชั่วโมงบริการแบบชำระเงินล่วงหน้า Odoo ขอแนะนำคุณ\n"
+"ตัวอย่างเช่น หากคุณขายชั่วโมงบริการแบบชำระเงินล่วงหน้า Godo ขอแนะนำคุณ\n"
 "              ให้ขายชั่วโมงพิเศษเมื่อหมดชั่วโมงที่ซื้อแล้ว"
 
 #. module: sale

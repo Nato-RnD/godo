@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 
 {
@@ -9,7 +9,7 @@
     'description': """
        Auto-complete partner companies' data
     """,
-    'author': "Odoo SA",
+    'author': "Godo SA",
     'category': 'Hidden/Tools',
     'depends': [
         'iap_mail',

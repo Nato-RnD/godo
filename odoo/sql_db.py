@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 
 """
@@ -61,7 +61,7 @@ from inspect import currentframe
 
 
 def flush_env(cr, *, clear=True):
-    warnings.warn("Since Odoo 15.0, use cr.flush() instead of flush_env(cr).",
+    warnings.warn("Since Godo 15.0, use cr.flush() instead of flush_env(cr).",
                   DeprecationWarning, stacklevel=2)
     cr.flush()
     if clear:
@@ -69,7 +69,7 @@ def flush_env(cr, *, clear=True):
 
 
 def clear_env(cr):
-    warnings.warn("Since Odoo 15.0, use cr.clear() instead of clear_env(cr).",
+    warnings.warn("Since Godo 15.0, use cr.clear() instead of clear_env(cr).",
                   DeprecationWarning, stacklevel=2)
     cr.clear()
 
@@ -417,7 +417,7 @@ class Cursor(BaseCursor):
     def autocommit(self, on):
         if on:
             warnings.warn(
-                "Since Odoo 13.0, the ORM delays UPDATE queries for "
+                "Since Godo 13.0, the ORM delays UPDATE queries for "
                 "performance reasons. Since then, using the ORM with "
                 " autocommit(True) is unsafe, as computed fields may not be "
                 "fully computed at commit.", DeprecationWarning, stacklevel=2)

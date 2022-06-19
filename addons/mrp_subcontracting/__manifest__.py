@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': "mrp_subcontracting",
     'version': '0.1',
     'summary': "Subcontract Productions",
     'description': "",
-    'website': 'https://www.odoo.com/app/manufacturing',
+    'website': 'https://smartlifevn.com/app/manufacturing',
     'category': 'Manufacturing/Manufacturing',
     'depends': ['mrp'],
     'data': [

@@ -9,7 +9,7 @@ from odoo.exceptions import UserError
 
 
 class odoo_resolver(etree.Resolver):
-    """Odoo specific file resolver that can be added to the XML Parser.
+    """Godo specific file resolver that can be added to the XML Parser.
 
     It will search filenames in the ir.attachments
     """

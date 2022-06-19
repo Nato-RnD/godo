@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website_slides_forum
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:29+0000\n"
 "PO-Revision-Date: 2021-09-14 12:29+0000\n"
@@ -358,10 +358,10 @@ msgstr "Переглянути усі курси"
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
+"questions related to Godo."
 msgstr ""
 "Мета цього сайту - створити відповідну базу знань, яка відповідатиме на "
-"питання, пов'язані з Odoo."
+"питання, пов'язані з Godo."
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -477,8 +477,8 @@ msgstr "кожна відповідь однаково дійсна: \"Який 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to configure or customize Odoo to specific business needs,"
-msgstr "як налаштувати Odoo для конкретних бізнес-потреб,"
+msgid "how to configure or customize Godo to specific business needs,"
+msgstr "як налаштувати Godo для конкретних бізнес-потреб,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -489,8 +489,8 @@ msgstr "як розробляти модулі для власної потре�
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "як встановити Odoo на певну інфраструктуру,"
+msgid "how to install Godo on a specific infrastructure,"
+msgstr "як встановити Godo на певну інфраструктуру,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -501,8 +501,8 @@ msgstr "це неприйнятне питання, таке як: “______ ч�
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "specific questions about Odoo service offers, etc."
-msgstr "конкретні питання про послуги Odoo та ін."
+msgid "specific questions about Godo service offers, etc."
+msgstr "конкретні питання про послуги Godo та ін."
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -527,9 +527,9 @@ msgstr ""
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "what's the best way to use Odoo for a specific business need,"
+msgid "what's the best way to use Godo for a specific business need,"
 msgstr ""
-"який найкращий спосіб використовувати Odoo для конкретної бізнес-потреби,"
+"який найкращий спосіб використовувати Godo для конкретної бізнес-потреби,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0

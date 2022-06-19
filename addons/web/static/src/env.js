@@ -21,7 +21,7 @@ import { registry } from "./core/registry";
 // -----------------------------------------------------------------------------
 
 /**
- * Return a value Odoo Env object
+ * Return a value Godo Env object
  *
  * @returns {OdooEnv}
  */

@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* crm
 # 
@@ -15,7 +15,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-05 10:53+0000\n"
 "PO-Revision-Date: 2021-09-14 12:21+0000\n"
@@ -178,10 +178,10 @@ msgstr ""
 #: code:addons/crm/models/crm_team.py:0
 #, python-format
 msgid ""
-"<p>As you don't belong to any Sales Team, Odoo opens the first one by "
+"<p>As you don't belong to any Sales Team, Godo opens the first one by "
 "default.</p>"
 msgstr ""
-"<p>Etant donné que vous ne faites partie d'aucune équipe commerciale, Odoo "
+"<p>Etant donné que vous ne faites partie d'aucune équipe commerciale, Godo "
 "ouvre la première par défaut.</p>"
 
 #. module: crm
@@ -320,7 +320,7 @@ msgid ""
 "                        <div>\n"
 "                            Hi <t t-out=\"object.partner_id and object.partner_id.name or ''\">Deco Addict</t>,<br/><br/>\n"
 "                            Welcome to <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t>.\n"
-"                            It's great to meet you! Now that you're on board, you'll discover what <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t> has to offer. My name is <t t-out=\"object.user_id.name or ''\">Marc Demo</t> and I'll help you get the most out of Odoo. Could we plan a quick demo soon?<br/>\n"
+"                            It's great to meet you! Now that you're on board, you'll discover what <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t> has to offer. My name is <t t-out=\"object.user_id.name or ''\">Marc Demo</t> and I'll help you get the most out of Godo. Could we plan a quick demo soon?<br/>\n"
 "                            Feel free to reach out at any time!<br/><br/>\n"
 "                            Best,<br/>\n"
 "                            <t t-if=\"object.user_id\">\n"
@@ -358,7 +358,7 @@ msgid ""
 "</td></tr>\n"
 "<!-- POWERED BY -->\n"
 "<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
-"    Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;utm_medium=email\" style=\"color: #875A7B;\">Odoo</a>\n"
+"    Powered by <a target=\"_blank\" href=\"https://smartlifevn.com?utm_source=db&amp;utm_medium=email\" style=\"color: #875A7B;\">Godo</a>\n"
 "</td></tr>\n"
 "</table>\n"
 "        "
@@ -1169,11 +1169,11 @@ msgstr ""
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_4
 msgid ""
 "Did you know you can search a company by name or VAT number to instantly "
-"fill in all its data? Odoo autocompletes everything for you: logo, address, "
+"fill in all its data? Godo autocompletes everything for you: logo, address, "
 "company size, business information, social media accounts, etc."
 msgstr ""
 "Saviez-vous que vous pouvez chercher le nom ou le numéro de TVA d'une "
-"société pour instantanément charger ses données ? Odoo complète "
+"société pour instantanément charger ses données ? Godo complète "
 "automatiquement toutes les infos pour vous: logo, adresse, taille "
 "d'entreprise, infos sur la société, réseaux sociaux, etc."
 
@@ -1181,11 +1181,11 @@ msgstr ""
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_5
 msgid ""
 "Did you know you can turn a list of opportunities into a map view, using the"
-" top-right map icon? A lot of screens in Odoo can be turned into a map: "
+" top-right map icon? A lot of screens in Godo can be turned into a map: "
 "tasks, contacts, delivery orders, etc."
 msgstr ""
 "Saviez-vous que vous pouvez transformer une liste d'opportunité en une carte"
-" d'un simple clic sur l'icône en haut à droite ? Beaucoup d'écrans dans Odoo"
+" d'un simple clic sur l'icône en haut à droite ? Beaucoup d'écrans dans Godo"
 " peuvent se transformer en carte: les tâches, les contacts, les livraisons, "
 "etc."
 
@@ -2535,23 +2535,23 @@ msgstr "Nombre de messages non lus"
 #. module: crm
 #: model_terms:ir.actions.act_window,help:crm.crm_case_form_view_salesteams_opportunity
 msgid ""
-"Odoo helps you keep track of your sales pipeline to follow\n"
+"Godo helps you keep track of your sales pipeline to follow\n"
 "                    up potential sales and better forecast your future revenues."
 msgstr ""
-"Odoo vous aide à suivre votre canal de vente pour faire le suivi des "
+"Godo vous aide à suivre votre canal de vente pour faire le suivi des "
 "potentielles ventes et pour mieux prévoir vos revenus futurs. "
 
 #. module: crm
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_2
 msgid ""
-"Odoo's artificial intelligence engine predicts the success rate of each "
+"Godo's artificial intelligence engine predicts the success rate of each "
 "opportunity based on your history. You can always update the success rate "
-"manually, but if you let Odoo do the job the score is updated while the "
+"manually, but if you let Godo do the job the score is updated while the "
 "opportunity moves forward in your sales cycle."
 msgstr ""
-"Le moteur d'intelligence artificielle d'Odoo prévoit le taux de réussite de "
+"Le moteur d'intelligence artificielle d'Godo prévoit le taux de réussite de "
 "chaque opportunité en fonction de son historique. Vous pouvez toujours "
-"actualiser le taux de réussite manuellement, mais si vous laissez Odoo le "
+"actualiser le taux de réussite manuellement, mais si vous laissez Godo le "
 "faire, le taux est actualisé pendant que l'opportunité avance dans votre "
 "cycle de vente."
 
@@ -3346,11 +3346,11 @@ msgstr ""
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team__alias_model_id
 msgid ""
-"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+"The model (Godo Document Kind) to which this alias corresponds. Any incoming"
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
-"Le modèle (sorte de document Odoo) auquel correspond cet alias. Tout les "
+"Le modèle (sorte de document Godo) auquel correspond cet alias. Tout les "
 "e-mail entrant ne correspondant pas à un enregistrement existant entraînera "
 "la création d'un nouvel enregistrement de ce modèle (Ex. : une tâche d'un "
 "projet)"
@@ -3520,9 +3520,9 @@ msgstr "Astuce: Convertissez les emails entrants en opportunités"
 #. module: crm
 #: model:digest.tip,name:crm.digest_tip_crm_1
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_1
-msgid "Tip: Did you know Odoo has built-in lead mining?"
+msgid "Tip: Did you know Godo has built-in lead mining?"
 msgstr ""
-"Astuce: Saviez-vous qu'Odoo contient un outil de recherche de pistes ?"
+"Astuce: Saviez-vous qu'Godo contient un outil de recherche de pistes ?"
 
 #. module: crm
 #: model:digest.tip,name:crm.digest_tip_crm_4
@@ -3910,8 +3910,8 @@ msgstr "par exemple: Trop cher"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
-msgid "e.g. https://www.odoo.com"
-msgstr "e.x. https://www.odoo.com"
+msgid "e.g. https://smartlifevn.com"
+msgstr "e.x. https://smartlifevn.com"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 import json
 from io import BytesIO
 from zipfile import ZipFile
@@ -43,7 +43,7 @@ class TestClocFields(test_cloc.TestClocCustomization):
 
     def test_count_qweb_imported_module(self):
         self.env['ir.module.module'].create({
-            'author': 'Odoo',
+            'author': 'Godo',
             'imported': True,
             'latest_version': '15.0.1.0.0',
             'name': 'test_imported_module',
@@ -54,7 +54,7 @@ class TestClocFields(test_cloc.TestClocCustomization):
         # Check for existing module in case the test run on an existing database
         if not self.env['ir.module.module'].search([('name', '=', 'studio_customization')]):
             self.env['ir.module.module'].create({
-                'author': 'Odoo',
+                'author': 'Godo',
                 'imported': True,
                 'latest_version': '15.0.1.0.0',
                 'name': 'studio_customization',

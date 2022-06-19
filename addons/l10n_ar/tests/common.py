@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 from odoo import fields
 from odoo.tests.common import Form, tagged
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
@@ -260,7 +260,7 @@ class TestAr(AccountTestInvoicingCommon):
         })
         cls.product_iva_exento = cls.env['product.product'].create({
             # demo product_product_exento
-            'name': 'Book: Development in Odoo (VAT Exempt)',
+            'name': 'Book: Development in Godo (VAT Exempt)',
             'uom_id': uom_unit.id,
             'uom_po_id': uom_unit.id,
             'standard_price': 100.0,

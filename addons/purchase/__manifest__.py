@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Purchase',
@@ -8,7 +8,7 @@
     'sequence': 35,
     'summary': 'Purchase orders, tenders and agreements',
     'description': "",
-    'website': 'https://www.odoo.com/app/purchase',
+    'website': 'https://smartlifevn.com/app/purchase',
     'depends': ['account'],
     'data': [
         'security/purchase_security.xml',

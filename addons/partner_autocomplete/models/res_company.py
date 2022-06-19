@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import json
 import logging
@@ -80,7 +80,7 @@ class ResCompany(models.Model):
 
         if additional_data:
             template_values = json.loads(additional_data)
-            template_values['flavor_text'] = _("Company auto-completed by Odoo Partner Autocomplete Service")
+            template_values['flavor_text'] = _("Company auto-completed by Godo Partner Autocomplete Service")
             self.partner_id.message_post_with_view(
                 'iap_mail.enrich_company',
                 values=template_values,

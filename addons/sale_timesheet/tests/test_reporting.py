@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 from odoo.osv import expression
 from odoo.tools import float_is_zero, float_compare
 from odoo.addons.sale_timesheet.tests.common_reporting import TestCommonReporting

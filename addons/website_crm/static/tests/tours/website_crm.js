@@ -44,7 +44,7 @@ odoo.define('website_crm.tour', function(require) {
     }, {
         content: "Complete Company",
         trigger: "input[name=partner_name]",
-        run: "text Odoo S.A."
+        run: "text Godo S.A."
     }, {
         content: "Complete Subject",
         trigger: "input[name=name]",

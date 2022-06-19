@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo import models, _
 
@@ -17,7 +17,7 @@ class MailBot(models.AbstractModel):
             elif odoobot_state == "onboarding_canned" and values.get("canned_response_ids"):
                 self.env.user.odoobot_failed = False
                 self.env.user.odoobot_state = "idle"
-                return _("Good, you can customize canned responses in the live chat application.<br/><br/><b>It's the end of this overview</b>, enjoy discovering Odoo!")
+                return _("Good, you can customize canned responses in the live chat application.<br/><br/><b>It's the end of this overview</b>, enjoy discovering Godo!")
             # repeat question if needed
             elif odoobot_state == 'onboarding_canned' and not self._is_help_requested(body):
                 self.env.user.odoobot_failed = True

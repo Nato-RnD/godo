@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* sale
 # 
@@ -7,7 +7,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:20+0000\n"
 "PO-Revision-Date: 2021-09-14 12:26+0000\n"
@@ -797,7 +797,7 @@ msgstr "請問您是否確定要取消授權交易嗎？此操作經確定後無
 #. module: sale
 #: model_terms:ir.actions.act_window,help:sale.action_orders_upselling
 msgid ""
-"As an example, if you sell pre-paid hours of services, Odoo recommends you\n"
+"As an example, if you sell pre-paid hours of services, Godo recommends you\n"
 "                to sell extra hours when all ordered hours have been consumed."
 msgstr ""
 "舉個粟子：超市裡，客人從貨架拿了瓶茅台到前台買單結賬，而此時你收銀系統裡卻顯示茅台庫存為0，系統顯示沒庫存了，你不可能告訴客人說這瓶茅台不賣讓客人別買。當然53度飛天除外。賬實不符，庫存不准，這些都是真實存在的，存在即合理，odoo預設允許超賣，有個模組，可以禁止超賣。都是開放原始碼的，自己找吧."

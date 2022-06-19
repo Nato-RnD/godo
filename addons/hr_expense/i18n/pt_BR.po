@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* hr_expense
 # 
@@ -7,7 +7,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:18+0000\n"
 "PO-Revision-Date: 2021-09-14 12:22+0000\n"
@@ -568,11 +568,11 @@ msgstr "Nome exibido"
 #: model_terms:digest.tip,tip_description:hr_expense.digest_tip_hr_expense_0
 msgid ""
 "Do not keep your expense tickets in your pockets any longer. Just snap a "
-"picture of your receipt and let Odoo digitalizes it for you. The OCR and "
+"picture of your receipt and let Godo digitalizes it for you. The OCR and "
 "Artificial Intelligence will fill the data automatically."
 msgstr ""
 "Não guarde mais seus tíquetes de despesas no bolso. Basta tirar uma foto do "
-"seu recibo e deixar que Odoo o digitalize para você. O OCR e a Inteligência "
+"seu recibo e deixar que Godo o digitalize para você. O OCR e a Inteligência "
 "Artificial preencherão os dados automaticamente."
 
 #. module: hr_expense
@@ -1274,8 +1274,8 @@ msgstr "Quantidade de mensagens não lidas"
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_template_register_no_user
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: hr_expense
 #: model_terms:ir.actions.act_window,help:hr_expense.action_hr_expense_account
@@ -1609,8 +1609,8 @@ msgstr "Digitalizar"
 #. openerp-web
 #: code:addons/hr_expense/static/src/xml/expense_qr_modal_template.xml:0
 #, python-format
-msgid "Scan this QR code to get the Odoo app:"
-msgstr "Escaneie este QR Code para obter o app Odoo:"
+msgid "Scan this QR code to get the Godo app:"
+msgstr "Escaneie este QR Code para obter o app Godo:"
 
 #. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_hr_employee__expense_manager_id
@@ -1672,10 +1672,10 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_all
 #: model_terms:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_unsubmitted
 msgid ""
-"Snap pictures of your receipts and let Odoo<br> automatically create "
+"Snap pictures of your receipts and let Godo<br> automatically create "
 "expenses for you."
 msgstr ""
-"Tire fotos de seus recibos e deixe o Odoo <br> criar automaticamente as "
+"Tire fotos de seus recibos e deixe o Godo <br> criar automaticamente as "
 "despesas para você."
 
 #. module: hr_expense

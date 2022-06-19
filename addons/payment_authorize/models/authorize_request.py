@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import json
 import logging
@@ -91,7 +91,7 @@ class AuthorizeAPI:
         """ Create an Auth.net payment/customer profile from an existing transaction.
 
         Creates a customer profile for the partner/credit card combination and links
-        a corresponding payment profile to it. Note that a single partner in the Odoo
+        a corresponding payment profile to it. Note that a single partner in the Godo
         database can have multiple customer profiles in Authorize.net (i.e. a customer
         profile is created for every res.partner/payment.token couple).
 

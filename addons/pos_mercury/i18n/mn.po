@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* pos_mercury
 # 
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:18+0000\n"
 "PO-Revision-Date: 2021-09-14 12:25+0000\n"
@@ -265,8 +265,8 @@ msgstr "Серверээс хариу алга (сүлжээнд холбогд�
 #: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
-msgid "Odoo error while processing transaction."
-msgstr "Гүйлгээг боловсруулах үед Odoo алдаа гарлаа."
+msgid "Godo error while processing transaction."
+msgstr "Гүйлгээг боловсруулах үед Godo алдаа гарлаа."
 
 #. module: pos_mercury
 #. openerp-web

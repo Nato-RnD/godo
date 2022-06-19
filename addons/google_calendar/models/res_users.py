@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import logging
 
@@ -62,13 +62,13 @@ class User(models.Model):
                 full_sync = True
         self.google_cal_account_id.calendar_sync_token = next_sync_token
 
-        # Google -> Odoo
+        # Google -> Godo
         events.clear_type_ambiguity(self.env)
         recurrences = events.filter(lambda e: e.is_recurrence())
         synced_recurrences = self.env['calendar.recurrence']._sync_google2odoo(recurrences)
         synced_events = self.env['calendar.event']._sync_google2odoo(events - recurrences, default_reminders=default_reminders)
 
-        # Odoo -> Google
+        # Godo -> Google
         recurrences = self.env['calendar.recurrence']._get_records_to_sync(full_sync=full_sync)
         recurrences -= synced_recurrences
         recurrences._sync_odoo2google(calendar_service)

@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* auth_totp_mail
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:18+0000\n"
 "PO-Revision-Date: 2021-09-14 12:20+0000\n"
@@ -64,9 +64,9 @@ msgstr "Seguretat del compte"
 
 #. module: auth_totp_mail
 #: model:mail.template,subject:auth_totp_mail.mail_template_totp_invite
-msgid "Invitation to activate two-factor authentication on your Odoo account"
+msgid "Invitation to activate two-factor authentication on your Godo account"
 msgstr ""
-"Invitació per activar l'autenticació de dos factors al vostre compte d'Odoo"
+"Invitació per activar l'autenticació de dos factors al vostre compte d'Godo"
 
 #. module: auth_totp_mail
 #: code:addons/auth_totp_mail/models/res_users.py:0

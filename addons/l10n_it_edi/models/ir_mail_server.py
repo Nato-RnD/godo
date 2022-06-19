@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import zipfile
 import io
@@ -358,7 +358,7 @@ class FetchmailServer(models.Model):
             # This is the file sent by the ES to the addressee together with the invoice file,
             # containing the main reference data of the file useful for processing, including
             # the IdentificativoSDI.
-            # Useless for Odoo
+            # Useless for Godo
 
         elif receipt_type == 'DT':
             # Deadline passed notice

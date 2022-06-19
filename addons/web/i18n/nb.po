@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* web
 # 
@@ -10,7 +10,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~12.5\n"
+"Project-Id-Version: Godo Server saas~12.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-27 09:11+0000\n"
 "PO-Revision-Date: 2019-08-26 09:15+0000\n"
@@ -1703,8 +1703,8 @@ msgstr "Fushia"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:0
 #, python-format
-msgid "Get this feature and much more with Odoo Enterprise!"
-msgstr "Få denne funksjonaliteten og mye mer med Odoo Enterprise!"
+msgid "Get this feature and much more with Godo Enterprise!"
+msgstr "Få denne funksjonaliteten og mye mer med Godo Enterprise!"
 
 #. module: web
 #. openerp-web
@@ -2288,7 +2288,7 @@ msgstr "Flere linjer med tekst"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:0
 #, python-format
-msgid "My Odoo.com account"
+msgid "My Godo.com account"
 msgstr "Min konto på odoo.com"
 
 #. module: web
@@ -2475,15 +2475,15 @@ msgstr "Objekt:"
 #: code:addons/web/static/src/js/core/dialog.js:0
 #: model_terms:ir.ui.view,arch_db:web.brand_promotion_message
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/apps.js:0
 #, python-format
-msgid "Odoo Apps will be available soon"
-msgstr "Apper fra Odoo vil snart være tilgjengelige"
+msgid "Godo Apps will be available soon"
+msgstr "Apper fra Godo vil snart være tilgjengelige"
 
 #. module: web
 #. openerp-web
@@ -2492,36 +2492,36 @@ msgstr "Apper fra Odoo vil snart være tilgjengelige"
 #: code:addons/web/static/src/js/services/crash_manager.js:0
 #: code:addons/web/static/src/js/services/crash_manager.js:0
 #, python-format
-msgid "Odoo Client Error"
-msgstr "Odoo-klientfeil"
+msgid "Godo Client Error"
+msgstr "Godo-klientfeil"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/fields/upgrade_fields.js:0
 #, python-format
-msgid "Odoo Enterprise"
-msgstr "Odoo Enterprise"
+msgid "Godo Enterprise"
+msgstr "Godo Enterprise"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/services/crash_manager.js:0
 #, python-format
-msgid "Odoo Error"
-msgstr "Odoo-feil"
+msgid "Godo Error"
+msgstr "Godo-feil"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/services/crash_manager.js:0
 #, python-format
-msgid "Odoo Session Expired"
-msgstr "Odoo-økt har utløpt"
+msgid "Godo Session Expired"
+msgstr "Godo-økt har utløpt"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/services/crash_manager.js:0
 #, python-format
-msgid "Odoo Warning"
-msgstr "Odoo-advarsel"
+msgid "Godo Warning"
+msgstr "Godo-advarsel"
 
 #. module: web
 #. openerp-web
@@ -2813,8 +2813,8 @@ msgstr ""
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login_layout
-msgid "Powered by <span>Odoo</span>"
-msgstr "Drevet av <span>Odoo</span>"
+msgid "Powered by <span>Godo</span>"
+msgstr "Drevet av <span>Godo</span>"
 
 #. module: web
 #. openerp-web
@@ -4207,9 +4207,9 @@ msgstr ""
 #: code:addons/web/static/src/js/chrome/action_manager_report.js:0
 #, python-format
 msgid ""
-"You need to start Odoo with at least two workers to print a pdf version of "
+"You need to start Godo with at least two workers to print a pdf version of "
 "the reports."
-msgstr "Du må starte Odoo med minst to workers for å printe pdf-rapporter."
+msgstr "Du må starte Godo med minst to workers for å printe pdf-rapporter."
 
 #. module: web
 #. openerp-web
@@ -4228,8 +4228,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/js/services/crash_manager.js:0
 #, python-format
-msgid "Your Odoo session expired. Please refresh the current web page."
-msgstr "Odoo-økten din har utløpt. Last inn nettsiden på nytt."
+msgid "Your Godo session expired. Please refresh the current web page."
+msgstr "Godo-økten din har utløpt. Last inn nettsiden på nytt."
 
 #. module: web
 #. openerp-web

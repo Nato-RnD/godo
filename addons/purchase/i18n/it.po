@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* purchase
 # 
@@ -11,7 +11,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:18+0000\n"
 "PO-Revision-Date: 2021-09-14 12:25+0000\n"
@@ -3046,12 +3046,12 @@ msgid ""
 "Vendors bills can be pre-generated based on purchase\n"
 "                    orders or receipts. This allows you to control bills\n"
 "                    you receive from your vendor according to the draft\n"
-"                    document in Odoo."
+"                    document in Godo."
 msgstr ""
 "Le fatture fornitore possono essere pregenerate in base agli\n"
 "                    ordini di acquisto o alle ricezioni. Ciò consente di tenere\n"
 "                    sotto controllo le fatture ricevute dal fornitore in conformità\n"
-"                    con il documento in bozza di Odoo."
+"                    con il documento in bozza di Godo."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report__volume
@@ -3124,14 +3124,14 @@ msgid ""
 "When creating a purchase order, have a look at the vendor's <i>On Time "
 "Delivery</i> rate: the percentage of products shipped on time. If it is too "
 "low, activate the <i>automated reminders</i>. A few days before the due "
-"shipment, Odoo will send the vendor an email to ask confirmation of shipment"
+"shipment, Godo will send the vendor an email to ask confirmation of shipment"
 " dates and keep you informed in case of any delays. To get the vendor's "
 "performance statistics, click on the OTD rate."
 msgstr ""
 "Quando crei un ordine di acquisto, dai un'occhiata al tasso di <i>On Time "
 "Delivery</i> del venditore: la percentuale di prodotti spediti in tempo. Se "
 "è troppo bassa, attiva i <i>promemoria automatici</i>. Qualche giorno prima "
-"della spedizione prevista, Odoo invierà al venditore una mail per chiedere "
+"della spedizione prevista, Godo invierà al venditore una mail per chiedere "
 "conferma delle date di spedizione e tenerti informato in caso di ritardi. "
 "Per ottenere le statistiche di performance del venditore, clicca sul tasso "
 "di OTD."
@@ -3139,12 +3139,12 @@ msgstr ""
 #. module: purchase
 #: model_terms:digest.tip,tip_description:purchase.digest_tip_purchase_1
 msgid ""
-"When sending a purchase order by email, Odoo asks the vendor to acknowledge "
+"When sending a purchase order by email, Godo asks the vendor to acknowledge "
 "the reception of the order. When the vendor acknowledges the order by "
 "clicking on a button in the email, the information is added on the purchase "
 "order. Use filters to track orders that have not been acknowledged."
 msgstr ""
-"Quando si invia un ordine di acquisto via e-mail, Odoo chiede al venditore "
+"Quando si invia un ordine di acquisto via e-mail, Godo chiede al venditore "
 "di confermare la ricezione dell'ordine. Quando il venditore conferma "
 "l'ordine cliccando su un pulsante nell'email, l'informazione viene aggiunta "
 "all'ordine di acquisto. Usa i filtri per rintracciare gli ordini che non "

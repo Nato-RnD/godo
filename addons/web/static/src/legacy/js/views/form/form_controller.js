@@ -489,7 +489,7 @@ var FormController = BasicController.extend({
     //--------------------------------------------------------------------------
 
     /**
-     * Save the record when we are about to leave Odoo.
+     * Save the record when we are about to leave Godo.
      *
      * @override
      */

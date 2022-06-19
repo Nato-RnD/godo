@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import base64
 import binascii
@@ -618,7 +618,7 @@ class Users(models.Model):
     @api.ondelete(at_uninstall=True)
     def _unlink_except_superuser(self):
         if SUPERUSER_ID in self.ids:
-            raise UserError(_('You can not remove the admin user as it is used internally for resources created by Odoo (updates, module installation, ...)'))
+            raise UserError(_('You can not remove the admin user as it is used internally for resources created by Godo (updates, module installation, ...)'))
         self.clear_caches()
 
     @api.model
@@ -981,10 +981,10 @@ class Users(models.Model):
             if ipaddress.ip_address(source).is_private:
                 _logger.warning(
                     "The rate-limited IP address %s is classified as private "
-                    "and *might* be a proxy. If your Odoo is behind a proxy, "
+                    "and *might* be a proxy. If your Godo is behind a proxy, "
                     "it may be mis-configured. Check that you are running "
-                    "Odoo in Proxy Mode and that the proxy is properly configured, see "
-                    "https://www.odoo.com/documentation/15.0/administration/install/deploy.html#https for details.",
+                    "Godo in Proxy Mode and that the proxy is properly configured, see "
+                    "https://smartlifevn.com/documentation/15.0/administration/install/deploy.html#https for details.",
                     source
                 )
             raise AccessDenied(_("Too many login failures, please wait a bit before trying again."))

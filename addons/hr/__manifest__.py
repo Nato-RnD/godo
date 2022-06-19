@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Employees',
@@ -8,7 +8,7 @@
     'sequence': 95,
     'summary': 'Centralize employee information',
     'description': "",
-    'website': 'https://www.odoo.com/app/employees',
+    'website': 'https://smartlifevn.com/app/employees',
     'images': [
         'images/hr_department.jpeg',
         'images/hr_employee.jpeg',

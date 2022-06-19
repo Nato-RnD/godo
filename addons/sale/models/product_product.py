@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 from datetime import timedelta, time
 from odoo import fields, models, _, api
 from odoo.tools.float_utils import float_round

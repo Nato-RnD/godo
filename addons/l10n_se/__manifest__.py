@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 {
     "name": "Sweden - Accounting",
     "version": "1.0",
-    "author": "XCLUDE, Odoo SA",
+    "author": "XCLUDE, Godo SA",
     "category": "Accounting/Localizations/Account Charts",
     'description': """
 Swedish Accounting
 ------------------
 
-This is the base module to manage the accounting chart for Sweden in Odoo.
+This is the base module to manage the accounting chart for Sweden in Godo.
 It also includes the invoice OCR payment reference handling.
     """,
     "depends": ["account", "base_vat"],

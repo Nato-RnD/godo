@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* account_check_printing
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:19+0000\n"
@@ -213,16 +213,16 @@ msgstr "Manuel nummerering"
 #. module: account_check_printing
 #: model:ir.model.fields,help:account_check_printing.field_account_payment__payment_method_line_id
 msgid ""
-"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Manual: Pay or Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"Manuel: Betal eller Bliv betalt via en hvilken som helst metode udenfor Odoo.\n"
+"Manuel: Betal eller Bliv betalt via en hvilken som helst metode udenfor Godo.\n"
 "Betalingsmodtagere: Hver betalingsmodtager har dens egen Betalingsmetode. Anmod om en transaktion på et kort takket være en betalings-token, gemt af partneren ved køb eller abonnering online.\n"
-"Check: Betal regninger via check og print den fra Odoo.\n"
+"Check: Betal regninger via check og print den fra Godo.\n"
 "Batchindbetaling: Saml flere kundechecks på én gang, og generer og indsend en batchindbetaling til din bank. Modulet account_batch_payment er nødvendig.\n"
 "SEPA-kreditoverførsel: Betal i SEPA-zonen ved at indsende en SEPA-kreditoverførselsfil til din bank. Modulet account_sepa er nødvendigt.\n"
 "SEPA Direct Debit: Bliv betalt i SEPA-zonen takket være et mandat, som din partner har givet dig. Modulet account_sepa er nødvendigt.\n"

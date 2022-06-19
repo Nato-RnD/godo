@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Point of Sale',
@@ -49,7 +49,7 @@
     ],
     'installable': True,
     'application': True,
-    'website': 'https://www.odoo.com/app/point-of-sale-shop',
+    'website': 'https://smartlifevn.com/app/point-of-sale-shop',
     'assets': {
         'web.assets_tests': [
             'point_of_sale/static/tests/tours/**/*',

@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 # Copyright (C) 2014 InnOpen Group Kft (<http://www.innopen.eu>).
-# Copyright (C) 2021 Odoo S.A.
+# Copyright (C) 2021 Godo S.A.
 
 {
     'name': 'Hungarian - Accounting',
     'version': '3.0',
     'category': 'Accounting/Localizations/Account Charts',
-    'author': 'Odoo S.A.',
+    'author': 'Godo S.A.',
     'description': """
 
 Base module for Hungarian localization

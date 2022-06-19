@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 import io
 import re
 
@@ -43,8 +43,8 @@ class BrandedFileWriter(PdfFileWriter):
     def __init__(self):
         super().__init__()
         self.addMetadata({
-            '/Creator': "Odoo",
-            '/Producer': "Odoo",
+            '/Creator': "Godo",
+            '/Producer': "Godo",
         })
 
 
@@ -85,11 +85,11 @@ def rotate_pdf(pdf):
 
 
 def add_banner(pdf_stream, text=None, logo=False, thickness=2 * cm):
-    """ Add a banner on a PDF in the upper right corner, with Odoo's logo (optionally).
+    """ Add a banner on a PDF in the upper right corner, with Godo's logo (optionally).
 
     :param pdf_stream (BytesIO):    The PDF stream where the banner will be applied.
     :param text (str):              The text to be displayed.
-    :param logo (bool):             Whether to display Odoo's logo in the banner.
+    :param logo (bool):             Whether to display Godo's logo in the banner.
     :param thickness (float):       The thickness of the banner in pixels.
     :return (BytesIO):              The modified PDF stream.
     """
@@ -350,8 +350,8 @@ class OdooPdfFileWriter(PdfFileWriter):
 
         # Set odoo as producer
         self.addMetadata({
-            '/Creator': "Odoo",
-            '/Producer': "Odoo",
+            '/Creator': "Godo",
+            '/Producer': "Godo",
         })
         self.is_pdfa = True
 

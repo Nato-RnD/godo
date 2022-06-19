@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo import models
 
@@ -13,7 +13,7 @@ class Attendee(models.Model):
 
     def _send_mail_to_attendees(self, mail_template, force_send=False):
         """ Override the super method
-        If not synced with Microsoft Outlook, let Odoo in charge of sending emails
+        If not synced with Microsoft Outlook, let Godo in charge of sending emails
         Otherwise, Microsoft Outlook will send them
         """
         with microsoft_calendar_token(self.env.user.sudo()) as token:

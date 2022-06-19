@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mail_bot
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -65,11 +65,11 @@ msgstr "Instradamento HTTP"
 #: code:addons/mail_bot/models/mail_channel.py:0
 #, python-format
 msgid ""
-"Hello,<br/>Odoo's chat helps employees collaborate efficiently. I'm here to "
+"Hello,<br/>Godo's chat helps employees collaborate efficiently. I'm here to "
 "help you discover its features.<br/><b>Try to send me an emoji</b> <span "
 "class=\"o_odoobot_command\">:)</span>"
 msgstr ""
-"Ciao,<br/>la chat di Odoo aiuta i dipendenti a collaborare in modo "
+"Ciao,<br/>la chat di Godo aiuta i dipendenti a collaborare in modo "
 "efficiente. Sono qui per aiutarti a scoprire le sue "
 "funzionalità.<br/><b>Prova a inviarmi un emoji</b> <span "
 "class=\"o_odoobot_command\">:)</span>"
@@ -86,11 +86,11 @@ msgstr "Hmmm..."
 msgid ""
 "I am a simple bot, but if that's a dog, he is the cutest 😊 "
 "<br/>Congratulations, you finished this tour. You can now <b>close this chat"
-" window</b>. Enjoy discovering Odoo."
+" window</b>. Enjoy discovering Godo."
 msgstr ""
 "Sono un semplice bot, ma se quello è un cane, è il più carino che abbia mai "
 "visto 😊 <br/>Congratulazioni, hai finito questo giro. Ora <b>puoi chiudere "
-"questa chat</b>. Divertiti a scoprire Odoo."
+"questa chat</b>. Divertiti a scoprire Godo."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -228,14 +228,14 @@ msgstr "Per iniziare, prova a mandarmi un emoji :) "
 msgid ""
 "Unfortunately, I'm just a bot 😞 I don't understand! If you need help "
 "discovering our product, please check <a "
-"href=\"https://www.odoo.com/documentation\" target=\"_blank\">our "
-"documentation</a> or <a href=\"https://www.odoo.com/slides\" "
+"href=\"https://smartlifevn.com/documentation\" target=\"_blank\">our "
+"documentation</a> or <a href=\"https://smartlifevn.com/slides\" "
 "target=\"_blank\">our videos</a>."
 msgstr ""
 "Purtroppo sono solo un bot 😞 Non capisco! Se hai bisogno di aiuto per "
 "scoprire il nostro prodotto, controlla <a "
-"href=\"https://www.odoo.com/documentation\" target=\"_blank\">la nostra "
-"documentazione</a> o <a href=\"https://www.odoo.com/slides\" "
+"href=\"https://smartlifevn.com/documentation\" target=\"_blank\">la nostra "
+"documentazione</a> o <a href=\"https://smartlifevn.com/slides\" "
 "target=\"_blank\">i nostri video</a>."
 
 #. module: mail_bot

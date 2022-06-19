@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* delivery
 # 
@@ -10,7 +10,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:21+0000\n"
@@ -43,11 +43,11 @@ msgstr "<i class=\"fa fa-arrow-right mr-1\"/>Rate erhalten"
 #, python-format
 msgid ""
 "<p class=\"o_view_nocontent\">\n"
-"                    Buy Odoo Enterprise now to get more providers.\n"
+"                    Buy Godo Enterprise now to get more providers.\n"
 "                </p>"
 msgstr ""
 "<p class=\"o_view_nocontent\">\n"
-"                    Kaufen Sie jetzt Odoo Enterprise, um weitere Anbieter zu erhalten.\n"
+"                    Kaufen Sie jetzt Godo Enterprise, um weitere Anbieter zu erhalten.\n"
 "                </p>"
 
 #. module: delivery

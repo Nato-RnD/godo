@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* project
 # 
@@ -18,7 +18,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:25+0000\n"
@@ -1555,11 +1555,11 @@ msgstr "Sự hài lòng của khách hàng"
 #: code:addons/project/static/src/js/project_task_kanban_examples.js:0
 #, python-format
 msgid ""
-"Customers propose feedbacks by email; Odoo creates tasks automatically, and "
+"Customers propose feedbacks by email; Godo creates tasks automatically, and "
 "you can communicate on the task directly. Your managers decide which "
 "feedback is accepted %s and which feedback is moved to the %s column. %s"
 msgstr ""
-"Khách hàng đề xuất phản hồi qua email; Odoo tạo nhiệm vụ tự động và bạn có "
+"Khách hàng đề xuất phản hồi qua email; Godo tạo nhiệm vụ tự động và bạn có "
 "thể giao tiếp trực tiếp về nhiệm vụ. Người quản lý của bạn quyết định phản "
 "hồi nào được chấp nhận %s và phản hồi được chuyển đến cột %s. %s"
 
@@ -4755,11 +4755,11 @@ msgstr "Các mốc thời gian sau đã được thêm:"
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__alias_model_id
 msgid ""
-"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+"The model (Godo Document Kind) to which this alias corresponds. Any incoming"
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
-"Mô hình (Kiểu tài liệu Odoo) mà bí danh này tương tác. Bất kỳ email nào nhận"
+"Mô hình (Kiểu tài liệu Godo) mà bí danh này tương tác. Bất kỳ email nào nhận"
 " được mà không trả lời một hồ sơ cụ thể sẽ tạo ra hồ sơ mới trong mô hình "
 "này. (ví dụ: Nhiệm vụ dự án) "
 

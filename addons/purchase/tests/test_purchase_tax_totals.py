@@ -11,7 +11,7 @@ class PurchaseTestTaxTotals(TestTaxTotals):
         super().setUpClass(chart_template_ref=chart_template_ref)
 
         cls.po_product = cls.env['product.product'].create({
-            'name': 'Odoo course',
+            'name': 'Godo course',
             'type': 'service',
         })
 

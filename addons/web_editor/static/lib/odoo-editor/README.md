@@ -1,4 +1,4 @@
-# Odoo editor
+# Godo editor
 
 A fast wysiwyg editor targeting documents and website structures.
 

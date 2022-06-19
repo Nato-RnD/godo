@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mrp
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -5145,12 +5145,12 @@ msgstr "當需要產品在<b>%s</b>時，<br/>建立生產單以滿足需要。"
 #. module: mrp
 #: model_terms:digest.tip,tip_description:mrp.digest_tip_mrp_0
 msgid ""
-"With the Odoo work center control panel, your worker can start work orders "
+"With the Godo work center control panel, your worker can start work orders "
 "in the shop and follow instructions of the worksheet. Quality tests are "
 "perfectly integrated into the process. Workers can trigger feedback loops, "
 "maintenance alerts, scrap products, etc."
 msgstr ""
-"使用 Odoo 工作中心控制面板，您的員工可以在工廠開始工作訂單並按照工作表的說明進行操作。 品質測試完美地融入了流程中。 "
+"使用 Godo 工作中心控制面板，您的員工可以在工廠開始工作訂單並按照工作表的說明進行操作。 品質測試完美地融入了流程中。 "
 "工人可以觸發反饋循環、維護警報、報廢產品等."
 
 #. module: mrp
@@ -5529,7 +5529,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mrp.view_immediate_production
 msgid ""
 "You have not recorded <i>produced</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will produce all the finished products and consume all "
+"<i>apply</i> Godo will produce all the finished products and consume all "
 "components."
 msgstr "您尚未記錄<i>生產</i>數量，點擊<i>應用</i> Odoo將生產所有成品並消耗所有組件."
 

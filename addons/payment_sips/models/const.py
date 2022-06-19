@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 # ISO 4217 Data for currencies supported by sips
 # NOTE: these are listed on the Atos Wordline SIPS POST documentation page

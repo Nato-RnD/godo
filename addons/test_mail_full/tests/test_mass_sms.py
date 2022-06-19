@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from ast import literal_eval
 
@@ -267,7 +267,7 @@ class TestMassSMS(TestMassSMSCommon):
     def test_mass_sms_links(self):
         mailing = self.env['mailing.mailing'].browse(self.mailing_sms.ids)
         mailing.write({
-            'body_plaintext': 'Dear {{ object.display_name }} this is a mass SMS with two links http://www.odoo.com/smstest and http://www.odoo.com/smstest/{{ object.name }}',
+            'body_plaintext': 'Dear {{ object.display_name }} this is a mass SMS with two links http://smartlifevn.com/smstest and http://smartlifevn.com/smstest/{{ object.name }}',
             'sms_template_id': False,
             'sms_force_send': True,
             'sms_allow_unsubscribe': True,
@@ -284,8 +284,8 @@ class TestMassSMS(TestMassSMSCommon):
              } for i, record in enumerate(self.records)],
             mailing, self.records,
             sms_links_info=[[
-                ('http://www.odoo.com/smstest', True, {}),
-                ('http://www.odoo.com/smstest/%s' % record.name, True, {}),
+                ('http://smartlifevn.com/smstest', True, {}),
+                ('http://smartlifevn.com/smstest/%s' % record.name, True, {}),
                 # unsubscribe is not shortened and parsed at sending
                 ('unsubscribe', False, {}),
             ] for record in self.records],
@@ -319,8 +319,8 @@ class TestMassSMS(TestMassSMSCommon):
              } for record in records],
             mailing, records,
             sms_links_info=[[
-                ('http://www.odoo.com/smstest', True, {}),
-                ('http://www.odoo.com/smstest/%s' % record.id, True, {}),
+                ('http://smartlifevn.com/smstest', True, {}),
+                ('http://smartlifevn.com/smstest/%s' % record.id, True, {}),
                 # unsubscribe is not shortened and parsed at sending
                 ('unsubscribe', False, {}),
             ] for record in records],
@@ -344,8 +344,8 @@ class TestMassSMS(TestMassSMSCommon):
              }],
             mailing, new_record,
             sms_links_info=[[
-                ('http://www.odoo.com/smstest', True, {}),
-                ('http://www.odoo.com/smstest/%s' % new_record.id, True, {}),
+                ('http://smartlifevn.com/smstest', True, {}),
+                ('http://smartlifevn.com/smstest/%s' % new_record.id, True, {}),
                 # unsubscribe is not shortened and parsed at sending
                 ('unsubscribe', False, {}),
             ]],

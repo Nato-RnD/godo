@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import logging
 import pprint
@@ -135,7 +135,7 @@ class PaymentTransaction(models.Model):
                 'address[line1]': self.partner_address or None,
                 'address[postal_code]': self.partner_zip or None,
                 'address[state]': self.partner_state_id.name or None,
-                'description': f'Odoo Partner: {self.partner_id.name} (id: {self.partner_id.id})',
+                'description': f'Godo Partner: {self.partner_id.name} (id: {self.partner_id.id})',
                 'email': self.partner_email,
                 'name': self.partner_name,
                 'phone': self.partner_phone or None,

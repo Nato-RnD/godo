@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import datetime
 
@@ -13,7 +13,7 @@ class ResConfigSettings(models.TransientModel):
 
     fail_counter = fields.Integer('Fail Mail', readonly=True)
     alias_domain = fields.Char('Alias Domain', help="If you have setup a catch-all email domain redirected to "
-                               "the Odoo server, enter the domain name here.", config_parameter='mail.catchall.domain')
+                               "the Godo server, enter the domain name here.", config_parameter='mail.catchall.domain')
     restrict_template_rendering = fields.Boolean(
         'Restrict Template Rendering',
         config_parameter='mail.restrict.template.rendering',

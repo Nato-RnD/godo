@@ -432,7 +432,7 @@ var BaseSettingController = FormController.extend({
      * @private
      */
     _onBeforeUnload: function () {
-        // We should not save when leaving Odoo in the settings
+        // We should not save when leaving Godo in the settings
     },
 
 });

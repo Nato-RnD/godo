@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website
 # 
@@ -9,13 +9,13 @@
 # Phinitnan Chanasabaeng <crackerizer@gmail.com>, 2021
 # Martin Trigaux, 2021
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2021
-# Odoo Thaidev <odoothaidev@gmail.com>, 2021
+# Godo Thaidev <odoothaidev@gmail.com>, 2021
 # Cécile Collart <cco@odoo.com>, 2021
 # Wichanon Jamwutthipreecha, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-10 06:07+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
@@ -475,8 +475,8 @@ msgstr "50%"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_call_to_action
-msgid "50,000+ companies run Odoo to grow their businesses."
-msgstr "บริษัทมากกว่า 50,000 แห่งเรียกใช้ Odoo เพื่อขยายธุรกิจ"
+msgid "50,000+ companies run Godo to grow their businesses."
+msgstr "บริษัทมากกว่า 50,000 แห่งเรียกใช้ Godo เพื่อขยายธุรกิจ"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_hr_options
@@ -498,8 +498,8 @@ msgstr "80% การพัฒนา"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
-msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
-msgstr "<b>50,000+ บริษัท</b> ที่เรียกใช้ Odoo เพื่อขยายธุรกิจของพวกเขา"
+msgid "<b>50,000+ companies</b> run Godo to grow their businesses."
+msgstr "<b>50,000+ บริษัท</b> ที่เรียกใช้ Godo เพื่อขยายธุรกิจของพวกเขา"
 
 #. module: website
 #. openerp-web
@@ -2657,10 +2657,10 @@ msgstr "เปลี่ยนไอคอน"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
-"Change theme in a few clicks, and browse through Odoo's catalog of\n"
+"Change theme in a few clicks, and browse through Godo's catalog of\n"
 "                            ready-to-use themes available in our app store."
 msgstr ""
-"เปลี่ยนธีมได้ในไม่กี่คลิก และเรียกดูแคตตาล็อกธีมพร้อมใช้งานของ Odoo\n"
+"เปลี่ยนธีมได้ในไม่กี่คลิก และเรียกดูแคตตาล็อกธีมพร้อมใช้งานของ Godo\n"
 "                            ที่มีไว้ให้เลือกใช้ในร้านค้าแอปของเรา"
 
 #. module: website
@@ -4067,10 +4067,10 @@ msgstr "เช่น https://www.mydomain.com"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
-"Easily design your own Odoo templates thanks to clean HTML\n"
+"Easily design your own Godo templates thanks to clean HTML\n"
 "                            structure and bootstrap CSS."
 msgstr ""
-"ออกแบบเทมเพลต Odoo ของคุณเองอย่างง่ายดายด้วยโครงสร้าง HTML \n"
+"ออกแบบเทมเพลต Godo ของคุณเองอย่างง่ายดายด้วยโครงสร้าง HTML \n"
 "                            ที่ชัดเจนและ Bootstrap CSS"
 
 #. module: website
@@ -4652,8 +4652,8 @@ msgstr "ติดตามเรา"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "Follow your website traffic in Odoo."
-msgstr "ติดตามการเข้าชมเว็บไซต์ของคุณใน Odoo"
+msgid "Follow your website traffic in Godo."
+msgstr "ติดตามการเข้าชมเว็บไซต์ของคุณใน Godo"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5097,8 +5097,8 @@ msgstr "เมนูแฮมเบอร์เกอร์"
 #. openerp-web
 #: code:addons/website/static/src/snippets/s_countdown/000.xml:0
 #, python-format
-msgid "Happy Odoo Anniversary!"
-msgstr "สุขสันต์วันครบรอบ Odoo!"
+msgid "Happy Godo Anniversary!"
+msgstr "สุขสันต์วันครบรอบ Godo!"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__has_social_default_image
@@ -5845,12 +5845,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid ""
 "It appears your website is still using the old color system of\n"
-"            Odoo 13.0 in some places. We made sure it is still working but\n"
+"            Godo 13.0 in some places. We made sure it is still working but\n"
 "            we recommend you to try to use the new color system, which is\n"
 "            still customizable."
 msgstr ""
 "ดูเหมือนว่าเว็บไซต์ของคุณยังคงใช้ระบบสีแบบเก่าของ\n"
-"            Odoo 13.0 ในบางที่ เรามั่นใจว่ามันยังใช้งานได้แต่\n"
+"            Godo 13.0 ในบางที่ เรามั่นใจว่ามันยังใช้งานได้แต่\n"
 "            เราขอแนะนำให้คุณลองใช้ระบบสีใหม่ ซึ่งก็คือ\n"
 "           และยังคงปรับแต่งได้"
 
@@ -6657,12 +6657,12 @@ msgstr "ตรวจสอบข้อมูลผลการค้นหาข
 #. module: website
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_0
 msgid ""
-"Monitor your visitors while they are browsing your website with the Odoo "
+"Monitor your visitors while they are browsing your website with the Godo "
 "Social app. Engage with them in just a click using a live chat request or a "
 "push notification. If they have completed one of your forms, you can send "
 "them an SMS, or call them right away while they are browsing your website."
 msgstr ""
-"ตรวจสอบผู้เยี่ยมชมของคุณในขณะที่พวกเขากำลังเรียกดูเว็บไซต์ของคุณด้วยแอป Odoo"
+"ตรวจสอบผู้เยี่ยมชมของคุณในขณะที่พวกเขากำลังเรียกดูเว็บไซต์ของคุณด้วยแอป Godo"
 " Social "
 "มีส่วนร่วมกับพวกเขาด้วยการคลิกเพียงครั้งเดียวโดยส่งคำขอไลฟ์แชทหรือการแจ้งเตือนแบบพุช"
 " หากพวกเขากรอกแบบฟอร์มของคุณเรียบร้อยแล้ว คุณสามารถส่ง SMS "
@@ -7103,18 +7103,18 @@ msgstr "หรือ"
 #: code:addons/website/static/src/components/configurator/configurator.xml:0
 #: code:addons/website/static/src/components/configurator/configurator.xml:0
 #, python-format
-msgid "Odoo Logo"
-msgstr "โลโก้ Odoo "
+msgid "Godo Logo"
+msgstr "โลโก้ Godo "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-msgid "Odoo Menu"
-msgstr "เมนู Odoo"
+msgid "Godo Menu"
+msgstr "เมนู Godo"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "Odoo Version"
-msgstr "เวอร์ชัน Odoo"
+msgid "Godo Version"
+msgstr "เวอร์ชัน Godo"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -8355,12 +8355,12 @@ msgstr "ค้นหาผู้เยี่ยมชม"
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_1
 msgid ""
 "Search in the media dialogue when you need photos to illustrate your "
-"website. Odoo's integration with Unsplash, featuring millions of royalty "
+"website. Godo's integration with Unsplash, featuring millions of royalty "
 "free and high quality photos, makes it possible for you to get the perfect "
 "picture, in just a few clicks."
 msgstr ""
 "ค้นหาในสื่อการสนทนาเมื่อคุณต้องการรูปภาพเพื่อแสดงเว็บไซต์ของคุณ "
-"การผสานการทำงานระหว่าง Odoo กับ Unsplash "
+"การผสานการทำงานระหว่าง Godo กับ Unsplash "
 "ซึ่งประกอบด้วยภาพถ่ายคุณภาพสูงปลอดค่าลิขสิทธิ์นับล้านรายการ "
 "ซึ่งช่วยให้คุณได้ภาพที่สมบูรณ์แบบด้วยการคลิกเพียงไม่กี่ครั้ง"
 
@@ -8679,12 +8679,12 @@ msgstr "ลงชื่อเข้าใช้แล้ว"
 msgid ""
 "Sitemap.xml: Help search engine crawlers to find out what pages are present "
 "and which have recently changed, and to crawl your site accordingly. This "
-"file is automatically generated by Odoo."
+"file is automatically generated by Godo."
 msgstr ""
 "Sitemap.xml: "
 "ช่วยโปรแกรมค้นหารวบรวมข้อมูลเพื่อค้นหาว่ามีหน้าใดแสดงอยู่บ้างและหน้าใดที่มีการเปลี่ยนแปลงล่าสุด"
 " และรวบรวมข้อมูลเว็บไซต์ของคุณตามนั้น ไฟล์นี้จะถูกสร้างขึ้นโดยอัตโนมัติโดย "
-"Odoo"
+"Godo"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_alert_options
@@ -9707,13 +9707,13 @@ msgstr ""
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_2
 msgid ""
 "To get more visitors, you should target keywords that are often searched in "
-"Google. With the built-in SEO tool, once you define a few keywords, Odoo "
+"Google. With the built-in SEO tool, once you define a few keywords, Godo "
 "will recommend you the best keywords to target. Then adapt your title and "
 "description accordingly to boost your traffic."
 msgstr ""
 "เพื่อให้มีผู้เข้าชมมากขึ้น คุณควรกำหนดเป้าหมายของคำสำคัญที่มักถูกค้นหาใน "
 "Google ด้วยเครื่องมือ SEO ที่มีในตัว เมื่อคุณกำหนดคำสำคัญเพียงสองสามคำแล้ว "
-"Odoo จะแนะนำคำสำคัญที่ดีที่สุดอื่น ๆ ให้คุณเพื่อกำหนดเป้าหมาย "
+"Godo จะแนะนำคำสำคัญที่ดีที่สุดอื่น ๆ ให้คุณเพื่อกำหนดเป้าหมาย "
 "จากนั้นปรับชื่อและคำอธิบายของคุณให้เหมาะสมเพื่อเพิ่มจำนวนการเข้าชม"
 
 #. module: website
@@ -11423,8 +11423,8 @@ msgstr "จากโลโก้"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
-msgid "frontend_lang (Odoo)"
-msgstr "frontend_lang (Odoo)"
+msgid "frontend_lang (Godo)"
+msgstr "frontend_lang (Godo)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -11468,8 +11468,8 @@ msgstr "https://fonts.google.com/specimen/Roboto"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "https://www.odoo.com"
-msgstr "https://www.odoo.com"
+msgid "https://smartlifevn.com"
+msgstr "https://smartlifevn.com"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
@@ -11479,15 +11479,15 @@ msgstr "ไอโฟน"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
 msgid ""
-"im_livechat_previous_operator_pid (Odoo)<br/>\n"
-"                                            utm_campaign (Odoo)<br/>\n"
-"                                            utm_source (Odoo)<br/>\n"
-"                                            utm_medium (Odoo)"
+"im_livechat_previous_operator_pid (Godo)<br/>\n"
+"                                            utm_campaign (Godo)<br/>\n"
+"                                            utm_source (Godo)<br/>\n"
+"                                            utm_medium (Godo)"
 msgstr ""
-"im_livechat_previous_operator_pid (Odoo)<br/>\n"
-"                                            utm_campaign (Odoo)<br/>\n"
-"                                            utm_source (Odoo)<br/>\n"
-"                                            utm_medium (Odoo)"
+"im_livechat_previous_operator_pid (Godo)<br/>\n"
+"                                            utm_campaign (Godo)<br/>\n"
+"                                            utm_source (Godo)<br/>\n"
+"                                            utm_medium (Godo)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -11526,8 +11526,8 @@ msgstr "แจ้งลูกค้า"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "instance of Odoo, the"
-msgstr "ตัวอย่างของ Odoo"
+msgid "instance of Godo, the"
+msgstr "ตัวอย่างของ Godo"
 
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__theme_ir_ui_view__inherit_id__ir_ui_view
@@ -11652,8 +11652,8 @@ msgstr "ตัวคั่น, ตัวแบ่ง"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
-msgid "session_id (Odoo)<br/>"
-msgstr "session_id (Odoo)<br/>"
+msgid "session_id (Godo)<br/>"
+msgstr "session_id (Godo)<br/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets

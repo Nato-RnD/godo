@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import logging
 import random
@@ -70,7 +70,7 @@ class EventTypeMail(models.Model):
 
 class EventMailScheduler(models.Model):
     """ Event automated mailing. This model replaces all existing fields and
-    configuration allowing to send emails on events since Odoo 9. A cron exists
+    configuration allowing to send emails on events since Godo 9. A cron exists
     that periodically checks for mailing to run. """
     _name = 'event.mail'
     _rec_name = 'event_id'

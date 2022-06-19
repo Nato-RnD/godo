@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mail_plugin
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -66,7 +66,7 @@ msgstr ""
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
 msgid ""
-"Attachments could not be logged in Odoo because their total size exceeded "
+"Attachments could not be logged in Godo because their total size exceeded "
 "the allowed maximum."
 msgstr ""
 
@@ -504,7 +504,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "No company linked to this contact could be enriched or found in Odoo"
+msgid "No company linked to this contact could be enriched or found in Godo"
 msgstr ""
 
 #. module: mail_plugin
@@ -553,14 +553,14 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Odoo Access Token"
+msgid "Godo Access Token"
 msgstr ""
 
 #. module: mail_plugin
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Odoo Server URL"
+msgid "Godo Server URL"
 msgstr ""
 
 #. module: mail_plugin
@@ -647,7 +647,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Save in Odoo"
+msgid "Save in Godo"
 msgstr ""
 
 #. module: mail_plugin
@@ -682,7 +682,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "Search In Odoo"
+msgid "Search In Godo"
 msgstr ""
 
 #. module: mail_plugin
@@ -696,7 +696,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "Search contact in Odoo..."
+msgid "Search contact in Godo..."
 msgstr ""
 
 #. module: mail_plugin
@@ -724,7 +724,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "This contact does not exist in the Odoo database."
+msgid "This contact does not exist in the Godo database."
 msgstr ""
 
 #. module: mail_plugin
@@ -746,7 +746,7 @@ msgstr ""
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
 msgid ""
-"Warning: Attachments could not be logged in Odoo because their total size "
+"Warning: Attachments could not be logged in Godo because their total size "
 "exceeded the allowed maximum."
 msgstr ""
 
@@ -789,7 +789,7 @@ msgstr ""
 
 #. module: mail_plugin
 #: model_terms:ir.ui.view,arch_db:mail_plugin.app_auth
-msgid "access your Odoo database?"
+msgid "access your Godo database?"
 msgstr ""
 
 #. module: mail_plugin

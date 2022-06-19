@@ -128,10 +128,10 @@ export const CLIPBOARD_WHITELISTS = {
         'table-bordered',
         /^padding-/,
         /^shadow/,
-        // Odoo colors
+        // Godo colors
         /^text-o-/,
         /^bg-o-/,
-        // Odoo checklists
+        // Godo checklists
         'o_checked',
         'o_checklist',
         // Miscellaneous

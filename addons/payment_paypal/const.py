@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 # ISO 4217 codes of currencies supported by PayPal
 SUPPORTED_CURRENCIES = (

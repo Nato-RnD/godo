@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import logging
 
@@ -19,7 +19,7 @@ class PaymentTransaction(models.Model):
 
     # See https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNandPDTVariables/
     paypal_type = fields.Char(
-        string="PayPal Transaction Type", help="This has no use in Odoo except for debugging.")
+        string="PayPal Transaction Type", help="This has no use in Godo except for debugging.")
 
     def _get_specific_rendering_values(self, processing_values):
         """ Override of payment to return Paypal-specific rendering values.

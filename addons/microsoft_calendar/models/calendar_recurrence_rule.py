@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo import api, fields, models
 
@@ -27,7 +27,7 @@ class RecurrenceRule(models.Model):
     def _inverse_rrule(self):
         # Note: 'need_sync_m' is set to False to avoid syncing the updated recurrence with
         # Outlook, as this update mainly comes from Outlook (the 'rrule' field is not directly
-        # modified in Odoo but computed from other fields).
+        # modified in Godo but computed from other fields).
         for recurrence in self.filtered('rrule'):
             values = self._rrule_parse(recurrence.rrule, recurrence.dtstart)
             recurrence.write(dict(values, need_sync_m=False))
@@ -83,7 +83,7 @@ class RecurrenceRule(models.Model):
 
     def _write_from_microsoft(self, microsoft_event, vals):
         current_rrule = self.rrule
-        # event_tz is written on event in Microsoft but on recurrence in Odoo
+        # event_tz is written on event in Microsoft but on recurrence in Godo
         vals['event_tz'] = microsoft_event.start.get('timeZone')
         super()._write_from_microsoft(microsoft_event, vals)
         base_event_time_fields = ['start', 'stop', 'allday']

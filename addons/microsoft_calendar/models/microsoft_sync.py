@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import logging
 from contextlib import contextmanager
@@ -23,9 +23,9 @@ MAX_RECURRENT_EVENT = 720
 
 
 # API requests are sent to Microsoft Calendar after the current transaction ends.
-# This ensures changes are sent to Microsoft only if they really happened in the Odoo database.
+# This ensures changes are sent to Microsoft only if they really happened in the Godo database.
 # It is particularly important for event creation , otherwise the event might be created
-# twice in Microsoft if the first creation crashed in Odoo.
+# twice in Microsoft if the first creation crashed in Godo.
 def after_commit(func):
     @wraps(func)
     def wrapped(self, *args, **kwargs):
@@ -248,7 +248,7 @@ class MicrosoftSync(models.AbstractModel):
 
     @api.model
     def _sync_microsoft2odoo(self, microsoft_events: MicrosoftEvent, default_reminders=()):
-        """Synchronize Microsoft recurrences in Odoo. Creates new recurrences, updates
+        """Synchronize Microsoft recurrences in Godo. Creates new recurrences, updates
         existing ones.
 
         :return: synchronized odoo
@@ -336,7 +336,7 @@ class MicrosoftSync(models.AbstractModel):
                 })
 
     def _get_microsoft_records_to_sync(self, full_sync=False):
-        """Return records that should be synced from Odoo to Microsoft
+        """Return records that should be synced from Godo to Microsoft
 
         :param full_sync: If True, all events attended by the user are returned
         :return: events
@@ -353,9 +353,9 @@ class MicrosoftSync(models.AbstractModel):
 
     @api.model
     def _microsoft_to_odoo_values(self, microsoft_event: MicrosoftEvent, default_reminders=()):
-        """Implements this method to return a dict of Odoo values corresponding
+        """Implements this method to return a dict of Godo values corresponding
         to the Microsoft event given as parameter
-        :return: dict of Odoo formatted values
+        :return: dict of Godo formatted values
         """
         raise NotImplementedError()
 

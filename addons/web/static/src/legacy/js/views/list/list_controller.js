@@ -746,7 +746,7 @@ var ListController = BasicController.extend({
         }
     },
     /**
-     * Save the row in edition, if any, when we are about to leave Odoo.
+     * Save the row in edition, if any, when we are about to leave Godo.
      *
      * @override
      */

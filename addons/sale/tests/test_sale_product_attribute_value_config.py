@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo import fields
 from odoo.addons.product.tests.test_product_attribute_value_config import TestProductAttributeValueCommon

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import datetime
 from importlib import util
@@ -68,7 +68,7 @@ def check_certificate():
 
 def check_git_branch():
     """
-    Check if the local branch is the same than the connected Odoo DB and
+    Check if the local branch is the same than the connected Godo DB and
     checkout to match it if needed.
     """
     server = get_odoo_server_url()
@@ -195,12 +195,12 @@ def get_wifi_essid():
 
 def load_certificate():
     """
-    Send a request to Odoo with customer db_uuid and enterprise_code to get a true certificate
+    Send a request to Godo with customer db_uuid and enterprise_code to get a true certificate
     """
     db_uuid = read_file_first_line('odoo-db-uuid.conf')
     enterprise_code = read_file_first_line('odoo-enterprise-code.conf')
     if db_uuid and enterprise_code:
-        url = 'https://www.odoo.com/odoo-enterprise/iot/x509'
+        url = 'https://smartlifevn.com/odoo-enterprise/iot/x509'
         data = {
             'params': {
                 'db_uuid': db_uuid,
@@ -231,7 +231,7 @@ def load_certificate():
 
 def download_iot_handlers(auto=True):
     """
-    Get the drivers from the configured Odoo server
+    Get the drivers from the configured Godo server
     """
     server = get_odoo_server_url()
     if server:

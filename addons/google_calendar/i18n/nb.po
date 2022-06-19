@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* google_calendar
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~12.5\n"
+"Project-Id-Version: Godo Server saas~12.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 08:16+0000\n"
 "PO-Revision-Date: 2019-08-26 09:10+0000\n"
@@ -197,10 +197,10 @@ msgstr ""
 #: model:ir.model.fields,help:google_calendar.field_res_users__google_calendar_cal_id
 msgid ""
 "Last Calendar ID who has been synchronized. If it is changed, we remove all "
-"links between GoogleID and Odoo Google Internal ID"
+"links between GoogleID and Godo Google Internal ID"
 msgstr ""
 "Siste kalender-ID som er synkronisert. Hvis den endres, fjerner vi alle "
-"koblinger mellom Google-ID og Odoo Google intern ID "
+"koblinger mellom Google-ID og Godo Google intern ID "
 
 #. module: google_calendar
 #: model:ir.model.fields,field_description:google_calendar.field_google_calendar____last_update
@@ -214,13 +214,13 @@ msgstr "Siste synkroniseringsdato"
 
 #. module: google_calendar
 #: model:ir.model.fields,field_description:google_calendar.field_calendar_attendee__oe_synchro_date
-msgid "Odoo Synchro Date"
-msgstr "Odoo-synkroniseringsdato"
+msgid "Godo Synchro Date"
+msgstr "Godo-synkroniseringsdato"
 
 #. module: google_calendar
 #: model:ir.model.fields,field_description:google_calendar.field_calendar_event__oe_update_date
-msgid "Odoo Update Date"
-msgstr "Odoo-oppdateringsdato"
+msgid "Godo Update Date"
+msgstr "Godo-oppdateringsdato"
 
 #. module: google_calendar
 #. openerp-web

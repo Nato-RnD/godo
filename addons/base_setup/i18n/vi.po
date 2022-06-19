@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* base_setup
 # 
@@ -14,7 +14,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:20+0000\n"
@@ -373,8 +373,8 @@ msgstr "Nhập địa chỉ email"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Extract and analyze Odoo data from Google Spreadsheet"
-msgstr "Xuất và phân tích dữ liệu Odoo ở Google Spreadsheet"
+msgid "Extract and analyze Godo data from Google Spreadsheet"
+msgstr "Xuất và phân tích dữ liệu Godo ở Google Spreadsheet"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -562,15 +562,15 @@ msgstr "Xác thực OAuth"
 #. openerp-web
 #: code:addons/base_setup/static/src/xml/res_config_edition.xml:0
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: base_setup
 #. openerp-web
 #: code:addons/base_setup/static/src/xml/res_config_edition.xml:0
 #, python-format
-msgid "Odoo S.A."
-msgstr "Odoo S.A."
+msgid "Godo S.A."
+msgstr "Godo S.A."
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -691,8 +691,8 @@ msgstr "Sử dụng các nhà cung cấp dịch vụ xác thực bên ngoài (OA
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Use external pads in Odoo Notes"
-msgstr "Sử dụng bảng bên ngoài trong Odoo Ghi chú"
+msgid "Use external pads in Godo Notes"
+msgstr "Sử dụng bảng bên ngoài trong Godo Ghi chú"
 
 #. module: base_setup
 #: model:ir.model,name:base_setup.model_res_users
@@ -703,11 +703,11 @@ msgstr "Người dùng"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"When populating your address book, Odoo provides a list of matching "
+"When populating your address book, Godo provides a list of matching "
 "companies. When selecting one item, the company data and logo are auto-"
 "filled."
 msgstr ""
-"Khi nhập thông tin vào sổ địa chỉ, Odoo sẽ cung cấp danh sách các công ty "
+"Khi nhập thông tin vào sổ địa chỉ, Godo sẽ cung cấp danh sách các công ty "
 "khớp với thông tin. Khi chọn một công ty, dữ liệu và logo sẽ được điền tự "
 "động."
 

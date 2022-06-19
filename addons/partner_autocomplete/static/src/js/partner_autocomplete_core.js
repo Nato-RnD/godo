@@ -45,7 +45,7 @@ var PartnerAutocompleteMixin = {
             });
 
             var concatResults = function () {
-                // Add Clearbit result with Odoo result (with unique domain)
+                // Add Clearbit result with Godo result (with unique domain)
                 if (clearbitSuggestions && clearbitSuggestions.length) {
                     var websites = odooSuggestions.map(function (suggestion) {
                         return suggestion.website;
@@ -249,7 +249,7 @@ var PartnerAutocompleteMixin = {
     },
 
     /**
-     * Use Odoo Autocomplete API to return suggestions
+     * Use Godo Autocomplete API to return suggestions
      *
      * @param {string} value
      * @param {boolean} isVAT

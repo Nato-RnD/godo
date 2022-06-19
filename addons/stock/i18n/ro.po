@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* stock
 # 
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:18+0000\n"
 "PO-Revision-Date: 2021-09-14 12:26+0000\n"
@@ -1164,11 +1164,11 @@ msgstr "Înainte de data planificată"
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Godo S.A. "
 "responsibility."
 msgstr ""
 "Textul de mai jos servește drept sugestie și nu implică responsabilitatea "
-"Odoo S.A."
+"Godo S.A."
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__res_partner__picking_warn__block
@@ -2068,7 +2068,7 @@ msgstr "Rute implicite prin depozit"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_orderpoint
 msgid ""
-"Define a minimum stock rule so that Odoo creates automatically requests for "
+"Define a minimum stock rule so that Godo creates automatically requests for "
 "quotations or confirmed manufacturing orders to resupply your stock."
 msgstr ""
 
@@ -2081,14 +2081,14 @@ msgstr "Definiți un nou depozit"
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
 "Define your locations to reflect your warehouse structure and\n"
-"            organization. Odoo is able to manage physical locations\n"
+"            organization. Godo is able to manage physical locations\n"
 "            (warehouses, shelves, bin, etc), partner locations (customers,\n"
 "            vendors) and virtual locations which are the counterpart of\n"
 "            the stock operations like the manufacturing orders\n"
 "            consumptions, inventories, etc."
 msgstr ""
 "Definiți locațiile pentru a reflecta structura și organizația depozitului. "
-"Odoo este capabil să gestioneze locațiile fizice (depozite, rafturi, bin "
+"Godo este capabil să gestioneze locațiile fizice (depozite, rafturi, bin "
 "etc.), locații partenere (clienți, furnizori) și locații virtuale care sunt "
 "contrapartida operațiunilor de stoc cum ar fi consumul de comenzi de "
 "producție, stocurile etc."
@@ -2559,12 +2559,12 @@ msgstr "E-mail trimis clientului odată ce comanda este finalizată."
 #. module: stock
 #: model_terms:digest.tip,tip_description:stock.digest_tip_stock_0
 msgid ""
-"Enjoy a quick-paced experience with the Odoo barcode app. It is blazing fast"
+"Enjoy a quick-paced experience with the Godo barcode app. It is blazing fast"
 " and works even without a stable internet connection. It supports all flows:"
 " inventory adjustments, batch picking, moving lots or pallets, low inventory"
 " checks, etc. Go to the \"Apps\" menu to activate the barcode interface."
 msgstr ""
-"Bucurați-vă imediat de aplicația cod de bare Odoo. Pornește rapid și "
+"Bucurați-vă imediat de aplicația cod de bare Godo. Pornește rapid și "
 "funcționează chiar și fără o conexiune stabilă la internet. Acceptă toate "
 "fluxurile: ajustări de inventar, preluarea loturilor, mutarea loturilor sau "
 "paletelor, verificări de inventar reduse etc. Accesați meniul „Aplicații” "
@@ -2592,14 +2592,14 @@ msgstr "Eroare"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
-"Every stock operation in Odoo moves the products from one\n"
+"Every stock operation in Godo moves the products from one\n"
 "            location to another one.  For instance, if you receive products\n"
-"            from a vendor, Odoo will move products from the Vendor\n"
+"            from a vendor, Godo will move products from the Vendor\n"
 "            location to the Stock location. Each report can be performed on\n"
 "            physical, partner or virtual locations."
 msgstr ""
-"Fiecare operațiune de stocare din Odoo mută produsele de la o locație la "
-"alta. De exemplu, dacă primiți produse de la un furnizor, Odoo va muta "
+"Fiecare operațiune de stocare din Godo mută produsele de la o locație la "
+"alta. De exemplu, dacă primiți produse de la un furnizor, Godo va muta "
 "produsele din locația furnizorului în locația Stoc. Fiecare raport poate fi "
 "efectuat pe locații fizice, partenere sau virtuale."
 
@@ -3197,11 +3197,11 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking__show_reserved
 #: model:ir.model.fields,help:stock.field_stock_picking_type__show_reserved
 msgid ""
-"If this checkbox is ticked, Odoo will automatically pre-fill the detailed "
+"If this checkbox is ticked, Godo will automatically pre-fill the detailed "
 "operations with the corresponding products, locations and lot/serial "
 "numbers."
 msgstr ""
-"Dacă această casetă de selectare este bifată, Odoo va completa automat "
+"Dacă această casetă de selectare este bifată, Godo va completa automat "
 "operațiunile detaliate cu produsele, locațiile și numerele de lot / serie "
 "corespunzătoare."
 
@@ -8822,21 +8822,21 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_min_qty
 msgid ""
 "When the virtual stock goes below the Min Quantity specified for this field,"
-" Odoo generates a procurement to bring the forecasted quantity to the Max "
+" Godo generates a procurement to bring the forecasted quantity to the Max "
 "Quantity."
 msgstr ""
 "În cazul în care stocul prognozat scade sub cantitate minimă specificată în "
-"acest câmp, Odoo generează o aprovizionare pentru a aduce cantitatea "
+"acest câmp, Godo generează o aprovizionare pentru a aduce cantitatea "
 "prognozată la cantitatea Max."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_max_qty
 msgid ""
-"When the virtual stock goes below the Min Quantity, Odoo generates a "
+"When the virtual stock goes below the Min Quantity, Godo generates a "
 "procurement to bring the forecasted quantity to the Quantity specified as "
 "Max Quantity."
 msgstr ""
-"În cazul în care stocul prognozat scade sub cantitate minimă,  Odoo "
+"În cazul în care stocul prognozat scade sub cantitate minimă,  Godo "
 "generează o aprovizionare pentru a aduce cantitatea prognozată la cantitatea"
 " specificată ca maximă."
 
@@ -9177,10 +9177,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
 msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will process all the quantities."
+"<i>apply</i> Godo will process all the quantities."
 msgstr ""
 "Nu ați introdus cantitățile <i>efectuate</i>, făcând clic pe <i>Aplică</i> "
-"Odoo va procesa toate cantitățile."
+"Godo va procesa toate cantitățile."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation

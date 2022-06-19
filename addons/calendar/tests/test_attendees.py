@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from datetime import datetime
 
@@ -39,7 +39,7 @@ class TestEventNotifications(TransactionCase):
     def test_attendee_added_create_with_specific_states(self):
         """
         When an event is created from an external calendar account (such as Google) which is not linked to an 
-        Odoo account, attendee info such as email and state are given at sync.
+        Godo account, attendee info such as email and state are given at sync.
         In this case, attendee_ids should be created accordingly.
         """
         organizer_partner = self.env['res.partner'].create({'name': "orga", "email": "orga@google.com"})

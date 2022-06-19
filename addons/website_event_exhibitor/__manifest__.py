@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 
 {
@@ -8,7 +8,7 @@
     'sequence': 1004,
     'version': '1.1',
     'summary': 'Event: manage sponsors and exhibitors',
-    'website': 'https://www.odoo.com/app/events',
+    'website': 'https://smartlifevn.com/app/events',
     'description': "",
     'depends': [
         'website_event',

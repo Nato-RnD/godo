@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 import requests
 import logging
 
@@ -87,7 +87,7 @@ class GeoCoder(models.AbstractModel):
             return None
         url = 'https://nominatim.openstreetmap.org/search'
         try:
-            headers = {'User-Agent': 'Odoo (http://www.odoo.com/contactus)'}
+            headers = {'User-Agent': 'Godo (http://smartlifevn.com/contactus)'}
             response = requests.get(url, headers=headers, params={'format': 'json', 'q': addr})
             _logger.info('openstreetmap nominatim service called')
             if response.status_code != 200:

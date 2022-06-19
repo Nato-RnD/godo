@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 """ Implementation of "INVENTORY VALUATION TESTS (With valuation layers)" spreadsheet. """
 
@@ -306,7 +306,7 @@ class TestStockValuationStandard(TestStockValuationCommon):
 
     def test_currency_precision_and_standard_svl_value(self):
         currency = self.env['res.currency'].create({
-            'name': 'Odoo',
+            'name': 'Godo',
             'symbol': 'O',
             'rounding': 1,
         })
@@ -735,7 +735,7 @@ class TestStockValuationFIFO(TestStockValuationCommon):
 
     def test_currency_precision_and_fifo_svl_value(self):
         currency = self.env['res.currency'].create({
-            'name': 'Odoo',
+            'name': 'Godo',
             'symbol': 'O',
             'rounding': 1,
         })

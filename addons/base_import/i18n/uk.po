@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* base_import
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:20+0000\n"
@@ -457,12 +457,12 @@ msgstr "ID"
 #, python-format
 msgid ""
 "If the file contains\n"
-"                    the column names, Odoo can try auto-detecting the\n"
+"                    the column names, Godo can try auto-detecting the\n"
 "                    field corresponding to the column. This makes imports\n"
 "                    simpler especially when the file has many columns."
 msgstr ""
 "Якщо файл містить\n"
-"                    назву колонки, Odoo може спробувати автоматичне визначення\n"
+"                    назву колонки, Godo може спробувати автоматичне визначення\n"
 "                    кореспондуючого поля в колонці. Це робить імпорт\n"
 "                    простішим, особливо коли у файлі багато колонок."
 
@@ -702,8 +702,8 @@ msgstr "Не знайдено співставлених записів для �
 #. openerp-web
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
-msgid "Odoo Field"
-msgstr "Поле Odoo"
+msgid "Godo Field"
+msgstr "Поле Godo"
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__othervalue

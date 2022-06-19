@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Sales Teams',
@@ -10,7 +10,7 @@
 Using this application you can manage Sales Teams with CRM and/or Sales
 =======================================================================
  """,
-    'website': 'https://www.odoo.com/app/crm',
+    'website': 'https://smartlifevn.com/app/crm',
     'depends': ['base', 'mail'],
     'data': [
         'security/sales_team_security.xml',

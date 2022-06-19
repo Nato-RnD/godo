@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Blogs',
     'category': 'Website/Website',
     'sequence': 200,
-    'website': 'https://www.odoo.com/app/blog',
+    'website': 'https://smartlifevn.com/app/blog',
     'summary': 'Publish blog posts, announces, news',
     'version': '1.1',
     'description': "",

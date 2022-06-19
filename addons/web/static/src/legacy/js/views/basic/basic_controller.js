@@ -54,7 +54,7 @@ var BasicController = AbstractController.extend(FieldManagerMixin, {
         // of the model is called in a mutex. The following structure is used to
         // accumulate change requests that haven't been sent to the model yet,
         // because of the mutex. This is useful when we want to quickly save a
-        // record before leaving Odoo (see @_urgentSave).
+        // record before leaving Godo (see @_urgentSave).
         this.pendingChanges = [];
     },
     /**
@@ -268,7 +268,7 @@ var BasicController = AbstractController.extend(FieldManagerMixin, {
     /**
      * We override applyChanges (from the field manager mixin) to protect it
      * with a mutex. As we do so, we need to accumulate change requests that
-     * haven't been sent to the model yet, just in case we would leave Odoo
+     * haven't been sent to the model yet, just in case we would leave Godo
      * (close tab/browser). If this happens, we will bypass the mutex and notify
      * the model directly of those changes, to save them if possible (see
      * @_urgentSave).
@@ -702,7 +702,7 @@ var BasicController = AbstractController.extend(FieldManagerMixin, {
         return this.updateControlPanel(props);
     },
     /**
-     * To be called **only** when Odoo is about to be closed, and we want to
+     * To be called **only** when Godo is about to be closed, and we want to
      * save potential changes on a given record.
      *
      * We can't follow the normal flow (onchange(s) + save, mutexified),
@@ -821,7 +821,7 @@ var BasicController = AbstractController.extend(FieldManagerMixin, {
     /**
      * Called when the user closes the tab or browser. To be overriden by
      * specific controllers to execute some code (e.g. save pending changes)
-     * just before leaving Odoo.
+     * just before leaving Godo.
      *
      * @abstract
      * @private

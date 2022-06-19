@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Forum',
@@ -10,7 +10,7 @@
     'description': """
 Ask questions, get answers, no distractions
         """,
-    'website': 'https://www.odoo.com/app/forum',
+    'website': 'https://smartlifevn.com/app/forum',
     'depends': [
         'auth_signup',
         'website_mail',

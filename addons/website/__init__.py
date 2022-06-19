@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from . import controllers
 from . import models
@@ -13,7 +13,7 @@ from functools import partial
 def uninstall_hook(cr, registry):
     # Force remove ondelete='cascade' elements,
     # This might be prevented by another ondelete='restrict' field
-    # TODO: This should be an Odoo generic fix, not a website specific one
+    # TODO: This should be an Godo generic fix, not a website specific one
     env = api.Environment(cr, SUPERUSER_ID, {})
     website_domain = [('website_id', '!=', False)]
     env['ir.asset'].search(website_domain).unlink()

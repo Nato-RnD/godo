@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mass_mailing
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 17:39+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -151,8 +151,8 @@ msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_call_to_action
-msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
-msgstr "<b>50,000 家以上的公司</b> 使用 Odoo 來推動公司成長。"
+msgid "<b>50,000+ companies</b> run Godo to grow their businesses."
+msgstr "<b>50,000 家以上的公司</b> 使用 Godo 來推動公司成長。"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_alert
@@ -2754,7 +2754,7 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:mass_mailing.action_view_mass_mailing_lists
 msgid ""
 "No need to import mailing lists, you can send mailings to contacts saved in "
-"other Odoo apps."
+"other Godo apps."
 msgstr ""
 
 #. module: mass_mailing
@@ -2877,8 +2877,8 @@ msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.layout
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_image_text
@@ -3736,8 +3736,8 @@ msgstr "謝謝您！您的回饋已經成功發送！"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_paragraph
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
-msgid "That way, Odoo evolves much faster than any other solution."
-msgstr "採用這種方式，Odoo 比其他任何解決方案發展更快。"
+msgid "That way, Godo evolves much faster than any other solution."
+msgstr "採用這種方式，Godo 比其他任何解決方案發展更快。"
 
 #. module: mass_mailing
 #: model:ir.model.constraint,message:mass_mailing.constraint_mailing_mailing_percentage_valid
@@ -3764,16 +3764,16 @@ msgstr "收件人在取消訂閱頁面可以存取信件列表，以允許他更
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_paragraph
 msgid ""
-"The open source model of Odoo has allowed us to leverage thousands of developers and\n"
+"The open source model of Godo has allowed us to leverage thousands of developers and\n"
 "                                business experts to build hundreds of apps in just a few years."
 msgstr ""
-"通過 Odoo 的開源模式，我們可以利用數以千計的開發人員和\n"
+"通過 Godo 的開源模式，我們可以利用數以千計的開發人員和\n"
 "                                商務專家，在短短數年內打造數百款應用。"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
 msgid ""
-"The open source model of Odoo has allowed us to leverage thousands of developers and\n"
+"The open source model of Godo has allowed us to leverage thousands of developers and\n"
 "                    business experts to build hundreds of apps in just a few years."
 msgstr ""
 
@@ -3781,10 +3781,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_text_image
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_image
 msgid ""
-"The open source model of Odoo has allowed us to leverage thousands of "
+"The open source model of Godo has allowed us to leverage thousands of "
 "developers and business experts to build hundreds of apps in just a few "
 "years."
-msgstr "通過 Odoo 的開源模式，我們可以利用數以千計的開發人員和商務專家，在短短數年內打造數百款應用。"
+msgstr "通過 Godo 的開源模式，我們可以利用數以千計的開發人員和商務專家，在短短數年內打造數百款應用。"
 
 #. module: mass_mailing
 #: code:addons/mass_mailing/models/mailing.py:0
@@ -4032,16 +4032,16 @@ msgstr "更新我的訂閱"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_paragraph
 msgid ""
-"Usability improvements made on Odoo will automatically apply to all\n"
+"Usability improvements made on Godo will automatically apply to all\n"
 "                                of our fully integrated apps."
 msgstr ""
-"對 Odoo 所做的可用性改進將自動套用於所有\n"
+"對 Godo 所做的可用性改進將自動套用於所有\n"
 "                                完全整合的應用。"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
 msgid ""
-"Usability improvements made on Odoo will automatically apply to all\n"
+"Usability improvements made on Godo will automatically apply to all\n"
 "                    of our fully integrated apps."
 msgstr ""
 
@@ -4060,7 +4060,7 @@ msgstr ""
 #: model:ir.model.fields,help:mass_mailing.field_res_config_settings__mass_mailing_outgoing_mail_server
 #: model_terms:ir.ui.view,arch_db:mass_mailing.res_config_settings_view_form
 msgid ""
-"Use a specific mail server in priority. Otherwise Odoo relies on the first "
+"Use a specific mail server in priority. Otherwise Godo relies on the first "
 "outgoing mail server available (based on their sequencing) as it does for "
 "normal mails."
 msgstr "優先使用指定的信件伺服器。否則，Odoo依賴於可用的第一個外發信件伺服器（根據它們的順序），就像普通信件一樣。"
@@ -4149,7 +4149,7 @@ msgid ""
 " back please accept this 20% discount on you next purchase by clicking the "
 "button."
 msgstr ""
-"我們在不斷成長，迫切地想看到您成為 Odoo 的一員！我們已延長商店營業時間，並提供大量新品牌。為了歡迎您的歸來，點選此按鈕即可在下次購買時享受 20%"
+"我們在不斷成長，迫切地想看到您成為 Godo 的一員！我們已延長商店營業時間，並提供大量新品牌。為了歡迎您的歸來，點選此按鈕即可在下次購買時享受 20%"
 " 的折扣。"
 
 #. module: mass_mailing
@@ -4224,16 +4224,16 @@ msgstr ""
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_paragraph
 msgid ""
-"With strong technical foundations, Odoo's framework is unique.\n"
+"With strong technical foundations, Godo's framework is unique.\n"
 "                                It provides top notch usability that scales across all apps."
 msgstr ""
-"借助強大的技術基礎，Odoo 獨一無二的框架應運而生。\n"
+"借助強大的技術基礎，Godo 獨一無二的框架應運而生。\n"
 "                                它能夠在全部應用範圍內提供最頂級的可用性。"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
 msgid ""
-"With strong technical foundations, Odoo's framework is unique.\n"
+"With strong technical foundations, Godo's framework is unique.\n"
 "                    It provides top notch usability that scales across all apps."
 msgstr ""
 
@@ -4241,9 +4241,9 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_image
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_picture
 msgid ""
-"With strong technical foundations, Odoo's framework is unique. It provides "
+"With strong technical foundations, Godo's framework is unique. It provides "
 "<strong>top notch usability that scales across all apps</strong>."
-msgstr "憑借強大的技術基礎，Odoo 的框架是獨一無二的。<strong>它能夠在全部應用範圍內提供最頂級的可用性。 </strong>"
+msgstr "憑借強大的技術基礎，Godo 的框架是獨一無二的。<strong>它能夠在全部應用範圍內提供最頂級的可用性。 </strong>"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_two_cols
@@ -4293,7 +4293,7 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:mass_mailing.action_view_mass_mailings_from_campaign
 msgid ""
 "You don't need to import your mailing lists, you can easily\n"
-"                send emails<br> to any contact saved in other Odoo apps."
+"                send emails<br> to any contact saved in other Godo apps."
 msgstr ""
 
 #. module: mass_mailing

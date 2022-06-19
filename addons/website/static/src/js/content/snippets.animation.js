@@ -654,13 +654,13 @@ registry.mediaVideo = publicWidget.Widget.extend(MobileYoutubeAutoplayMixin, {
      */
     start: function () {
         // TODO: this code should be refactored to make more sense and be better
-        // integrated with Odoo (this refactoring should be done in master).
+        // integrated with Godo (this refactoring should be done in master).
 
         const proms = [this._super.apply(this, arguments)];
         let iframeEl = this.$target[0].querySelector(':scope > iframe');
 
         // The following code is only there to ensure compatibility with
-        // videos added before bug fixes or new Odoo versions where the
+        // videos added before bug fixes or new Godo versions where the
         // <iframe/> element is properly saved.
         if (!iframeEl) {
             iframeEl = this._generateIframe();

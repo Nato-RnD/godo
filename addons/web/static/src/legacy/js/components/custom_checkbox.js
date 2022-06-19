@@ -8,7 +8,7 @@ odoo.define('web.CustomCheckbox', function (require) {
     /**
      * Custom checkbox
      * 
-     * Component that can be used in templates to render the custom checkbox of Odoo.
+     * Component that can be used in templates to render the custom checkbox of Godo.
      * 
      * <CustomCheckbox
      *     value="boolean"

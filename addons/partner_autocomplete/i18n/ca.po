@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* partner_autocomplete
 # 
@@ -11,7 +11,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.4\n"
+"Project-Id-Version: Godo Server saas~14.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-12 07:50+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -44,8 +44,8 @@ msgstr "Empreses"
 #. module: partner_autocomplete
 #: code:addons/partner_autocomplete/models/res_company.py:0
 #, python-format
-msgid "Company auto-completed by Odoo Partner Autocomplete Service"
-msgstr "Empresa autocompletada pel servei d'autocompletat de socis de Odoo"
+msgid "Company auto-completed by Godo Partner Autocomplete Service"
+msgstr "Empresa autocompletada pel servei d'autocompletat de socis de Godo"
 
 #. module: partner_autocomplete
 #: model:ir.model.fields,field_description:partner_autocomplete.field_res_company__partner_gid
@@ -164,8 +164,8 @@ msgstr "Sincronització d'autocompletat de socis"
 #. module: partner_autocomplete
 #: code:addons/partner_autocomplete/models/res_partner.py:0
 #, python-format
-msgid "Partner created by Odoo Partner Autocomplete Service"
-msgstr "Soci creat pel Servei d'autocompletat de Socis de Odoo"
+msgid "Partner created by Godo Partner Autocomplete Service"
+msgstr "Soci creat pel Servei d'autocompletat de Socis de Godo"
 
 #. module: partner_autocomplete
 #. openerp-web

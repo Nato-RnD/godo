@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 # Endpoints of the API.
 # See https://docs.adyen.com/api-explorer/#/CheckoutService/v67/overview for Checkout API

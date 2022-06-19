@@ -1,5 +1,5 @@
 [Unit]
-Description=Odoo Open Source ERP and CRM
+Description=Godo Open Source ERP and CRM
 After=network.target
 
 [Service]

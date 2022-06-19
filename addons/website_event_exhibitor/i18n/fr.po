@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website_event_exhibitor
 # 
@@ -7,13 +7,13 @@
 # Martin Trigaux, 2021
 # Melanie Bernard <mbe@odoo.com>, 2021
 # Alexandra Jubert <aju@odoo.com>, 2021
-# Priscilla (prs) Odoo <prs@odoo.com>, 2021
+# Priscilla (prs) Godo <prs@odoo.com>, 2021
 # Vallen Delobel <edv@odoo.com>, 2021
 # Cécile Collart <cco@odoo.com>, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:29+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
@@ -952,8 +952,8 @@ msgstr "par ex. : OpenWood Decoration"
 
 #. module: website_event_exhibitor
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_form
-msgid "e.g. : https://www.odoo.com"
-msgstr "par ex. : https://www.odoo.com"
+msgid "e.g. : https://smartlifevn.com"
+msgstr "par ex. : https://smartlifevn.com"
 
 #. module: website_event_exhibitor
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_form

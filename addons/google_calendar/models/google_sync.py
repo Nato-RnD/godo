@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import logging
 from contextlib import contextmanager
@@ -21,9 +21,9 @@ _logger = logging.getLogger(__name__)
 
 
 # API requests are sent to Google Calendar after the current transaction ends.
-# This ensures changes are sent to Google only if they really happened in the Odoo database.
+# This ensures changes are sent to Google only if they really happened in the Godo database.
 # It is particularly important for event creation , otherwise the event might be created
-# twice in Google if the first creation crashed in Odoo.
+# twice in Google if the first creation crashed in Godo.
 def after_commit(func):
     @wraps(func)
     def wrapped(self, *args, **kwargs):
@@ -102,7 +102,7 @@ class GoogleSync(models.AbstractModel):
         elif synced:
             # Since we can not delete such an event (see method comment), we archive it.
             # Notice that archiving an event will delete the associated event on Google.
-            # Then, since it has been deleted on Google, the event is also deleted on Odoo DB (_sync_google2odoo).
+            # Then, since it has been deleted on Google, the event is also deleted on Godo DB (_sync_google2odoo).
             self.action_archive()
             return True
         return super().unlink()
@@ -138,10 +138,10 @@ class GoogleSync(models.AbstractModel):
 
     @api.model
     def _sync_google2odoo(self, google_events: GoogleEvent, default_reminders=()):
-        """Synchronize Google recurrences in Odoo. Creates new recurrences, updates
+        """Synchronize Google recurrences in Godo. Creates new recurrences, updates
         existing ones.
 
-        :param google_recurrences: Google recurrences to synchronize in Odoo
+        :param google_recurrences: Google recurrences to synchronize in Godo
         :return: synchronized odoo recurrences
         """
         existing = google_events.exists(self.env)
@@ -258,7 +258,7 @@ class GoogleSync(models.AbstractModel):
                         self.with_context(dont_notify=True).need_sync = False
 
     def _get_records_to_sync(self, full_sync=False):
-        """Return records that should be synced from Odoo to Google
+        """Return records that should be synced from Godo to Google
 
         :param full_sync: If True, all events attended by the user are returned
         :return: events
@@ -286,9 +286,9 @@ class GoogleSync(models.AbstractModel):
 
     @api.model
     def _odoo_values(self, google_event: GoogleEvent, default_reminders=()):
-        """Implements this method to return a dict of Odoo values corresponding
+        """Implements this method to return a dict of Godo values corresponding
         to the Google event given as parameter
-        :return: dict of Odoo formatted values
+        :return: dict of Godo formatted values
         """
         raise NotImplementedError()
 

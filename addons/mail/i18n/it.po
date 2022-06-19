@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mail
 # 
@@ -10,7 +10,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -3123,8 +3123,8 @@ msgstr "Con e-mail"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__res_users__notification_type__inbox
-msgid "Handle in Odoo"
-msgstr "Tramite Odoo"
+msgid "Handle in Godo"
+msgstr "Tramite Godo"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_resend_message__has_cancel
@@ -3370,7 +3370,7 @@ msgid ""
 "If set, the queue manager will send the email after the date. If not set, "
 "the email will be send as soon as possible."
 msgstr ""
-"Se questa opzione è definita, il Odoo manderà l'email dopo la data. Se "
+"Se questa opzione è definita, il Godo manderà l'email dopo la data. Se "
 "questa opzione non è definita, l'email sarà inviata non appena possibile. "
 
 #. module: mail
@@ -3414,11 +3414,11 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_res_config_settings__alias_domain
 msgid ""
-"If you have setup a catch-all email domain redirected to the Odoo server, "
+"If you have setup a catch-all email domain redirected to the Godo server, "
 "enter the domain name here."
 msgstr ""
 "Se un dominio catch-all è stato configurato per essere reindirizzato su "
-"Odoo, inserire qui il dominio."
+"Godo, inserire qui il dominio."
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_resend_cancel_view_form
@@ -4939,18 +4939,18 @@ msgstr "Numero di messaggi non letti"
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_light
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_paynow
 #: model_terms:ir.ui.view,arch_db:mail.message_notification_email
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/components/notification_alert/notification_alert.xml:0
 #, python-format
 msgid ""
-"Odoo Push notifications have been blocked. Go to your browser settings to "
+"Godo Push notifications have been blocked. Go to your browser settings to "
 "allow them."
 msgstr ""
-"Le notifiche push di Odoo sono state bloccate. Per consentirle andare nelle "
+"Le notifiche push di Godo sono state bloccate. Per consentirle andare nelle "
 "impostazioni del browser."
 
 #. module: mail
@@ -4958,9 +4958,9 @@ msgstr ""
 #: code:addons/mail/static/src/components/notification_request/notification_request.js:0
 #, python-format
 msgid ""
-"Odoo will not have the permission to send native notifications on this "
+"Godo will not have the permission to send native notifications on this "
 "device."
-msgstr "Odoo non avrà il permesso di inviare notifiche native sul dispositivo"
+msgstr "Godo non avrà il permesso di inviare notifiche native sul dispositivo"
 
 #. module: mail
 #. openerp-web
@@ -5437,11 +5437,11 @@ msgstr "Attendere..."
 msgid ""
 "Policy on how to handle Chatter notifications:\n"
 "- Handle by Emails: notifications are sent to your email address\n"
-"- Handle in Odoo: notifications appear in your Odoo Inbox"
+"- Handle in Godo: notifications appear in your Godo Inbox"
 msgstr ""
 "Politica su come gestire le notifiche del chatter:\n"
 "- Email: le notifiche sono inviate sull'indirizzo email\n"
-"- Odoo: le notifiche appaiono nella posta in arrivo Odoo"
+"- Godo: le notifiche appaiono nella posta in arrivo Godo"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_contact
@@ -5498,7 +5498,7 @@ msgstr ""
 #: code:addons/mail/models/mail_thread.py:0
 #, python-format
 msgid ""
-"Posting a message with channels as listeners is not supported since Odoo "
+"Posting a message with channels as listeners is not supported since Godo "
 "14.3+. Please update code accordingly."
 msgstr ""
 
@@ -6906,11 +6906,11 @@ msgstr "L'utente interno responsabile di questo contatto. "
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_model_id
 #: model:ir.model.fields,help:mail.field_mail_channel__alias_model_id
 msgid ""
-"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+"The model (Godo Document Kind) to which this alias corresponds. Any incoming"
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
-"Il modello (tipo di documento Odoo) a cui corrisponde questo alias. Le "
+"Il modello (tipo di documento Godo) a cui corrisponde questo alias. Le "
 "e-mail in ingresso che non rispondono a un record esistente attiveranno la "
 "creazione di un nuovo record per questo modello (es. lavoro di un progetto)"
 
@@ -7043,11 +7043,11 @@ msgstr "Questa è la loro prima connessione. Augura loro buona fortuna."
 msgid ""
 "This option permanently removes any track of email after it's been sent, "
 "including from the Technical menu in the Settings, in order to preserve "
-"storage space of your Odoo database."
+"storage space of your Godo database."
 msgstr ""
 "Questa opzione rimuove in modo permanente qualsiasi traccia di un'e-mail "
 "dopo l'invio, anche dal menù tecnico nelle impostazioni. Serve per "
-"preservare lo spazio di archiviazione del database Odoo."
+"preservare lo spazio di archiviazione del database Godo."
 
 #. module: mail
 #. openerp-web

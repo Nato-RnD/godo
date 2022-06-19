@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mail
 # 
@@ -20,7 +20,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -3133,8 +3133,8 @@ msgstr "Xử lý bằng email"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__res_users__notification_type__inbox
-msgid "Handle in Odoo"
-msgstr "Xử lý trong Odoo"
+msgid "Handle in Godo"
+msgstr "Xử lý trong Godo"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_resend_message__has_cancel
@@ -3422,10 +3422,10 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_res_config_settings__alias_domain
 msgid ""
-"If you have setup a catch-all email domain redirected to the Odoo server, "
+"If you have setup a catch-all email domain redirected to the Godo server, "
 "enter the domain name here."
 msgstr ""
-"Nếu bạn đã thiết lập một miền email catch-all chuyển hướng đến máy chủ Odoo,"
+"Nếu bạn đã thiết lập một miền email catch-all chuyển hướng đến máy chủ Godo,"
 " hãy nhập tên miền vào đây."
 
 #. module: mail
@@ -4944,25 +4944,25 @@ msgstr "Số tin chưa đọc"
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_light
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_paynow
 #: model_terms:ir.ui.view,arch_db:mail.message_notification_email
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/components/notification_alert/notification_alert.xml:0
 #, python-format
 msgid ""
-"Odoo Push notifications have been blocked. Go to your browser settings to "
+"Godo Push notifications have been blocked. Go to your browser settings to "
 "allow them."
 msgstr ""
-"Thông báo đẩy Odoo đã bị chặn. Đi tới cài đặt trình duyệt để cho phép."
+"Thông báo đẩy Godo đã bị chặn. Đi tới cài đặt trình duyệt để cho phép."
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/components/notification_request/notification_request.js:0
 #, python-format
 msgid ""
-"Odoo will not have the permission to send native notifications on this "
+"Godo will not have the permission to send native notifications on this "
 "device."
 msgstr "Hệ thống hiện sẽ không có quyền để gửi thông báo trên thiết bị này."
 
@@ -5436,11 +5436,11 @@ msgstr "Vui lòng đợi..."
 msgid ""
 "Policy on how to handle Chatter notifications:\n"
 "- Handle by Emails: notifications are sent to your email address\n"
-"- Handle in Odoo: notifications appear in your Odoo Inbox"
+"- Handle in Godo: notifications appear in your Godo Inbox"
 msgstr ""
 "Chính sách xử lý thông báo của chatter:\n"
 "- Xử lý bằng email: thông báo được gửi tới địa chỉ email của bạn\n"
-"- Xử lý trong Odoo: thông báo xuất hiện trong hộp thư đến Odoo"
+"- Xử lý trong Godo: thông báo xuất hiện trong hộp thư đến Godo"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_contact
@@ -5499,10 +5499,10 @@ msgstr ""
 #: code:addons/mail/models/mail_thread.py:0
 #, python-format
 msgid ""
-"Posting a message with channels as listeners is not supported since Odoo "
+"Posting a message with channels as listeners is not supported since Godo "
 "14.3+. Please update code accordingly."
 msgstr ""
-"Đăng tin nhắn trong kênh với tư cách là thính giả không được hỗ trợ từ Odoo "
+"Đăng tin nhắn trong kênh với tư cách là thính giả không được hỗ trợ từ Godo "
 "14.3+. Vui lòng cập nhật mã tương ứng."
 
 #. module: mail
@@ -6907,11 +6907,11 @@ msgstr "Tài khoản người dùng nội bộ có liên kết với liên lạc
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_model_id
 #: model:ir.model.fields,help:mail.field_mail_channel__alias_model_id
 msgid ""
-"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+"The model (Godo Document Kind) to which this alias corresponds. Any incoming"
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
-"Mô hình (Kiểu tài liệu Odoo) mà bí danh này tương tác. Bất kỳ email nào nhận"
+"Mô hình (Kiểu tài liệu Godo) mà bí danh này tương tác. Bất kỳ email nào nhận"
 " được mà không trả lời một hồ sơ cụ thể sẽ tạo ra hồ sơ mới trong mô hình "
 "này. (ví dụ: Nhiệm vụ dự án) "
 
@@ -7045,7 +7045,7 @@ msgstr "Đây là kết nối đầu tiên của họ. Chúc họ may mắn."
 msgid ""
 "This option permanently removes any track of email after it's been sent, "
 "including from the Technical menu in the Settings, in order to preserve "
-"storage space of your Odoo database."
+"storage space of your Godo database."
 msgstr ""
 "Tùy chọn này sẽ xóa vĩnh viễn mọi dấu vết của email sau khi nó được gửi đi, "
 "bao gồm cả từ menu Kỹ thuật trong Cài đặt, để duy trì không gian lưu trữ "

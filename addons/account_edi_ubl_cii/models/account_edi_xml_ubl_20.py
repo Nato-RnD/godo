@@ -241,7 +241,7 @@ class AccountEdiXmlUBL20(models.AbstractModel):
 
         Allowances are distinguished from charges using the ChargeIndicator node with 'false' as value.
 
-        Note that allowance charges do not exist for credit notes in UBL 2.0, so if we apply discount in Odoo
+        Note that allowance charges do not exist for credit notes in UBL 2.0, so if we apply discount in Godo
         the net price will not be consistent with the unit price, but we cannot do anything about it
 
         :param line:    An invoice line.
@@ -265,7 +265,7 @@ class AccountEdiXmlUBL20(models.AbstractModel):
             # Must be 'false' since this method is for allowances.
             'charge_indicator': 'false',
 
-            # A reason should be provided. In Odoo, we only manage discounts.
+            # A reason should be provided. In Godo, we only manage discounts.
             # Full code list is available here:
             # https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5189/
             'allowance_charge_reason_code': 95,

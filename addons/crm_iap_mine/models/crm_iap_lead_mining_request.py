@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import logging
 
@@ -266,7 +266,7 @@ class CRMLeadMiningRequest(models.Model):
 
             template_values = data['company_data']
             template_values.update({
-                'flavor_text': _("Opportunity created by Odoo Lead Generation"),
+                'flavor_text': _("Opportunity created by Godo Lead Generation"),
                 'people_data': data.get('people_data'),
             })
             messages_to_post[data['company_data']['clearbit_id']] = template_values

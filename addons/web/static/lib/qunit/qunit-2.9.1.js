@@ -1251,7 +1251,7 @@
 
   var LISTENERS = Object.create(null);
   var SUPPORTED_EVENTS = ["runStart", "suiteStart", "testStart", "assertion", "testEnd", "suiteEnd", "runEnd"];
-  SUPPORTED_EVENTS.push("OdooBeforeTestHook", "OdooAfterTestHook"); // Odoo customization
+  SUPPORTED_EVENTS.push("OdooBeforeTestHook", "OdooAfterTestHook"); // Godo customization
 
   /**
    * Emits an event with the specified data to all currently registered listeners.
@@ -3007,7 +3007,7 @@
 
   			_this.started = now();
 			emit("testStart", _this.testReport.start(true));
-			emit("OdooBeforeTestHook"); // Odoo customization
+			emit("OdooBeforeTestHook"); // Godo customization
   			return runLoggingCallbacks("testStart", {
   				name: _this.testName,
   				module: module.name,
@@ -3148,7 +3148,7 @@
   			this.pushFailure("Expected at least one assertion, but none were run - call " + "expect(0) to accept zero assertions.", this.stack);
   		}
 
-        emit("OdooAfterTestHook", this); // Odoo customization
+        emit("OdooAfterTestHook", this); // Godo customization
 
   		var i,
   		    module = this.module,
@@ -5339,7 +5339,7 @@
   		assertLi.innerHTML = message;
   		assertList.appendChild(assertLi);
 
-      // Odoo Customisation!!!
+      // Godo Customisation!!!
       // Crappy hack to display traceback with sourcemaps if debug=assets
       if (lastError && QUnit.annotateTraceback && debug && debug.includes("assets")) {
           const pre = assertLi.querySelector("pre");

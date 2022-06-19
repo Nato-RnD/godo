@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import datetime
 import logging
@@ -613,7 +613,7 @@ class Team(models.Model):
     as a member of one of the Sales Team.
 </p>""")
             if user_team_id:
-                action['help'] += _("<p>As you don't belong to any Sales Team, Odoo opens the first one by default.</p>")
+                action['help'] += _("<p>As you don't belong to any Sales Team, Godo opens the first one by default.</p>")
 
         action_context = safe_eval(action['context'], {'uid': self.env.uid})
         if user_team_id:

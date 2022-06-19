@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import ast
 import collections.abc
@@ -323,7 +323,7 @@ def load_information_from_description_file(module, mod_path=None):
         # default values for descriptor
         info = {
             'application': False,
-            'author': 'Odoo S.A.',
+            'author': 'Godo S.A.',
             'auto_install': False,
             'category': 'Uncategorized',
             'depends': [],

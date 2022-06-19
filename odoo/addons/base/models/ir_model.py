@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 import itertools
 import logging
 import re
@@ -1458,7 +1458,7 @@ class IrModelSelection(models.Model):
 
 class IrModelConstraint(models.Model):
     """
-    This model tracks PostgreSQL foreign keys and constraints used by Odoo
+    This model tracks PostgreSQL foreign keys and constraints used by Godo
     models.
     """
     _name = 'ir.model.constraint'
@@ -1607,7 +1607,7 @@ class IrModelConstraint(models.Model):
 
 class IrModelRelation(models.Model):
     """
-    This model tracks PostgreSQL tables used to implement Odoo many2many
+    This model tracks PostgreSQL tables used to implement Godo many2many
     relations.
     """
     _name = 'ir.model.relation'
@@ -1855,7 +1855,7 @@ class IrModelData(models.Model):
            * allows easy data integration with third-party systems,
              making import/export/sync of data possible, as records
              can be uniquely identified across multiple systems
-           * allows tracking the origin of data installed by Odoo
+           * allows tracking the origin of data installed by Godo
              modules themselves, thus making it possible to later
              update them seamlessly.
     """

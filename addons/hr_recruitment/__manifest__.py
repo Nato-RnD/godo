@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Recruitment',
@@ -8,7 +8,7 @@
     'sequence': 90,
     'summary': 'Track your recruitment pipeline',
     'description': "",
-    'website': 'https://www.odoo.com/app/recruitment',
+    'website': 'https://smartlifevn.com/app/recruitment',
     'depends': [
         'hr',
         'calendar',

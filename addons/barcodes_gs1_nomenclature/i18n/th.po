@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* barcodes_gs1_nomenclature
 # 
@@ -7,12 +7,12 @@
 # Seksan Poltree <seksan.poltree@gmail.com>, 2021
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2021
 # Pornvibool Tippayawat <pornvibool.t@gmail.com>, 2021
-# Odoo Thaidev <odoothaidev@gmail.com>, 2021
+# Godo Thaidev <odoothaidev@gmail.com>, 2021
 # Wichanon Jamwutthipreecha, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 14:47+0000\n"
 "PO-Revision-Date: 2021-09-14 12:20+0000\n"
@@ -176,13 +176,13 @@ msgstr "ทางเลือกตัวคั่น FNC1 ไม่ใช่ Re
 #: model:ir.model.fields,help:barcodes_gs1_nomenclature.field_barcode_rule__gs1_content_type
 msgid ""
 "The GS1 content type defines what kind of data the rule will process the "
-"barcode as:        * Date: the barcode will be converted into a Odoo "
+"barcode as:        * Date: the barcode will be converted into a Godo "
 "datetime;        * Measure: the barcode's value is related to a specific "
 "UoM;        * Numeric Identifier: fixed length barcode following a specific "
 "encoding;        * Alpha-Numeric Name: variable length barcode."
 msgstr ""
 "ประเภทเนื้อหา GS1 กำหนดประเภทของข้อมูลที่กฎจะประมวลผลบาร์โค้ดเป็น: * วันที่:"
-" บาร์โค้ดจะถูกแปลงเป็นวันที่และเวลาของ Odoo; * การวัด: "
+" บาร์โค้ดจะถูกแปลงเป็นวันที่และเวลาของ Godo; * การวัด: "
 "ค่าของบาร์โค้ดเกี่ยวข้องกับหน่วยวัดเฉพาะ * ตัวระบุตัวเลข: "
 "บาร์โค้ดความยาวคงที่ตามการเข้ารหัสเฉพาะ * ชื่อตัวเลขอัลฟ่า: "
 "ตวามยาวตัวแปรบาร์โค้ด"

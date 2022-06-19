@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Pakistan - Accounting',
     'version': '1.0',
     'category': 'Accounting/Localizations/Account Charts',
     'description': """ This is the base module to manage chart of accounts and localization for the Pakistan """,
-    'author': 'Odoo S.A.',
+    'author': 'Godo S.A.',
     'depends': ['account'],
     'data': [
         'data/account_chart_template_data.xml',

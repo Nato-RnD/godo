@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* account_check_printing
 # 
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:19+0000\n"
@@ -217,16 +217,16 @@ msgstr "Numeració manual"
 #. module: account_check_printing
 #: model:ir.model.fields,help:account_check_printing.field_account_payment__payment_method_line_id
 msgid ""
-"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Manual: Pay or Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"Manual: pagueu o rebeu pagaments per qualsevol mètode fora d'Odoo.\n"
+"Manual: pagueu o rebeu pagaments per qualsevol mètode fora d'Godo.\n"
 "Adquirents de pagament: cada mètode de pagament té el seu propi mètode de pagament. Sol·liciteu una transacció en/a una targeta gràcies a un token de pagament guardat pel soci en comprar o subscriure's en línia.\n"
-"Xec: pagueu factures amb xec i imprimiu-lo des d'Odoo.\n"
+"Xec: pagueu factures amb xec i imprimiu-lo des d'Godo.\n"
 "Dipòsit per lots: coure diversos xecs de clients alhora generant i enviant un dipòsit per lots al banc. El mòdul account_batch_payment és necessari.\n"
 "Transferència de crèdit SEPA: pagueu a la zona SEPA enviant un fitxer de transferència de crèdit SEPA al vostre banc. Mòdul account_sepa és necessari.\n"
 "Dèbit Directe SEPA: Rep pagaments a la zona SEPA gràcies a un mandat que t'haurà atorgat el teu soci. Mòdul account_sepa és necessari.\n"

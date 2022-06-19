@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* base_setup
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:20+0000\n"
@@ -345,8 +345,8 @@ msgstr "ใส่ที่อยู่อีเมลล์"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Extract and analyze Odoo data from Google Spreadsheet"
-msgstr "แยกและวิเคราะห์ข้อมูล Odoo จาก Google Spreadsheet"
+msgid "Extract and analyze Godo data from Google Spreadsheet"
+msgstr "แยกและวิเคราะห์ข้อมูล Godo จาก Google Spreadsheet"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -534,15 +534,15 @@ msgstr "OAuth Authentication"
 #. openerp-web
 #: code:addons/base_setup/static/src/xml/res_config_edition.xml:0
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: base_setup
 #. openerp-web
 #: code:addons/base_setup/static/src/xml/res_config_edition.xml:0
 #, python-format
-msgid "Odoo S.A."
-msgstr "Odoo S.A."
+msgid "Godo S.A."
+msgstr "Godo S.A."
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -663,8 +663,8 @@ msgstr "ใช้ผู้ให้บริการการพิสูจน
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
-msgid "Use external pads in Odoo Notes"
-msgstr "ใช้บันทึกภายนอกใน Odoo Notes"
+msgid "Use external pads in Godo Notes"
+msgstr "ใช้บันทึกภายนอกใน Godo Notes"
 
 #. module: base_setup
 #: model:ir.model,name:base_setup.model_res_users
@@ -675,11 +675,11 @@ msgstr "ผู้ใช้งาน"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid ""
-"When populating your address book, Odoo provides a list of matching "
+"When populating your address book, Godo provides a list of matching "
 "companies. When selecting one item, the company data and logo are auto-"
 "filled."
 msgstr ""
-"เมื่อใส่สมุดที่อยู่ของคุณ Odoo จะให้รายชื่อ บริษัท ที่ตรงกัน "
+"เมื่อใส่สมุดที่อยู่ของคุณ Godo จะให้รายชื่อ บริษัท ที่ตรงกัน "
 "เมื่อเลือกหนึ่งรายการข้อมูล บริษัท และโลโก้จะถูกเติมอัตโนมัติ"
 
 #. module: base_setup

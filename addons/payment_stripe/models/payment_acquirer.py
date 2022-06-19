@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import logging
 import uuid
@@ -31,7 +31,7 @@ class PaymentAcquirer(models.Model):
     stripe_webhook_secret = fields.Char(
         string="Webhook Signing Secret",
         help="If a webhook is enabled on your Stripe account, this signing secret must be set to "
-             "authenticate the messages sent from Stripe to Odoo.",
+             "authenticate the messages sent from Stripe to Godo.",
         groups='base.group_system')
 
     #=== CONSTRAINT METHODS ===#
@@ -76,7 +76,7 @@ class PaymentAcquirer(models.Model):
 
         If the acquirer is already enabled, close the current window. Otherwise, generate a Stripe
         Connect onboarding link and redirect the user to it. If provided, the menu id is included in
-        the URL the user is redirected to when coming back on Odoo after the onboarding. If the link
+        the URL the user is redirected to when coming back on Godo after the onboarding. If the link
         generation failed, redirect the user to the acquirer form.
 
         Note: This method serves as a hook for modules that would fully implement Stripe Connect.

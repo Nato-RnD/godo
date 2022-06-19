@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* payment_paypal
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.4\n"
+"Project-Id-Version: Godo Server saas~14.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-12 07:49+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -25,17 +25,17 @@ msgstr ""
 msgid ""
 "<br/><br/>\n"
 "                Thanks,<br/>\n"
-"                <b>The Odoo Team</b>"
+"                <b>The Godo Team</b>"
 msgstr ""
 "<br/><br/>\n"
 "                Grazie,<br/>\n"
-"                <b>il team Odoo</b>"
+"                <b>il team Godo</b>"
 
 #. module: payment_paypal
 #: code:addons/payment_paypal/models/payment_acquirer.py:0
 #, python-format
-msgid "Add your PayPal account to Odoo"
-msgstr "Aggiungi il conto Paypal a Odoo"
+msgid "Add your PayPal account to Godo"
+msgstr "Aggiungi il conto Paypal a Godo"
 
 #. module: payment_paypal
 #: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer__paypal_email_account
@@ -49,13 +49,13 @@ msgid ""
 "                <br/><br/>\n"
 "                You have received a payment through PayPal.<br/>\n"
 "                Kindly follow the instructions given by PayPal to create your account.<br/>\n"
-"                Then, help us complete your Paypal credentials in Odoo.<br/><br/>"
+"                Then, help us complete your Paypal credentials in Godo.<br/><br/>"
 msgstr ""
 "Ciao,\n"
 "                <br/><br/>\n"
 "                Hai ricevuto un pagamento attraverso PayPal.<br/>\n"
 "                Per favore segui le istruzioni date da PayPal per creare il tuo account.<br/>\n"
-"                Successivamente, aiutaci a completare le tue credenziali Paypal su Odoo.<br/><br/>"
+"                Successivamente, aiutaci a completare le tue credenziali Paypal su Godo.<br/><br/>"
 
 #. module: payment_paypal
 #: model_terms:ir.ui.view,arch_db:payment_paypal.payment_acquirer_form
@@ -161,8 +161,8 @@ msgstr ""
 
 #. module: payment_paypal
 #: model:ir.model.fields,help:payment_paypal.field_payment_transaction__paypal_type
-msgid "This has no use in Odoo except for debugging."
-msgstr "Questo non ha alcun uso in Odoo, tranne che per il debug."
+msgid "This has no use in Godo except for debugging."
+msgstr "Questo non ha alcun uso in Godo, tranne che per il debug."
 
 #. module: payment_paypal
 #: model:ir.model.fields,field_description:payment_paypal.field_payment_acquirer__paypal_use_ipn

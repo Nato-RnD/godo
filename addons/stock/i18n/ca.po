@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* stock
 # 
@@ -23,7 +23,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:18+0000\n"
 "PO-Revision-Date: 2021-09-14 12:26+0000\n"
@@ -1227,11 +1227,11 @@ msgstr "Abans de la data planificada"
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Godo S.A. "
 "responsibility."
 msgstr ""
 "El text següent serveix com a suggeriment i no implica la responsabilitat "
-"d'Odoo S.A."
+"d'Godo S.A."
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__res_partner__picking_warn__block
@@ -2150,10 +2150,10 @@ msgstr "Rutes per defecte a través del magatzem"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_orderpoint
 msgid ""
-"Define a minimum stock rule so that Odoo creates automatically requests for "
+"Define a minimum stock rule so that Godo creates automatically requests for "
 "quotations or confirmed manufacturing orders to resupply your stock."
 msgstr ""
-"Defineix una regla mínima de les accions per tal que Odoo creï "
+"Defineix una regla mínima de les accions per tal que Godo creï "
 "automàticament sol· licituds de citació o confirmades ordres de fabricació "
 "per reabastir les vostres accions."
 
@@ -2166,14 +2166,14 @@ msgstr "Definir un nou magatzem"
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
 "Define your locations to reflect your warehouse structure and\n"
-"            organization. Odoo is able to manage physical locations\n"
+"            organization. Godo is able to manage physical locations\n"
 "            (warehouses, shelves, bin, etc), partner locations (customers,\n"
 "            vendors) and virtual locations which are the counterpart of\n"
 "            the stock operations like the manufacturing orders\n"
 "            consumptions, inventories, etc."
 msgstr ""
 "Defineixi les seves ubicacions per reflectir la seva estructura de magatzem "
-"i organització. Odoo és capaç de gestionar ubicacions físiques (magatzems, "
+"i organització. Godo és capaç de gestionar ubicacions físiques (magatzems, "
 "estanteries, cubs, etc.), ubicacions de socis (clients, proveïdors) i "
 "ubicacions virtuals que són la contrapartida de les operacions d'estoc com "
 "les ordres de fabricació consum, inventaris, etc."
@@ -2654,7 +2654,7 @@ msgstr "Correu electrònic enviat al client una vegada fet l'ordre."
 #. module: stock
 #: model_terms:digest.tip,tip_description:stock.digest_tip_stock_0
 msgid ""
-"Enjoy a quick-paced experience with the Odoo barcode app. It is blazing fast"
+"Enjoy a quick-paced experience with the Godo barcode app. It is blazing fast"
 " and works even without a stable internet connection. It supports all flows:"
 " inventory adjustments, batch picking, moving lots or pallets, low inventory"
 " checks, etc. Go to the \"Apps\" menu to activate the barcode interface."
@@ -2687,14 +2687,14 @@ msgstr "Error"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
-"Every stock operation in Odoo moves the products from one\n"
+"Every stock operation in Godo moves the products from one\n"
 "            location to another one.  For instance, if you receive products\n"
-"            from a vendor, Odoo will move products from the Vendor\n"
+"            from a vendor, Godo will move products from the Vendor\n"
 "            location to the Stock location. Each report can be performed on\n"
 "            physical, partner or virtual locations."
 msgstr ""
-"Cada operació d'estoc en Odoo mou els productes d'una ubicació a una altra. "
-"Per exemple, si rep productes d'un proveïdor, Odoo mourà els productes de la"
+"Cada operació d'estoc en Godo mou els productes d'una ubicació a una altra. "
+"Per exemple, si rep productes d'un proveïdor, Godo mourà els productes de la"
 " ubicació Proveïdor a la ubicació d'estoc. Es pot analitzar informes per "
 "ubicacions físiques, de tercers o virtuals."
 
@@ -3297,11 +3297,11 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking__show_reserved
 #: model:ir.model.fields,help:stock.field_stock_picking_type__show_reserved
 msgid ""
-"If this checkbox is ticked, Odoo will automatically pre-fill the detailed "
+"If this checkbox is ticked, Godo will automatically pre-fill the detailed "
 "operations with the corresponding products, locations and lot/serial "
 "numbers."
 msgstr ""
-"Si aquesta casella de selecció està marcada, Odoo preemplenarà "
+"Si aquesta casella de selecció està marcada, Godo preemplenarà "
 "automàticament les operacions detallades amb els productes, ubicacions i "
 "números de lot/sèrie corresponents."
 
@@ -8982,21 +8982,21 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_min_qty
 msgid ""
 "When the virtual stock goes below the Min Quantity specified for this field,"
-" Odoo generates a procurement to bring the forecasted quantity to the Max "
+" Godo generates a procurement to bring the forecasted quantity to the Max "
 "Quantity."
 msgstr ""
 "Quan les existències virtuals estiguin per sota de la quantitat mínima "
-"especificada en aquest camp, Odoo generarà un abastiment per portar la "
+"especificada en aquest camp, Godo generarà un abastiment per portar la "
 "quantitat prevista a la quantitat màxima."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_max_qty
 msgid ""
-"When the virtual stock goes below the Min Quantity, Odoo generates a "
+"When the virtual stock goes below the Min Quantity, Godo generates a "
 "procurement to bring the forecasted quantity to the Quantity specified as "
 "Max Quantity."
 msgstr ""
-"Quan les existències virtuals estiguin per sota de la quantitat, Odoo "
+"Quan les existències virtuals estiguin per sota de la quantitat, Godo "
 "generarà un abastiment per portar la quantitat prevista a la quantitat "
 "especificada com aquí com màxima."
 
@@ -9341,10 +9341,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
 msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will process all the quantities."
+"<i>apply</i> Godo will process all the quantities."
 msgstr ""
 "Encara no heu registrat <i>done </i> quantitats, clicant a <i>apply </i> "
-"Odoo processarà totes les quantitats."
+"Godo processarà totes les quantitats."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation

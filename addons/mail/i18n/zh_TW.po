@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* mail
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:23+0000\n"
@@ -3053,7 +3053,7 @@ msgstr "用信件處理"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__res_users__notification_type__inbox
-msgid "Handle in Odoo"
+msgid "Handle in Godo"
 msgstr "在Odoo內處理"
 
 #. module: mail
@@ -3331,7 +3331,7 @@ msgstr ""
 #. module: mail
 #: model:ir.model.fields,help:mail.field_res_config_settings__alias_domain
 msgid ""
-"If you have setup a catch-all email domain redirected to the Odoo server, "
+"If you have setup a catch-all email domain redirected to the Godo server, "
 "enter the domain name here."
 msgstr "如果您設定了電子信件域名重導向到Odoo伺服器，請在這裡輸入域名。"
 
@@ -4820,26 +4820,26 @@ msgstr "未讀訊息的數量"
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_light
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_paynow
 #: model_terms:ir.ui.view,arch_db:mail.message_notification_email
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/components/notification_alert/notification_alert.xml:0
 #, python-format
 msgid ""
-"Odoo Push notifications have been blocked. Go to your browser settings to "
+"Godo Push notifications have been blocked. Go to your browser settings to "
 "allow them."
-msgstr "Odoo 推送通知已被阻止。轉到您的瀏覽器設置以允許它們。"
+msgstr "Godo 推送通知已被阻止。轉到您的瀏覽器設置以允許它們。"
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/components/notification_request/notification_request.js:0
 #, python-format
 msgid ""
-"Odoo will not have the permission to send native notifications on this "
+"Godo will not have the permission to send native notifications on this "
 "device."
-msgstr "Odoo 沒有權限在該設備上發送本地通知。"
+msgstr "Godo 沒有權限在該設備上發送本地通知。"
 
 #. module: mail
 #. openerp-web
@@ -5294,7 +5294,7 @@ msgstr "請稍候..."
 msgid ""
 "Policy on how to handle Chatter notifications:\n"
 "- Handle by Emails: notifications are sent to your email address\n"
-"- Handle in Odoo: notifications appear in your Odoo Inbox"
+"- Handle in Godo: notifications appear in your Godo Inbox"
 msgstr ""
 "處理聊天通知的規則:\n"
 "- 通過EMail處理: 通知會發送至您的EMail地址\n"
@@ -5355,9 +5355,9 @@ msgstr "應在業務文檔上發布消息。使用 message_notify 向用戶發�
 #: code:addons/mail/models/mail_thread.py:0
 #, python-format
 msgid ""
-"Posting a message with channels as listeners is not supported since Odoo "
+"Posting a message with channels as listeners is not supported since Godo "
 "14.3+. Please update code accordingly."
-msgstr "自 Odoo 14.3+ 起，不支持將頻道作為聽眾發布消息。請相應地更新代碼。"
+msgstr "自 Godo 14.3+ 起，不支持將頻道作為聽眾發布消息。請相應地更新代碼。"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_borders
@@ -6736,7 +6736,7 @@ msgstr "負責此聯絡人的內部使用者。"
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_model_id
 #: model:ir.model.fields,help:mail.field_mail_channel__alias_model_id
 msgid ""
-"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+"The model (Godo Document Kind) to which this alias corresponds. Any incoming"
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
@@ -6861,8 +6861,8 @@ msgstr "這是他們的第一次登入。"
 msgid ""
 "This option permanently removes any track of email after it's been sent, "
 "including from the Technical menu in the Settings, in order to preserve "
-"storage space of your Odoo database."
-msgstr "此選項會在電子郵件發送後永久刪除任何跟踪，包括從設置中的技術選單中刪除，以保留您的 Odoo 資料庫的存儲空間。"
+"storage space of your Godo database."
+msgstr "此選項會在電子郵件發送後永久刪除任何跟踪，包括從設置中的技術選單中刪除，以保留您的 Godo 資料庫的存儲空間。"
 
 #. module: mail
 #. openerp-web

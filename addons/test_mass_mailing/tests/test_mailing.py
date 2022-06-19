@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo.addons.test_mass_mailing.data.mail_test_data import MAIL_TEMPLATE
 from odoo.addons.test_mass_mailing.tests.common import TestMassMailCommon
@@ -92,7 +92,7 @@ class TestMassMailing(TestMassMailCommon):
             mail_links_info=[[
                 ('url0', 'https://www.odoo.tz/my/%s' % record.name, True, {}),
                 ('url1', 'https://www.odoo.be', True, {}),
-                ('url2', 'https://www.odoo.com', True, {}),
+                ('url2', 'https://smartlifevn.com', True, {}),
                 ('url3', 'https://www.odoo.eu', True, {}),
                 ('url4', 'https://www.example.com/foo/bar?baz=qux', True, {'baz': 'qux'}),
                 ('url5', '%s/event/dummy-event-0' % mailing.get_base_url(), True, {}),

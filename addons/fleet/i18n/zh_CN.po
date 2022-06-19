@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* fleet
 # 
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:22+0000\n"
@@ -1343,16 +1343,16 @@ msgstr "品牌"
 #: model_terms:ir.actions.act_window,help:fleet.fleet_vehicle_log_contract_action
 msgid ""
 "Manage all your contracts (leasing, insurances, etc.) with\n"
-"            their related services, costs. Odoo will automatically warn\n"
+"            their related services, costs. Godo will automatically warn\n"
 "            you when some contracts have to be renewed."
 msgstr ""
 "管理所有合同（租赁、保险等）及\n"
-" 其相关服务、成本。当某些合同必须续订时，Odoo 将自动警告\n"
+" 其相关服务、成本。当某些合同必须续订时，Godo 将自动警告\n"
 " 您。"
 
 #. module: fleet
 #: model_terms:ir.actions.act_window,help:fleet.fleet_costs_reporting_action
-msgid "Manage efficiently your different effective vehicles Costs with Odoo."
+msgid "Manage efficiently your different effective vehicles Costs with Godo."
 msgstr "用Odoo有效地管理你不同的有效车辆成本。"
 
 #. module: fleet

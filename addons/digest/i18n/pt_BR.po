@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* digest
 # 
@@ -7,7 +7,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:21+0000\n"
@@ -26,8 +26,8 @@ msgstr "<span class=\"button\" id=\"button_open_report\">Abrir Relatório</span>
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main
-msgid "<span class=\"odoo_link_text\">Odoo</span>"
-msgstr "<span class=\"odoo_link_text\">Odoo</span>"
+msgid "<span class=\"odoo_link_text\">Godo</span>"
+msgstr "<span class=\"odoo_link_text\">Godo</span>"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main
@@ -324,8 +324,8 @@ msgstr "Próxima Data de Envio"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
-msgstr "Odoo Mobile"
+msgid "Godo Mobile"
+msgstr "Godo Mobile"
 
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_digest__periodicity
@@ -367,8 +367,8 @@ msgstr "Destinatários"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
-msgstr "Administre sua empresa de qualquer lugar com o <b>Odoo Mobile</b>."
+msgid "Run your business from anywhere with <b>Godo Mobile</b>."
+msgstr "Administre sua empresa de qualquer lugar com o <b>Godo Mobile</b>."
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
@@ -418,8 +418,8 @@ msgstr "Descrição da Dica"
 
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_2
-msgid "Tip: A calculator in Odoo"
-msgstr "Dica: uma calculadora no Odoo"
+msgid "Tip: A calculator in Godo"
+msgstr "Dica: uma calculadora no Godo"
 
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_1
@@ -443,8 +443,8 @@ msgstr "Dica: acelere seu fluxo de trabalho com atalhos"
 
 #. module: digest
 #: model:digest.tip,name:digest.digest_tip_digest_2
-msgid "Tip: A calculator in Odoo"
-msgstr "Dica: uma calculadora no Odoo"
+msgid "Tip: A calculator in Godo"
+msgstr "Dica: uma calculadora no Godo"
 
 #. module: digest
 #: model:digest.tip,name:digest.digest_tip_digest_1
@@ -542,13 +542,13 @@ msgstr "Você cancelou sua inscrição"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
-msgid "You may want to add new computed fields with Odoo Studio:"
-msgstr "Você pode querer adicionar novos campos calculados com o Odoo Studio:"
+msgid "You may want to add new computed fields with Godo Studio:"
+msgstr "Você pode querer adicionar novos campos calculados com o Godo Studio:"
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
-msgstr "Seu Resumo Periódico do Odoo"
+msgid "Your Godo Periodic Digest"
+msgstr "Seu Resumo Periódico do Godo"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form

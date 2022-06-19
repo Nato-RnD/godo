@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* hr
 # 
@@ -17,7 +17,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:22+0000\n"
@@ -2012,22 +2012,22 @@ msgstr "Số tin nhắn chưa đọc"
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_tree_action
 msgid ""
-"Odoo's department structure is used to manage all documents\n"
+"Godo's department structure is used to manage all documents\n"
 "                    related to employees by departments: expenses, timesheets,\n"
 "                    leaves, recruitments, etc."
 msgstr ""
-"Cấu trúc phòng ban của Odoo được sử dụng để quản lý tất cả tài liệu\n"
+"Cấu trúc phòng ban của Godo được sử dụng để quản lý tất cả tài liệu\n"
 "                    liên quan tới nhân viên theo phòng ban: chi phí, bảng chấm công,\n"
 "                    nghỉ phép, tuyển dụng, v.v."
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_kanban_action
 msgid ""
-"Odoo's department structure is used to manage all documents\n"
+"Godo's department structure is used to manage all documents\n"
 "                related to employees by departments: expenses, timesheets,\n"
 "                time off, recruitments, etc."
 msgstr ""
-"Cấu trúc phòng ban của Odoo được sử dụng để quản lý tất cả tài liệu\n"
+"Cấu trúc phòng ban của Godo được sử dụng để quản lý tất cả tài liệu\n"
 "                    liên quan tới nhân viên theo phòng ban: chi phí, bảng chấm công,\n"
 "                    nghỉ phép, tuyển dụng, v.v."
 
@@ -2951,22 +2951,22 @@ msgstr "Góa phụ"
 #: model_terms:ir.actions.act_window,help:hr.act_employee_from_department
 #: model_terms:ir.actions.act_window,help:hr.hr_employee_public_action
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the Godo employee screen, you\n"
 "                can easily find all the information you need for each person;\n"
 "                contact data, job position, availability, etc."
 msgstr ""
-"Chỉ cần nhìn lướt qua màn hình nhân viên Odoo, bạn đã\n"
+"Chỉ cần nhìn lướt qua màn hình nhân viên Godo, bạn đã\n"
 "               có thể dễ dàng tìm thấy thông tin bạn cần của mỗi người;\n"
 "               dữ liệu liên hệ, vị trí công việc, lịch trống, v.v."
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.open_view_employee_list_my
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the Godo employee screen, you\n"
 "               can easily find all the information you need for each person;\n"
 "               contact data, job position, availability, etc."
 msgstr ""
-"Chỉ cần nhìn lướt qua màn hình nhân viên Odoo, bạn đã\n"
+"Chỉ cần nhìn lướt qua màn hình nhân viên Godo, bạn đã\n"
 "               có thể dễ dàng tìm thấy thông tin bạn cần của mỗi người;\n"
 "               dữ liệu liên hệ, vị trí công việc, lịch trống, v.v."
 

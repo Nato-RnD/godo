@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from hashlib import md5
 
@@ -41,7 +41,7 @@ class PaymentAcquirer(models.Model):
 
         :param dict values: The values used to generate the signature
         :param bool incoming: Whether the signature must be generated for an incoming (PayU Latam to
-                              Odoo) or outgoing (Odoo to PayU Latam) communication.
+                              Godo) or outgoing (Godo to PayU Latam) communication.
         :return: The signature
         :rtype: str
         """

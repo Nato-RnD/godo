@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* web_editor
 # 
@@ -12,12 +12,12 @@
 # Clément Watthez <cwa@odoo.com>, 2022
 # Khadija Mbazaa <khadija.mbazaa@gmail.com>, 2022
 # Cécile Collart <cco@odoo.com>, 2022
-# Priscilla (prs) Odoo <prs@odoo.com>, 2022
+# Priscilla (prs) Godo <prs@odoo.com>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-10 08:53+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
@@ -2460,11 +2460,11 @@ msgstr "Cette image est une image externe"
 #, python-format
 msgid ""
 "This type of image is not supported for cropping.<br/>If you want to crop "
-"it, please first download it from the original source and upload it in Odoo."
+"it, please first download it from the original source and upload it in Godo."
 msgstr ""
 "Ce type d'image n'est pas pris en charge pour le recadrage. <br/>Si vous "
 "souhaitez le recadrer, veuillez d'abord le télécharger à partir de la source"
-" d'origine et le télécharger dans Odoo."
+" d'origine et le télécharger dans Godo."
 
 #. module: web_editor
 #. openerp-web
@@ -2908,15 +2908,15 @@ msgstr "exclusion"
 #. openerp-web
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
-msgid "https://www.odoo.com/logo.png"
-msgstr "https://www.odoo.com/logo.png"
+msgid "https://smartlifevn.com/logo.png"
+msgstr "https://smartlifevn.com/logo.png"
 
 #. module: web_editor
 #. openerp-web
 #: code:addons/web_editor/static/src/xml/wysiwyg.xml:0
 #, python-format
-msgid "https://www.odoo.com/mydocument"
-msgstr "https://www.odoo.com/mydocument"
+msgid "https://smartlifevn.com/mydocument"
+msgstr "https://smartlifevn.com/mydocument"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_image_optimization_widgets

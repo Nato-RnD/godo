@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* digest
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:19+0000\n"
 "PO-Revision-Date: 2021-09-14 12:21+0000\n"
@@ -27,7 +27,7 @@ msgstr "<span class=\"button\" id=\"button_open_report\">تقرير مفتوح</
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main
-msgid "<span class=\"odoo_link_text\">Odoo</span>"
+msgid "<span class=\"odoo_link_text\">Godo</span>"
 msgstr "<span class=\"odoo_link_text\">أودو</span> "
 
 #. module: digest
@@ -325,7 +325,7 @@ msgstr "تاريخ الإرسال التالي"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
+msgid "Godo Mobile"
 msgstr "أودو للهاتف المحمول "
 
 #. module: digest
@@ -368,7 +368,7 @@ msgstr "المستلمين "
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
+msgid "Run your business from anywhere with <b>Godo Mobile</b>."
 msgstr ""
 "تمكن من إدارة أعمالك من أي مكان باستخدام تطبيق <b>أودو للهاتف المحمول</b>. "
 
@@ -420,7 +420,7 @@ msgstr "وصف النصيحة "
 
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_2
-msgid "Tip: A calculator in Odoo"
+msgid "Tip: A calculator in Godo"
 msgstr "نصيحة: الآلة الحاسبة في أودو "
 
 #. module: digest
@@ -445,7 +445,7 @@ msgstr "نصيحة: قم بتسريع سير عملك عن طريق الاختص
 
 #. module: digest
 #: model:digest.tip,name:digest.digest_tip_digest_2
-msgid "Tip: A calculator in Odoo"
+msgid "Tip: A calculator in Godo"
 msgstr "نصيحة: الآلة الحاسبة في أودو "
 
 #. module: digest
@@ -545,12 +545,12 @@ msgstr "ألغيت اشتراكك بنجاح من "
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
-msgid "You may want to add new computed fields with Odoo Studio:"
+msgid "You may want to add new computed fields with Godo Studio:"
 msgstr "قد تحتاج إلى إضافة حقول محسوبة جديدة مع استديو أودو: "
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your Godo Periodic Digest"
 msgstr "موجزك الدوري من أودو "
 
 #. module: digest

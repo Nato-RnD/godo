@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Mollie Payment Acquirer',
@@ -9,7 +9,7 @@
     'summary': 'Payment Acquirer: Mollie Implementation',
     'description': """Mollie Payment Acquirer""",
 
-    'author': 'Odoo S.A, Applix BV, Droggol Infotech Pvt. Ltd.',
+    'author': 'Godo S.A, Applix BV, Droggol Infotech Pvt. Ltd.',
     'website': 'https://www.mollie.com',
 
     'depends': ['payment'],

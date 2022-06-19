@@ -62,7 +62,7 @@ registerInstancePatchModel('mail.partner', 'hr_holidays/static/src/models/partne
 registerFieldPatchModel('mail.partner', 'hr/static/src/models/partner/partner.js', {
     /**
      * Date of end of the out of office period of the partner as string.
-     * String is expected to use Odoo's date string format
+     * String is expected to use Godo's date string format
      * (examples: '2011-12-01' or '2011-12-01').
      */
     outOfOfficeDateEnd: attr(),

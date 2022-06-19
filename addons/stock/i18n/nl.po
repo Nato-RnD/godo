@@ -1,18 +1,18 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* stock
 # 
 # Translators:
 # Jordy Blankestijn <jblankestijn@erpopen.nl>, 2021
 # Yenthe Van Ginneken <yenthespam@gmail.com>, 2021
-# Odoo Experts Consultants <consultants@odooexperts.nl>, 2021
+# Godo Experts Consultants <consultants@odooexperts.nl>, 2021
 # Martin Trigaux, 2022
 # Pauline Thiry <pth@odoo.com>, 2022
 # Erwin van der Ploeg <erwin@odooexperts.nl>, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:18+0000\n"
 "PO-Revision-Date: 2021-09-14 12:26+0000\n"
@@ -1221,10 +1221,10 @@ msgstr "Voor geplande datum"
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Godo S.A. "
 "responsibility."
 msgstr ""
-"Onderstaande tekst dient als suggestie en geeft Odoo S.A. geen "
+"Onderstaande tekst dient als suggestie en geeft Godo S.A. geen "
 "verantwoordelijkheid."
 
 #. module: stock
@@ -2139,10 +2139,10 @@ msgstr "Standaard routes door het magazijn"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_orderpoint
 msgid ""
-"Define a minimum stock rule so that Odoo creates automatically requests for "
+"Define a minimum stock rule so that Godo creates automatically requests for "
 "quotations or confirmed manufacturing orders to resupply your stock."
 msgstr ""
-"Definieer een minimale voorraadregel, zodat Odoo automatisch aanvragen voor "
+"Definieer een minimale voorraadregel, zodat Godo automatisch aanvragen voor "
 "offertes of bevestigde productieorders kan aanmaken om je voorraad aan te "
 "vullen."
 
@@ -2155,14 +2155,14 @@ msgstr "Definieer een nieuw magazijn"
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
 "Define your locations to reflect your warehouse structure and\n"
-"            organization. Odoo is able to manage physical locations\n"
+"            organization. Godo is able to manage physical locations\n"
 "            (warehouses, shelves, bin, etc), partner locations (customers,\n"
 "            vendors) and virtual locations which are the counterpart of\n"
 "            the stock operations like the manufacturing orders\n"
 "            consumptions, inventories, etc."
 msgstr ""
 "Definieer je locaties om je magazijnstructuur en organisatie\n"
-"te reflecteren. Odoo kan fysieke locaties beheren\n"
+"te reflecteren. Godo kan fysieke locaties beheren\n"
 "(magazijnen, planken, bakken, enz), relatie locaties (klanten,\n"
 "leveranciers) en virtuele locaties die de tegenrekening zijn van de\n"
 "voorraad bewerkingen zoals de productieorder\n"
@@ -2644,12 +2644,12 @@ msgstr "E-mail verzonden naar de klant zodra de order is voltooid."
 #. module: stock
 #: model_terms:digest.tip,tip_description:stock.digest_tip_stock_0
 msgid ""
-"Enjoy a quick-paced experience with the Odoo barcode app. It is blazing fast"
+"Enjoy a quick-paced experience with the Godo barcode app. It is blazing fast"
 " and works even without a stable internet connection. It supports all flows:"
 " inventory adjustments, batch picking, moving lots or pallets, low inventory"
 " checks, etc. Go to the \"Apps\" menu to activate the barcode interface."
 msgstr ""
-"Geniet van een snelle ervaring met de Odoo barcode-app. Het is razendsnel en"
+"Geniet van een snelle ervaring met de Godo barcode-app. Het is razendsnel en"
 " werkt zelfs zonder een stabiele internetverbinding. Het ondersteunt alle "
 "stromen: voorraadaanpassingen, batch-picking, verplaatsen van partijen of "
 "pallets, lage voorraadcontroles, enz. Ga naar het menu \"Apps\" om de "
@@ -2678,14 +2678,14 @@ msgstr "Fout"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
-"Every stock operation in Odoo moves the products from one\n"
+"Every stock operation in Godo moves the products from one\n"
 "            location to another one.  For instance, if you receive products\n"
-"            from a vendor, Odoo will move products from the Vendor\n"
+"            from a vendor, Godo will move products from the Vendor\n"
 "            location to the Stock location. Each report can be performed on\n"
 "            physical, partner or virtual locations."
 msgstr ""
-"Elke voorraad bewerking in Odoo verplaatst het product van een locatie naar een \n"
-"andere. Bijvoorbeeld, als je producten ontvangt van een leverancier, zal Odoo de \n"
+"Elke voorraad bewerking in Godo verplaatst het product van een locatie naar een \n"
+"andere. Bijvoorbeeld, als je producten ontvangt van een leverancier, zal Godo de \n"
 "producten verplaatsen van de leverancierslocatie naar de voorraad locatie. Elk rapport\n"
 "kan toegepast worden op fysieke, partner of virtuele locaties."
 
@@ -3289,11 +3289,11 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking__show_reserved
 #: model:ir.model.fields,help:stock.field_stock_picking_type__show_reserved
 msgid ""
-"If this checkbox is ticked, Odoo will automatically pre-fill the detailed "
+"If this checkbox is ticked, Godo will automatically pre-fill the detailed "
 "operations with the corresponding products, locations and lot/serial "
 "numbers."
 msgstr ""
-"Indien aangevinkt, vult Odoo automatisch de gedetailleerde bewerkingen in "
+"Indien aangevinkt, vult Godo automatisch de gedetailleerde bewerkingen in "
 "met de overeenkomstige producten, locaties en partij- / serienummers."
 
 #. module: stock
@@ -8986,22 +8986,22 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_min_qty
 msgid ""
 "When the virtual stock goes below the Min Quantity specified for this field,"
-" Odoo generates a procurement to bring the forecasted quantity to the Max "
+" Godo generates a procurement to bring the forecasted quantity to the Max "
 "Quantity."
 msgstr ""
 "Wanneer een virtuele voorraad onder de minimale voorraad komt, zoals "
-"gespecificeerd in dit veld, zal Odoo een verwervingsopdracht genereren om de"
+"gespecificeerd in dit veld, zal Godo een verwervingsopdracht genereren om de"
 " verwachte voorraad aan te vullen tot de maximale hoeveelheid."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_max_qty
 msgid ""
-"When the virtual stock goes below the Min Quantity, Odoo generates a "
+"When the virtual stock goes below the Min Quantity, Godo generates a "
 "procurement to bring the forecasted quantity to the Quantity specified as "
 "Max Quantity."
 msgstr ""
 "Wanneer een virtuele voorraad onder de minimale voorraad komt, zoals "
-"gespecificeerd in dit veld, zal Odoo een aanvulopdracht genereren om de "
+"gespecificeerd in dit veld, zal Godo een aanvulopdracht genereren om de "
 "voorraadprognose aan te vullen tot de maximale hoeveelheid."
 
 #. module: stock
@@ -9355,10 +9355,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
 msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will process all the quantities."
+"<i>apply</i> Godo will process all the quantities."
 msgstr ""
 "Je hebt nog geen <i>gemaakte</i> hoeveelheden geregistreerd. Door op "
-"<i>toepassen</i> te klikken zal Odoo alle hoeveelheden verwerken."
+"<i>toepassen</i> te klikken zal Godo alle hoeveelheden verwerken."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation

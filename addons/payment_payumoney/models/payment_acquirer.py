@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import hashlib
 
@@ -32,7 +32,7 @@ class PaymentAcquirer(models.Model):
 
         :param dict values: The values used to generate the signature
         :param bool incoming: Whether the signature must be generated for an incoming (PayUmoney to
-                              Odoo) or outgoing (Odoo to PayUMoney) communication.
+                              Godo) or outgoing (Godo to PayUMoney) communication.
         :return: The shasign
         :rtype: str
         """

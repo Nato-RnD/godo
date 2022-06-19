@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 from odoo import api, models, fields, _
 from odoo.tests.common import Form
@@ -216,7 +216,7 @@ class AccountEdiFormat(models.Model):
         res = invoice.invoice_generate_xml()
         if invoice._is_commercial_partner_pa():
             invoice.message_post(
-                body=(_("Invoices for PA are not managed by Odoo, you can download the document and send it on your own."))
+                body=(_("Invoices for PA are not managed by Godo, you can download the document and send it on your own."))
             )
         else:
             invoice.l10n_it_send_state = 'to_send'

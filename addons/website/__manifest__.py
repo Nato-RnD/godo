@@ -1,12 +1,12 @@
 # -*- encoding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Website',
     'category': 'Website/Website',
     'sequence': 20,
     'summary': 'Enterprise website builder',
-    'website': 'https://www.odoo.com/app/website',
+    'website': 'https://smartlifevn.com/app/website',
     'version': '1.0',
     'description': "",
     'depends': [

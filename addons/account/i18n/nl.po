@@ -1,15 +1,15 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* account
 # 
 # Translators:
-# Odoo Experts Consultants <consultants@odooexperts.nl>, 2021
+# Godo Experts Consultants <consultants@odooexperts.nl>, 2021
 # Martin Trigaux, 2021
 # Erwin van der Ploeg <erwin@odooexperts.nl>, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-18 09:52+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
@@ -175,10 +175,10 @@ msgstr "-> Zie de gedeeltelijk afgeletterde boekingen"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid ""
-". The journal entries need to be computed by Odoo before being posted in "
+". The journal entries need to be computed by Godo before being posted in "
 "your company's currency."
 msgstr ""
-". De journaalboekingen moeten door Odoo worden berekend voordat ze in de "
+". De journaalboekingen moeten door Godo worden berekend voordat ze in de "
 "valuta van je bedrijf worden geboekt."
 
 #. module: account
@@ -3148,10 +3148,10 @@ msgstr "Eerder"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Godo S.A. "
 "responsibility."
 msgstr ""
-"Onderstaande tekst dient als suggestie en geeft Odoo S.A. geen "
+"Onderstaande tekst dient als suggestie en geeft Godo S.A. geen "
 "verantwoordelijkheid."
 
 #. module: account
@@ -4981,10 +4981,10 @@ msgstr "Datum Modus"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_financial_year_op__opening_date
 msgid ""
-"Date from which the accounting is managed in Odoo. It is the date of the "
+"Date from which the accounting is managed in Godo. It is the date of the "
 "opening entry."
 msgstr ""
-"Datum vanaf wanneer de boekhouding bijgehouden is in Odoo. Het is de datum "
+"Datum vanaf wanneer de boekhouding bijgehouden is in Godo. Het is de datum "
 "van de openingsbalans boeking."
 
 #. module: account
@@ -8593,12 +8593,12 @@ msgstr "Handmatige invoer"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__inbound_payment_method_line_ids
 msgid ""
-"Manual: Get paid by any method outside of Odoo.\n"
+"Manual: Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"Handmatig: Krijg betaald via elke methode buiten Odoo.\n"
+"Handmatig: Krijg betaald via elke methode buiten Godo.\n"
 "Betaalproviders: Elke Betaalproviders heeft zijn eigen betaalmethode. Vraag een transactie op/naar een kaart aan dankzij een betalingstoken dat door de partner is opgeslagen bij online aankopen of abonnementen.\n"
 "Batchstorting: Verzamel meerdere klantcheques tegelijk en genereer een batchstorting en dien deze in bij je bank. Module account_batch_payment is noodzakelijk.\n"
 "SEPA Incasso: Krijg betaald in de SEPA-zone dankzij een mandaat dat je klant je heeft gegeven. Module account_sepa is noodzakelijk.\n"
@@ -8606,28 +8606,28 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__outbound_payment_method_line_ids
 msgid ""
-"Manual: Pay by any method outside of Odoo.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Manual: Pay by any method outside of Godo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 msgstr ""
-"Handmatig: Betaal met elke methode buiten Odoo.\n"
-"Cheque: Betaal rekeningen met een cheque en print deze vanuit Odoo.\n"
+"Handmatig: Betaal met elke methode buiten Godo.\n"
+"Cheque: Betaal rekeningen met een cheque en print deze vanuit Godo.\n"
 "SEPA Betaalopdrachten: Betaal in de SEPA-zone door een SEPA Credit Transfer-bestand in te dienen bij je bank. Module account_sepa is noodzakelijk.\n"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_payment__payment_method_line_id
 #: model:ir.model.fields,help:account.field_account_payment_register__payment_method_line_id
 msgid ""
-"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Manual: Pay or Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"Handmatig: Betaal of word betaald met elke methode buiten Odoo.\n"
+"Handmatig: Betaal of word betaald met elke methode buiten Godo.\n"
 "Betaalproviders: Elke betaalproviders heeft zijn eigen Betaalmethode. Vraag een transactie op/naar een kaart aan dankzij een betalingstoken dat door de klant is opgeslagen bij online aankopen of abonnementen.\n"
-"Cheque: Betaal rekeningen met een cheque en print deze vanuit Odoo.\n"
+"Cheque: Betaal rekeningen met een cheque en print deze vanuit Godo.\n"
 "Batchstorting: Verzamel meerdere klantcheques tegelijk en genereer een batchstorting en dien deze in bij de bank. Module account_batch_payment is noodzakelijk.\n"
 "SEPA incasso: Betaal in de SEPA-zone door een SEPA Credit Transfer-bestand in te dienen bij je bank. Module account_sepa is noodzakelijk.\n"
 "SEPA betaling: Krijg betaald in de SEPA-zone dankzij een mandaat dat de klant je hebt gegeven. Module account_sepa is noodzakelijk.\n"
@@ -9342,39 +9342,39 @@ msgstr "Oktober"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_line
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Godo allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoice(s)."
 msgstr ""
-"Odoo laat je toe om een afschriftregel direct met de gerelateerde\n"
+"Godo laat je toe om een afschriftregel direct met de gerelateerde\n"
 "klant- of leveranciersfactuur af te letteren."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_tree
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Godo allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoices."
 msgstr ""
-"Odoo laat je toe om een afschriftregel direct met de gerelateerde\n"
+"Godo laat je toe om een afschriftregel direct met de gerelateerde\n"
 "klant- of leveranciersfactuur af te letteren."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_customer
-msgid "Odoo helps you easily track all activities related to a customer."
+msgid "Godo helps you easily track all activities related to a customer."
 msgstr ""
-"Odoo helpt je bij het gemakkelijk opvolgen van alle activiteiten gerelateerd"
+"Godo helpt je bij het gemakkelijk opvolgen van alle activiteiten gerelateerd"
 " aan een klant."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_supplier
-msgid "Odoo helps you easily track all activities related to a supplier."
+msgid "Godo helps you easily track all activities related to a supplier."
 msgstr ""
-"Odoo helpt je bij het gemakkelijk opvolgen van alle activiteiten gerelateerd"
+"Godo helpt je bij het gemakkelijk opvolgen van alle activiteiten gerelateerd"
 " aan een leverancier."
 
 #. module: account
@@ -11911,13 +11911,13 @@ msgid ""
 "\n"
 "Any file extension will be accepted.\n"
 "\n"
-"Only PDF and XML files will be interpreted by Odoo"
+"Only PDF and XML files will be interpreted by Godo"
 msgstr ""
 "Stuur een aparte e-mail voor elke factuur.\n"
 "\n"
 "Elke bestandsextensie wordt geaccepteerd.\n"
 "\n"
-"Alleen PDF- en XML-bestanden worden door Odoo geïnterpreteerd"
+"Alleen PDF- en XML-bestanden worden door Godo geïnterpreteerd"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.account_send_payment_receipt_by_email_action
@@ -14936,11 +14936,11 @@ msgstr "Deze boeking wordt geboekt op de boekhouddatum: %(date)s"
 msgid ""
 "This option permanently removes any track of email after it's been sent, "
 "including from the Technical menu in the Settings, in order to preserve "
-"storage space of your Odoo database."
+"storage space of your Godo database."
 msgstr ""
 "Deze optie verwijdert permanent elk spoor van e-mail nadat deze is "
 "verzonden, inclusief vanuit het Technisch menu in de Instellingen, om "
-"opslagruimte van je Odoo-database te behouden."
+"opslagruimte van je Godo-database te behouden."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account_template__chart_template_id
@@ -15925,8 +15925,8 @@ msgstr "Met valuta"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_tour_upload_bill
-msgid "With Odoo, you won't have to record bills manually"
-msgstr "Met Odoo hoeft je je rekeningen niet handmatig te registreren"
+msgid "With Godo, you won't have to record bills manually"
+msgstr "Met Godo hoeft je je rekeningen niet handmatig te registreren"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_search
@@ -15973,10 +15973,10 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_journal__invoice_reference_model
 msgid ""
 "You can choose different models for each type of reference. The default one "
-"is the Odoo reference."
+"is the Godo reference."
 msgstr ""
 "Je kunt verschillende modellen kiezen voor elk type referentie. De standaard"
-" is de Odoo-referentie."
+" is de Godo-referentie."
 
 #. module: account
 #: code:addons/account/models/account_journal.py:0

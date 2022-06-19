@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* hr
 # 
@@ -10,7 +10,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:22+0000\n"
@@ -2005,22 +2005,22 @@ msgstr "Кількість непрочитаних повідомлень"
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_tree_action
 msgid ""
-"Odoo's department structure is used to manage all documents\n"
+"Godo's department structure is used to manage all documents\n"
 "                    related to employees by departments: expenses, timesheets,\n"
 "                    leaves, recruitments, etc."
 msgstr ""
-"Структура відділу Odoo використовується для управління всіма документами\n"
+"Структура відділу Godo використовується для управління всіма документами\n"
 "                 пов'язаними з працівниками відділів: витрати, табелі,\n"
 "                 відпустки, рекрутинг та ін."
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_kanban_action
 msgid ""
-"Odoo's department structure is used to manage all documents\n"
+"Godo's department structure is used to manage all documents\n"
 "                related to employees by departments: expenses, timesheets,\n"
 "                time off, recruitments, etc."
 msgstr ""
-"Структура відділу Odoo використовується для управління всіма документами\n"
+"Структура відділу Godo використовується для управління всіма документами\n"
 "                 пов'язаними з працівниками відділів: витрати, табелі,\n"
 "                 відпустки, рекрутинг та ін."
 
@@ -2947,22 +2947,22 @@ msgstr "Вдівець/вдова"
 #: model_terms:ir.actions.act_window,help:hr.act_employee_from_department
 #: model_terms:ir.actions.act_window,help:hr.hr_employee_public_action
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the Godo employee screen, you\n"
 "                can easily find all the information you need for each person;\n"
 "                contact data, job position, availability, etc."
 msgstr ""
-"Зі швидким переглядом працівника на Odoo, ви\n"
+"Зі швидким переглядом працівника на Godo, ви\n"
 "можете легко знайти всю необхідну інформації по кожній людині;\n"
 "контактні дані, робоче місце, наявність і т. д."
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.open_view_employee_list_my
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the Godo employee screen, you\n"
 "               can easily find all the information you need for each person;\n"
 "               contact data, job position, availability, etc."
 msgstr ""
-"Швидким поглядом на екран працівника Odoo, ви\n"
+"Швидким поглядом на екран працівника Godo, ви\n"
 "               можете легко знайти інформацію, яка вам необхідна по кожній особі;\n"
 "               контактні дані, посада, наявність тощо."
 

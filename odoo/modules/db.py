@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import odoo.modules
 import logging
@@ -151,7 +151,7 @@ def has_trigram(cr):
     """ Test if the database has the a word_similarity function.
 
     The word_similarity is supposed to be provided by the PostgreSQL built-in
-    pg_trgm module but any similar function will be picked by Odoo.
+    pg_trgm module but any similar function will be picked by Godo.
 
     """
     cr.execute("SELECT proname FROM pg_proc WHERE proname='word_similarity'")

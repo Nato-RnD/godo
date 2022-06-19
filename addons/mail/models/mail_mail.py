@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import ast
 import base64
@@ -77,7 +77,7 @@ class MailMail(models.Model):
         help="Failure reason. This is usually the exception thrown by the email server, stored to ease the debugging of mailing issues.")
     auto_delete = fields.Boolean(
         'Auto Delete',
-        help="This option permanently removes any track of email after it's been sent, including from the Technical menu in the Settings, in order to preserve storage space of your Odoo database.")
+        help="This option permanently removes any track of email after it's been sent, including from the Technical menu in the Settings, in order to preserve storage space of your Godo database.")
     scheduled_date = fields.Char('Scheduled Send Date',
         help="If set, the queue manager will send the email after the date. If not set, the email will be send as soon as possible.")
 
@@ -295,7 +295,7 @@ class MailMail(models.Model):
             except Exception as exc:
                 if raise_exception:
                     # To be consistent and backward compatible with mail_mail.send() raised
-                    # exceptions, it is encapsulated into an Odoo MailDeliveryException
+                    # exceptions, it is encapsulated into an Godo MailDeliveryException
                     raise MailDeliveryException(_('Unable to connect to SMTP Server'), exc)
                 else:
                     batch = self.browse(batch_ids)

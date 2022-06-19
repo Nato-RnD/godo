@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* partner_autocomplete
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.4\n"
+"Project-Id-Version: Godo Server saas~14.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-12 07:50+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
@@ -41,7 +41,7 @@ msgstr "الشركات "
 #. module: partner_autocomplete
 #: code:addons/partner_autocomplete/models/res_company.py:0
 #, python-format
-msgid "Company auto-completed by Odoo Partner Autocomplete Service"
+msgid "Company auto-completed by Godo Partner Autocomplete Service"
 msgstr ""
 "تم إكمال بيانات الشركة تلقائياً باستخدام خدمة الإكمال التلقائي للشريك لدى "
 "أودو "
@@ -163,7 +163,7 @@ msgstr "مزامنة إكمال الشريك تلقائيًا"
 #. module: partner_autocomplete
 #: code:addons/partner_autocomplete/models/res_partner.py:0
 #, python-format
-msgid "Partner created by Odoo Partner Autocomplete Service"
+msgid "Partner created by Godo Partner Autocomplete Service"
 msgstr "تم إنشاء الشريك من خلال خدمة إكمال الشريك تلقائيًا المقدمة من أودو"
 
 #. module: partner_autocomplete

@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* hr
 # 
@@ -14,7 +14,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:22+0000\n"
@@ -2001,22 +2001,22 @@ msgstr "Počet neprečítaných správ"
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_tree_action
 msgid ""
-"Odoo's department structure is used to manage all documents\n"
+"Godo's department structure is used to manage all documents\n"
 "                    related to employees by departments: expenses, timesheets,\n"
 "                    leaves, recruitments, etc."
 msgstr ""
-"Odoo štruktúra oddelení slúži na správu všetkých dokumentov\n"
+"Godo štruktúra oddelení slúži na správu všetkých dokumentov\n"
 "vzťahujúcich sa na zamestnancov oddelenia: náklady, časové výkazy,\n"
 "pracovné voľno, nábory, atď."
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_kanban_action
 msgid ""
-"Odoo's department structure is used to manage all documents\n"
+"Godo's department structure is used to manage all documents\n"
 "                related to employees by departments: expenses, timesheets,\n"
 "                time off, recruitments, etc."
 msgstr ""
-"Odoo štruktúra oddelení slúži na správu všetkých dokumentov\n"
+"Godo štruktúra oddelení slúži na správu všetkých dokumentov\n"
 "vzťahujúcich sa na zamestnancov oddelenia: náklady, časové výkazy,\n"
 "pracovné voľno, nábory, atď."
 
@@ -2944,22 +2944,22 @@ msgstr "Vdovec"
 #: model_terms:ir.actions.act_window,help:hr.act_employee_from_department
 #: model_terms:ir.actions.act_window,help:hr.hr_employee_public_action
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the Godo employee screen, you\n"
 "                can easily find all the information you need for each person;\n"
 "                contact data, job position, availability, etc."
 msgstr ""
-"Pri letmom pohľade na prehľad zamestnancov Odoo,\n"
+"Pri letmom pohľade na prehľad zamestnancov Godo,\n"
 "môžete ľahko nájsť všetky informácie, ktoré potrebujete pre každú osobu;\n"
 "kontaktné údaje, pracovná pozícia, dostupnosť, atď."
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.open_view_employee_list_my
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the Godo employee screen, you\n"
 "               can easily find all the information you need for each person;\n"
 "               contact data, job position, availability, etc."
 msgstr ""
-"Pri letmom pohľade na Odoo zamestnanckú obrazovku, vy\n"
+"Pri letmom pohľade na Godo zamestnanckú obrazovku, vy\n"
 "môžet ľahko nájsť všetky informácie, ktoré potrebujete pre každú osobu;\n"
 "kontaktné údaje, pracovná pozícia, dostupnosť, atď."
 

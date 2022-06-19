@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website_links
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.4\n"
+"Project-Id-Version: Godo Server saas~14.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-12 07:50+0000\n"
 "PO-Revision-Date: 2021-09-14 12:28+0000\n"
@@ -253,10 +253,10 @@ msgstr "Deze code is al in gebruik"
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
 msgid ""
 "Those trackers can be used in Google Analytics to track clicks and visitors,"
-" or in Odoo reports to track opportunities and related revenues."
+" or in Godo reports to track opportunities and related revenues."
 msgstr ""
 "Deze trackers kunnen worden gebruikt in Google Analytics om klikken en "
-"bezoekers te volgen, of in Odoo rapportages om verkoopkansen en omzet te "
+"bezoekers te volgen, of in Godo rapportages om verkoopkansen en omzet te "
 "volgen."
 
 #. module: website_links
@@ -339,8 +339,8 @@ msgstr "Bijv. Zoekmachines, Website pagina, .."
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
-msgid "e.g. https://www.odoo.com/contactus"
-msgstr "Bijv. https://www.odoo.com/contactus"
+msgid "e.g. https://smartlifevn.com/contactus"
+msgstr "Bijv. https://smartlifevn.com/contactus"
 
 #. module: website_links
 #. openerp-web

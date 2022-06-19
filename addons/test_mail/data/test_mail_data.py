@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 MAIL_TEMPLATE = """Return-Path: <whatever-2a840@postmaster.twitter.com>
 To: {to}
@@ -477,10 +477,10 @@ Résultat de recherche d'images pour "dessin la princesse au petit pois"
 --
 Soup
 
-Odoo S.A.
+Godo S.A.
 Chaussée de Namur, 40
 B-1367 Grand Rosière
-Web: http://www.odoo.com
+Web: http://smartlifevn.com
 
 
 --------------1F2D18B1129FC2F0B9EECF50
@@ -500,10 +500,10 @@ src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjCNAadd3NDM8g9w0P_-g
     <pre class="moz-signature" cols="72">--
 Soup
 
-Odoo S.A.
+Godo S.A.
 Chaussée de Namur, 40
 B-1367 Grand Rosière
-Web: <a class="moz-txt-link-freetext" href="http://www.odoo.com">http://www.odoo.com</a> </pre>
+Web: <a class="moz-txt-link-freetext" href="http://smartlifevn.com">http://smartlifevn.com</a> </pre>
   </body>
 </html>
 
@@ -565,7 +565,7 @@ From: "Test" <noreply+srglvrz-gmail.com@mycompany.example.com>
 Reply-To: "MY COMPANY" <info@mycompany.example.com>
 To: "Test" <test@anothercompany.example.com>
 Date: Tue, 24 Dec 2019 10:32:05 -0000
-X-Odoo-Objects: account.invoice-19177
+X-Godo-Objects: account.invoice-19177
 
 --16063919151.b32bE0eD.7--"""
 
@@ -796,7 +796,7 @@ aa.com" style=3D"text-decoration:none; color: white;">info@aust-mfg.com</a>=
                       </tr>
                       <tr>
                         <td align=3D"center">
-                            Powered by <a href=3D"https://www.odoo.com">Odo=
+                            Powered by <a href=3D"https://smartlifevn.com">Odo=
 o</a>.
                         </td>
                       </tr>
@@ -886,7 +886,7 @@ From: Mitchell Admin <admin@yourcompany.example.com>
 Reply-To: YourCompany Research & Development <aaa+catchall@test.ironsky>
 To: Raoul <{email_from}>
 Date: Mon, 15 Apr 2019 13:40:24 -0000
-X-Odoo-Objects: project.project-3, ,project.task-32
+X-Godo-Objects: project.project-3, ,project.task-32
 X-Spam-Status: No, score=-2.0 required=5.0 tests=ALL_TRUSTED,BAYES_00,
     DKIM_ADSP_NXDOMAIN,HEADER_FROM_DIFFERENT_DOMAINS,HTML_MESSAGE
     shortcircuit=no autolearn=no autolearn_force=no version=3.4.2

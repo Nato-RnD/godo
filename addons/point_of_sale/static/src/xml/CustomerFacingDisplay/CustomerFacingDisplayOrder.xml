@@ -40,7 +40,7 @@
                     <!-- Paymentlines -->
                     <t t-call="CustomerFacingDisplayPaymentLines"/>
 
-                    <!-- Odoo Logo -->
+                    <!-- Godo Logo -->
                     <div class="pos-odoo_logo_container"/>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* web
 # 
@@ -6,7 +6,7 @@
 # Amin Cheloh <nineamin@hotmail.com>, 2021
 # Pornvibool Tippayawat <pornvibool.t@gmail.com>, 2021
 # gsong <gsong2014@foxmail.com>, 2021
-# Odoo Thaidev <odoothaidev@gmail.com>, 2021
+# Godo Thaidev <odoothaidev@gmail.com>, 2021
 # Krisa C, 2022
 # Wichanon Jamwutthipreecha, 2022
 # Martin Trigaux, 2022
@@ -14,7 +14,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Godo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-24 08:20+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
@@ -2060,8 +2060,8 @@ msgstr "ฟูเชีย"
 #. openerp-web
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
-msgid "Get this feature and much more with Odoo Enterprise!"
-msgstr "รับฟีเจอร์นี้และฟีเจอร์อื่น ๆ อีกมากมายด้วย Odoo สำหรับองค์กร"
+msgid "Get this feature and much more with Godo Enterprise!"
+msgstr "รับฟีเจอร์นี้และฟีเจอร์อื่น ๆ อีกมากมายด้วย Godo สำหรับองค์กร"
 
 #. module: web
 #. openerp-web
@@ -2677,8 +2677,8 @@ msgstr "ข้อความหลายบรรทัด"
 #. openerp-web
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.js:0
 #, python-format
-msgid "My Odoo.com account"
-msgstr "บัญชี Odoo.com ของฉัน"
+msgid "My Godo.com account"
+msgstr "บัญชี Godo.com ของฉัน"
 
 #. module: web
 #. openerp-web
@@ -2903,68 +2903,68 @@ msgstr "อ็อบเจกต์:"
 #: code:addons/web/static/src/legacy/js/core/dialog.js:0
 #: model_terms:ir.ui.view,arch_db:web.brand_promotion_message
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Godo"
+msgstr "Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/apps.js:0
 #, python-format
-msgid "Odoo Apps will be available soon"
-msgstr "แอป Odoo จะพร้อมให้ใช้งานเร็วๆ นี้"
+msgid "Godo Apps will be available soon"
+msgstr "แอป Godo จะพร้อมให้ใช้งานเร็วๆ นี้"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Client Error"
-msgstr "ข้อผิดพลาดลูกค้า Odoo"
+msgid "Godo Client Error"
+msgstr "ข้อผิดพลาดลูกค้า Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/fields/upgrade_fields.js:0
 #, python-format
-msgid "Odoo Enterprise"
-msgstr "Odoo สำหรับองค์กร"
+msgid "Godo Enterprise"
+msgstr "Godo สำหรับองค์กร"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Error"
-msgstr "ข้อผิดพลาด Odoo"
+msgid "Godo Error"
+msgstr "ข้อผิดพลาด Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Network Error"
-msgstr "ข้อผิดพลาดเครือข่าย Odoo"
+msgid "Godo Network Error"
+msgstr "ข้อผิดพลาดเครือข่าย Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Server Error"
-msgstr "ข้อผิดพลาดของเซิร์ฟเวอร์ Odoo"
+msgid "Godo Server Error"
+msgstr "ข้อผิดพลาดของเซิร์ฟเวอร์ Godo"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Odoo Session Expired"
-msgstr "เซสชัน Odoo หมดอายุ"
+msgid "Godo Session Expired"
+msgstr "เซสชัน Godo หมดอายุ"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Warning"
-msgstr "คำเตือน Odoo"
+msgid "Godo Warning"
+msgstr "คำเตือน Godo"
 
 #. module: web
 #. openerp-web
@@ -3351,8 +3351,8 @@ msgstr "สนับสนุนโดย %s%s"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login_layout
-msgid "Powered by <span>Odoo</span>"
-msgstr "สนับสนุนโดย <span>Odoo</span>"
+msgid "Powered by <span>Godo</span>"
+msgstr "สนับสนุนโดย <span>Godo</span>"
 
 #. module: web
 #. openerp-web
@@ -4951,10 +4951,10 @@ msgstr ""
 #: code:addons/web/static/src/webclient/actions/action_service.js:0
 #, python-format
 msgid ""
-"You need to start Odoo with at least two workers to print a pdf version of "
+"You need to start Godo with at least two workers to print a pdf version of "
 "the reports."
 msgstr ""
-"คุณต้องเริ่มต้น Odoo กับพนักงานอย่างน้อยสองคนเพื่อพิมพ์รายงานในเวอร์ชัน pdf"
+"คุณต้องเริ่มต้น Godo กับพนักงานอย่างน้อยสองคนเพื่อพิมพ์รายงานในเวอร์ชัน pdf"
 
 #. module: web
 #. openerp-web
@@ -4974,8 +4974,8 @@ msgstr ""
 #: code:addons/web/static/src/core/errors/error_dialogs.xml:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Your Odoo session expired. The current page is about to be refreshed."
-msgstr "เซสชัน Odoo ของคุณหมดอายุแล้ว หน้าปัจจุบันกำลังจะถูกรีเฟรช"
+msgid "Your Godo session expired. The current page is about to be refreshed."
+msgstr "เซสชัน Godo ของคุณหมดอายุแล้ว หน้าปัจจุบันกำลังจะถูกรีเฟรช"
 
 #. module: web
 #. openerp-web

@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': 'Denmark - Accounting',
     'version': '1.0',
-    'author': 'Odoo House ApS, VK DATA ApS',
+    'author': 'Godo House ApS, VK DATA ApS',
     'website': 'http://odoodanmark.dk',
     'category': 'Accounting/Localizations/Account Charts',
     'description': """

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import base64
 import json
@@ -165,7 +165,7 @@ class ResPartner(models.Model):
             partners._update_autocomplete_data(vals_list[0].get('vat', False))
             if partners.additional_info:
                 template_values = json.loads(partners.additional_info)
-                template_values['flavor_text'] = _("Partner created by Odoo Partner Autocomplete Service")
+                template_values['flavor_text'] = _("Partner created by Godo Partner Autocomplete Service")
                 partners.message_post_with_view(
                     'iap_mail.enrich_company',
                     values=template_values,

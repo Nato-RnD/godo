@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* account_check_printing
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:19+0000\n"
@@ -214,16 +214,16 @@ msgstr "Ручна нумерація"
 #. module: account_check_printing
 #: model:ir.model.fields,help:account_check_printing.field_account_payment__payment_method_line_id
 msgid ""
-"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Manual: Pay or Get paid by any method outside of Godo.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Check: Pay bills by check and print it from Godo.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"Вручну: сплачуйте або отримуйте гроші будь-яким способом за межами Odoo.\n"
+"Вручну: сплачуйте або отримуйте гроші будь-яким способом за межами Godo.\n"
 "Одержувачі платежів: кожен одержувач платежу має свій власний спосіб оплати. Замовте транзакцію на карту завдяки платіжному токену, збереженому партнером під час покупки або підписки в Інтернеті.\n"
-"Чек: оплачуйте рахунки чеком і роздрукуйте його з Odoo.\n"
+"Чек: оплачуйте рахунки чеком і роздрукуйте його з Godo.\n"
 "Груповий платіж. Зберіть кілька чеків клієнтів одночасно, створюючи та надсилаючи груповий платіж у свій банк. Необхідний модуль account_batch_payment.\n"
 "Кредитний переказ SEPA: оплачуйте в зоні SEPA, надіславши файл кредитного переказу SEPA у свій банк. Необхідний модуль account_sepa.\n"
 "Прямий дебет SEPA: отримуйте оплату в зоні SEPA завдяки дорученням, наданим вам вашим партнером. Необхідний модуль account_sepa.\n"

@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* website
 # 
@@ -11,7 +11,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~12.5\n"
+"Project-Id-Version: Godo Server saas~12.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-01 12:08+0000\n"
 "PO-Revision-Date: 2019-08-26 09:15+0000\n"
@@ -231,9 +231,9 @@ msgstr "75%"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
-msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
+msgid "<b>50,000+ companies</b> run Godo to grow their businesses."
 msgstr ""
-"<b>50 000+ firmaer</b> bruker Odoo for å få virksomhetene sine til å vokse."
+"<b>50 000+ firmaer</b> bruker Godo for å få virksomhetene sine til å vokse."
 
 #. module: website
 #. openerp-web
@@ -1119,13 +1119,13 @@ msgid ""
 "Analyze the efficiency of your marketing campaigns by using trackable UTM "
 "trackers (campaigns, medium, sources). Create trackers and follow clicks "
 "from the Promote menu of your website. Those trackers can be used in Google "
-"Analytics or in Odoo reports where you can see the opportunities and sales "
+"Analytics or in Godo reports where you can see the opportunities and sales "
 "revenue generated thanks to your links."
 msgstr ""
 "Analyser effektiviteten av dine markedsføringskampanjer ved å bruke sporbare"
 " UTM-trackere (kampanjer, medier, kilder). Opprett trackere og følg klikkene"
 " fra Promoter-menyen på ditt nettsted. Disse trackerne kan brukes i Google "
-"Analytics eller i Odoo-rapporter, hvor du kan se mulighetene og "
+"Analytics eller i Godo-rapporter, hvor du kan se mulighetene og "
 "salgsinntekter generert takket være linkene dine."
 
 #. module: website
@@ -2228,8 +2228,8 @@ msgstr "Følg alle"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "Follow your website traffic in Odoo."
-msgstr "Følg trafikken til nettsiden i Odoo."
+msgid "Follow your website traffic in Godo."
+msgstr "Følg trafikken til nettsiden i Godo."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.theme_customize
@@ -2878,10 +2878,10 @@ msgstr "Det ser ut som filen din kalles av"
 #, python-format
 msgid ""
 "It might be possible to edit the relevant items or fix the issue in <a "
-"href=\"%s\">the classic Odoo interface</a>"
+"href=\"%s\">the classic Godo interface</a>"
 msgstr ""
 "Det kan være mulig å redigere de relevante oppføringene eller fikse "
-"problemet i det <a href=\"%s\">klassiske Odoo-grensesnittet</a>"
+"problemet i det <a href=\"%s\">klassiske Godo-grensesnittet</a>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
@@ -3559,47 +3559,47 @@ msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns
-msgid "Odoo - Sample 1 for three columns"
-msgstr "Odoo - Eksempel 1 for tre kolonner"
+msgid "Godo - Sample 1 for three columns"
+msgstr "Godo - Eksempel 1 for tre kolonner"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns
-msgid "Odoo - Sample 2 for three columns"
-msgstr "Odoo - Eksempel 2 for tre kolonner"
+msgid "Godo - Sample 2 for three columns"
+msgstr "Godo - Eksempel 2 for tre kolonner"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns
-msgid "Odoo - Sample 3 for three columns"
-msgstr "Odoo - Eksempel 3 for tre kolonner"
+msgid "Godo - Sample 3 for three columns"
+msgstr "Godo - Eksempel 3 for tre kolonner"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "Odoo Version"
-msgstr "Odoo-versjon"
+msgid "Godo Version"
+msgstr "Godo-versjon"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_quotes_carousel
 msgid ""
-"Odoo provides essential platform for our project management. Things are "
+"Godo provides essential platform for our project management. Things are "
 "better organized and more visible with it."
 msgstr ""
-"Odoo tilbyr en essensiell platform for vår prosjektstyring. Ting er bedre "
-"organisert og mer synlig med Odoo."
+"Godo tilbyr en essensiell platform for vår prosjektstyring. Ting er bedre "
+"organisert og mer synlig med Godo."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_picture
-msgid "Odoo • A picture with a caption"
-msgstr "Odoo • Et bilde med bildetekst"
+msgid "Godo • A picture with a caption"
+msgstr "Godo • Et bilde med bildetekst"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_text
-msgid "Odoo • Image and Text"
-msgstr "Odoo • Bilde og tekst"
+msgid "Godo • Image and Text"
+msgstr "Godo • Bilde og tekst"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_text_image
-msgid "Odoo • Text and Image"
-msgstr "Odoo • Tekst og bilde"
+msgid "Godo • Text and Image"
+msgstr "Godo • Tekst og bilde"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_kanban
@@ -5804,8 +5804,8 @@ msgstr "gratis nettsted"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "instance of Odoo, the"
-msgstr "instans av Odoo,"
+msgid "instance of Godo, the"
+msgstr "instans av Godo,"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.menu_search
@@ -5858,8 +5858,8 @@ msgstr "nettsted"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "www.odoo.com"
-msgstr "www.odoo.com"
+msgid "smartlifevn.com"
+msgstr "smartlifevn.com"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.500

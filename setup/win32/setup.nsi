@@ -1,4 +1,4 @@
-﻿# Part of Odoo. See LICENSE file for full copyright and licensing details.
+﻿# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 # TODO: Avoid to uninstall the database
 # TODO: We can update the server or the clients without to uninstall the all-in-one
@@ -40,7 +40,7 @@ Unicode True
     Exch $R2
 !macroend
 
-!define PUBLISHER 'Odoo S.A.'
+!define PUBLISHER 'Godo S.A.'
 
 !ifndef MAJOR_VERSION
     !define MAJOR_VERSION '15'
@@ -70,13 +70,13 @@ Unicode True
 	!define TOOLSDIR 'c:\odoobuild'
 !endif
 
-!define PRODUCT_NAME "Odoo"
+!define PRODUCT_NAME "Godo"
 !define DISPLAY_NAME "${PRODUCT_NAME} ${MAJOR_VERSION}.${MINOR_VERSION}"
 
 !define UNINSTALL_BASE_REGISTRY_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall"
 !define UNINSTALL_REGISTRY_KEY "${UNINSTALL_BASE_REGISTRY_KEY}\${DISPLAY_NAME}"
 
-!define UNINSTALL_REGISTRY_KEY_SERVER "${UNINSTALL_BASE_REGISTRY_KEY}\Odoo Server ${VERSION}"
+!define UNINSTALL_REGISTRY_KEY_SERVER "${UNINSTALL_BASE_REGISTRY_KEY}\Godo Server ${VERSION}"
 
 !define REGISTRY_KEY "SOFTWARE\${DISPLAY_NAME}"
 
@@ -145,7 +145,7 @@ Page Custom ShowProxyTokenDialogPage
 !define MUI_FINISHPAGE_RUN_TEXT "$(DESC_FinishPageText)"
 !define MUI_FINISHPAGE_RUN_FUNCTION "LaunchLink"
 !define MUI_FINISHPAGE_LINK $(DESC_FinishPage_Link)
-!define MUI_FINISHPAGE_LINK_LOCATION "https://www.odoo.com/page/contactus"
+!define MUI_FINISHPAGE_LINK_LOCATION "https://smartlifevn.com/page/contactus"
 !insertmacro MUI_PAGE_FINISH
 
 !insertmacro MUI_UNPAGE_WELCOME
@@ -158,11 +158,11 @@ Page Custom ShowProxyTokenDialogPage
 !insertmacro MUI_RESERVEFILE_LANGDLL
 
 ; English
-LangString DESC_Odoo_Server ${LANG_ENGLISH} "Install the Odoo Server with all the Odoo standard modules."
-LangString DESC_PostgreSQL ${LANG_ENGLISH} "Install the PostgreSQL RDBMS used by Odoo."
-LangString DESC_FinishPage_Link ${LANG_ENGLISH} "Contact Odoo for Partnership and/or Support"
+LangString DESC_Odoo_Server ${LANG_ENGLISH} "Install the Godo Server with all the Godo standard modules."
+LangString DESC_PostgreSQL ${LANG_ENGLISH} "Install the PostgreSQL RDBMS used by Godo."
+LangString DESC_FinishPage_Link ${LANG_ENGLISH} "Contact Godo for Partnership and/or Support"
 LangString DESC_AtLeastOneComponent ${LANG_ENGLISH} "You have to choose at least one component"
-LangString DESC_CanNotInstallPostgreSQL ${LANG_ENGLISH} "You can not install the PostgreSQL database without the Odoo Server"
+LangString DESC_CanNotInstallPostgreSQL ${LANG_ENGLISH} "You can not install the PostgreSQL database without the Godo Server"
 LangString WARNING_HostNameIsEmpty ${LANG_ENGLISH} "The hostname for the connection to the PostgreSQL Server is empty"
 LangString WARNING_UserNameIsEmpty ${LANG_ENGLISH} "The username for the connection to the PostgreSQL Server is empty"
 LangString WARNING_PasswordIsEmpty ${LANG_ENGLISH} "The password for the connection to the PostgreSQL Server is empty"
@@ -172,20 +172,20 @@ LangString DESC_PostgreSQL_Hostname ${LANG_ENGLISH} "Hostname"
 LangString DESC_PostgreSQL_Port ${LANG_ENGLISH} "Port"
 LangString DESC_PostgreSQL_Username ${LANG_ENGLISH} "Username"
 LangString DESC_PostgreSQL_Password ${LANG_ENGLISH} "Password"
-LangString Profile_AllInOne ${LANG_ENGLISH} "Odoo Server And PostgreSQL Server"
-LangString Profile_Server ${LANG_ENGLISH} "Odoo Server Only"
+LangString Profile_AllInOne ${LANG_ENGLISH} "Godo Server And PostgreSQL Server"
+LangString Profile_Server ${LANG_ENGLISH} "Godo Server Only"
 LangString Profile_LocalProxyMode ${LANG_ENGLISH} "Local Proxy Mode"
-LangString TITLE_Odoo_Server ${LANG_ENGLISH} "Odoo Server"
+LangString TITLE_Odoo_Server ${LANG_ENGLISH} "Godo Server"
 LangString TITLE_PostgreSQL ${LANG_ENGLISH} "PostgreSQL Database"
 LangString TITLE_LocalProxyMode ${LANG_ENGLISH} "Local Proxy Mode"
-LangString DESC_FinishPageText ${LANG_ENGLISH} "Start Odoo"
+LangString DESC_FinishPageText ${LANG_ENGLISH} "Start Godo"
 
 ; French
-LangString DESC_Odoo_Server ${LANG_FRENCH} "Installation du Serveur Odoo avec tous les modules Odoo standards."
-LangString DESC_PostgreSQL ${LANG_FRENCH} "Installation de la base de données PostgreSQL utilisée par Odoo."
-LangString DESC_FinishPage_Link ${LANG_FRENCH} "Contactez Odoo pour un Partenariat et/ou du Support"
+LangString DESC_Odoo_Server ${LANG_FRENCH} "Installation du Serveur Godo avec tous les modules Godo standards."
+LangString DESC_PostgreSQL ${LANG_FRENCH} "Installation de la base de données PostgreSQL utilisée par Godo."
+LangString DESC_FinishPage_Link ${LANG_FRENCH} "Contactez Godo pour un Partenariat et/ou du Support"
 LangString DESC_AtLeastOneComponent ${LANG_FRENCH} "Vous devez choisir au moins un composant"
-LangString DESC_CanNotInstallPostgreSQL ${LANG_FRENCH} "Vous ne pouvez pas installer la base de données PostgreSQL sans le serveur Odoo"
+LangString DESC_CanNotInstallPostgreSQL ${LANG_FRENCH} "Vous ne pouvez pas installer la base de données PostgreSQL sans le serveur Godo"
 LangString WARNING_HostNameIsEmpty ${LANG_FRENCH} "L'adresse pour la connection au serveur PostgreSQL est vide"
 LangString WARNING_UserNameIsEmpty ${LANG_FRENCH} "Le nom d'utilisateur pour la connection au serveur PostgreSQL est vide"
 LangString WARNING_PasswordIsEmpty ${LANG_FRENCH} "Le mot de passe pour la connection au serveur PostgreSQL est vide"
@@ -195,13 +195,13 @@ LangString DESC_PostgreSQL_Hostname ${LANG_FRENCH} "Hôte"
 LangString DESC_PostgreSQL_Port ${LANG_FRENCH} "Port"
 LangString DESC_PostgreSQL_Username ${LANG_FRENCH} "Utilisateur"
 LangString DESC_PostgreSQL_Password ${LANG_FRENCH} "Mot de passe"
-LangString Profile_AllInOne ${LANG_FRENCH} "Serveur Odoo Et Serveur PostgreSQL"
-LangString Profile_Server ${LANG_FRENCH} "Seulement Le Serveur Odoo"
+LangString Profile_AllInOne ${LANG_FRENCH} "Serveur Godo Et Serveur PostgreSQL"
+LangString Profile_Server ${LANG_FRENCH} "Seulement Le Serveur Godo"
 LangString Profile_LocalProxyMode ${LANG_FRENCH} "Mode Proxy Local"
-LangString TITLE_Odoo_Server ${LANG_FRENCH} "Serveur Odoo"
+LangString TITLE_Odoo_Server ${LANG_FRENCH} "Serveur Godo"
 LangString TITLE_PostgreSQL ${LANG_FRENCH} "Installation du serveur de base de données PostgreSQL"
 LangString TITLE_LocalProxyMode ${LANG_FRENCH} "Mode Proxy Local"
-LangString DESC_FinishPageText ${LANG_FRENCH} "Démarrer Odoo"
+LangString DESC_FinishPageText ${LANG_FRENCH} "Démarrer Godo"
 
 InstType /NOCUSTOM
 InstType $(Profile_AllInOne)
@@ -239,7 +239,7 @@ Section $(TITLE_Odoo_Server) SectionOdoo_Server
     SetOutPath "$INSTDIR\thirdparty"
     File /r "${STATIC_PATH}\wkhtmltopdf\*"
 
-    # If there is a previous install of the Odoo Server, keep the login/password from the config file
+    # If there is a previous install of the Godo Server, keep the login/password from the config file
     WriteIniStr "$INSTDIR\server\odoo.conf" "options" "db_host" $TextPostgreSQLHostname
     WriteIniStr "$INSTDIR\server\odoo.conf" "options" "db_user" $TextPostgreSQLUsername
     WriteIniStr "$INSTDIR\server\odoo.conf" "options" "db_password" $TextPostgreSQLPassword
@@ -326,7 +326,7 @@ Section -Post
     WriteRegStr HKLM       "${UNINSTALL_REGISTRY_KEY}" "Publisher" "${PUBLISHER}"
     WriteRegStr HKLM       "${UNINSTALL_REGISTRY_KEY}" "HelpLink" "support@odoo.com"
     WriteRegStr HKLM       "${UNINSTALL_REGISTRY_KEY}" "HelpTelephone" "+32.81.81.37.00"
-    WriteRegStr HKLM       "${UNINSTALL_REGISTRY_KEY}" "URLInfoAbout" "https://www.odoo.com"
+    WriteRegStr HKLM       "${UNINSTALL_REGISTRY_KEY}" "URLInfoAbout" "https://smartlifevn.com"
     WriteRegStr HKLM       "${UNINSTALL_REGISTRY_KEY}" "Contact" "sales@odoo.com"
     WriteRegDWORD HKLM     "${UNINSTALL_REGISTRY_KEY}" "NoModify" "1"
     WriteRegDWORD HKLM     "${UNINSTALL_REGISTRY_KEY}" "NoRepair" "1"
@@ -364,9 +364,9 @@ Function .onInit
     ReadRegStr $previous_install_dir HKLM "${REGISTRY_KEY}" "Install_Dir"
     ${If} $previous_install_dir == ""
         ${If} ${RunningX64}
-            StrCpy $INSTDIR "$PROGRAMFILES64\Odoo ${VERSION}"
+            StrCpy $INSTDIR "$PROGRAMFILES64\Godo ${VERSION}"
         ${Else}
-            StrCpy $INSTDIR "$PROGRAMFILES\Odoo ${VERSION}"
+            StrCpy $INSTDIR "$PROGRAMFILES\Godo ${VERSION}"
         ${EndIf}
         WriteRegStr HKLM "${REGISTRY_KEY}" "Install_dir" "$INSTDIR"
     ${EndIf}
@@ -500,7 +500,7 @@ Function ShowProxyTokenDialogPage
             Abort
         ${EndIf}
 
-        ${NSD_CreateLabel} 0 0 100% 25% "Here is your access token for the Odoo Local Proxy, please write it down in a safe place, you will need it to configure the proxy"
+        ${NSD_CreateLabel} 0 0 100% 25% "Here is your access token for the Godo Local Proxy, please write it down in a safe place, you will need it to configure the proxy"
         Pop $ProxyTokenLabel
 
         ${NSD_CreateText} 0 30% 100% 13u $ProxyTokenPwd
@@ -531,7 +531,7 @@ Function LaunchLink
 FunctionEnd
 
 Function RestartOdooService
-    DetailPrint "Restarting Odoo Service"
+    DetailPrint "Restarting Godo Service"
     ExecWait "net stop ${SERVICENAME}"
     ExecWait "net start ${SERVICENAME}"
 FunctionEnd

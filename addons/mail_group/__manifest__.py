@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
     'name': "Mail Group",
     'summary': "Manage your mailing lists",
     'description': """
-        Manage your mailing lists from Odoo.
+        Manage your mailing lists from Godo.
     """,
     'version': '1.0',
     'depends': [

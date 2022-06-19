@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import ast
 import base64
@@ -43,7 +43,7 @@ class MailThread(models.AbstractModel):
         communication history. ``mail.thread`` also manages followers of
         inheriting classes. All features and expected behavior are managed
         by mail.thread. Widgets has been designed for the 7.0 and following
-        versions of Odoo.
+        versions of Godo.
 
         Inheriting classes are not required to implement any method, as the
         default implementation will work for any model. However it is common
@@ -1801,7 +1801,7 @@ class MailThread(models.AbstractModel):
         if self._name == 'mail.thread' or not self.id or message_type == 'user_notification':
             raise ValueError(_('Posting a message should be done on a business document. Use message_notify to send a notification to an user.'))
         if 'channel_ids' in kwargs:
-            raise ValueError(_("Posting a message with channels as listeners is not supported since Odoo 14.3+. Please update code accordingly."))
+            raise ValueError(_("Posting a message with channels as listeners is not supported since Godo 14.3+. Please update code accordingly."))
         if 'model' in msg_kwargs or 'res_id' in msg_kwargs:
             raise ValueError(_("message_post does not support model and res_id parameters anymore. Please call message_post on record."))
         if 'subtype' in kwargs:
@@ -2238,7 +2238,7 @@ class MailThread(models.AbstractModel):
         mail_subject = ' '.join((mail_subject or '').splitlines())
         # compute references: set references to the parent and add current message just to
         # have a fallback in case replies mess with Messsage-Id in the In-Reply-To (e.g. amazon
-        # SES SMTP may replace Message-Id and In-Reply-To refers an internal ID not stored in Odoo)
+        # SES SMTP may replace Message-Id and In-Reply-To refers an internal ID not stored in Godo)
         message_sudo = message.sudo()
         if message_sudo.parent_id:
             references = f'{message_sudo.parent_id.message_id} {message_sudo.message_id}'

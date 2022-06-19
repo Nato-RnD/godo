@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Godo Server.
 # This file contains the translation of the following modules:
 # 	* hr
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Godo Server saas~14.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:22+0000\n"
@@ -2006,22 +2006,22 @@ msgstr "Quantidade de mensagens não lidas"
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_tree_action
 msgid ""
-"Odoo's department structure is used to manage all documents\n"
+"Godo's department structure is used to manage all documents\n"
 "                    related to employees by departments: expenses, timesheets,\n"
 "                    leaves, recruitments, etc."
 msgstr ""
-"A estrutura de departamento do Odoo é utilizada para gerenciar todos os documentos\n"
+"A estrutura de departamento do Godo é utilizada para gerenciar todos os documentos\n"
 "relacionados a funcionários por departamentos: despesas, planilha de horários, \n"
 "folgas, recrutamentos, etc."
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_department_kanban_action
 msgid ""
-"Odoo's department structure is used to manage all documents\n"
+"Godo's department structure is used to manage all documents\n"
 "                related to employees by departments: expenses, timesheets,\n"
 "                time off, recruitments, etc."
 msgstr ""
-"A estrutura de departamento do Odoo é utilizada para gerenciar todos os documentos\n"
+"A estrutura de departamento do Godo é utilizada para gerenciar todos os documentos\n"
 "relacionados a funcionários por departamentos: despesas, planilha de horários, \n"
 "folgas, recrutamentos, etc."
 
@@ -2943,22 +2943,22 @@ msgstr "Viúvo"
 #: model_terms:ir.actions.act_window,help:hr.act_employee_from_department
 #: model_terms:ir.actions.act_window,help:hr.hr_employee_public_action
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the Godo employee screen, you\n"
 "                can easily find all the information you need for each person;\n"
 "                contact data, job position, availability, etc."
 msgstr ""
-"Com apenas uma rápida olhada na tela de funcionários do Odoo, você\n"
+"Com apenas uma rápida olhada na tela de funcionários do Godo, você\n"
 "pode facilmente encontrar todas as informações que você precisa para cada pessoa;\n"
 "dados de contato, cargo, disponibilidade, etc."
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.open_view_employee_list_my
 msgid ""
-"With just a quick glance on the Odoo employee screen, you\n"
+"With just a quick glance on the Godo employee screen, you\n"
 "               can easily find all the information you need for each person;\n"
 "               contact data, job position, availability, etc."
 msgstr ""
-"Com apenas um rápido relance na tela de funcionários do Odoo, você\n"
+"Com apenas um rápido relance na tela de funcionários do Godo, você\n"
 "pode facilmente procurar todas as informações que você precisa sobre cada pessoa;\n"
 "dados de contato, cargo, disponibilidade, etc."
 

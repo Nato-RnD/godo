@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Part of Godo. See LICENSE file for full copyright and licensing details.
 
 import socket
 
@@ -1344,7 +1344,7 @@ class TestMailgateway(TestMailCommon):
                           extra='In-Reply-To: <12321321-openerp-%d-mail.test.gateway@%s>' % (self.test_record.id, socket.gethostname()))
 
         # when 6.1 messages are present, compat mode is available
-        # Odoo 10 update: compat mode has been removed and should not work anymore
+        # Godo 10 update: compat mode has been removed and should not work anymore
         self.fake_email.write({'message_id': False})
         # Do: compat mode accepts partial-matching emails
         self.assertRaises(
