@@ -5,7 +5,7 @@
             <nav class="o_main_navbar"
                  t-on-dropdown-item-selected="onNavBarDropdownItemSelection"
                  data-command-category="navbar">
-                <div class="top_heading">
+                <div class="top_heading" style="margin-left:200px; transition: all .1s linear; width: auto;">
                     <!-- Apps Menu -->
                     <t t-call="web.NavBar.AppsMenu">
                         <t t-set="apps" t-value="menuService.getApps()"/>
@@ -35,7 +35,8 @@
                     </t>
                 </div>
             </nav>
-            <div class="sidebar_panel" id="sidebar_panel">
+
+            <div class="sidebar_panel" id="sidebar_panel" style="display: block;">
                 <div class="sidebar">
                     <div class="sidebar_close">
                         <a id="closeSidebar" style="cursor: pointer;">
@@ -69,10 +70,10 @@
     <t t-inherit="web.NavBar.AppsMenu" t-inherit-mode="extension" owl="1">
         <xpath expr="//Dropdown[hasclass('o_navbar_apps_menu')]" position="replace">
             <li class="dropdown">
-                <a id="openSidebar" style="display: block; cursor: pointer;">
+                <a id="openSidebar" style="display: none; cursor: pointer;">
                     <i class="fa fa-bars fa-lg"/>
                 </a>
-                <a id="closeSidebar" style="display: none; cursor: pointer;">
+                <a id="closeSidebar" style="display: block; cursor: pointer;">
                     <i class="fa fa-bars fa-lg"/>
                 </a>
             </li>
