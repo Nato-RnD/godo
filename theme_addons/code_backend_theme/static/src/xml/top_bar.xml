@@ -2,7 +2,7 @@
 <templates id="template" xml:space="preserve">
     <t t-inherit="web.NavBar" t-inherit-mode="extension" owl="1">
         <xpath expr="//nav[hasclass('o_main_navbar')]" position="replace">
-            <nav class="o_main_navbar"
+            <nav class="o_main_navbar small_nav"
                  t-on-dropdown-item-selected="onNavBarDropdownItemSelection"
                  data-command-category="navbar">
                 <div class="top_heading" style="margin-left:200px; transition: all .1s linear; width: auto;">

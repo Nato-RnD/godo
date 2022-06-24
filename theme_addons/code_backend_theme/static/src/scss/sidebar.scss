@@ -2,7 +2,7 @@
     height: calc(100% - 0%);
     position: fixed;
     top: 0px;
-    background-color: #f8f9fa;
+    background-color: #e9eaeb;
     display: none;
     width: 200px;
     overflow-y: scroll;
@@ -75,6 +75,8 @@
     padding: 0;
     border: 0px;
     display: block;
+    height: 46px;
+    border-bottom: inset 1px rgb(228, 225, 225);
 }
 
 .sidebar_panel .sidebar .sidebar_menu li a {
@@ -87,6 +89,7 @@
     color: #1f1c1c;
     font-size: 13px;
     transition: .3s all;
+    line-height: 28px;
 }
 
 .sidebar_panel .sidebar .sidebar_menu li:hover a {
@@ -100,8 +103,9 @@
 }
 
 .sidebar_panel .sidebar a.nav-link.active {
-    color: #fff !important;
+    color: #252424 !important;
     opacity: 1;
+    background: #a1b4d180;
 }
 
 .sidebar_panel .sidebar .sidebar_menu li a .sidebar_img {

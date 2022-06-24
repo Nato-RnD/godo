@@ -1,0 +1,6 @@
+<odoo>
+    <data>
+        <menuitem id="hr.menu_hr_root" name="Nhân sự"
+                  web_icon="g_personnel,static/description/icon.png"/> 
+    </data>
+</odoo>
