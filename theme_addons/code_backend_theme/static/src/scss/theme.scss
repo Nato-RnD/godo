@@ -1895,3 +1895,7 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
     margin-left: 15px!important;
     padding-right: 10px;
 }
+
+.o_form_view .o_group.o_inner_group>tbody>tr>td.o_td_label {
+    min-width: 250px!important;
+}
