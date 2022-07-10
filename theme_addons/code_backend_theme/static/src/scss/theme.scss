@@ -1,12 +1,17 @@
 //Top Bar
 @font-face {
-    font-family: 'Poppins' !important;
-    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap');
+    font-family: 'Roboto' !important;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+html {
+    font-size: 14px!important;
 }
 
 body {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
     background-color: #f8f8fb;
+    // font-size: 1.1rem;
 }
 
 a {
@@ -118,11 +123,12 @@ button[aria-pressed="true"] {
 .o_searchview {
     border: 1px solid #ddd;
     padding-left: 12px;
-    padding-right: 20px;
+    padding-right: 25px;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 5px;
-    padding-top: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .o_searchview .o_searchview_icon {
@@ -136,9 +142,9 @@ button[aria-pressed="true"] {
 .o_searchview .o_searchview_facet {
     border: 1px solid #ddd;
     background: #f8f8fb;
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 0 2px;
-    max-height: 20px;
+    max-height: 30px;
 }
 
 .o_cp_bottom_right span.o_dropdown_title {
@@ -988,10 +994,17 @@ select {
 //search view
 .o_searchview input.o_searchview_input {
     border: none !important;
-    height: auto !important;
+    height: 30px !important;
     margin: 0 !important;
     padding: 0px;
+    line-height: 25px;
 }
+
+.o_searchview .o_searchview_input_container .o_searchview_facet .o_facet_values {
+    direction: ltr/*rtl:ignore*/;
+    padding: 2px 18px 0 5px;
+}
+
 
 .o_base_settings .o_control_panel .o_panel .o_setting_search .searchIcon {
     top: 9px;
@@ -1898,4 +1911,8 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
 
 .o_form_view .o_group.o_inner_group>tbody>tr>td.o_td_label {
     min-width: 250px!important;
+}
+
+.o_searchview .o_searchview_autocomplete li.o_selection_focus {
+    background-color: #a7eebc;
 }

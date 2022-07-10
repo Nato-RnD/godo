@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data >
+        <record id="g_material_fertilizer_category_tree_view" model="ir.ui.view">
+            <field name="name">godo.material.fertilizer.category.tree</field>
+            <field name="model">godo.material.fertilizer.category</field>
+            <field eval="8" name="priority" />
+            <field name="arch" type="xml">
+              <tree string="Loại phân bón"> 
+                <field name="name" />
+                <field name="parent_id" /> 
+              </tree>
+            </field>
+        </record>
+
+        <record id="g_material_fertilizer_category_search_view" model="ir.ui.view">
+            <field name="name">godo.material.fertilizer.category.search</field>
+            <field name="model">godo.material.fertilizer.category</field>
+            <field name="arch" type="xml">
+                <search string="Nhóm phân bón">
+                    <field name="name" string="Nhóm phân bón" filter_domain="['|',  ('name', 'ilike', self), ('complete_name', 'ilike', self)]"/>
+                    
+                    <group expand="1" string="Nhóm theo">
+                        <filter string="Nhóm cha" name="filter_by_parent_id" context="{'group_by':'parent_id'}"/> 
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="g_material_fertilizer_tree_view" model="ir.ui.view">
+            <field name="name">godo.material.fertilizer.tree</field>
+            <field name="model">godo.material.fertilizer</field>
+            <field eval="8" name="priority" />
+            <field name="arch" type="xml">
+              <tree string="Phân bón"> 
+                <field name="name" />
+                <field name="fertilizer_type" /> 
+                <field name="composition_fertilizer_rate" /> 
+                <field name="composition_fertilizer_ppm" /> 
+                <field name="ph_value" /> 
+                <field name="proportion_value" /> 
+                <field name="registered_owner" /> 
+                <field name="state"  widget="badge" decoration-success = "state == 'activated'" decoration-danger = "state == 'draft'" decoration-muted = "state == 'inactivated'"  /> 
+              </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="g_material_fertilizer_category_action_window">
+            <field name="name">g_material_fertilizer_category</field>
+            <field name="res_model">godo.material.fertilizer.category</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="g_material_fertilizer_category_search_view"/>
+          </record>
+      
+          <record id="g_material_fertilizer_category_action_window_tree" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="g_material_fertilizer_category_action_window"/>
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="g_material_fertilizer_category_tree_view"/>
+          </record>
+      
+        
+
+        <record model="ir.actions.act_window" id="g_material_fertilizer_action_window">
+            <field name="name">g_material_fertilizer</field>
+            <field name="res_model">godo.material.fertilizer</field>
+            <field name="view_mode">tree,form</field>
+            <!-- <field name="search_view_id" ref="g_material_fertilizer_search_view"/> -->
+          </record>
+      
+          <record id="g_material_fertilizer_action_window_tree" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="g_material_fertilizer_action_window"/>
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="g_material_fertilizer_tree_view"/>
+          </record>
+    
+    </data>
+    
+
+</odoo>

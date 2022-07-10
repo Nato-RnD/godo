@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+
+     <!-- == Cay trong                                 == Vat tu == Thong ke ==
+        == Cay trong, Giong, Nhom cay trong           == Bao ve thuc vat, Phan bon, Giong -->
+    <menuitem name="Production" id="g_production.menu_root"  web_icon="g_production,static/description/icon.png" />
+
+    <menuitem name="Cây trồng và Sản phẩm nông nghiệp" id="g_production.production_root" parent="g_production.menu_root" />
+    <menuitem name="Sản phẩm nông nghiệp" id="g_production.production_root_product" parent="g_production.production_root" action="g_production_item_action_window"/> 
+    <menuitem name="Cây trồng" id="g_production.production_root_item" parent="g_production.production_root" action="g_production_item_action_window"/> 
+    <menuitem name="Loại cây trồng" id="g_production.production_root_item_category" parent="g_production.production_root" action="g_production_item_category_action_window"/>
+
+    <menuitem name="Giống và Vật tư nông nghiệp" id="g_production.material_root" parent="g_production.menu_root"  />
+    <menuitem name="Giống cây trồng" id="g_production.material_root_seed" parent="g_production.material_root" action="g_production_seed_action_window"/>
+    <menuitem name="Phân bón" id="g_production.material_root_fertilizer" parent="g_production.material_root" action="g_material_fertilizer_action_window"/>
+    <menuitem name="Thuốc bảo vệ thực vật" id="g_production.material_root_pesticides" parent="g_production.material_root" action="g_production_seed_action_window"/>
+ 
+    <menuitem name="Bản đồ" id="g_production.item_map" parent="g_production.menu_root" action="g_production_map_action_window" />
+     
+    <menuitem name="Thiết lập" id="g_production.settings_root" parent="g_production.menu_root"   />
+    <menuitem name="Phân loại cây trồng" id="g_production.settings_root_item_category" parent="g_production.settings_root" action="g_production_item_category_action_window"/>
+    <menuitem name="Phân loại phân bón" id="g_production.settings_root_fertilizer_category" parent="g_production.settings_root" action="g_material_fertilizer_category_action_window"/>
+    <menuitem name="Phân loại thuốc bảo vệ" id="g_production.settings_root_pesticides_category" parent="g_production.settings_root" action="g_material_pesticides_category_action_window"/>
+
+  </data>
+</odoo>

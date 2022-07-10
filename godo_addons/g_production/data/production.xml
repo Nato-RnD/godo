@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="production_item_category_root" model="godo.production.item.category">
+            <field name="name">Cây trồng</field>
+        </record>
+        <record id="production_item_category_field_crop" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_root"/>
+            <field name="name">Cây trồng nông học hay đồng ruộng</field>
+        </record>
+        <record id="production_item_category_field_crop_rice" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_field_crop"/>
+            <field name="name">Cây hạt ngũ cốc</field>
+        </record>
+        <record id="production_item_category_field_crop_bean" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_field_crop"/>
+            <field name="name">Cây đậu cho hạt thuộc họ cánh bướm</field>
+        </record>
+        <record id="production_item_category_field_crop_yarn" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_field_crop"/>
+            <field name="name">Cây cho sợi</field>
+        </record>
+        <record id="production_item_category_field_crop_tuber" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_field_crop"/>
+            <field name="name">Cây lấy củ</field>
+        </record>
+        <record id="production_item_category_field_crop_industry" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_field_crop"/>
+            <field name="name">Cây công nghiệp</field>
+        </record>
+        <record id="production_item_category_field_crop_grass" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_field_crop"/>
+            <field name="name">Cây đồng cỏ và thức ăn gia súc</field>
+        </record>
+
+
+        <record id="production_item_category_horticultural_crop" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_root"/>
+            <field name="name">Cây trồng nghề vườn</field>
+        </record>
+        <record id="production_item_category_horticultural_crop_vege" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_horticultural_crop"/>
+            <field name="name">Nhóm rau</field>
+        </record>
+        <record id="production_item_category_horticultural_crop_fruit" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_horticultural_crop"/>
+            <field name="name">Nhóm cây ăn trái</field>
+        </record>
+        <record id="production_item_category_horticultural_crop_flower" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_horticultural_crop"/>
+            <field name="name">Nhóm hoa kiểng</field>
+        </record>
+        <record id="production_item_category_horticultural_crop_industry" model="godo.production.item.category">
+            <field name="parent_id" ref="production_item_category_horticultural_crop"/>
+            <field name="name">Nhóm cây đồn điền/cây công nghiệp</field>
+        </record>
+    </data>
+</odoo>

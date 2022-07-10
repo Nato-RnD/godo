@@ -1,0 +1,297 @@
+<odoo>
+  <data> 
+
+    <record id="g_production_item_category_tree_view" model="ir.ui.view">
+      <field name="name">godo.production.item.category.tree</field>
+      <field name="model">godo.production.item.category</field>
+      <field eval="8" name="priority" />
+      <field name="arch" type="xml">
+        <tree string="Loại cây trồng"> 
+          <field name="name" />
+          <field name="parent_id" /> 
+        </tree>
+      </field>
+    </record>
+
+    <record id="g_production_item_category_search_view" model="ir.ui.view">
+      <field name="name">godo.production.item.category.search</field>
+      <field name="model">godo.production.item.category</field>
+      <field name="arch" type="xml">
+          <search string="Nhóm cây trồng">
+              <field name="name" string="Nhóm cây trồng" filter_domain="['|', ('name', 'ilike', self), ('complete_name', 'ilike', self)]"/>
+              
+              <group expand="1" string="Nhóm theo">
+                  <filter string="Nhóm cha" name="filter_by_parent_id" context="{'group_by':'parent_id'}"/> 
+              </group>
+          </search>
+      </field>
+  </record>
+
+    <record id="g_production_item_tree_view" model="ir.ui.view">
+      <field name="name">godo.production.item.tree</field>
+      <field name="model">godo.production.item</field>
+      <field eval="8" name="priority" />
+      <field name="arch" type="xml">
+        <tree string="Cây trồng"> 
+          <field name="name" />
+          <field name="categ_id" /> 
+        </tree>
+      </field>
+    </record>
+
+    <record id="g_production_seed_tree_view" model="ir.ui.view">
+      <field name="name">godo.production.seed.tree</field>
+      <field name="model">godo.production.seed</field>
+      <field eval="8" name="priority" />
+      <field name="arch" type="xml">
+        <tree string="Giống cây trồng"> 
+          <field name="name" />
+          <field name="code" />
+          <field name="categ_id" />
+          <field name="seed_num" />
+          <field name="location" />
+          <field name="cert_num" />
+          <field name="cert_date" />
+          <field name="state" widget="badge" decoration-success = "state == 'done'" decoration-danger = "state == 'draft'" />
+        </tree>
+      </field>
+    </record>>
+
+    <record id="g_production_seed_form_view" model="ir.ui.view">
+      <field name="name">godo.production.seed.form</field>
+      <field name="model">godo.production.seed</field>
+      <field name="mode">primary</field>
+      <field eval="7" name="priority" />
+      <field name="arch" type="xml">
+        <form string="Giống cây trồng">
+          <header>
+            <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="draft,done"/>
+          </header>
+          <sheet> 
+            <!-- <widget name="web_ribbon" title="Đang sử dụng" bg_color="bg-success"
+              attrs="{'invisible': [('state', '!=', 'done')]}" /> -->
+
+            <field name="id" invisible="True" />
+            <field name="image" widget="image" class="oe_avatar" />
+            <div class="oe_title">
+              <label for="name" string="Tên giống" />
+              <h1>
+                <div class="d-flex"> 
+                  <field class="o_text_overflow" name="name" placeholder="Giống cây trồng" />
+                </div>
+              </h1>
+            </div>
+            <style>
+              div[name="options"] .o_field_boolean {
+                margin-left: 10px;
+                margin-right: 0px;
+              }
+            </style> 
+          
+                <group>
+                  <group > 
+                    <field name="code" />
+                    <field name="cert_num" />
+                    <field name="categ_id"  options="{'no_create': True, 'no_edit': True}" /> 
+                  </group>
+
+                  <group> 
+                    <field name="seed_num" />
+                    <field name="cert_date" />
+                    <field name="location" options="{'no_create': True, 'no_edit': True}" /> 
+                  </group> 
+                </group> 
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" />
+            <field name="activity_ids" />
+            <field name="message_ids" />
+          </div>
+        </form>
+      </field>
+    </record>
+
+    <record id="g_production_item_form_view" model="ir.ui.view">
+      <field name="name">godo.production.item.form</field>
+      <field name="model">godo.production.item</field>
+      <field name="mode">primary</field>
+      <field eval="7" name="priority" />
+      <field name="arch" type="xml">
+        <form string="Cây trồng">
+          <header>
+            <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="draft,done"/>
+          </header>
+          <sheet> 
+            <!-- <widget name="web_ribbon" title="Đang sử dụng" bg_color="bg-success"
+              attrs="{'invisible': [('state', '!=', 'done')]}" /> -->
+
+            <field name="id" invisible="True" />
+            <field name="image" widget="image" class="oe_avatar" />
+            <div class="oe_title">
+              <label for="name" string="Tên cây trồng" />
+              <h1>
+                <div class="d-flex"> 
+                  <field class="o_text_overflow" name="name" placeholder="Giống cây trồng" />
+                </div>
+              </h1>
+            </div>
+            <style>
+              div[name="options"] .o_field_boolean {
+                margin-left: 10px;
+                margin-right: 0px;
+              }
+            </style> 
+          
+                <group>
+                  <group > 
+                    <field name="code" /> 
+                    
+                  </group>
+
+                  <group> 
+                    <field name="categ_id"  options="{'no_create': True, 'no_edit': True}" /> 
+                  </group> 
+                </group> 
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" />
+            <field name="activity_ids" />
+            <field name="message_ids" />
+          </div>
+        </form>
+      </field>
+    </record>
+
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="godo_production_item_map">
+      <field name="name">godo_production_item_map</field>
+      <field name="model">godo.production.item</field>
+      <field name="arch" type="html">
+
+        <form create="false" edit="false">
+          <script type="text/javascript" src="/g_production/static/src/js/test.js" />
+          <div class="row mx-0 px-5">
+                <div class="col-6 bg-info">
+                    Da goi duoc o day
+
+                    <tree>
+                        <field name="name" />
+                    </tree>
+
+                    <div align="center">
+<!--Adds a heading to the form-->
+<h1>Employee Interests Survey form</h1>
+Enter your name:
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="UserName"   value="" />
+<!--Adds spaces - remove and see what happens -->
+<br/>
+Enter your department:
+<input type="text" name="Deptt"   value="" />   <br/>
+Tell us a little about yourself:
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<textarea name="Comments" cols="30" rows="4"></textarea> <br/>
+Do you exercise at home?
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="exe" value="1" />Yes
+<input type="radio" name="exe" value="2" />No
+<p>
+How do you like to read about your favorite topics?
+</p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="Books" />Books
+<input type="checkbox" name="Web"/>Online resources
+<input type="checkbox" name="Phone"/>Phone apps
+<input type="checkbox" name="Magazines"/>Magazines
+ 
+What genre of movies do you like?
+<!--Select box lets you choose one of the multiple dropdown options-->
+<select name="moviepref" >
+<option value="1" selected = "true">comedy</option>
+<option value="2" >romance</option>
+<option value="3" >thriller</option>
+<option value="4" >horror</option>
+<option value="5" >biopic</option>
+</select>
+<br/><br/>
+<!--submits the information entered in the form by the user -->
+<input type="submit" value="Submit form"/>
+</div>
+                </div>
+
+            </div>
+            </form>
+      </field>
+    </record>
+ 
+    
+    <!-- Nhom cay trong -->
+    <record model="ir.actions.act_window" id="g_production_item_category_action_window">
+      <field name="name">g_production_item_category</field>
+      <field name="res_model">godo.production.item.category</field>
+      <field name="view_mode">tree,form</field> 
+      <field name="search_view_id" ref="g_production_item_category_search_view"/>
+    </record>
+
+    <record id="g_production_item_category_action_window_tree" model="ir.actions.act_window.view">
+      <field name="act_window_id" ref="g_production_item_category_action_window"/>
+      <field name="sequence" eval="1"/>
+      <field name="view_mode">tree</field>
+      <field name="view_id" ref="g_production_item_category_tree_view"/>
+    </record>
+
+
+    <!-- Cay trong -->
+    <record model="ir.actions.act_window" id="g_production_item_action_window">
+      <field name="name">g_production_item</field>
+      <field name="res_model">godo.production.item</field>
+      <field name="view_mode">tree,form</field>
+    </record> 
+
+    <record id="g_production_item_action_window_tree" model="ir.actions.act_window.view">
+      <field name="act_window_id" ref="g_production_item_action_window"/>
+      <field name="sequence" eval="1"/>
+      <field name="view_mode">tree</field>
+      <field name="view_id" ref="g_production_item_tree_view"/>
+    </record>
+    
+    <record id="g_production_item_action_window_form" model="ir.actions.act_window.view">
+      <field name="act_window_id" ref="g_production_item_action_window"/>
+      <field name="sequence" eval="2"/>
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="g_production_item_form_view"/>
+    </record>
+
+    
+    <record model="ir.actions.act_window" id="g_production_map_action_window">
+      <field name="name">g_production_item_map</field>
+      <field name="res_model">godo.production.item</field>
+      <field name="view_mode">form</field>
+      <field name="binding_view_types">tree</field>
+      <field name="view_id" ref="godo_production_item_map" /> 
+    </record> 
+ 
+    <!-- Giong cay trong  -->
+    <record model="ir.actions.act_window" id="g_production_seed_action_window">
+      <field name="name">g_production_seed</field>
+      <field name="res_model">godo.production.seed</field>
+      <field name="view_mode">tree,form</field>  
+    </record> 
+
+    <record id="g_production_seed_action_window_tree" model="ir.actions.act_window.view">
+      <field name="act_window_id" ref="g_production_seed_action_window"/>
+      <field name="sequence" eval="1"/>
+      <field name="view_mode">tree</field>
+      <field name="view_id" ref="g_production_seed_tree_view"/>
+  </record>
+
+  <!-- <record id="g_production_seed_action_window_form" model="ir.actions.act_window.view">
+    <field name="act_window_id" ref="g_production_seed_action_window"/>
+    <field name="sequence" eval="2"/>
+    <field name="view_mode">form</field>
+    <field name="view_id" ref="g_production_seed_form_view"/>
+  </record> --> 
+  </data>
+</odoo>

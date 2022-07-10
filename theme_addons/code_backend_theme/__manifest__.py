@@ -63,5 +63,5 @@
     'post_init_hook': 'test_post_init_hook',
     'installable': True,
     'application': False,
-    'auto_install': False,
+    'auto_install': True,
 }
