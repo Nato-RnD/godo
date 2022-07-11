@@ -60,20 +60,26 @@ class GodoMaterialFertilizerCategory(models.Model):
 
 class GodoMaterialFertilizer(models.Model):
     _name = 'godo.material.fertilizer'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Phân bón'      
     _order = 'name'
 
     name = fields.Char('Tên phân bón')
+    image = fields.Image('Hình ảnh')
+    package = fields.Char('Đóng gói')
+    net_weight = fields.Float('Khối lượng tịnh (kg)')
     registered_owner = fields.Char('Tổ chức/cá nhân đăng ký')
     fertilizer_type = fields.Many2one(comodel_name='godo.material.fertilizer.category', string='Nhóm phân bón')
     composition_fertilizer_rate = fields.Char('Thành phần (%)')
     composition_fertilizer_ppm = fields.Char('Thành phần (ppm)')
-    ph_value = fields.Float('Độ PH')
-    proportion_value = fields.Float('Tỷ trọng')
+    ph_value = fields.Char('Độ PH')
+    proportion_value = fields.Char('Tỷ trọng')
+    description = fields.Text('Mô tả')
     state = fields.Selection(selection=[('draft','Nháp'),('activated','Đang sử dụng'),('inactivated','Đã hủy')],   index=True, tracking=3, default='activated')
 
 class GodoMaterialPesticidesCategory(models.Model):
     _name = 'godo.material.pesticides.category'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Pesticides Category'   
     _parent_name = "parent_id"
     _parent_store = True
