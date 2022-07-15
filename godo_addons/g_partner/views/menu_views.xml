@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+        <menuitem id="menu_g_partner_root" name="Khách hàng" web_icon="g_partner,static/description/icon.png"/> 
+        <menuitem id="menu_g_partner_root_partner_list" name="Khách hàng" parent="menu_g_partner_root" action="g_partner_main_action_window" /> 
+
+    </data>
+</odoo>

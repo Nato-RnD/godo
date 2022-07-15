@@ -1916,3 +1916,8 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
 .o_searchview .o_searchview_autocomplete li.o_selection_focus {
     background-color: #a7eebc;
 }
+
+.o_input {
+    border: 1px solid var(--o-input-border-color);
+    padding: 2px 10px;
+}
