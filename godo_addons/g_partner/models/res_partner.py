@@ -5,10 +5,18 @@ class ResPartner(models.Model):
     _inherit ='res.partner'
     _description = _('Partner')
 
+    _customer_ranking = [
+       ( 'rank_a', 'Rank A'),
+       ( 'rank_b', 'Rank B'),
+       ( 'rank_c','Rank C'),
+       ( 'rank_d', 'Rank D'),
+       ( 'rank_e','Rank E')
+    ]
+
     province_id = fields.Many2one(comodel_name='res.province',string='Province')
     district_id = fields.Many2one(comodel_name='res.district', string='District')
     ward_id = fields.Many2one(comodel_name='res.ward',string='Ward')
-    partner_rank = fields.Integer(string='Partner Rank')
+    customer_rank = fields.Selection(string='Customer Rank', selection=_customer_ranking, default='rank_e')
 
 
     @api.onchange('province_id')
@@ -28,7 +36,7 @@ class ResPartner(models.Model):
     @api.onchange('district_id')
     def district_onchange(self):
         res = {}
-        self.ward = False
+        self.ward_id = False
         parent_code = ''
         if self.district_id:
             list_ward = self.env['res.ward'].search([('parent_code', '=', self.district_id.district_code)])

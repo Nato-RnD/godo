@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+        <menuitem id="menu_g_logistic_root" name="Billing" web_icon="g_logistic,static/description/icon.png"/> 
+        <menuitem id="menu_g_logistic_root_logistic_list" name="Billing" parent="menu_g_logistic_root" action="g_logistic_main_action_window" /> 
+        <menuitem id="menu_g_logistic_root_logistic_inventory_list" name="Inventory" parent="menu_g_logistic_root" action="g_logistic_inventory_action_window" /> 
+    </data>
+</odoo>

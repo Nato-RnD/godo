@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>   
+        <record id="g_logistic_main_tree_view" model="ir.ui.view">
+            <field name="name">logo.logistic.bill.tree</field>
+            <field name="model">godo.logistic.bill</field>
+            <field eval="8" name="priority" /> 
+            <field name="arch" type="xml">
+                <tree string="Bills" decoration-primary="state=='sent'"  decoration-success="state=='received'"  decoration-warning="state=='forward'" decoration-muted="state=='cancelled'" > 
+                    <field name="name" />
+                    <field name="origin_code" />
+                    <field name="packing_code" optional="show" />
+                    <field name="bill_date" />
+                    <field name="customer_id" optional="show"  />
+                    <field name="customer_address" optional="hide"  />
+                    <field name="customer_mobile" />
+                    <field name="goods_name" optional="show"  />
+                    <field name="package_weight" />
+                    <field name="unit_price" optional="hide"  />
+                    <field name="unit_quantity" optional="hide" />
+                    <field name="total_amount" optional="hide" />
+                    <field name="state" widget="badge" />  
+                </tree>
+            </field>
+        </record>  
+
+        <record id="g_logistic_main_search_view" model="ir.ui.view">
+            <field name="name">godo.logistic.bill.search</field>
+            <field name="model">godo.logistic.bill</field>
+            <field name="arch" type="xml">
+                <search string="Logistic Bills">
+                    <field name="name" string="Bill Code" filter_domain="['|', '|', ('name', 'ilike', self), ('origin_code', 'ilike', self), ('packing_code', 'ilike', self)]"/>
+                    <group expand="1" string="Nhóm theo">
+                        <filter string="Customer" name="customer_id" context="{'group_by':'customer_id'}"/>  
+                        <filter string="Package Code" name="packing_code" context="{'group_by':'packing_code'}"/> 
+                        <filter string="Bill date" name="bill_date" context="{'group_by':'bill_date'}"/> 
+                        <filter string="Status" name="state" context="{'group_by':'state'}"/>   
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="g_logistic_main_action_window">
+            <field name="name">Logistic bill</field>
+            <field name="res_model">godo.logistic.bill</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="g_logistic_main_search_view" /> 
+            <!-- <field name="context">{ 
+                "search_default_is_customer": 1}
+            </field> -->
+        </record>
+
+        <record id="g_logistic_main_action_window_tree" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="g_logistic_main_action_window" />
+            <field name="sequence" eval="1" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="g_logistic_main_tree_view" />
+        </record>
+
+        <!-- <record id="g_logistic_main_action_window_form" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="g_logistic_main_action_window" />
+            <field name="sequence" eval="2" />
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="g_logistic_main_form_view" />
+        </record>  -->
+
+    </data>
+    
+
+</odoo>

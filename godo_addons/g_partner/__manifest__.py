@@ -21,6 +21,7 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base','g_init','hr'],
+    'application':True,
 
     # always loaded
     'data': [
