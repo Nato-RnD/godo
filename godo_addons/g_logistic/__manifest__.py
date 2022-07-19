@@ -20,15 +20,21 @@
     'version': '0.1',
     'application': True,
     # any module necessary for this one to work correctly
-    'depends': ['base','g_partner'],
+    'depends': ['base','mail','web','g_partner'],
 
     # always loaded
     'data': [
         'security/ir.model.access.csv',
         'views/bill_views.xml',
-        'views/inventory_views.xml',
+        'views/check_views.xml',
         'views/menu_views.xml',
          
     ],
+    'assets': {
+        'web.assets_backend': [ 
+            'g_logistic/static/src/js/scan_mode.js',
+        ]
+        
+      }
  
 }
