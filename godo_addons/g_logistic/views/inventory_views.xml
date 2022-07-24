@@ -2,21 +2,21 @@
 <odoo>
 
     <data>   
-        <record id="g_logistic_inventory_tree_view" model="ir.ui.view">
+        <!-- <record id="g_logistic_inventory_list_view" model="ir.ui.view">
             <field name="name">godo.logistic.bill.inventory.tree</field>
             <field name="model">godo.logistic.bill.inventory</field>
             <field eval="8" name="priority" /> 
             <field name="arch" type="xml">
-                <tree string="Bills"   decoration-danger="state=='draft'"   decoration-muted="state=='cancelled'" > 
+                <tree string="Bills"  > 
                     <field name="name" />
                     <field name="date" /> 
                     <field name="user_id" /> 
                     <field name="state" widget="badge" />  
                 </tree>
             </field>
-        </record>  
+        </record>   -->
 
-        <record id="g_logistic_inventory_form_view" model="ir.ui.view">
+        <!-- <record id="g_logistic_inventory_form_view" model="ir.ui.view">
             <field name="name">godo.logistic.bill.inventory.form</field>
             <field name="model">godo.logistic.bill.inventory</field>
             <field name="priority" eval="1"/>
@@ -30,7 +30,7 @@
                     <div class="oe_title mb24"> 
                         <h1>
                             <field id="name" class="o_text_overflow" name="name" default_focus="1" />
-                             </h1> 
+                        </h1> 
                     </div>
 
                     <group>
@@ -62,14 +62,14 @@
                   </div>
                 </form>
             </field>
-        </record> 
+        </record>  -->
 
-        <record id="g_logistic_inventory_search_view" model="ir.ui.view">
+        <!-- <record id="g_logistic_inventory_search_view" model="ir.ui.view">
             <field name="name">godo.logistic.bill.inventory.search</field>
             <field name="model">godo.logistic.bill.inventory</field>
             <field name="arch" type="xml">
                 <search string="Bills Inventory">
-                    <field name="name" string="Bill Inventory" filter_domain="[ ('name', 'ilike', self)]"/>
+                    <field name="name" string="Bill Inventory" filter_domain="[('name', 'ilike', self)]"/>
                     <group expand="1" string="Nhóm theo">
                         <filter string="Employee" name="user_id" context="{'group_by':'user_id'}"/>   
                         <filter string="Inventory date" name="date" context="{'group_by':'date'}"/> 
@@ -77,23 +77,23 @@
                     </group>
                 </search>
             </field>
-        </record>
+        </record> -->
 
-        <record model="ir.actions.act_window" id="g_logistic_inventory_action_window">
+        <record model="ir.actions.act_window" id="g_logistic_inventory_action_windoww">
             <field name="name">Logistic bill Inventory</field>
             <field name="res_model">godo.logistic.bill.inventory</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="g_logistic_inventory_search_view" /> 
+            <!-- <field name="search_view_id" ref="g_logistic_inventory_search_view" />  -->
             <!-- <field name="context">{ 
                 "search_default_is_customer": 1}
             </field> -->
         </record>
 
-        <record id="g_logistic_inventory_action_window_tree" model="ir.actions.act_window.view">
+        <!-- <record id="g_logistic_inventory_action_window_tree" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="g_logistic_inventory_action_window" />
             <field name="sequence" eval="1" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="g_logistic_inventory_tree_view" />
+            <field name="view_id" ref="g_logistic_inventory_list_view" />
         </record>
 
         <record id="g_logistic_inventory_action_window_form" model="ir.actions.act_window.view">
@@ -101,7 +101,7 @@
             <field name="sequence" eval="2" />
             <field name="view_mode">form</field>
             <field name="view_id" ref="g_logistic_inventory_form_view" />
-        </record> 
+        </record>  -->
 
     </data>
     

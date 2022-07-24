@@ -1,3 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_godo_logistic_bill,g_logistic.godo_logistic_bill,model_godo_logistic_bill,base.group_user,1,1,1,1
-access_godo_logistic_bill_inventory,g_logistic.godo_logistic_bill_inventory,model_godo_logistic_bill_inventory,base.group_user,1,1,1,1
+access_godo_logistic_bill_check,g_logistic.godo_logistic_bill_check,model_godo_logistic_bill_check,base.group_user,1,1,1,1
