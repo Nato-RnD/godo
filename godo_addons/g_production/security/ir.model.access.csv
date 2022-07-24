@@ -5,3 +5,4 @@ production_seed,production_seed,model_godo_production_seed,base.group_user,1,1,1
 material_fertilizer_category,material_fertilizer_category,model_godo_material_fertilizer_category,base.group_user,1,1,1,1
 material_pesticides_category,material_pesticides_category,model_godo_material_pesticides_category,base.group_user,1,1,1,1
 material_fertilizer,material_fertilizer,model_godo_material_fertilizer,base.group_user,1,1,1,1
+material_pesticides,material_pesticides,model_godo_material_pesticides,base.group_user,1,1,1,1

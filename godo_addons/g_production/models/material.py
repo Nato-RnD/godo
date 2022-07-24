@@ -1,10 +1,10 @@
 #-*- coding: utf-8 -*-  
-from odoo import SUPERUSER_ID, models, fields, api, tools
+from odoo import SUPERUSER_ID, models, fields, api, tools, _
 from odoo.exceptions import UserError, ValidationError
 
 class GodoMaterialFertilizerCategory(models.Model):
     _name = 'godo.material.fertilizer.category'
-    _description = 'Fertilizer Category'   
+    _description = _('Nhóm phân bón')
     _parent_name = "parent_id"
     _parent_store = True
     _rec_name = 'complete_name'
@@ -61,7 +61,7 @@ class GodoMaterialFertilizerCategory(models.Model):
 class GodoMaterialFertilizer(models.Model):
     _name = 'godo.material.fertilizer'
     _inherit = ['mail.thread', 'mail.activity.mixin']
-    _description = 'Phân bón'      
+    _description = _('Phân bón')      
     _order = 'name'
 
     name = fields.Char('Tên phân bón')
@@ -69,6 +69,8 @@ class GodoMaterialFertilizer(models.Model):
     package = fields.Char('Đóng gói')
     net_weight = fields.Float('Khối lượng tịnh (kg)')
     registered_owner = fields.Char('Tổ chức/cá nhân đăng ký')
+    origin = fields.Char('Nguồn gốc') 
+    hs_code = fields.Char('Mã HS')
     fertilizer_type = fields.Many2one(comodel_name='godo.material.fertilizer.category', string='Nhóm phân bón')
     composition_fertilizer_rate = fields.Char('Thành phần (%)')
     composition_fertilizer_ppm = fields.Char('Thành phần (ppm)')
@@ -80,7 +82,7 @@ class GodoMaterialFertilizer(models.Model):
 class GodoMaterialPesticidesCategory(models.Model):
     _name = 'godo.material.pesticides.category'
     _inherit = ['mail.thread', 'mail.activity.mixin']
-    _description = 'Pesticides Category'   
+    _description = _('Nhóm thuốc bảo vệ')   
     _parent_name = "parent_id"
     _parent_store = True
     _rec_name = 'complete_name'
@@ -133,4 +135,21 @@ class GodoMaterialPesticidesCategory(models.Model):
     #     main_category = self.env.ref('g_production.production_item_category_root')
     #     if main_category in self:
     #         raise UserError(_("You cannot delete this product category, it is the default generic category."))
- 
+
+class GodoMaterialPesticides(models.Model):
+    _name = 'godo.material.pesticides'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _description = _('Thuốc bảo vệ thực vật') 
+
+    name = fields.Char('Tên thương phẩm')
+    active_ingredient = fields.Char('Hoạt chất')
+    image = fields.Image('Hình ảnh')
+    package = fields.Char('Đóng gói')
+    net_weight = fields.Float('Khối lượng tịnh (kg)')
+    registered_owner = fields.Char('Tổ chức/cá nhân đăng ký')
+    origin = fields.Char('Nguồn gốc') 
+    pesticides_type = fields.Many2one(comodel_name='godo.material.pesticides.category', string='Nhóm thuốc') 
+    pest = fields.Text('Đối tượng phòng trừ')
+    description = fields.Text('Mô tả')
+    state = fields.Selection(selection=[('draft','Nháp'),('activated','Đang sử dụng'),('inactivated','Đã hủy')],   index=True, tracking=3, default='activated')
+  
