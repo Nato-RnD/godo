@@ -245,7 +245,7 @@ What genre of movies do you like?
 
     <!-- Cay trong -->
     <record model="ir.actions.act_window" id="g_production_item_action_window">
-      <field name="name">g_production_item</field>
+      <field name="name">Cây trồng</field>
       <field name="res_model">godo.production.item</field>
       <field name="view_mode">tree,form</field>
     </record> 
@@ -266,7 +266,7 @@ What genre of movies do you like?
 
     
     <record model="ir.actions.act_window" id="g_production_map_action_window">
-      <field name="name">g_production_item_map</field>
+      <field name="name">Bản đồ</field>
       <field name="res_model">godo.production.item</field>
       <field name="view_mode">form</field>
       <field name="binding_view_types">tree</field>
@@ -275,7 +275,7 @@ What genre of movies do you like?
  
     <!-- Giong cay trong  -->
     <record model="ir.actions.act_window" id="g_production_seed_action_window">
-      <field name="name">g_production_seed</field>
+      <field name="name">Giống cây trồng</field>
       <field name="res_model">godo.production.seed</field>
       <field name="view_mode">tree,form</field>  
     </record> 

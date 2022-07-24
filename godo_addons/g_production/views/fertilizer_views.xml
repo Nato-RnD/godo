@@ -119,7 +119,7 @@
 
 
         <record model="ir.actions.act_window" id="g_material_fertilizer_category_action_window">
-            <field name="name">g_material_fertilizer_category</field>
+            <field name="name">Nhóm phân bón</field>
             <field name="res_model">godo.material.fertilizer.category</field>
             <field name="view_mode">tree,form</field>
             <field name="search_view_id" ref="g_material_fertilizer_category_search_view"/>
@@ -135,7 +135,7 @@
         
 
         <record model="ir.actions.act_window" id="g_material_fertilizer_action_window">
-            <field name="name">g_material_fertilizer</field>
+            <field name="name">Phân bón</field>
             <field name="res_model">godo.material.fertilizer</field>
             <field name="view_mode">tree,form</field>
             <field name="search_view_id" ref="g_material_fertilizer_search_view"/>
