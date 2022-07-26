@@ -36,9 +36,11 @@
       <field name="arch" type="xml">
         <tree string="Thuốc bảo vệ thực vật"> 
           <field name="name" />
+          <field name="hs_code" />
           <field name="active_ingredient" />
           <field name="pesticides_type" />   
-          <field name="origin" optional="show" />
+          <field name="origin" optional="show" /> 
+          <field name="import_state" optional="hide" /> 
           <field name="package" optional="hide" /> 
           <field name="net_weight" optional="hide" /> 
           <field name="registered_owner" />  
@@ -46,6 +48,56 @@
         </tree>
       </field>
   </record>
+
+
+  <record id="g_material_pesticides_form_view" model="ir.ui.view">
+          <field name="name">godo.material.pesticides.form</field>
+          <field name="model">godo.material.pesticides</field>
+          <field name="mode">primary</field>
+          <field eval="7" name="priority" />
+          <field name="arch" type="xml">
+            <form string="Thuốc bảo vệ">
+              <header>
+                <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="activated,inactivated"/>
+              </header>
+              <sheet>  
+                <field name="id" invisible="True" />
+                <field name="image" widget="image" class="oe_avatar" />
+                <div class="oe_title"> 
+                  <h1>
+                    <div class="d-flex"> 
+                      <field class="o_text_overflow" name="name" placeholder="Tên thuốc" />
+                    </div>
+                  </h1>
+                </div> 
+                    <group>
+                      <group > 
+                        <field name="hs_code" />
+                        <field name="pesticides_type" />  
+                        <field name="pest" />   
+                        <field name="origin" />
+                        <field name="import_state" />  
+                      </group>
+    
+                      <group>  
+                        <field name="registered_owner" /> 
+                        <field name="active_ingredient" /> 
+                        <field name="package"  />  
+                        <field name="net_weight"  /> 
+                      </group> 
+                    </group> 
+                    <group>
+                      <field name="description" />
+                    </group>
+              </sheet>
+              <div class="oe_chatter">
+                <field name="message_follower_ids" />
+                <field name="activity_ids" />
+                <field name="message_ids" />
+              </div>
+            </form>
+          </field>
+        </record>
 
   <record id="g_material_pesticides_search_view" model="ir.ui.view">
     <field name="name">godo.material.pesticides.search</field>

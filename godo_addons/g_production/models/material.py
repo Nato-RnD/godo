@@ -51,25 +51,20 @@ class GodoMaterialFertilizerCategory(models.Model):
         if not self.env.context.get('hierarchical_naming', True):
             return [(record.id, record.name) for record in self]
         return super().name_get()
-
-    # @api.ondelete(at_uninstall=False)
-    # def _unlink_except_default_category(self):
-    #     main_category = self.env.ref('g_production.production_item_category_root')
-    #     if main_category in self:
-    #         raise UserError(_("You cannot delete this product category, it is the default generic category."))
-
+ 
 class GodoMaterialFertilizer(models.Model):
     _name = 'godo.material.fertilizer'
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = _('Phân bón')      
     _order = 'name'
 
-    name = fields.Char('Tên phân bón')
+    name = fields.Char('Tên phân bón', required=True)
     image = fields.Image('Hình ảnh')
     package = fields.Char('Đóng gói')
     net_weight = fields.Float('Khối lượng tịnh (kg)')
-    registered_owner = fields.Char('Tổ chức/cá nhân đăng ký')
-    origin = fields.Char('Nguồn gốc') 
+    registered_owner = fields.Char('Tổ chức/cá nhân đăng ký') 
+    origin = fields.Selection( selection=[('imported','Nhập khẩu'),('internal','Sản xuất trong nước')], string='Nguồn gốc', default='internal', required=True) 
+    import_state = fields.Many2one(comodel_name='res.country', string='Nước nhập khẩu')
     hs_code = fields.Char('Mã HS')
     fertilizer_type = fields.Many2one(comodel_name='godo.material.fertilizer.category', string='Nhóm phân bón')
     composition_fertilizer_rate = fields.Char('Thành phần (%)')
@@ -141,13 +136,15 @@ class GodoMaterialPesticides(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = _('Thuốc bảo vệ thực vật') 
 
-    name = fields.Char('Tên thương phẩm')
+    name = fields.Char('Tên thương phẩm', required=True)
     active_ingredient = fields.Char('Hoạt chất')
     image = fields.Image('Hình ảnh')
     package = fields.Char('Đóng gói')
     net_weight = fields.Float('Khối lượng tịnh (kg)')
     registered_owner = fields.Char('Tổ chức/cá nhân đăng ký')
-    origin = fields.Char('Nguồn gốc') 
+    origin = fields.Selection(selection=[('imported','Nhập khẩu'),('internal','Sản xuất trong nước')], string='Nguồn gốc', default='internal', required=True) 
+    import_state = fields.Many2one( comodel_name='res.country', string='Nước nhập khẩu')
+    hs_code = fields.Char('Mã HS')
     pesticides_type = fields.Many2one(comodel_name='godo.material.pesticides.category', string='Nhóm thuốc') 
     pest = fields.Text('Đối tượng phòng trừ')
     description = fields.Text('Mô tả')

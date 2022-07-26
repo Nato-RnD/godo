@@ -1,12 +1,12 @@
 #-*- coding: utf-8 -*-
 
 from soupsieve import select
-from odoo import SUPERUSER_ID, models, fields, api, tools
+from odoo import SUPERUSER_ID, models, fields, api, tools,_
 from odoo.exceptions import UserError, ValidationError
 
 class GodoProductionItemCategory(models.Model):
     _name = 'godo.production.item.category'
-    _description = 'Production Item Category'
+    _description = 'Nhóm cây trồng'
     _parent_name = "parent_id"
     _parent_store = True
     _rec_name = 'complete_name'
@@ -63,7 +63,7 @@ class GodoProductionItemCategory(models.Model):
  
 class GodoProductionItem(models.Model):
     _name = 'godo.production.item'
-    _description = 'Production Item'
+    _description = 'Cây trồng'
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _order = 'code, name, id desc' 
 
@@ -94,7 +94,7 @@ class GodoProductionItem(models.Model):
 
 class GodoProductionSeed(models.Model):
     _name = 'godo.production.seed'
-    _description = 'Production Seed'
+    _description = _('Giống cây trồng')
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _order = 'code, name, id desc' 
 
@@ -114,7 +114,9 @@ class GodoProductionSeed(models.Model):
     code = fields.Char('Mã giống')
     location = fields.Char('Vùng được phép sản xuất')
     cert_num = fields.Char('Số thông tư, quy định công nhận')
-    seed_num = fields.Char('Mã hàng')
+    origin = fields.Selection( selection=[('imported','Nhập khẩu'),('internal','Sản xuất trong nước')], string = 'Nguồn gốc', default='internal', required=True) 
+    import_state = fields.Many2one(  comodel_name='res.country', string='Nước nhập khẩu')
+    hs_code = fields.Char('Mã HS')
     cert_date = fields.Date('Ngày tháng')
     categ_id = fields.Many2one(
         'godo.production.item.category', 'Loại giống',

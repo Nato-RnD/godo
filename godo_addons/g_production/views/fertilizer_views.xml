@@ -35,11 +35,14 @@
             <field name="arch" type="xml">
               <tree string="Phân bón"> 
                 <field name="name" />
+                <field name="hs_code" />
                 <field name="fertilizer_type" /> 
                 <field name="composition_fertilizer_rate" /> 
                 <field name="composition_fertilizer_ppm" /> 
                 <field name="ph_value" /> 
                 <field name="proportion_value" /> 
+                <field name="origin" optional="show" /> 
+                <field name="import_state" optional="hide" /> 
                 <field name="package" optional="hide" /> 
                 <field name="net_weight" optional="hide" /> 
                 <field name="registered_owner" />  
@@ -81,8 +84,7 @@
     
                 <field name="id" invisible="True" />
                 <field name="image" widget="image" class="oe_avatar" />
-                <div class="oe_title">
-                  <label for="name" string="Tên phân bón" />
+                <div class="oe_title"> 
                   <h1>
                     <div class="d-flex"> 
                       <field class="o_text_overflow" name="name" placeholder="Tên phân bón" />
@@ -91,17 +93,20 @@
                 </div> 
                     <group>
                       <group > 
+                        <field name="hs_code" />
                         <field name="fertilizer_type" />  
                         <field name="composition_fertilizer_rate" />  
                         <field name="ph_value" /> 
                         <field name="package"  /> 
+                        <field name="import_state" />
                       </group>
     
-                      <group> 
+                      <group>  
                         <field name="registered_owner" /> 
                         <field name="composition_fertilizer_ppm" /> 
                         <field name="proportion_value" />  
                         <field name="net_weight"  /> 
+                        <field name="origin" />
                       </group> 
                     </group> 
                     <group>
@@ -116,8 +121,7 @@
             </form>
           </field>
         </record>
-
-
+ 
         <record model="ir.actions.act_window" id="g_material_fertilizer_category_action_window">
             <field name="name">Nhóm phân bón</field>
             <field name="res_model">godo.material.fertilizer.category</field>
