@@ -98,7 +98,7 @@
                         <field name="composition_fertilizer_rate" />  
                         <field name="ph_value" /> 
                         <field name="package"  /> 
-                        <field name="import_state" />
+                        <field name="import_state"  attrs="{'invisible': [('origin', '!=', 'imported')]}"  />
                       </group>
     
                       <group>  
