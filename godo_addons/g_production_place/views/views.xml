@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="godo_addons/g_production_place.list">
+      <field name="name">godo_addons/g_production_place list</field>
+      <field name="model">godo_addons/g_production_place.godo_addons/g_production_place</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="godo_addons/g_production_place.action_window">
+      <field name="name">godo_addons/g_production_place window</field>
+      <field name="res_model">godo_addons/g_production_place.godo_addons/g_production_place</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="godo_addons/g_production_place.action_server">
+      <field name="name">godo_addons/g_production_place server</field>
+      <field name="model_id" ref="model_godo_addons/g_production_place_godo_addons/g_production_place"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="godo_addons/g_production_place" id="godo_addons/g_production_place.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="godo_addons/g_production_place.menu_1" parent="godo_addons/g_production_place.menu_root"/>
+    <menuitem name="Menu 2" id="godo_addons/g_production_place.menu_2" parent="godo_addons/g_production_place.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="godo_addons/g_production_place.menu_1_list" parent="godo_addons/g_production_place.menu_1"
+              action="godo_addons/g_production_place.action_window"/>
+    <menuitem name="Server to list" id="godo_addons/g_production_place" parent="godo_addons/g_production_place.menu_2"
+              action="godo_addons/g_production_place.action_server"/>
+-->
+  </data>
+</odoo>

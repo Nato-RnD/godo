@@ -30,6 +30,7 @@
         'views/production_views.xml', 
         'views/fertilizer_views.xml', 
         'views/pesticides_views.xml', 
+        'views/product_views.xml', 
         'views/menu_views.xml',
     ],
     # only loaded in demonstration mode

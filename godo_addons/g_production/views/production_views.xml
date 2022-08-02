@@ -25,19 +25,7 @@
               </group>
           </search>
       </field>
-  </record>
-
-    <record id="g_production_item_tree_view" model="ir.ui.view">
-      <field name="name">godo.production.item.tree</field>
-      <field name="model">godo.production.item</field>
-      <field eval="8" name="priority" />
-      <field name="arch" type="xml">
-        <tree string="Cây trồng"> 
-          <field name="name" />
-          <field name="categ_id" /> 
-        </tree>
-      </field>
-    </record>
+  </record> 
 
     <record id="g_production_seed_tree_view" model="ir.ui.view">
       <field name="name">godo.production.seed.tree</field>
@@ -107,6 +95,20 @@
       </field>
     </record>
 
+    <record id="g_production_item_tree_view" model="ir.ui.view">
+      <field name="name">godo.production.item.tree</field>
+      <field name="model">godo.production.item</field>
+      <field eval="8" name="priority" />
+      <field name="arch" type="xml">
+        <tree string="Cây trồng"> 
+          <field name="name" />
+          <field name="hs_code" /> 
+          <field name="categ_id" /> 
+          <field name="state" />
+        </tree>
+      </field>
+    </record>
+
     <record id="g_production_item_form_view" model="ir.ui.view">
       <field name="name">godo.production.item.form</field>
       <field name="model">godo.production.item</field>
@@ -117,37 +119,30 @@
           <header>
             <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="draft,done"/>
           </header>
-          <sheet> 
-            <!-- <widget name="web_ribbon" title="Đang sử dụng" bg_color="bg-success"
-              attrs="{'invisible': [('state', '!=', 'done')]}" /> -->
-
+          <sheet>  
             <field name="id" invisible="True" />
             <field name="image" widget="image" class="oe_avatar" />
-            <div class="oe_title">
-              <label for="name" string="Tên cây trồng" />
+            <div class="oe_title"> 
               <h1>
                 <div class="d-flex"> 
-                  <field class="o_text_overflow" name="name" placeholder="Giống cây trồng" />
+                  <field class="o_text_overflow" name="name" placeholder="Tên cây trồng" />
                 </div>
               </h1>
-            </div>
-            <style>
-              div[name="options"] .o_field_boolean {
-                margin-left: 10px;
-                margin-right: 0px;
-              }
-            </style> 
-          
+            </div> 
                 <group>
                   <group > 
-                    <field name="code" /> 
+                    <field name="hs_code" /> 
+                    <field name="seed_id" />
                     
-                  </group>
-
+                  </group> 
                   <group> 
                     <field name="categ_id"  options="{'no_create': True, 'no_edit': True}" /> 
+                    <field name="state" />
                   </group> 
                 </group> 
+                <group >
+                  <field name="note" />
+                </group>
           </sheet>
           <div class="oe_chatter">
             <field name="message_follower_ids" />
