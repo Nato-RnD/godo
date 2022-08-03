@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+
+        <record id="g_production_puc_map_action_windows" model="ir.actions.client">
+            <field name="name">Ban do</field>
+            <field name="tag">building_dashboard</field>
+            <field name="context" eval="{'model': 'godo.production.unit.declaration'}" />
+        </record> 
+
         <record id="g_production_puc_map_tree_view" model="ir.ui.view">
             <field name="name">g_production_puc_map_tree_view</field>
             <field name="model">godo.production.unit.declaration</field>
@@ -17,12 +24,11 @@
                 </form>
             </field>
         </record>
-        <record model="ir.actions.act_window" id="g_production_puc_map_action_windows">
+        <!-- <record model="ir.actions.act_window" id="g_production_puc_map_action_windows">
             <field name="name">Nông sản</field>
             <field name="res_model">godo.production.unit.declaration</field>
             <field name="view_mode">form</field>
-            <field name="view_id" ref="g_production_puc_map_tree_view" />
-            <!-- <field name="search_view_id" ref="g_material_pesticides_category_search_view" /> -->
-        </record>  
+            <field name="view_id" ref="g_production_puc_map_form_view" /> 
+        </record>   -->
     </data> 
 </odoo>

@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-    <data>
-
+    <data>   
         <record model="ir.ui.view" id="view_decimal_precision_form">
             <field name="name">Decimal Precision</field>
             <field name="model">decimal.precision</field>
