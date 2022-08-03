@@ -65,7 +65,7 @@ class GodoProductionItem(models.Model):
     _name = 'godo.production.item'
     _description = 'Cây trồng'
     _inherit = ['mail.thread', 'mail.activity.mixin']
-    _order = 'code, name, id desc' 
+    _order = 'name, id desc' 
 
     @tools.ormcache()
     def _get_default_category_id(self):
@@ -79,18 +79,18 @@ class GodoProductionItem(models.Model):
         return categories.browse(category_ids)
         
     
-    name = fields.Char('Item name', required=True)
-    code = fields.Char('Item code')
+    name = fields.Char('Tên cây trồng', required=True) 
+    hs_code = fields.Char('Mã HS')
     image = fields.Image('Ảnh')
+    seed_id = fields.Many2one(comodel_name='godo.production.seed', string='Giống cây trồng')
     categ_id = fields.Many2one(
-        'godo.production.item.category', 'Product Category',
+        'godo.production.item.category', 'Nhóm cây trồng',
         change_default=True, default=_get_default_category_id, group_expand='_read_group_categ_id',
-        required=True, help="Select category for the current product")
-    state = fields.Selection(selection=[('draft','Nháp'),('done','Đang sử dụng'),('cancelled','Đã hủy')],   index=True, tracking=3, default='draft')
+        required=True, help="Select category for the current plant")
 
-    # partner_ref = fields.Char('Customer Ref', compute='_compute_partner_ref')
-
-
+    note = fields.Text(string='Ghi chú')
+    
+    state = fields.Selection(selection=[('draft','Nháp'),('done','Đang sử dụng'),('cancelled','Đã hủy')],   index=True, tracking=3, default='draft', string='Trạng thái') 
 
 class GodoProductionSeed(models.Model):
     _name = 'godo.production.seed'

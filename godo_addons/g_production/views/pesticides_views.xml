@@ -76,7 +76,7 @@
                         <field name="pesticides_type" />  
                         <field name="pest" />   
                         <field name="origin" />
-                        <field name="import_state" />  
+                        <field name="import_state"  attrs="{'invisible': [('origin', '!=', 'imported')]}"  />  
                       </group>
     
                       <group>  
