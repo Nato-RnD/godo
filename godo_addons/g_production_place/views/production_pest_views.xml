@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="g_production_puc_map_tree_view" model="ir.ui.view">
+            <field name="name">g_production_puc_map_tree_view</field>
+            <field name="model">godo.production.unit.declaration</field>
+            <field eval="8" name="priority" />
+            <field name="arch" type="xml">
+                <form string="Loại cây trồng"> 
+                    <xpath expr="//div[@class='o_content']" position="inside">
+                        <div class="bg-warning">
+                                <h1>Ban do vung trong</h1>
+                        </div>
+                        
+                    </xpath>
+                    <field name="name" />
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="g_production_puc_map_action_windows">
+            <field name="name">Nông sản</field>
+            <field name="res_model">godo.production.unit.declaration</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="g_production_puc_map_tree_view" />
+            <!-- <field name="search_view_id" ref="g_material_pesticides_category_search_view" /> -->
+        </record>  
+    </data> 
+</odoo>

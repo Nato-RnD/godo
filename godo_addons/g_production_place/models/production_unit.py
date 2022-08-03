@@ -18,13 +18,12 @@ class GodoProductionUnitDeclaration(models.Model):
     registered_owner_name = fields.Char(string='Tổ chức/cá nhân đăng ký')
     registered_owner_type= fields.Selection(selection=[('personal','Cá nhân'),('company','Tổ chức/Doanh nghiệp')], default='company' ,required=True, string='Loại hình hoạt động')
     registered_owner_representer = fields.Char(string='Đại diện')
-    registered_owner_address = fields.Char(string='Địa chỉ')
+    registered_owner_address = fields.Char(string='Địa chỉ liên hệ')
     registered_owner_code = fields.Char(string='Mã số DN/CCCD')
     phone = fields.Char(string='Điện thoại')
     fax = fields.Char(string='Fax')
     email = fields.Char(string='Email')
     has_vietgap_global_gap = fields.Boolean(string='Có chứng nhận Viet Gap, Global Gap')
-
 
 class GodoProductionUnitInspection(models.Model):
     _name = 'godo.production.unit.inspection'

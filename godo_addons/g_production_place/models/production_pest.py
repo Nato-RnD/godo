@@ -1,6 +1,4 @@
-#-*- coding: utf-8 -*-
-
-from re import M
+#-*- coding: utf-8 -*- 
 from odoo import models, fields, api, _
 
 class GodoProductionPest(models.Model):

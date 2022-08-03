@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Quản lý vùng trồng",
+    'name': "G PUC",
 
     'summary': """
        Quản lý vùng trồng
@@ -18,15 +18,17 @@
     # for the full list
     'category': 'G-Office',
     'version': '0.1',
+    'license':'LGPL-3',
+    'application':True,
 
     # any module necessary for this one to work correctly
     'depends': ['base','g_production'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'security/ir.model.access.csv',
+        'views/production_pest_views.xml',
+        'views/menu_views.xml',
     ],
  
 }

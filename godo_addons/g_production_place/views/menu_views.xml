@@ -1,0 +1,36 @@
+<odoo>
+  <data> 
+    <menuitem name="Quản lý vùng trồng" id="g_production_place.menu_root"  web_icon="g_production_place,static/description/icon.png" />
+
+    <menuitem name="Bản đồ vùng trồng" id="g_production_place.production_place_map" parent="g_production_place.menu_root" action="g_production_puc_map_action_windows" />
+
+    
+    <!-- Start Quan ly vung trong  -->
+    <menuitem name="Quản lý vùng trồng" id="g_production_place.production_place_management" parent="g_production_place.menu_root" /> 
+    <menuitem name="Biểu mẫu đăng ký" id="g_production_place.production_place_management_declaration" parent="g_production_place.production_place_management" action="g_production.g_production_seed_action_window" /> 
+    <menuitem name="Mã vùng trồng" id="g_production_place.production_place_management_puc" parent="g_production_place.production_place_management" action="g_production.g_production_seed_action_window" /> 
+    <!-- End Quan ly vung trong  -->
+
+
+    <!-- Start Quan ly to chuc ca nhan -->
+    <menuitem name="Quản lý tổ chức/cá nhân" id="g_production_place.production_place_partner" parent="g_production_place.menu_root" /> 
+    <menuitem name="Tổ chức/cá nhân đăng ký mã vùng trồng" id="g_production_place.production_place_partner_company" parent="g_production_place.production_place_partner" action="g_production.g_production_seed_action_window" /> 
+    <menuitem name="Nông hộ tham gia vùng trồng" id="g_production_place.production_place_farmer" parent="g_production_place.production_place_partner" action="g_production.g_production_seed_action_window" />
+    <!-- End Quan ly to chuc ca nhan -->
+
+
+    <!-- Start Quan ly nghiệp vụ -->
+    <menuitem name="Quản lý nghiệp vụ" id="g_production_place.production_place_management_business" parent="g_production_place.menu_root"  />
+    <menuitem name="Biên bản kiểm tra" id="g_production_place.production_place_management_business_inspection" parent="g_production_place.production_place_management_business" action="g_production.g_production_seed_action_window" />
+    <menuitem name="Báo cáo kết quả" id="g_production_place.production_place_management_business_report" parent="g_production_place.production_place_management_business" action="g_production.g_production_seed_action_window" />
+    <!-- Start Quan ly nghiệp vụ -->
+
+    <!-- Start Quan ly dịch bệnh -->
+    <menuitem name="Quản lý dịch bệnh" id="g_production_place.production_place_pest_management" parent="g_production_place.menu_root" />
+    <menuitem name="Sinh vật có hại" id="g_production_place.production_place_pest" parent="g_production_place.production_place_pest_management"  action="g_production.g_production_seed_action_window"/>
+    <!-- Start Quan ly dịch bệnh -->
+
+
+
+  </data>
+</odoo>
