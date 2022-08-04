@@ -30,5 +30,16 @@
         'views/production_pest_views.xml',
         'views/menu_views.xml',
     ],
+    
+    'assets': {
+        'web.assets_backend': [
+            'g_production_place/static/src/vendors/leaflet/leaflet.css',
+            'g_production_place/static/src/vendors/leaflet/leaflet.js',
+            'g_production_place/static/src/js/map.js',
+        ],
+    'web.assets_qweb': [
+            'g_production_place/static/src/xml/**/*',
+        ],
+    },
  
 }

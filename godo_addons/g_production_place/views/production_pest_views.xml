@@ -4,7 +4,7 @@
 
         <record id="g_production_puc_map_action_windows" model="ir.actions.client">
             <field name="name">Ban do</field>
-            <field name="tag">building_dashboard</field>
+            <field name="tag">puc_map</field>
             <field name="context" eval="{'model': 'godo.production.unit.declaration'}" />
         </record> 
 
