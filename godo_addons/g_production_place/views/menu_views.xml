@@ -7,8 +7,8 @@
     
     <!-- Start Quan ly vung trong  -->
     <menuitem name="Quản lý vùng trồng" id="g_production_place.production_place_management" parent="g_production_place.menu_root" /> 
-    <menuitem name="Biểu mẫu đăng ký" id="g_production_place.production_place_management_declaration" parent="g_production_place.production_place_management" action="g_production.g_production_seed_action_window" /> 
-    <menuitem name="Mã vùng trồng" id="g_production_place.production_place_management_puc" parent="g_production_place.production_place_management" action="g_production.g_production_seed_action_window" /> 
+    <menuitem name="Biểu mẫu đăng ký" id="g_production_place.production_place_management_declaration" parent="g_production_place.production_place_management" action="g_production_place.production_place_management_declaration_action_window" /> 
+    <menuitem name="Danh sách Vùng trồng" id="g_production_place.production_place_management_puc" parent="g_production_place.production_place_management" action="g_production.g_production_seed_action_window" /> 
     <!-- End Quan ly vung trong  -->
 
 
@@ -27,7 +27,7 @@
 
     <!-- Start Quan ly dịch bệnh -->
     <menuitem name="Quản lý dịch bệnh" id="g_production_place.production_place_pest_management" parent="g_production_place.menu_root" />
-    <menuitem name="Sinh vật có hại" id="g_production_place.production_place_pest" parent="g_production_place.production_place_pest_management"  action="g_production.g_production_seed_action_window"/>
+    <menuitem name="Sinh vật có hại" id="g_production_place.production_place_pest" parent="g_production_place.production_place_pest_management"  action="g_production_place.g_production_pest_action_window"/>
     <!-- Start Quan ly dịch bệnh -->
 
 

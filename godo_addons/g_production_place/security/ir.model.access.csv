@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 godo_production_unit_declaration_id,godo_production_unit_declaration_name,model_godo_production_unit_declaration,,1,1,1,1
 godo_production_unit_inspection_id,godo_production_unit_inspection_name,model_godo_production_unit_inspection,,1,1,1,1
 godo_production_pest_id,godo_production_pest_name,model_godo_production_pest,,1,1,1,1
+godo_production_unit_declaration_id,godo_production_unit_declaration_name,model_godo_production_unit_declaration,,1,1,1,1

@@ -24,6 +24,10 @@ class GodoProductionUnitDeclaration(models.Model):
     fax = fields.Char(string='Fax')
     email = fields.Char(string='Email')
     has_vietgap_global_gap = fields.Boolean(string='Có chứng nhận Viet Gap, Global Gap')
+    farm_ids = fields.Many2many(comodel_name='res.partner',relation='godo_production_unit_declaration_farm_rel', column1='declaration_id', column2='farm_id', string='Danh sách các hộ nông dân')
+    certificate_attachment_ids = fields.Many2many(comodel_name='ir.attachment',relation='godo_production_unit_declaration_certification_attachment_rel', column1='declaration_id', column2='attachment_id', string='Bản sao chứng nhận')
+    agreement_attachment_ids = fields.Many2many(comodel_name='ir.attachment',relation='godo_production_unit_declaration_agreement_attachment_rel', column1='declaration_id', column2='attachment_id', string='Cam kết')
+    map_kml_id = fields.Many2one(comodel_name='ir.attachment',string='Dữ liệu bản đồ KML')
 
 class GodoProductionUnitInspection(models.Model):
     _name = 'godo.production.unit.inspection'

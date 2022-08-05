@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data> 
-        <record id="g_production_pest_tree_view" model="ir.ui.view">
-            <field name="name">g_production_pest_tree_view</field>
-            <field name="model">godo.production.pest</field>
+    <data>  
+        <record id="production_place_management_declaration_tree_view" model="ir.ui.view">
+            <field name="name">production_place_management_declaration_tree_view</field>
+            <field name="model">godo.production.unit.declaration</field>
             <field eval="8" name="priority" />
             <field name="arch" type="xml">
-                <tree string="Sinh vật có hại">
+                <tree string="Tờ khai đăng ký vùng trồng">
                     <field name="name" />
                     <field name="plant_id" />
-                    <field name="description" />
+                    <field name="registered_owner_name" />
                 </tree>
             </field>
         </record>
+        
+        <!-- 
 
         <record id="g_production_pest_search_view" model="ir.ui.view">
             <field name="name">g_production_pest_search_view</field>
@@ -58,21 +60,23 @@
           </div>
         </form>
       </field>
-    </record>
+    </record> -->
 
-        <record model="ir.actions.act_window" id="g_production_pest_action_window">
-            <field name="name">Sinh vật có hại</field>
-            <field name="res_model">godo.production.pest</field>
+        <record model="ir.actions.act_window" id="production_place_management_declaration_action_window">
+            <field name="name">Khai báo vùng trồng</field>
+            <field name="res_model">godo.production.unit.declaration</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="g_production_pest_search_view" />
+            <!-- <field name="search_view_id" ref="g_production_pest_search_view" /> -->
         </record>
 
-        <record id="g_production_pest_action_window_tree" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="g_production_pest_action_window" />
+        <record id="production_place_management_declaration_action_window_tree" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="production_place_management_declaration_action_window" />
             <field name="sequence" eval="1" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="g_production_pest_tree_view" />
+            <field name="view_id" ref="production_place_management_declaration_tree_view" />
         </record>
+
+        <!-- 
 
         <record id="g_production_pest_action_window_form" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="g_production_pest_action_window" />
@@ -103,7 +107,7 @@
                     <field name="name" />
                 </form>
             </field>
-        </record>
+        </record> -->
 
     </data>
 </odoo>

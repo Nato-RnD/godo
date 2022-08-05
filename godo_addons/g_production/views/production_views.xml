@@ -301,5 +301,6 @@ What genre of movies do you like?
     <field name="view_mode">form</field>
     <field name="view_id" ref="g_production_seed_form_view"/>
   </record> 
+  
   </data>
 </odoo>
