@@ -32,7 +32,7 @@
     ],
     'assets': {
         'web.assets_backend': [ 
-            
+            # 'g_logistic/static/src/js/scan_input_mode.js'
         ]
         
       }

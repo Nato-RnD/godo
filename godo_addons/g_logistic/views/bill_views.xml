@@ -3,7 +3,7 @@
 
     <data>   
         <record id="g_logistic_main_tree_view" model="ir.ui.view">
-            <field name="name">logo.logistic.bill.tree</field>
+            <field name="name">godo.logistic.bill.tree</field>
             <field name="model">godo.logistic.bill</field>
             <field eval="8" name="priority" /> 
             <field name="arch" type="xml">
@@ -25,6 +25,61 @@
             </field>
         </record>  
 
+        <record id="g_logistic_main_action_window_form" model="ir.ui.view">
+          <field name="name">godo.logistic.bill.form</field>
+          <field name="model">godo.logistic.bill</field>
+          <field name="mode">primary</field>
+          <field eval="7" name="priority" />
+          <field name="arch" type="xml">
+            <form string="Logistic Bill">
+              <header>
+                <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="sent,received,forward,done,cancelled"/>
+              </header>
+              <sheet>  
+                <field name="id" invisible="True" /> 
+                <div class="oe_title"> 
+                  <h1>
+                    <div class="d-flex"> 
+                      <field class="o_text_overflow" name="name" placeholder="Bill code" />
+                    </div>
+                  </h1>
+                </div> 
+                    <group>
+                      <group > 
+                        <field name="origin_code" />
+                        <field name="bill_date" />  
+                        <field name="customer_id" />   
+                        <field name="customer_mobile" />
+                        <field name="package_weight" />  
+                        <field name="unit_quantity" />
+                      </group>
+    
+                      <group>  
+                        <field name="packing_code" /> 
+                        <field name="done_date" /> 
+                        <field name="customer_address"  />  
+                        <field name="goods_name"  /> 
+                        <field name="unit_price" />
+                        <field name="total_amount" />
+                      </group> 
+                    </group>
+
+                    <group> 
+                      <field name="note" />
+                    </group>
+              </sheet>
+              <div class="oe_chatter">
+                <field name="message_follower_ids" />
+                <field name="activity_ids" />
+                <field name="message_ids" />
+              </div>
+            </form>
+          </field>
+        </record>
+
+  
+  
+
         <record id="g_logistic_main_search_view" model="ir.ui.view">
             <field name="name">godo.logistic.bill.search</field>
             <field name="model">godo.logistic.bill</field>
@@ -45,10 +100,7 @@
             <field name="name">Logistic bill</field>
             <field name="res_model">godo.logistic.bill</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="g_logistic_main_search_view" /> 
-            <!-- <field name="context">{ 
-                "search_default_is_customer": 1}
-            </field> -->
+            <field name="search_view_id" ref="g_logistic_main_search_view" />  
         </record>
 
         <record id="g_logistic_main_action_window_tree" model="ir.actions.act_window.view">
@@ -58,12 +110,12 @@
             <field name="view_id" ref="g_logistic_main_tree_view" />
         </record>
 
-        <!-- <record id="g_logistic_main_action_window_form" model="ir.actions.act_window.view">
+        <record id="g_logistic_main_action_window_form" model="ir.actions.act_window.view">
             <field name="act_window_id" ref="g_logistic_main_action_window" />
             <field name="sequence" eval="2" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="g_logistic_main_form_view" />
-        </record>  -->
+            <field name="view_id" ref="g_logistic_main_action_window_form" />
+        </record> 
 
     </data>
     

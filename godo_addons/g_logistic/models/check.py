@@ -12,7 +12,7 @@ class LogisticBillCheck(models.Model):
        ( 'cancelled','Cancelled')
     ]
 
-    name = fields.Char(string='Bill Check')
+    name = fields.Char(string='Bill Check', required=True)
     date = fields.Date(string='Date', default=fields.Date.today())
     user_id = fields.Many2one(comodel_name= 'res.users', string='Employee ID')
     bill_ids = fields.Many2many(comodel_name='godo.logistic.bill',  column1='check_id', column2='bill_id', string='Bills')

@@ -99,6 +99,7 @@
           </field>
         </record>
 
+  
   <record id="g_material_pesticides_search_view" model="ir.ui.view">
     <field name="name">godo.material.pesticides.search</field>
     <field name="model">godo.material.pesticides</field>
