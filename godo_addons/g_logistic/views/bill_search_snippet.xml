@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <div class = "row mb-3 alert alert-success">
+            <div class = "row mb-3">
                 <div id="search-result" class="col-12" style="position:left"></div>  
             </div>
             <div class = "row mb-5 py-2">
@@ -42,4 +42,3 @@
     </template>
 
 </odoo>
-

@@ -20,7 +20,7 @@
     'version': '0.1',
     'application': True,
     # any module necessary for this one to work correctly
-    'depends': ['base','mail','web','g_partner'],
+    'depends': ['base','mail','web','g_partner','website'],
 
     # always loaded
     'data': [

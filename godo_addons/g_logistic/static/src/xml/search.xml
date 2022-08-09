@@ -1,37 +1,36 @@
     <templates>
         <t t-name="BillSearch.Result" name="Bill Search Result">
             <t t-if="search_result.id>0">
-                <div t-attf-class="container #{search_result.color}" > 
-                    <t t-esc="search_result.color"/>
+                <div t-attf-class="container #{search_result.color}" >  
                     <div class="row py-2 mx-0">
-                        <div class="col-6">Mã vận đơn:
+                        <div class="col-12 col-lg-6">Mã vận đơn:
                             <t t-esc="search_result.name" />
                         </div>
-                        <div class="col-6">Vận đơn gốc:
+                        <div class="col-12 col-lg-6">Vận đơn gốc:
                             <t t-esc="search_result.origin_code" />
                         </div>
                     </div>
                     <div class="row py-2 mx-0">
-                        <div class="col-6">Ngày vận đơn:
+                        <div class="col-12 col-lg-6">Ngày vận đơn:
                             <t t-esc="search_result.bill_date" />
                         </div>
-                        <div class="col-6">Trạng thái:
+                        <div class="col-12 col-lg-6">Trạng thái:
                             <t t-esc="search_result.state" />
                         </div>
                     </div>
                     <div class="row py-2 mx-0">
-                        <div class="col-6">Tên hàng:
+                        <div class="col-12 col-lg-6">Tên hàng:
                             <t t-esc="search_result.goods_name" />
                         </div>
-                        <div class="col-6">Khối lượng:
+                        <div class="col-12 col-lg-6">Khối lượng:
                             <t t-esc="search_result.package_weight" />
                         </div>
                     </div>
                     <div class="row py-2 mx-0">
-                        <div class="col-6">Khách hàng:
+                        <div class="col-12 col-lg-6">Khách hàng:
                             <t t-esc="search_result.customer_id[1]" />
                         </div>
-                        <div class="col-6">Điện thoại:
+                        <div class="col-12 col-lg-6">Điện thoại:
                             <t t-esc="search_result.customer_mobile" />
                         </div>
                     </div>

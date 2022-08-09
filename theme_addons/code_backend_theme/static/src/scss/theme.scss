@@ -649,6 +649,31 @@ th.o_list_record_selector {
     float: left;
 }
 
+@media screen and (max-width: 1600px) {
+    .o_form_view .o_form_sheet_bg {
+        border-bottom: none;
+        background: #ffffff !important;
+        box-shadow: none !important;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%!important;
+        float: left;
+    }
+
+    .o_FormRenderer_chatterContainer {
+        width: 100%!important;
+        float: left;
+        max-width: initial;
+        padding: 0 !important;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03) !important;
+        box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03) !important;
+    }
+
+  }
+
+
+
 .o_form_sheet {
     float: left; 
 }
@@ -778,7 +803,7 @@ th.o_list_record_selector {
 // Discuss End
 //Chatter @form
 .o_FormRenderer_chatterContainer {
-    width: 35%!important;
+    width: 35%;
     float: left;
     max-width: initial;
     padding: 0 !important;

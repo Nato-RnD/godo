@@ -1,85 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo> 
-    <data>   
+<odoo>
+    <data>
         <record id="g_logistic_check_list_view" model="ir.ui.view">
             <field name="name">godo.logistic.bill.check.tree</field>
             <field name="model">godo.logistic.bill.check</field>
-            <field eval="8" name="priority" /> 
+            <field eval="8" name="priority" />
             <field name="arch" type="xml">
-                <tree string="Bills"  > 
+                <tree string="Bills">
                     <field name="name" />
-                    <field name="date" /> 
-                    <field name="user_id" /> 
-                    <field name="state" widget="badge" />  
+                    <field name="date" />
+                    <field name="user_id" />
+                    <field name="state" widget="badge" />
                 </tree>
             </field>
-        </record>  
+        </record>
 
         <record id="g_logistic_check_form_view" model="ir.ui.view">
             <field name="name">godo.logistic.bill.check.form</field>
             <field name="model">godo.logistic.bill.check</field>
-            <field name="priority" eval="1"/>
-            <field name="arch" type="xml"> 
-                <form string="Check"> 
+            <field name="priority" eval="1" />
+            <field name="arch" type="xml">
+                <form string="Check">
                     <xpath expr="." position="inside">
-                    <script type="text/javascript" src="/g_logistic/static/src/js/scan_input_mode.js"></script>
+                        <script type="text/javascript" src="/g_logistic/static/src/js/scan_input_mode.js"></script>
                     </xpath>
                     <header>
-                        <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="draft,done,cancelled"/>
+                        <field name="state" widget="statusbar" options="{'clickable': '1'}"
+                            statusbar_visible="draft,done,cancelled" />
                     </header>
-                    <sheet> 
-                        <widget name="web_ribbon" title="Done" bg_color="bg-success" attrs="{'invisible': [('state', '!=', 'done')]}"/> 
-                        <widget name="web_ribbon" title="Done" bg_color="bg-danger" attrs="{'invisible': [('state', '!=', 'cancelled')]}"/> 
-                        <div class="oe_title mb24"> 
+                    <sheet>
+                        <widget name="web_ribbon" title="Done" bg_color="bg-success"
+                            attrs="{'invisible': [('state', '!=', 'done')]}" />
+                        <widget name="web_ribbon" title="Done" bg_color="bg-danger"
+                            attrs="{'invisible': [('state', '!=', 'cancelled')]}" />
+                        <div class="oe_title mb24">
                             <h1>
-                                <field id="name" required="1" class="o_text_overflow" name="name" default_focus="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
-                            </h1> 
+                                <field id="name" required="1" class="o_text_overflow" name="name" default_focus="1"
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                            </h1>
                         </div>
 
                         <group>
                             <group>
-                                <field name="date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="date" attrs="{'readonly': [('state', '!=', 'draft')]}" />
                             </group>
                             <group>
-                                <field name="user_id" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="user_id" attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                <field name="bill_count" attrs="{'readonly': [('state', '!=', 'draft')]}" />
                             </group>
+                        </group>
+                        <field name="note" nolabel="1" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                            placeholder="Note here" />
+                        <hr />
 
-                            <group  > 
-                                <field name="note" attrs="{'readonly': [('state', '!=', 'draft')]}"/> 
-                            </group> 
-                            
-                            <hr/>
 
-                            <field name="search_text" />
-                            <field name="bill_ids" attrs="{'readonly': [('state', '!=', 'draft')]}" options="{'no_create_edit': True}" >
-                                    <tree create="false" delete="false">
-                                        <field name="name" />
-                                        <field  name="origin_code" />
-                                        <field name="packing_code" />
-                                        <field name="goods_name" />
-                                    </tree>
-                            </field>
-                        </group> 
+                        <field name="search_text" nolabel="1" placeholder="Barcode fill here!"  class="alert-info oe_edit_only" style="width: 450px; float:right" />
+                        <field name="bill_ids" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                            options="{'no_create_edit': True}">
+                            <tree create="false" delete="false">
+                                <field name="name" />
+                                <field name="origin_code" />
+                                <field name="packing_code" />
+                                <field name="goods_name" />
+                            </tree>
+                        </field>
                     </sheet>
                     <div class="oe_chatter">
                         <field name="message_follower_ids" />
                         <field name="activity_ids" />
                         <field name="message_ids" />
-                  </div>
+                    </div>
                 </form>
             </field>
-        </record> 
+        </record>
 
         <record id="g_logistic_check_search_view" model="ir.ui.view">
             <field name="name">godo.logistic.bill.check.search</field>
             <field name="model">godo.logistic.bill.check</field>
             <field name="arch" type="xml">
                 <search string="Bills Check">
-                    <field name="name" string="Bill Check" filter_domain="[('name', 'ilike', self)]"/>
+                    <field name="name" string="Bill Check" filter_domain="[('name', 'ilike', self)]" />
                     <group expand="1" string="Nhóm theo">
-                        <filter string="Employee" name="user_id" context="{'group_by':'user_id'}"/>   
-                        <filter string="Check date" name="date" context="{'group_by':'date'}"/> 
-                        <filter string="Status" name="state" context="{'group_by':'state'}"/>   
+                        <filter string="Employee" name="user_id" context="{'group_by':'user_id'}" />
+                        <filter string="Check date" name="date" context="{'group_by':'date'}" />
+                        <filter string="Status" name="state" context="{'group_by':'state'}" />
                     </group>
                 </search>
             </field>
@@ -89,7 +93,7 @@
             <field name="name">Logistic bill Check</field>
             <field name="res_model">godo.logistic.bill.check</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="g_logistic_check_search_view" />  
+            <field name="search_view_id" ref="g_logistic_check_search_view" />
         </record>
 
         <record id="g_logistic_check_action_window_tree" model="ir.actions.act_window.view">
@@ -104,8 +108,8 @@
             <field name="sequence" eval="2" />
             <field name="view_mode">form</field>
             <field name="view_id" ref="g_logistic_check_form_view" />
-        </record>  
+        </record>
     </data>
-    
+
 
 </odoo>
