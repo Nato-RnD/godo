@@ -28,11 +28,15 @@
         'views/bill_views.xml',
         'views/check_views.xml',
         'views/menu_views.xml',
+        'views/bill_search_snippet.xml',
          
     ],
     'assets': {
-        'web.assets_backend': [ 
-            # 'g_logistic/static/src/js/scan_input_mode.js'
+        'web.assets_qweb': [
+            'g_logistic/static/src/xml/search.xml',
+        ],
+        'web.assets_frontend': [ 
+            'g_logistic/static/src/js/search_snippet.js'
         ]
         
       }

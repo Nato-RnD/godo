@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo> 
+    <template id="bill_search_snippet" name="Bill Search Snippet">
+        <section class="container dynamic_snippet_blog">
+            <div class="row my-5">
+                <div class="col-lg-12 o_colored_level">
+                    <h2 class="o_default_snippet_text">Tìm kiếm vận đơn</h2>
+                    <p class="o_default_snippet_text">Quý khách có thể tìm kiếm thông tin đơn hàng tại đây</p>
+                    <div  class="o_searchbar_form s_searchbar_input"
+                        action="/website/search">
+                        <div role="search" class="input-group ">
+                            <input type="text" id="txt-bill-search"  class="search-query form-control oe_search_box None"
+                                placeholder="Tìm kiếm đơn hàng" autocomplete="off" />
+                            <div class="input-group-append">
+                                <button  id="btn-bill-search" aria-label="Search" title="Search"
+                                    class="btn oe_search_button btn-primary">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class = "row mb-3 alert alert-success">
+                <div id="search-result" class="col-12" style="position:left"></div>  
+            </div>
+            <div class = "row mb-5 py-2">
+                 Hướng dẫn tra cứu đơn hàng:
+                  - a
+                  - b
+            </div>
+        </section>
+    </template> 
+
+    <template id="bill_search_snippets_web_snippets" inherit_id="website.snippets" name="Bill Search Snippets">
+        <xpath expr="//div[@id='snippet_structure']" position="inside">
+            <div class="o_panel_body">
+                <t t-snippet="g_logistic.bill_search_snippet"
+                    t-thumbnail="/g_logistic/static/src/img/snippets/search.png" />
+            </div>
+        </xpath>
+    </template>
+
+</odoo>
+
