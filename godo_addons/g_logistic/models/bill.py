@@ -27,6 +27,7 @@ class LogisticBill(models.Model):
     total_amount = fields.Float(string='Total amount')
     note = fields.Text(string='Note')
     state = fields.Selection(string='Status', selection=_bill_selection, default='sent')
+    bill_check_ids = fields.Many2many(comodel_name='godo.logistic.bill.check', relation='godo_logistic_bill_check_rel',  column1='bill_id_rec', column2='check_id', string='Bill Checks')
 
 
  

@@ -659,7 +659,6 @@ th.o_list_record_selector {
         width: 100%!important;
         float: left;
     }
-
     .o_FormRenderer_chatterContainer {
         width: 100%!important;
         float: left;
@@ -669,13 +668,10 @@ th.o_list_record_selector {
         -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03) !important;
         box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03) !important;
     }
-
-  }
-
-
+}
 
 .o_form_sheet {
-    float: left; 
+    float: left;
 }
 
 .o_form_view .o_form_sheet_bg>.o_form_sheet {
@@ -1954,8 +1950,13 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
     padding-right: 10px;
 }
 
+.o_form_view .o_group.o_inner_group {
+    display: inline-block!important;
+}
+
 .o_form_view .o_group.o_inner_group>tbody>tr>td.o_td_label {
-    min-width: 250px!important;
+    min-width: 150px!important;
+    padding-top: 10px;
 }
 
 .o_searchview .o_searchview_autocomplete li.o_selection_focus {
@@ -1971,7 +1972,6 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
     font-size: 1rem!important;
 }
 
- 
 .o_field_widget.o_field_monetary.o_input .o_input {
     border: none!important;
     width: 100%!important;

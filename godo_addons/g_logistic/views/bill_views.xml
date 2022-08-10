@@ -33,7 +33,7 @@
           <field name="arch" type="xml">
             <form string="Logistic Bill">
               <header>
-                <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="sent,received,forward,done,cancelled"/>
+                <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="sent,received,forward,done"/>
               </header>
               <sheet>  
                 <field name="id" invisible="True" /> 

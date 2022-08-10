@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_godo_logistic_bill,g_logistic.godo_logistic_bill,model_godo_logistic_bill,base.group_user,1,1,1,1
 access_godo_logistic_bill_check,g_logistic.godo_logistic_bill_check,model_godo_logistic_bill_check,base.group_user,1,1,1,1
 access_godo_logistic_bill_public,g_logistic.godo_logistic_bill_public,model_godo_logistic_bill,,1,0,0,0
+access_godo_logistic_bill_check_public,g_logistic.godo_logistic_bill_check_public,model_godo_logistic_bill_check,,1,0,0,0

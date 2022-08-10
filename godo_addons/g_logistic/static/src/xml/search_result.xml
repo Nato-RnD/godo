@@ -1,0 +1,86 @@
+    <templates>
+        <t t-name="BillSearch.Result" name="Bill Search Result">
+            <t t-if="search_result.id>0">
+                <div t-attf-class="container #{search_result.color}">
+                    <div class="row mx-0">
+                        <div class="col-12 col-lg-8">
+                            <div class="row py-2 mx-0">
+                                <div class="col-12 col-lg-6">Mã vận đơn:
+                                    <t t-esc="search_result.name" />
+                                </div>
+                                <div class="col-12 col-lg-6">Vận đơn gốc:
+                                    <t t-esc="search_result.origin_code" />
+                                </div>
+                            </div>
+                            <div class="row py-2 mx-0">
+                                <div class="col-12 col-lg-6">Ngày vận đơn:
+                                    <t t-esc="search_result.bill_date" />
+                                </div>
+                                <div class="col-12 col-lg-6">Trạng thái:
+                                    <t t-esc="search_result.state" />
+                                </div>
+                            </div>
+                            <div class="row py-2 mx-0">
+                                <div class="col-12 col-lg-6">Tên hàng:
+                                    <t t-esc="search_result.goods_name" />
+                                </div>
+                                <div class="col-12 col-lg-6">Khối lượng:
+                                    <t t-esc="search_result.package_weight" />
+                                </div>
+                            </div>
+                            <div class="row py-2 mx-0">
+                                <div class="col-12 col-lg-6">Khách hàng:
+                                    <t t-esc="search_result.customer_id[1]" />
+                                </div>
+                                <div class="col-12 col-lg-6">Điện thoại:
+                                    <t t-esc="search_result.customer_mobile" />
+                                </div>
+                            </div>
+                            <div class="row py-2 mx-0">
+                                <div class="col-12">Địa chỉ:
+                                    <t t-esc="search_result.customer_address" />
+                                </div>
+                            </div>
+                            <div class="row py-2 mx-0">
+                                <div class="col-12">Ghi chú:
+                                    <t t-esc="search_result.note" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <ul class="timeline">
+                                <t t-foreach="search_result.transfer_history" t-as="transfer_history">
+                                    <li class="timeline-inverted">
+                                        <div t-attf-class="timeline-badge #{transfer_history.bgcolor}"><i
+                                                t-attf-class="#{transfer_history.icon}"></i></div>
+                                        <div class="timeline-panel">
+                                            <div class="timeline-heading">
+                                                <h4 class="timeline-title">
+                                                    <t t-esc="transfer_history.name" />
+                                                </h4> 
+                                                <div>
+                                                    <small class="text-muted"><i class="fa fa-calendar"></i>
+                                                        <t t-esc="transfer_history.date" /></small> 
+                                                    <br/>
+                                                     <small class="text-muted"><i class="fa fa-user"></i>
+                                                        <t t-esc="transfer_history.processor" /></small> 
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </li>
+
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </t>
+
+            <t t-if="!search_result.id">
+                <div class="container alert alert-danger">
+                    <h4 class="text-danger my-4 text-center">Không tìm thấy kết quả tìm kiếm</h4>
+                </div>
+            </t>
+
+        </t>
+    </templates>

@@ -11,15 +11,22 @@ class LogisticBillCheck(models.Model):
        ( 'done', 'Done'), 
        ( 'cancelled','Cancelled')
     ]
+    
+    _bill_status = [( 'received', 'Received'),
+       ( 'forward','Forwarded'),
+       ( 'done', 'Done'),
+       ( 'cancelled','Cancelled')]
 
     name = fields.Char(string='Bill Check', required=True)
     date = fields.Date(string='Date', default=fields.Date.today())
     user_id = fields.Many2one(comodel_name= 'res.users', string='Employee ID', default=lambda self: self.env.user and self.env.user.id or False)
-    bill_ids = fields.Many2many(comodel_name='godo.logistic.bill',  column1='check_id', column2='bill_id', string='Bills')
+    bill_ids = fields.Many2many(comodel_name='godo.logistic.bill', relation='godo_logistic_bill_check_rel',  column1='check_id', column2='bill_id_rec', string='Bills')
     bill_count = fields.Integer(string='Bill count')
     note =fields.Text(string='Note')
     state = fields.Selection(string='Status', selection=_check_selection, default='draft')
     search_text = fields.Char(string='Search', default='')
+    check_type = fields.Selection(selection=_bill_status,string='Check Type')
+    
 
  
     @api.onchange('search_text')
@@ -31,3 +38,21 @@ class LogisticBillCheck(models.Model):
                 self.bill_count = len(self.bill_ids)
                 
         return {}
+
+
+ 
+    def bill_check_confirm(self):
+        self.ensure_one()
+        if self.check_type is not None:
+            for bill in self.bill_ids:
+                bill.state = self.check_type
+            self.state = 'done'
+                
+        
+    
+ 
+    def bill_check_cancel(self):
+        self.ensure_one()
+        if self.check_type is not None:
+            for bill in self.bill_ids:
+                bill.state = 'cancelled'

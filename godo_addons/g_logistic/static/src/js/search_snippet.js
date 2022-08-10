@@ -5,7 +5,7 @@ odoo.define('g_logistic.bill_search', function(require) {
     var QWeb = core.qweb;
     var BillSearch = PublicWidget.Widget.extend({
         selector: '.dynamic_snippet_blog',
-        xmlDependencies: ['/g_logistic/static/src/xml/search.xml'],
+        xmlDependencies: ['/g_logistic/static/src/xml/search_result.xml'],
         start: function() {
             var self = this;
             self.$('#btn-bill-search').on('click', () => {
@@ -27,7 +27,7 @@ odoo.define('g_logistic.bill_search', function(require) {
                     route: '/bill-search',
                     params: { code: _code },
                 }).then(function(result) {
-                    self.$('#search-result').html(QWeb.render('BillSearch.Result', { 'search_result': result }))
+                    self.$('#bill-search-result').html(QWeb.render('BillSearch.Result', { 'search_result': result }))
 
                 });
             })

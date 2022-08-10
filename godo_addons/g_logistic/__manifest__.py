@@ -33,10 +33,11 @@
     ],
     'assets': {
         'web.assets_qweb': [
-            'g_logistic/static/src/xml/search.xml',
+            'g_logistic/static/src/xml/search_result.xml',
         ],
         'web.assets_frontend': [ 
-            'g_logistic/static/src/js/search_snippet.js'
+            'g_logistic/static/src/js/search_snippet.js',
+            'g_logistic/static/src/css/timeline.css',
         ]
         
       }

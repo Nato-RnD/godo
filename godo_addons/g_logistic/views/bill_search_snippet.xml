@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class = "row mb-3">
-                <div id="search-result" class="col-12" style="position:left"></div>  
+                <div id="bill-search-result" class="col-12" style="position:left"></div>  
             </div>
             <div class = "row mb-5 py-2">
                  Hướng dẫn tra cứu đơn hàng:
