@@ -74,7 +74,7 @@ class PublisherWarrantyContract(AbstractModel):
         arguments = {'arg0': ustr(msg), "action": "update"}
 
         url = config.get("publisher_warranty_url")
-
+        print(arguments)
         r = requests.post(url, data=arguments, timeout=30)
         r.raise_for_status()
         return literal_eval(r.text)

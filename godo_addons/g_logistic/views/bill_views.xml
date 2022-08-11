@@ -7,7 +7,7 @@
             <field name="model">godo.logistic.bill</field>
             <field eval="8" name="priority" /> 
             <field name="arch" type="xml">
-                <tree string="Bills" decoration-primary="state=='sent'"  decoration-success="state=='received'"  decoration-warning="state=='forward'" decoration-muted="state=='cancelled'" > 
+                <tree string="Bills" default_order='id desc' decoration-primary="state=='sent'"  decoration-success="state=='received'"  decoration-warning="state=='forward'" decoration-muted="state=='cancelled'" > 
                     <field name="name" />
                     <field name="origin_code" />
                     <field name="packing_code" optional="show" />
@@ -20,7 +20,7 @@
                     <field name="unit_price" optional="hide"  />
                     <field name="unit_quantity" optional="hide" />
                     <field name="total_amount" optional="hide" />
-                    <field name="state" widget="badge" />  
+                    <field name="state" widget="badge" decoration-success="state=='done'"  decoration-danger="state=='cancelled'" />  
                 </tree>
             </field>
         </record>  
@@ -33,7 +33,7 @@
           <field name="arch" type="xml">
             <form string="Logistic Bill">
               <header>
-                <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="sent,received,forward,done"/>
+                <field name="state" widget="statusbar"   statusbar_visible="sent,received,forward,done"/>
               </header>
               <sheet>  
                 <field name="id" invisible="True" /> 

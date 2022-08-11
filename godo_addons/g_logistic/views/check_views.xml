@@ -6,11 +6,11 @@
             <field name="model">godo.logistic.bill.check</field>
             <field eval="8" name="priority" />
             <field name="arch" type="xml">
-                <tree string="Bills">
+                <tree string="Bills"  decoration-primary="state=='draft'"  decoration-muted="state=='cancelled'"  default_order='id desc' >
                     <field name="name" />
                     <field name="date" />
                     <field name="user_id" />
-                    <field name="state" widget="badge" />
+                    <field name="state" widget="badge" decoration-danger="state=='cancelled'" decoration-primary="state=='draft'"  decoration-success="state=='done'"/>
                 </tree>
             </field>
         </record>
@@ -26,15 +26,15 @@
                     </xpath>
                     <header>
                         <button string="Confirm" type="object" name="bill_check_confirm" class="oe_highlight"   attrs="{'invisible': [('state', '!=', 'draft')]}" />
-                        <button string="Cancel" type="object" name="bill_check_cancel"   data-hotkey="z"   attrs="{'invisible': [('state', '!=', 'draft')]}" />
+                        <button string="Cancel" type="object" name="bill_check_cancel"   data-hotkey="z"  attrs="{'invisible': [('state', '!=', 'draft')]}" />
 
-                        <field name="state" widget="statusbar" options="{'clickable': '1'}"
+                        <field name="state" widget="statusbar"
                             statusbar_visible="draft,done" />
                     </header>
                     <sheet>
                         <widget name="web_ribbon" title="Done" bg_color="bg-success"
                             attrs="{'invisible': [('state', '!=', 'done')]}" />
-                        <widget name="web_ribbon" title="Done" bg_color="bg-danger"
+                        <widget name="web_ribbon" title="Cancelled" bg_color="bg-danger"
                             attrs="{'invisible': [('state', '!=', 'cancelled')]}" />
                         <div class="oe_title mb24">
                             <h1>

@@ -1,3 +1,5 @@
+from datetime import datetime
+from unicodedata import name
 from odoo import models, fields, api,_ 
 
 class LogisticBillCheck(models.Model):
@@ -46,13 +48,16 @@ class LogisticBillCheck(models.Model):
         if self.check_type is not None:
             for bill in self.bill_ids:
                 bill.state = self.check_type
+                if self.check_type == 'done':
+                    bill.done_date = datetime.now()
             self.state = 'done'
+            self.message_post(body= _('%s confirmed the bill check %s' % (self.user_id.name, self.name) ))
                 
         
     
  
     def bill_check_cancel(self):
         self.ensure_one()
-        if self.check_type is not None:
-            for bill in self.bill_ids:
-                bill.state = 'cancelled'
+        if self.id is not None:
+            self.state='cancelled'
+            self.message_post(body= _('%s cancelled the bill check %s' % (self.user_id.name, self.name) ))
