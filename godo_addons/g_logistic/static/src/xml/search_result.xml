@@ -1,9 +1,9 @@
     <templates>
         <t t-name="BillSearch.Result" name="Bill Search Result">
             <t t-if="search_result.id>0">
-                <div t-attf-class="container #{search_result.color}">
+                <div  class="container">
                     <div class="row mx-0">
-                        <div class="col-12 col-lg-8">
+                        <div class="col-12 col-lg-8 py-2 bg-received">
                             <div class="row py-2 mx-0">
                                 <div class="col-12 col-lg-6">Mã vận đơn:
                                     <t t-esc="search_result.name" />
@@ -14,10 +14,10 @@
                             </div>
                             <div class="row py-2 mx-0">
                                 <div class="col-12 col-lg-6">Ngày vận đơn:
-                                    <t t-esc="search_result.bill_date" />
+                                   <t t-esc="search_result.bill_date" />
                                 </div>
                                 <div class="col-12 col-lg-6">Trạng thái:
-                                    <t t-esc="search_result.state" />
+                                     <span t-attf-class="px-2 py-1 #{search_result.color}"> <t t-esc="search_result.state" /></span>
                                 </div>
                             </div>
                             <div class="row py-2 mx-0">
@@ -61,9 +61,11 @@
                                                 <div>
                                                     <small class="text-muted"><i class="fa fa-calendar"></i>
                                                         <t t-esc="transfer_history.date" /></small> 
+                                                   <t t-if="transfer_history.processor">
                                                     <br/>
                                                      <small class="text-muted"><i class="fa fa-user"></i>
-                                                        <t t-esc="transfer_history.processor" /></small> 
+                                                        <t t-esc="transfer_history.processor" /></small>  
+                                                    </t>
                                                 </div>
                                             </div> 
                                         </div>
@@ -80,7 +82,6 @@
                 <div class="container alert alert-danger">
                     <h4 class="text-danger my-4 text-center">Không tìm thấy kết quả tìm kiếm</h4>
                 </div>
-            </t>
-
+            </t> 
         </t>
     </templates>

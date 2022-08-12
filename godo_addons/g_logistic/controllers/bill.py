@@ -1,59 +1,56 @@
 from odoo import http
 from odoo.http import request
-import random
+from odoo.models import _
 class BillSearch(http.Controller):
    @http.route(['/bill-search'], type="json", auth="public")
    def bill_search(self, **kw):
-        _bill_selection = [
-       ( 'sent', 'Sent from China'),
-       ( 'received', 'Received'),
-       ( 'forward','Forwarded'),
-       ( 'done', 'Done'),
-       ( 'cancelled','Cancelled')
+         _bill_selection = [
+       ( 'sent',_('Sent from China'), _('The goods has sent from China')),
+       ( 'received',_('Received'), _('Vietnam warehouse has received the goods')),
+       ( 'forward',_('Forwarded'),_('Delivered via third-party')),
+       ( 'done', _('Done'),_('Customer has received the goods')),
+       ( 'cancelled',_('Cancelled'),_('The bill has been cancelled'))
     ] 
-        _color_selection =   [
+         _color_selection =   [
        ( 'sent', 'alert alert-primary'),
        ( 'received', 'alert alert-info'),
        ( 'forward','alert alert-danger'),
        ( 'done', 'alert alert-success'),
        ( 'cancelled','alert alert-secondary')
     ]
-        _icon_selection =   [
+         _icon_selection =   [
        ( 'sent', 'fa fa-send'),
        ( 'received', 'fa fa-calendar-check-o'),
        ( 'forward','fa fa-truck'),
        ( 'done', 'fa fa-map-signs'),
        ( 'cancelled','fa fa-lock')
     ]
-        
-        badge_color = ('bg-warning','bg-success','bg-danger','bg-info') 
-        bill_code = kw.get('code',None)
-        if bill_code is not None:
-           bill = request.env['godo.logistic.bill'].sudo().search(['|',('origin_code','=',bill_code),('name','=',bill_code)],limit=1)
-           if bill: 
-                transfer_history = [{ 
+         
+         bill_code = kw.get('code',None)
+         if bill_code is not None:
+            bill = request.env['godo.logistic.bill'].sudo().search(['|',('origin_code','=',bill_code),('name','=',bill_code)],limit=1)
+            if bill: 
+               transfer_history = [{ 
                    'date': bill.bill_date,
-                   'name': _bill_selection[0][1], 
-                   'bgcolor': random.choice(badge_color),
+                   'name': _bill_selection[0][2], 
+                   'bgcolor': '',
                    'icon': _icon_selection[0][1]
                    
                }]
                
-                for bill_check in bill.bill_check_ids:
+               for bill_check in bill.bill_check_ids:
                    transfer_history.insert(0,{
                         'date': bill_check.date,
-                        'name': next(_c[1] for _c in _bill_selection if bill_check.check_type == _c[0]), 
+                        'name': next(_c[2] for _c in _bill_selection if bill_check.check_type == _c[0]), 
                         'processor': bill_check.user_id.name,
-                        'bgcolor': random.choice(badge_color),
+                        'bgcolor':'',
                         'icon': next(_c[1] for _c in _icon_selection if bill_check.check_type == _c[0])
                    })
-                   
-                
-        
-               
+                    
+               transfer_history[0]['bgcolor']='bg-success'
                # search the check of this bill
                 
-                return {
+               return {
                    'id': bill.id,
                    'name': bill.name,
                    'packing_code': bill.packing_code,
@@ -74,4 +71,4 @@ class BillSearch(http.Controller):
                    'transfer_history': transfer_history or []
                } 
         
-        return {}
+         return {}

@@ -3,14 +3,14 @@
     <template id="bill_search_snippet" name="Bill Search Snippet">
         <section class="container dynamic_snippet_blog">
             <div class="row my-5">
-                <div class="col-lg-12 o_colored_level">
-                    <h2 class="o_default_snippet_text">Tìm kiếm vận đơn</h2>
-                    <p class="o_default_snippet_text">Quý khách có thể tìm kiếm thông tin đơn hàng tại đây</p>
+                <div class="col-12 col-lg-6 o_colored_level">
+                    <h2 class="o_default_snippet_text">Kiểm tra vận đơn</h2>
+                    <p class="o_default_snippet_text">Quý khách có thể kiểm tra thông tin vận đơn tại đây</p>
                     <div  class="o_searchbar_form s_searchbar_input"
                         action="/website/search">
                         <div role="search" class="input-group ">
                             <input type="text" id="txt-bill-search"  class="search-query form-control oe_search_box None"
-                                placeholder="Tìm kiếm đơn hàng" autocomplete="off" />
+                                placeholder="Nhập mã vận đơn, ví dụ như: YTO20220630000" autocomplete="off" />
                             <div class="input-group-append">
                                 <button  id="btn-bill-search" aria-label="Search" title="Search"
                                     class="btn oe_search_button btn-primary">
@@ -19,6 +19,9 @@
                             </div>
                         </div> 
                     </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="/g_logistic/static/src/img/snippets/logistic.png" width="100%" />
                 </div>
             </div>
             <div class = "row mb-3">
@@ -36,7 +39,7 @@
         <xpath expr="//div[@id='snippet_structure']" position="inside">
             <div class="o_panel_body">
                 <t t-snippet="g_logistic.bill_search_snippet"
-                    t-thumbnail="/g_logistic/static/src/img/snippets/search.png" />
+                    t-thumbnail="/g_logistic/static/src/img/snippets/bill-search.png" />
             </div>
         </xpath>
     </template>
