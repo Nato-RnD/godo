@@ -1,56 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>  
-        <record id="production_place_management_declaration_tree_view" model="ir.ui.view">
-            <field name="name">production_place_management_declaration_tree_view</field>
-            <field name="model">godo.production.unit.declaration</field>
+        <record id="production_place_management_code_action_window_tree_view" model="ir.ui.view">
+            <field name="name">production_place_management_code_tree_view</field>
+            <field name="model">godo.production.unit.code</field>
             <field eval="8" name="priority" />
             <field name="arch" type="xml">
-                <tree string="Tờ khai kỹ thuật" decoration-muted="state=='cancelled'" decoration-danger="state=='draft'" decoration-success="state=='post'" decoration-it="state == 'cancelled'"  >
+                <tree string="Tờ khai kỹ thuật"> 
                     <field name="name" />
+                    <field name="code" />
                     <field name="tree_id" />
                     <field name="export_to" />
                     <field name="plant_farm_num" />
                     <field name="three_years_average_production" />
                     <field name="area" />
-                    <field name="registered_owner_name" />
-                    <field name="state" widget="badge" decoration-muted="state=='cancelled'" decoration-info="state == 'draft'" decoration-danger="state == 'rejected'"   decoration-success="state=='post'"  />
+                    <field name="registered_owner_id" />
+                    <field name="state" />
                 </tree>
-            </field>
-        </record>
-
-        <record id="production_place_management_declaration_search_view" model="ir.ui.view">
-            <field name="name">production_place_management_declaration_search_view</field>
-            <field name="model">godo.production.unit.declaration</field>
-            <field name="arch" type="xml">
-                <search string="Tờ khai kỹ thuật">
-                    <field name="name" string="Tên vùng trồng"
-                        filter_domain="[ ('name', 'ilike', self)]" /> 
-                    <field name="tree_id" string="Cây trồng"
-                        filter_domain="[ ('tree_id', 'ilike', self)]" />
-                    <field name="registered_owner_name" string="Đơn vị/cá nhân đăng ký"
-                        filter_domain="[ ('registered_owner_name', 'ilike', self)]" /> 
-                        
-                        <separator  colspan="4" /> 
-                    <filter string="Lưu nháp" name="state_post"  domain="[('state', '=', 'draft')]"   />
-                    <filter string="Đã đăng ký" name="state_post"  domain="[('state', '=', 'post')]"   />
-                    <filter string="Đã duyệt" name="state_post"  domain="[('state', '=', 'done')]"   />
-                    <filter string="Từ chối" name="state_post"  domain="[('state', '=', 'rejected')]"   />
-                    <filter string="Đã hủy" name="state_post"  domain="[('state', '=', 'cancelled')]"   />
-
-                    <group expand="1" string="Tờ khai">
-                        <filter string="Cây trồng" name="tree_id" context="{'group_by':'tree_id'}" />
-                        <filter string="Nước nhập khẩu" name="export_to" context="{'group_by':'export_to'}" />
-                        <filter string="Đơn vị/cá nhân đăng ký" name="registered_owner_name" context="{'group_by':'registered_owner_name'}" />
-                        <filter string="Trạng thái" name="export_to" context="{'group_by':'state'}" />
-                    </group>
-                </search>
             </field>
         </record>
         
         <!-- 
 
-
+        <record id="g_production_pest_search_view" model="ir.ui.view">
+            <field name="name">g_production_pest_search_view</field>
+            <field name="model">godo.production.pest</field>
+            <field name="arch" type="xml">
+                <search string="Sinh vật gây hại">
+                    <field name="name" string="Tên sinh vật"
+                        filter_domain="[ '|', ('name', 'ilike', self), ('tree_id', 'ilike', self)]" /> 
+                    <group expand="1" string="Cây trồng">
+                        <filter string="Cây trồng" name="tree_id" context="{'group_by':'tree_id'}" />
+                    </group>
+                </search>
+            </field>
+        </record>
 
     <record id="g_production_pest_form_view" model="ir.ui.view">
       <field name="name">g_production_pest_form_view</field>
@@ -84,18 +68,18 @@
       </field>
     </record> -->
 
-        <record model="ir.actions.act_window" id="production_place_management_declaration_action_window">
-            <field name="name">Tờ khai kỹ thuật</field>
-            <field name="res_model">godo.production.unit.declaration</field>
+        <record model="ir.actions.act_window" id="production_place_management_code_action_window">
+            <field name="name">Vùng trồng</field>
+            <field name="res_model">godo.production.unit.code</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="production_place_management_declaration_search_view" />
+            <!-- <field name="search_view_id" ref="g_production_pest_search_view" /> -->
         </record>
 
-        <record id="production_place_management_declaration_action_window_tree" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="production_place_management_declaration_action_window" />
+        <record id="production_place_management_code_action_window_tree" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="production_place_management_code_action_window" />
             <field name="sequence" eval="1" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="production_place_management_declaration_tree_view" />
+            <field name="view_id" ref="production_place_management_code_action_window_tree_view" />
         </record>
 
         <!-- 

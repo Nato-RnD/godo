@@ -8,5 +8,5 @@ class GodoProductionPest(models.Model):
 
     name = fields.Char(string='Tên gọi')
     image = fields.Image(string='Hình ảnh')
-    plant_id = fields.Many2one(comodel_name='godo.production.item', string='Loại cây')
+    tree_id = fields.Many2one(comodel_name='godo.production.item', string='Loại cây')
     description = fields.Text(string='Mô tả')

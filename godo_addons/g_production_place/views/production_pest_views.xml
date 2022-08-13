@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <tree string="Sinh vật có hại">
                     <field name="name" />
-                    <field name="plant_id" />
+                    <field name="tree_id" />
                     <field name="description" />
                 </tree>
             </field>
@@ -20,9 +20,9 @@
             <field name="arch" type="xml">
                 <search string="Sinh vật gây hại">
                     <field name="name" string="Tên sinh vật"
-                        filter_domain="[ '|', ('name', 'ilike', self), ('plant_id', 'ilike', self)]" /> 
+                        filter_domain="[ '|', ('name', 'ilike', self), ('tree_id', 'ilike', self)]" /> 
                     <group expand="1" string="Cây trồng">
-                        <filter string="Cây trồng" name="plant_id" context="{'group_by':'plant_id'}" />
+                        <filter string="Cây trồng" name="tree_id" context="{'group_by':'tree_id'}" />
                     </group>
                 </search>
             </field>
@@ -47,7 +47,7 @@
               </h1>
             </div> 
                 <group>
-                    <field name="plant_id" />
+                    <field name="tree_id" />
                     <field name="description" /> 
                 </group> 
           </sheet>

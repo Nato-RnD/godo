@@ -7,8 +7,8 @@
     
     <!-- Start Quan ly vung trong  -->
     <menuitem name="Quản lý vùng trồng" id="g_production_place.production_place_management" parent="g_production_place.menu_root" /> 
-    <menuitem name="Biểu mẫu đăng ký" id="g_production_place.production_place_management_declaration" parent="g_production_place.production_place_management" action="g_production_place.production_place_management_declaration_action_window" /> 
-    <menuitem name="Danh sách Vùng trồng" id="g_production_place.production_place_management_puc" parent="g_production_place.production_place_management" action="g_production.g_production_seed_action_window" /> 
+    <menuitem name="Tờ khai kỹ thuật" id="g_production_place.production_place_management_declaration" parent="g_production_place.production_place_management" action="g_production_place.production_place_management_declaration_action_window" /> 
+    <menuitem name="Danh sách vùng trồng" id="g_production_place.production_place_management_puc" parent="g_production_place.production_place_management" action="g_production_place.production_place_management_code_action_window" /> 
     <!-- End Quan ly vung trong  -->
 
 
