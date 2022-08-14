@@ -1,6 +1,6 @@
 <odoo>
   <data> 
-    <menuitem name="Quản lý vùng trồng" id="g_production_place.menu_root"  web_icon="g_production_place,static/description/icon.png" />
+    <menuitem name="Vùng trồng" id="g_production_place.menu_root"  web_icon="g_production_place,static/description/icon.png" />
 
     <menuitem name="Bản đồ vùng trồng" id="g_production_place.production_place_map" parent="g_production_place.menu_root" action="g_production_puc_map_action_windows" />
 
@@ -21,7 +21,7 @@
 
     <!-- Start Quan ly nghiệp vụ -->
     <menuitem name="Quản lý nghiệp vụ" id="g_production_place.production_place_management_business" parent="g_production_place.menu_root"  />
-    <menuitem name="Biên bản kiểm tra" id="g_production_place.production_place_management_business_inspection" parent="g_production_place.production_place_management_business" action="g_production.g_production_seed_action_window" />
+    <menuitem name="Biên bản kiểm tra" id="g_production_place.production_place_management_business_inspection" parent="g_production_place.production_place_management_business" action="g_production_place.production_place_management_inspection_action_window" />
     <menuitem name="Báo cáo kết quả" id="g_production_place.production_place_management_business_report" parent="g_production_place.production_place_management_business" action="g_production.g_production_seed_action_window" />
     <!-- Start Quan ly nghiệp vụ -->
 

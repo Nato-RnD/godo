@@ -1956,6 +1956,7 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
 
 .o_form_view .o_group.o_inner_group>tbody>tr>td.o_td_label {
     min-width: 150px!important;
+    width: 50%!important;
 }
 
 .o_searchview .o_searchview_autocomplete li.o_selection_focus {
@@ -1996,4 +1997,8 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 700;
+}
+
+.modal .modal-dialog .o_form_view .o_form_sheet_bg {
+    width: 100%!important;
 }

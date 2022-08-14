@@ -30,6 +30,7 @@
         'views/production_pest_views.xml',
         'views/production_puc_code_views.xml',
         'views/production_puc_declaration_views.xml',
+        'views/production_puc_inspection_views.xml',
         'views/menu_views.xml',
     ],
     
@@ -37,10 +38,11 @@
         'web.assets_backend': [
             'g_production_place/static/src/vendors/leaflet/leaflet.css',
             'g_production_place/static/src/vendors/leaflet/leaflet.js',
-            'g_production_place/static/src/js/map.js',
+            'g_production_place/static/src/js/map.js', 
         ],
     'web.assets_qweb': [
             'g_production_place/static/src/xml/**/*',
+           
         ],
     },
  

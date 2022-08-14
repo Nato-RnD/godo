@@ -30,6 +30,14 @@
         'data/district.xml',
         'data/ward.xml', 
     ],
+
+    'assets':{
+          'web.assets_backend': [
+                'g_init/static/src/js/widgets.js',
+                'g_init/static/src/js/lightbox.js',
+                  'g_init/static/src/css/lightbox.css',
+          ]
+    }
     # only loaded in demonstration mode
     
 }

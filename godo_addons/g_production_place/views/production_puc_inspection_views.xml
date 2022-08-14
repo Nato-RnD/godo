@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="production_place_management_inspection_tree_view" model="ir.ui.view">
+            <field name="name">production_place_management_inspection_tree_view</field>
+            <field name="model">godo.production.unit.inspection</field>
+            <field eval="8" name="priority" />
+            <field name="arch" type="xml">
+                <tree string="Biên bản kiểm tra vùng trồng"  decoration-danger="state=='draft'"
+                    decoration-success="state=='post'">
+                    <field name="name" />
+                    <field name="checker_id" />
+                    <field name="production_place" />
+                    <field name="tree_id" />
+                    <field name="export_to" />
+                    <field name="production_unit_area" />
+                    <field name="registered_owner_id" />
+                    <field name="state" widget="badge"  
+                        decoration-info="state == 'draft'"  decoration-success="state=='post'" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="production_place_management_inspection_search_view" model="ir.ui.view">
+            <field name="name">production_place_management_inspection_search_view</field>
+            <field name="model">godo.production.unit.inspection</field>
+            <field name="arch" type="xml">
+                <search string="Biên bản kiểm tra vùng trồng">
+                    <field name="name" string="Tên vùng trồng" filter_domain="[ ('name', 'ilike', self)]" />
+                    <field name="tree_id" string="Cây trồng" filter_domain="[ ('tree_id', 'ilike', self)]" />
+                    <field name="registered_owner_id" string="Đơn vị/cá nhân đăng ký"
+                        filter_domain="[ ('registered_owner_id', 'ilike', self)]" /> 
+                    <separator colspan="4" />
+                    <filter string="Lưu nháp" name="state_post" domain="[('state', '=', 'draft')]" />
+                    <filter string="Đã ghi sổ" name="state_post" domain="[('state', '=', 'post')]" />
+                    <filter string="Đã duyệt" name="state_post" domain="[('state', '=', 'approved')]" /> 
+
+                    <group expand="1" string="Tờ khai">
+                        <filter string="Cây trồng" name="tree_id" context="{'group_by':'tree_id'}" />
+                        <filter string="Nước nhập khẩu" name="export_to" context="{'group_by':'export_to'}" />
+                        <filter string="Đơn vị/cá nhân đăng ký" name="registered_owner_id"
+                            context="{'group_by':'registered_owner_id'}" />
+                        <filter string="Trạng thái" name="export_to" context="{'group_by':'state'}" />
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="production_place_management_inspection_form_view" model="ir.ui.view">
+            <field name="name">production_place_management_inspection_form_view</field>
+            <field name="model">godo.production.unit.inspection</field>
+            <field name="priority" eval="1" />
+            <field name="arch" type="xml">
+                <form string="Biên bản kiểm tra vùng trồng">
+                    <header>
+                        <button string="Xác nhận" type="object" name="puc_inspection_ready" class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'draft')]}" />
+
+                        <button string="Tạo báo cáo" type="object" name="puc_inspection_post" class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'ready')]}" />
+
+                        <button string="Bản nháp" type="object" name="puc_inspection_draft"  
+                            attrs="{'invisible': [('state', '!=', 'ready')]}" />
+
+                        <button string="Cấp mã số" type="object" name="puc_declaration_issue_code" data-hotkey="z" class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'post')]}" />
+
+                        <button string="Xuất báo cáo" type="object" name="puc_inspection_export_report" 
+                            attrs="{'invisible': [('state', '!=', 'post')]}" />  
+
+                        <field name="state" widget="statusbar" statusbar_visible="draft,ready,post,approved" />
+                        
+                    </header>
+                    <sheet>
+                        <widget name="web_ribbon" title="Done" bg_color="bg-success"
+                            attrs="{'invisible': [('state', '!=', 'approved')]}" /> 
+
+                        <div class="oe_title mb24">
+                            <h1>
+                                <field id="name" required="1" class="o_text_overflow" name="name" default_focus="1"
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                            </h1>
+                        </div>
+
+                        <group>
+                            <group string="Thông tin đơn vị kiểm tra và đơn vị đăng ký">
+                                <field name="checker_id" 
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                <field name="job_position" 
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                <field name="registered_owner_id" 
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                <field name="production_place" 
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                <field name="production_place_address" 
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                <field name="tree_id"  attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                <field name="export_to"  attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                      </group>
+                            <group string="Thông tin vùng trồng">
+                                <field name="production_unit_area" attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                <field name="plant_farm_num" attrs="{'readonly': [('state', '!=', 'draft')]}"  />
+                                <field name="tree_age" attrs="{'readonly': [('state', '!=', 'draft')]}"  />
+                                <field name="growth_stage" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     />
+                                <field name="harvest_time" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     />
+                                <field name="expected_production"
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}"  />
+                                <field name="tree_seed_id" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     /> 
+                            </group> 
+
+                            <group string="Thông tin khác">
+                                <field name="vn_allowed_pesticides_ids" attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                <field name="import_country_allowed_pesticides_ids" attrs="{'readonly': [('state', '!=', 'draft')]}"  />
+                                <field name="other_pesticides_ids" attrs="{'readonly': [('state', '!=', 'draft')]}"  />
+                                <field name="has_plant_diary" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     />
+                                <field name="has_fully_note" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     />
+                                <field name="additional_note"
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}"  />
+                                <field name="pest_composition_density" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     /> 
+                            </group>
+
+                            <group string="Thông tin khác">
+                                <field name="pest_anti_applying_method" attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                                <field name="has_sampling" attrs="{'readonly': [('state', '!=', 'draft')]}"  />
+                                <field name="sampling_report" attrs="{'readonly': [('state', '!=', 'draft')]}"  />
+                                <field name="has_farming_certificate" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     />
+                                <field name="no_wild_grass" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     />
+                                <field name="pesticides_pack_clearance"
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}"  />
+                                <field name="has_note" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     /> 
+                                <field name="other_item" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     /> 
+                            </group>
+                            
+                        </group>  
+                        <field name="conclusion" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                     /> 
+
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" />
+                        <field name="activity_ids" />
+                        <field name="message_ids" />
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="production_place_management_inspection_action_window">
+            <field name="name">Biên bản kiểm tra tại vùng trồng</field>
+            <field name="res_model">godo.production.unit.inspection</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="production_place_management_inspection_search_view" />
+        </record>
+
+        <record id="production_place_management_inspection_action_window_tree" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="production_place_management_inspection_action_window" />
+            <field name="sequence" eval="1" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="production_place_management_inspection_tree_view" />
+        </record>
+
+        <record id="production_place_management_inspection_action_window_form" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="production_place_management_inspection_action_window" />
+            <field name="sequence" eval="2" />
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="production_place_management_inspection_form_view" />
+        </record>
+
+        <!--   
+        <record id="g_production_puc_map_action_windows" model="ir.actions.client">
+            <field name="name">Ban do</field>
+            <field name="tag">puc_map</field>
+            <field name="context" eval="{'model': 'godo.production.unit.declaration'}" />
+        </record>
+
+        <record id="g_production_puc_map_tree_view" model="ir.ui.view">
+            <field name="name">g_production_puc_map_tree_view</field>
+            <field name="model">godo.production.unit.declaration</field>
+            <field eval="8" name="priority" />
+            <field name="arch" type="xml">
+                <form string="Loại cây trồng">
+                    <xpath expr="//div[@class='o_content']" position="inside">
+                        <div class="bg-warning">
+                            <h1>Ban do vung trong</h1>
+                        </div>
+
+                    </xpath>
+                    <field name="name" />
+                </form>
+            </field>
+        </record> -->
+
+    </data>
+</odoo>
