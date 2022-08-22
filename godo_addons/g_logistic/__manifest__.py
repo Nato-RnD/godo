@@ -27,8 +27,11 @@
         'security/ir.model.access.csv',
         'views/bill_views.xml',
         'views/check_views.xml',
-        'views/menu_views.xml',
+      
         'views/bill_search_snippet.xml',
+        'wizards/bill_report_wizard.xml',
+        'reports/bill_report_view.xml',
+        'views/menu_views.xml',
          
     ],
     'assets': {

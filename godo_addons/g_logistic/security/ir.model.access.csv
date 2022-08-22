@@ -3,3 +3,5 @@ access_godo_logistic_bill,g_logistic.godo_logistic_bill,model_godo_logistic_bill
 access_godo_logistic_bill_check,g_logistic.godo_logistic_bill_check,model_godo_logistic_bill_check,base.group_user,1,1,1,1
 access_godo_logistic_bill_public,g_logistic.godo_logistic_bill_public,model_godo_logistic_bill,,1,0,0,0
 access_godo_logistic_bill_check_public,g_logistic.godo_logistic_bill_check_public,model_godo_logistic_bill_check,,1,0,0,0
+access_godo_bill_report_wizard_id,g_logistic.godo_bill_report_wizard_name,model_godo_bill_report_wizard,,1,1,1,0
+access_godo_bill_report_id,g_logistic.godo_bill_report_name,model_godo_bill_report,,1,1,1,0

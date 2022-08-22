@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="godo_bill_report_wizard_form" model="ir.ui.view">
+        <field name="name">Bill Report</field>
+        <field name="model">godo.bill.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Bill Report">
+                <sheet>
+                    <group> 
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                    </group>
+                </sheet>
+                <footer> 
+                    <button name="bill_report_print" string="Print Calendars" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="g_logistic_report_wizard_action_window" model="ir.actions.act_window">
+        <field name="name">Bill Report</field>
+        <field name="res_model">godo.bill.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="godo_bill_report_wizard_form" /> 
+        <field name="target">main</field>
+    </record>
+</odoo>
