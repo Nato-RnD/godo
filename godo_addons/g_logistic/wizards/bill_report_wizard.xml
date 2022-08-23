@@ -24,6 +24,7 @@
         <field name="res_model">godo.bill.report.wizard</field>
         <field name="view_mode">form</field>
         <field name="view_id" ref="godo_bill_report_wizard_form" /> 
-        <field name="target">main</field>
+        <field name="target">new</field>
+        <field name="context">{'no_breadcrumbs':True } </field>
     </record>
 </odoo>

@@ -24,7 +24,8 @@
         report_type="qweb-html" 
         name="g_logistic.bill_report_template" 
         file="g_logistic.bill_report_template" 
-        paperformat="g_logistic.paperformat_A4_landscape" 
+        paperformat="g_logistic.paperformat_A4_landscape"  
+
         /> 
 
         <template id="bill_report_template">
