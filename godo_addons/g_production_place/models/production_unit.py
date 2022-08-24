@@ -22,12 +22,15 @@ class GodoProductionUnitDeclaration(models.Model):
     area = fields.Float(string='Diện tích')
     plant_farm_num = fields.Integer(string='Số nông hộ')
     three_years_average_production = fields.Float('Sản lượng tấn/ha/năm')
+    
+    registered_user_id = fields.Many2one(comodel_name='res.users', string='Người dùng')
 
     registered_owner_name = fields.Char(string='Tổ chức/cá nhân đăng ký')
     registered_owner_type= fields.Selection(selection=[('personal','Cá nhân'),('company','Tổ chức/Doanh nghiệp')], default='company' ,required=True, string='Loại hình hoạt động')
     registered_owner_representer = fields.Char(string='Đại diện')
     registered_owner_address = fields.Char(string='Địa chỉ liên hệ')
     registered_owner_code = fields.Char(string='Mã số DN/CCCD')
+    
     phone = fields.Char(string='Điện thoại')
     fax = fields.Char(string='Fax')
     email = fields.Char(string='Email')

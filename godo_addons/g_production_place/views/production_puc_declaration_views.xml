@@ -82,6 +82,7 @@
 
                         <group>
                             <group string="Thông tin tổ chức/cá nhân đăng ký">
+                                <field name="registered_user_id" />
                                 <field name="registered_owner_name" required="1"
                                     attrs="{'readonly': [('state', '!=', 'draft')]}" />
                                 <field name="registered_owner_type" required="1"
