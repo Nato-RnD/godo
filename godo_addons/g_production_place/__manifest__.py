@@ -31,6 +31,7 @@
         'views/production_puc_code_views.xml',
         'views/production_puc_declaration_views.xml',
         'views/production_puc_inspection_views.xml',
+        'views/production_puc_declaration_template.xml',
         'views/menu_views.xml',
     ],
     
