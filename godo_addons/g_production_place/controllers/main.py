@@ -20,6 +20,22 @@ class GPucPortal(http.Controller):
     @http.route(['/my', '/my/tokhai-kythuat'], type='http', auth="user", website=True)
     def home(self, **kw):
         values = self._prepare_portal_layout_values()
-        return http.request.render("g_production_place.puc_declaration_template", values)
+        _declarations = http.request.env['godo.production.unit.declaration'].search([('registered_user_id','=',http.request.env.user.id)])
+        # decl = []
+        # for model in _declarations:
+        #     decl.append(model.read())
+        values['test'] = _declarations
+        return http.request.render("g_production_place.portal_layout", values)
+
+ 
+    @http.route(['/my/tokhai-kythuat/detail/<int:declaration_id>'], type='http', auth="user", website=True)
+    def declaration_detail(self,declaration_id, **kw):
+        values = self._prepare_portal_layout_values()
+        _declaration = http.request.env['godo.production.unit.declaration'].browse(declaration_id)
+        # decl = []
+        # for model in _declarations:
+        #     decl.append(model.read())
+        values['detail'] = _declaration
+        return http.request.render("g_production_place.portal_layout", values)
 
  
