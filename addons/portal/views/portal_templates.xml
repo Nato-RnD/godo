@@ -117,7 +117,7 @@
                 <div class="container mb64">
                     <t t-if="my_details">
                         <div class="row justify-content-between mt-4">
-                            <div t-attf-class="col-12 col-md col-lg-6">
+                            <div t-attf-class="col-12 col-md col-lg-9">
                                 <t t-out="0"/>
                             </div>
                             <div id="o_my_sidebar" class="pt-3 pt-lg-0 col-12 col-md col-lg-4 col-xl-3 o_my_sidebar">

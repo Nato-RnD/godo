@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo> 
-    <template id="portal_layout" name="Portal Layout">
+    <!-- <template id="portal_layout" name="Portal Layout">
         <t t-call="portal.frontend_layout">
             <t t-set="is_portal" t-value="True" /> 
             <div class="container pt-4">
@@ -64,6 +64,58 @@
 
             </div> 
             
+        </t>
+    </template> -->
+
+
+    <template id="portal_my_home" name="My Portal"> 
+        <t t-call="g_production_place.portal_layout">
+            <t t-set="my_details" t-value="True"/>
+            <div class="o_portal_my_home">
+                <div class="card">
+                    <div class="card-body">
+                         <t t-if="test">
+                             <table class="table table-hover table-responsive">
+                                 <thead>
+                                 <tr>
+                                     <th scope="col">#</th>
+                                     <th scope="col">Ten vung trong</th>
+                                     <th scope="col">Dien tich</th>
+                                     <th scope="col">Cay trong</th>
+                                     <th scope="col">Thi truong</th>
+                                     <th scope="col">San luong</th>
+                                     <th scope="col">Trang thai</th> 
+                                 </tr>
+                                 </thead>
+                                 <tbody>
+                                     <t t-set="i" t-value="1"/>
+                                     <t t-foreach="test" t-as="item">
+                                         <tr>
+                                             <th scope="row"><t t-esc="i"/></th>
+                                             <td> <a t-attf-href="/my/puc-register/detail/{{item.id}}" ><t t-esc="item.name" /></a></td>
+                                             <td><t t-esc="item.area" /></td>
+                                             <td><t t-esc="item.tree_id.name" /></td> 
+                                             <td><t t-esc="item.export_to.name" /></td>
+                                             <td><t t-esc="item.three_years_average_production" /></td>
+                                             <td><t t-esc="item.state" /></td>
+                                         </tr>
+                                         <t t-set="i" t-value="i+1"/> 
+                                     
+                                 </t> 
+                                 
+                                 </tbody>
+                             </table> 
+                         </t>
+
+                         <t t-if="detail">
+                             <t t-esc="detail.name" />
+             
+                             <t t-esc="detail.registered_owner_name" /> 
+                         </t> 
+                    </div> 
+                 </div>
+            </div>
+            <div class="oe_structure" id="oe_structure_portal_my_home_2"/> 
         </t>
     </template>
 
