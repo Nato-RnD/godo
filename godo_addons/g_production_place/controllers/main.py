@@ -18,25 +18,38 @@ class GPucPortal(CustomerPortal):
             'page_name': 'home',
         }
         
-    @route(['/my', '/my/puc-register'], type='http', auth="user", website=True)
-    def home(self, **kw):
+    @route(['/my', '/my/productions'], type='http', auth="user", website=True)
+    def declaration_list(self, **kw):
         values = self._prepare_portal_layout_values()
         _declarations = request.env['godo.production.unit.declaration'].sudo().search([('registered_user_id','=',request.env.user.id)])
-        # decl = []
-        # for model in _declarations:
-        #     decl.append(model.read())
-        values['test'] = _declarations
+        values['listview'] = True
+        values['declaration_list'] = _declarations
         return request.render("g_production_place.portal_my_home", values)
 
  
-    @route(['/my/puc-register/detail/<int:declaration_id>'], type='http', auth="user", website=True)
+    @route(['/my/productions/detail/<int:declaration_id>'], type='http', auth="user", website=True)
     def declaration_detail(self,declaration_id, **kw):
         values = self._prepare_portal_layout_values()
         _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id)
-        # decl = []
-        # for model in _declarations:
-        #     decl.append(model.read())
-        values['detail'] = _declaration
+        values['detailview'] = True
+        values['declaration_detail'] = _declaration
+        return request.render("g_production_place.portal_my_home", values)
+
+    @route(['/my/productions/edit/<int:declaration_id>'], type='http', auth="user", website=True)
+    def declaration_edit(self,declaration_id, **kw):
+        values = self._prepare_portal_layout_values()
+        _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id)
+        values['editview'] = True
+        values['declaration_detail'] = _declaration
+        return request.render("g_production_place.portal_my_home", values)
+
+    
+    @route(['/my/productions/register'], type='http', auth="user", website=True)
+    def declaration_register(self, **kw):
+        values = self._prepare_portal_layout_values()
+        # _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id) 
+        values['createview'] = True
+        # values['detail'] = _declaration
         return request.render("g_production_place.portal_my_home", values)
 
 

@@ -8,7 +8,7 @@
                     <div class="list-group-item list-group-item-action active">
                        <h5 class="m-0">Thông tin tài khoản</h5>
                     </div>
-                    <a href="/my/puc-register" class="list-group-item list-group-item-action">
+                    <a href="/my/productions" class="list-group-item list-group-item-action">
                         <i class="fa fa-list-alt mr-2 text-muted" /> Tờ khai vùng trồng</a>
                     <a href="/my/puc" class="list-group-item list-group-item-action"> <i class="fa fa-map-signs mr-2 text-muted" /> Vùng trồng</a>
                     <a href="#" class="list-group-item list-group-item-action"> <i class="fa fa-flask mr-2 text-muted" /> Danh mục phân bón</a>

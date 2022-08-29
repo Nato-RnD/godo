@@ -1,121 +1,84 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo> 
-    <!-- <template id="portal_layout" name="Portal Layout">
-        <t t-call="portal.frontend_layout">
-            <t t-set="is_portal" t-value="True" /> 
-            <div class="container pt-4">
-                <div class="row mx-0">
-                    <div class="col-3">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action active">
-                                Cras justo odio
-                            </a>
-                            <a href="/tokhai-kythuat" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-                            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                            <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="card">
-                           <div class="card-body">
-                                <t t-if="test">
-                                    <table class="table table-hover table-responsive">
-                                        <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Ten vung trong</th>
-                                            <th scope="col">Dien tich</th>
-                                            <th scope="col">Cay trong</th>
-                                            <th scope="col">Thi truong</th>
-                                            <th scope="col">San luong</th>
-                                            <th scope="col">Trang thai</th> 
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                            <t t-set="i" t-value="1"/>
-                                            <t t-foreach="test" t-as="item">
-                                                <tr>
-                                                    <th scope="row"><t t-esc="i"/></th>
-                                                    <td> <a t-attf-href="/my/tokhai-kythuat/detail/{{item.id}}" ><t t-esc="item.name" /></a></td>
-                                                    <td><t t-esc="item.area" /></td>
-                                                    <td><t t-esc="item.tree_id.name" /></td> 
-                                                    <td><t t-esc="item.export_to.name" /></td>
-                                                    <td><t t-esc="item.three_years_average_production" /></td>
-                                                    <td><t t-esc="item.state" /></td>
-                                                </tr>
-                                                <t t-set="i" t-value="i+1"/> 
-                                            
-                                        </t> 
-                                        
-                                        </tbody>
-                                    </table> 
-                                </t>
-
-                                <t t-if="detail">
-                                    <t t-esc="detail.name" />
-                    
-                                    <t t-esc="detail.registered_owner_name" /> 
-                                </t> 
-                           </div> 
-                        </div>
-                    </div>
-                </div> 
-
-            </div> 
-            
-        </t>
-    </template> -->
-
-
-    <template id="portal_my_home" name="My Portal"> 
+    <template id="portal_my_home" name="My Portal">
         <t t-call="g_production_place.portal_layout">
-            <t t-set="my_details" t-value="True"/>
+            <t t-set="my_details" t-value="True" />
             <div class="o_portal_my_home">
                 <div class="card">
                     <div class="card-body">
-                         <t t-if="test">
-                             <table class="table table-hover table-responsive">
-                                 <thead>
-                                 <tr>
-                                     <th scope="col">#</th>
-                                     <th scope="col">Ten vung trong</th>
-                                     <th scope="col">Dien tich</th>
-                                     <th scope="col">Cay trong</th>
-                                     <th scope="col">Thi truong</th>
-                                     <th scope="col">San luong</th>
-                                     <th scope="col">Trang thai</th> 
-                                 </tr>
-                                 </thead>
-                                 <tbody>
-                                     <t t-set="i" t-value="1"/>
-                                     <t t-foreach="test" t-as="item">
-                                         <tr>
-                                             <th scope="row"><t t-esc="i"/></th>
-                                             <td> <a t-attf-href="/my/puc-register/detail/{{item.id}}" ><t t-esc="item.name" /></a></td>
-                                             <td><t t-esc="item.area" /></td>
-                                             <td><t t-esc="item.tree_id.name" /></td> 
-                                             <td><t t-esc="item.export_to.name" /></td>
-                                             <td><t t-esc="item.three_years_average_production" /></td>
-                                             <td><t t-esc="item.state" /></td>
-                                         </tr>
-                                         <t t-set="i" t-value="i+1"/> 
-                                     
-                                 </t> 
-                                 
-                                 </tbody>
-                             </table> 
-                         </t>
+                        <t t-if="listview">
+                            <table class="table table-hover table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Tên vùng trồng</th>
+                                        <th scope="col">Diện tích (ha)</th>
+                                        <th scope="col">Cây trồng</th>
+                                        <th scope="col">Thị trường</th>
+                                        <th scope="col">Sản lượng (tấn)</th>
+                                        <th scope="col">Trạng thái</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-set="i" t-value="1" />
+                                    <t t-foreach="declaration_list" t-as="item">
+                                        <tr>
+                                            <th scope="row">
+                                                <t t-esc="i" />
+                                            </th>
+                                            <td> <a t-attf-href="/my/productions/detail/{{item.id}}">
+                                                    <t t-esc="item.name" /></a></td>
+                                            <td>
+                                                <t t-esc="item.area" />
+                                            </td>
+                                            <td>
+                                                <t t-esc="item.tree_id.name" />
+                                            </td>
+                                            <td>
+                                                <t t-esc="item.export_to.name" />
+                                            </td>
+                                            <td>
+                                                <t t-esc="item.three_years_average_production" />
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-info px-3 py-2"><t t-esc="item.state" /></span> 
+                                                 <a class="btn btn-info" t-attf-href="/my/productions/edit/{{item.id}}" ><i class="fa fa-edit" /> Sửa đổi</a>
+                                            </td>
+                                        </tr>
+                                        <t t-set="i" t-value="i+1" />
 
-                         <t t-if="detail">
-                             <t t-esc="detail.name" />
-             
-                             <t t-esc="detail.registered_owner_name" /> 
-                         </t> 
-                    </div> 
-                 </div>
+                                    </t>
+
+                                </tbody>
+                            </table>
+                            <div class="row mx-0"> 
+                                <div class="col-6 text-center"><a class="btn btn-info"  href="/my/productions/register" ><i class="fa fa-edit" /> Đăng ký mới</a></div>
+                            </div>
+                        </t>
+
+                        <t t-if="detailview">
+                            <t t-esc="declaration_detail.name" />
+
+                            <t t-esc="declaration_detail.registered_owner_name" />
+                            <br/>
+                                <a class="btn btn-info" t-attf-href="/my/productions/edit/{{declaration_detail.id}}" ><i class="fa fa-edit" /> Sửa đổi</a> 
+                        </t>
+
+                        <t t-if="editview">
+                            <div>
+                                <input type="text" t-att-value="name or declaration_detail.name" />
+                            </div>
+                        </t>
+
+                        <t t-if="createview">
+                            <div>
+                                <input type="text" />
+                            </div>
+                        </t>
+                    </div>
+                </div>
             </div>
-            <div class="oe_structure" id="oe_structure_portal_my_home_2"/> 
+            <div class="oe_structure" id="oe_structure_portal_my_home_2" />
         </t>
     </template>
 
