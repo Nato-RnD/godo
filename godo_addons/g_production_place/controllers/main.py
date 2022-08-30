@@ -18,8 +18,8 @@ class GPucPortal(CustomerPortal):
             'page_name': 'home',
         }
         
-    @route(['/my', '/my/puc-register'], type='http', auth="user", website=True)
-    def home(self, **kw):
+    @route(['/my/puc-register'], type='http', auth="user", website=True)
+    def puc_register(self, **kw):
         values = self._prepare_portal_layout_values()
         _declarations = request.env['godo.production.unit.declaration'].sudo().search([('registered_user_id','=',request.env.user.id)])
         # decl = []
