@@ -6,10 +6,14 @@
             <ol t-if="page_name != 'home'" class="o_portal_submenu breadcrumb mb-0 py-2 flex-grow-1 row"> 
                 <li class="breadcrumb-item ml-1"><a href="/my/home" aria-label="Home" title="Home"><i class="fa fa-home"/></a></li>
                 <li t-if="page_name == 'my_details'" class="breadcrumb-item">Details</li>
-                <li t-if="page_name == 'declaration'" class="breadcrumb-item">Tờ khai kỹ thuật</li>
-                <li t-if="page_name == 'detail'" class="breadcrumb-item">Chi tiết</li>
-                <li t-if="page_name == 'edit'" class="breadcrumb-item">Cập nhật</li>
-                <li t-if="page_name == 'create'" class="breadcrumb-item">Tạo mới</li>  
+                <li t-if="page_name == 'declaration'" class="breadcrumb-item">Tờ khai</li> 
+                <t t-if="page_name =='detail' or page_name =='edit' or page_name =='create'">
+                    <li  class="breadcrumb-item"><a href="/my/productions" aria-label="Home" title="Home">Tờ khai</a></li> 
+                    <li t-if="page_name == 'detail'" class="breadcrumb-item">Chi tiết</li>
+                    <li t-if="page_name == 'edit'" class="breadcrumb-item">Cập nhật</li>
+                    <li t-if="page_name == 'create'" class="breadcrumb-item">Tạo mới</li>  
+                    
+                </t>  
             </ol>
         </xpath> 
     </template> 

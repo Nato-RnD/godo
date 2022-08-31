@@ -67,7 +67,7 @@ class GPucPortal(CustomerPortal):
         values.update({  
             'page_name': 'create' 
         })
-        return request.render("g_production_place.portal_my_puc_createview", values)
+        return request.render("g_production_place.portal_my_puc_create_view", values)
 
 
     @route(['/my/account'], type='http', auth='user', website=True)

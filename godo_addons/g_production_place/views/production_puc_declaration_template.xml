@@ -74,12 +74,14 @@
                                 <div class="col-6 text-center"><a class="btn btn-info"  href="/my/productions/register" ><i class="fa fa-edit" /> Đăng ký mới</a></div>
                             </div> 
 
-                            <input class="form-control" t-att-value="name or declaration_detail.name " t-att-disabled="page_name=='edit'" />
+                            <input class="form-control" t-att-value="name or declaration_detail.name " t-att-disabled="page_name!='edit'" />
  
-                            <input class="form-control" t-att-value="registered_owner_name or declaration_detail.registered_owner_name " t-att-disabled="page_name=='edit'" />
+                            <input class="form-control" t-att-value="registered_owner_name or declaration_detail.registered_owner_name " t-att-disabled="page_name!='edit'" />
                             <br/>
-                                <a class="btn btn-info" t-attf-href="/my/productions/edit/{{declaration_detail.id}}" ><i class="fa fa-edit" /> Sửa đổi</a> 
-                        
+                               
+                            <div class="row mx-0"> 
+                                <div class="col-6 offset-6 text-right"> <a class="btn btn-info" t-attf-href="/my/productions/edit/{{declaration_detail.id}}" ><i class="fa fa-edit" /> Sửa đổi</a> </div>
+                            </div>
                     </div>
                 </div>
             </div>
