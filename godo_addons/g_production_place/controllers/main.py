@@ -21,11 +21,15 @@ class GPucPortal(CustomerPortal):
     @route(['/my', '/my/productions'], type='http', auth="user", website=True)
     def declaration_list(self, **kw):
         values = self._prepare_portal_layout_values()
-        _declarations = request.env['godo.production.unit.declaration'].sudo().search([('registered_user_id','=',request.env.user.id)])
-        values['listview'] = True
-        values['declaration_list'] = _declarations
-        values['page_name'] ='declaration'
-        return request.render("g_production_place.portal_my_home", values)
+        _declarations = request.env['godo.production.unit.declaration'].sudo().search([('registered_user_id','=',request.env.user.id)]) 
+        values.update({
+            'listview': True,
+            'declaration_list': _declarations,
+            'page_name': 'declaration' 
+        })
+        response = request.render("g_production_place.portal_my_puc_listview", values)
+        response.headers['X-Frame-Options'] = 'DENY'
+        return response 
 
  
     @route(['/my/productions/detail/<int:declaration_id>'], type='http', auth="user", website=True)
@@ -34,24 +38,36 @@ class GPucPortal(CustomerPortal):
         _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id)
         values['detailview'] = True
         values['declaration_detail'] = _declaration
-        return request.render("g_production_place.portal_my_home", values)
+        values.update({ 
+            'declaration_detail': _declaration,
+            'page_name': 'detail' 
+        })
+        response = request.render("g_production_place.portal_my_puc_detailview", values)
+        response.headers['X-Frame-Options'] = 'DENY'
+        return response 
+     
 
     @route(['/my/productions/edit/<int:declaration_id>'], type='http', auth="user", website=True)
     def declaration_edit(self,declaration_id, **kw):
         values = self._prepare_portal_layout_values()
         _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id)
-        values['editview'] = True
-        values['declaration_detail'] = _declaration
-        return request.render("g_production_place.portal_my_home", values)
+        values.update({ 
+            'declaration_detail': _declaration,
+            'page_name': 'edit' 
+        })
+        response = request.render("g_production_place.portal_my_puc_detailview", values)
+        response.headers['X-Frame-Options'] = 'DENY'
+        return response
 
     
     @route(['/my/productions/register'], type='http', auth="user", website=True)
     def declaration_register(self, **kw):
         values = self._prepare_portal_layout_values()
         # _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id) 
-        values['createview'] = True
-        # values['detail'] = _declaration
-        return request.render("g_production_place.portal_my_home", values)
+        values.update({  
+            'page_name': 'create' 
+        })
+        return request.render("g_production_place.portal_my_puc_createview", values)
 
 
     @route(['/my/account'], type='http', auth='user', website=True)

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo> 
-    <template id="portal_my_home" name="My Portal">
-        <t t-call="g_production_place.portal_layout"> 
-            <t t-set="my_details" t-value="True" />
-            <t t-set="additional_title">Danh sách tờ khai</t>
+    <template id="portal_my_puc_listview" name="My Portal">
+        <t t-call="g_production_place.portal_layout">  
+            <t t-set="additional_title">Danh sách tờ khai</t>   
             <div class="o_portal_my_home">
                 <div class="card">
-                    <div class="card-body">
-                        <t t-if="listview">
-                          
-                            <table class="table table-hover table-responsive">
+                    <div class="card-body"> 
+                            <table class="table table-hover">
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
@@ -19,6 +16,7 @@
                                         <th scope="col">Thị trường</th>
                                         <th scope="col">Sản lượng (tấn)</th>
                                         <th scope="col">Trạng thái</th>
+                                        <th class="text-right"  scope="col">Hành động</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -43,8 +41,10 @@
                                                 <t t-esc="item.three_years_average_production" />
                                             </td>
                                             <td>
-                                                <span class="badge badge-info px-3 py-2"><t t-esc="item.state" /></span> 
-                                                 <a class="btn btn-info" t-attf-href="/my/productions/edit/{{item.id}}" ><i class="fa fa-edit" /> Sửa đổi</a>
+                                                <span class="badge badge-info px-2 py-1"><t t-esc="item.state" /></span>  
+                                            </td>
+                                            <td class="text-right">
+                                             <a class="text-info text-decoration-none" t-attf-href="/my/productions/edit/{{item.id}}" ><i class="fa fa-edit" /> Sửa đổi</a>
                                             </td>
                                         </tr>
                                         <t t-set="i" t-value="i+1" />
@@ -54,29 +54,9 @@
                                 </tbody>
                             </table>
                             <div class="row mx-0"> 
-                                <div class="col-6 text-center"><a class="btn btn-info"  href="/my/productions/register" ><i class="fa fa-edit" /> Đăng ký mới</a></div>
+                                <div class="col-6 offset-6 text-right"><a class="btn btn-info"  href="/my/productions/register" ><i class="fa fa-edit" /> Đăng ký mới</a></div>
                             </div>
-                        </t>
-
-                        <t t-if="detailview">
-                            <t t-esc="declaration_detail.name" />
-
-                            <t t-esc="declaration_detail.registered_owner_name" />
-                            <br/>
-                                <a class="btn btn-info" t-attf-href="/my/productions/edit/{{declaration_detail.id}}" ><i class="fa fa-edit" /> Sửa đổi</a> 
-                        </t>
-
-                        <t t-if="editview">
-                            <div>
-                                <input type="text" t-att-value="name or declaration_detail.name" />
-                            </div>
-                        </t>
-
-                        <t t-if="createview">
-                            <div>
-                                <input type="text" />
-                            </div>
-                        </t>
+                        
                     </div>
                 </div>
             </div>
@@ -84,4 +64,45 @@
         </t>
     </template>
 
+    <template id="portal_my_puc_detailview" name="My Portal">
+        <t t-call="g_production_place.portal_layout">  
+            <t t-set="additional_title">Chi tiết tờ khai</t>
+            <div class="o_portal_my_home">
+                <div class="card">
+                    <div class="card-body">   
+                            <div class="row mx-0"> 
+                                <div class="col-6 text-center"><a class="btn btn-info"  href="/my/productions/register" ><i class="fa fa-edit" /> Đăng ký mới</a></div>
+                            </div> 
+
+                            <input class="form-control" t-att-value="name or declaration_detail.name " t-att-disabled="page_name=='edit'" />
+ 
+                            <input class="form-control" t-att-value="registered_owner_name or declaration_detail.registered_owner_name " t-att-disabled="page_name=='edit'" />
+                            <br/>
+                                <a class="btn btn-info" t-attf-href="/my/productions/edit/{{declaration_detail.id}}" ><i class="fa fa-edit" /> Sửa đổi</a> 
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="oe_structure" id="oe_structure_portal_my_home_2" />
+        </t>
+    </template>
+    
+    <template id="portal_my_puc_create_view" name="My Portal">
+        <t t-call="g_production_place.portal_layout">  
+            <t t-set="additional_title">Tờ khai mới</t>
+            <div class="o_portal_my_home">
+                <div class="card">
+                    <div class="card-body">  
+                            <div>
+                                <input type="text" class="form-control"/>
+                            </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="oe_structure" id="oe_structure_portal_my_home_2" />
+        </t>
+    </template>
+
+  
 </odoo>

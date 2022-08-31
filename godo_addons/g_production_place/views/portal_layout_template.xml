@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <template id="portal_breadcrumbs" name="GPortal Breadcrumbs" >
+        <xpath expr="//div[@class='breadcrumb-item']" position="after">
+            <ol t-if="page_name != 'home'" class="o_portal_submenu breadcrumb mb-0 py-2 flex-grow-1 row"> 
+                <li class="breadcrumb-item ml-1"><a href="/my/home" aria-label="Home" title="Home"><i class="fa fa-home"/></a></li>
+                <li t-if="page_name == 'my_details'" class="breadcrumb-item">Details</li>
+                <li t-if="page_name == 'declaration'" class="breadcrumb-item">Tờ khai kỹ thuật</li>
+                <li t-if="page_name == 'detail'" class="breadcrumb-item">Chi tiết</li>
+                <li t-if="page_name == 'edit'" class="breadcrumb-item">Cập nhật</li>
+                <li t-if="page_name == 'create'" class="breadcrumb-item">Tạo mới</li>  
+            </ol>
+        </xpath> 
+    </template> 
+
     <template id="portal_layout" name="Portal Layout" inherit_id="portal.portal_layout">
+        <xpath expr="//div[@class='o_portal container mt-3']" position="replace"> 
+            <div t-if="not no_breadcrumbs and not my_details and not breadcrumbs_searchbar" class="o_portal container mt-3" style="max-width: 1350px">
+                    <div class="row align-items-center bg-white no-gutters border rounded">
+                        <div class="col-10">
+                            <t t-call="g_production_place.portal_breadcrumbs"></t>
+                        </div>
+                        <div t-if="prev_record or next_record" class="col-2 flex-grow-0 text-center">
+                            <t t-call='portal.record_pager'/>
+                        </div>
+                    </div>
+            </div>
+
+        </xpath>
         <xpath expr="//div[@class='o_portal_wrap']" position="replace"> 
             <div id="wrap" class='o_portal_wrap'>
                 <div class="container mb64" style="max-width: 1350px">
@@ -40,7 +66,7 @@
                                                 <a href="/my/account" class="btn btn-muted">
                                                     Tài khoản <i class="fa fa-pencil" />
                                                 </a></div>
-                                            <div class="col-6 px-0"> <a href="/my/account" class="btn btn-muted">
+                                            <div class="col-6 px-0"> <a href="/my/security" class="btn btn-muted">
                                                     Bảo mật <i class="fa fa-lock" />
                                                 </a></div>
                                         </div>
