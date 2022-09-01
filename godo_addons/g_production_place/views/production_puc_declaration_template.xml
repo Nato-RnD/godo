@@ -66,13 +66,13 @@
 
                         <t t-if="editview">
                             <div>
-                                <input type="text" t-att-value="name or declaration_detail.name" />
+                                <input class="form-control"  type="text" t-att-value="name or declaration_detail.name" />
                             </div>
                         </t>
 
                         <t t-if="createview">
                             <div>
-                                <input type="text" />
+                                <input class="form-control" type="text" />
                             </div>
                         </t>
                     </div>
