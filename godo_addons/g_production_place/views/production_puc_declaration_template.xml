@@ -1,62 +1,77 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo> 
+<odoo>
     <template id="portal_my_puc_listview" name="My Portal">
-        <t t-call="g_production_place.portal_layout">  
-            <t t-set="additional_title">Danh sách tờ khai</t>   
+        <t t-call="g_production_place.portal_layout">
+            <t t-set="additional_title">Danh sách tờ khai</t>
             <div class="o_portal_my_home">
                 <div class="card">
-                    <div class="card-body"> 
-                            <table class="table table-hover">
-                                <thead>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Tên vùng trồng</th>
+                                    <th scope="col">Diện tích (ha)</th>
+                                    <th scope="col">Cây trồng</th>
+                                    <th scope="col">Thị trường</th>
+                                    <th scope="col">Sản lượng (tấn)</th>
+                                    <th scope="col">Trạng thái</th>
+                                    <th class="text-right" scope="col">Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="i" t-value="1" />
+                                <t t-foreach="declaration_list" t-as="item">
                                     <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Tên vùng trồng</th>
-                                        <th scope="col">Diện tích (ha)</th>
-                                        <th scope="col">Cây trồng</th>
-                                        <th scope="col">Thị trường</th>
-                                        <th scope="col">Sản lượng (tấn)</th>
-                                        <th scope="col">Trạng thái</th>
-                                        <th class="text-right"  scope="col">Hành động</th>
+                                        <th scope="row">
+                                            <t t-esc="i" />
+                                        </th>
+                                        <td>
+                                            <a t-attf-href="/my/productions/detail/{{item.id}}">
+                                                <t t-esc="item.name" />
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <t t-esc="item.area" />
+                                        </td>
+                                        <td>
+                                            <t t-esc="item.tree_id.name" />
+                                        </td>
+                                        <td>
+                                            <t t-esc="item.export_to.name" />
+                                        </td>
+                                        <td>
+                                            <t t-esc="item.three_years_average_production" />
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-info px-2 py-1">
+                                                <t
+                                                    t-esc="dict(item.fields_get(allfields=['state'])['state']['selection'])[item.state]" />
+                                            </span>
+                                        </td>
+                                        <td class="text-right">
+                                            <t t-if="item.state=='draft'">
+                                                <a class="text-info text-decoration-none"
+                                                    t-attf-href="/my/productions/edit/{{item.id}}">
+                                                    <i class="fa fa-edit" />
+                                                    Sửa đổi</a>
+                                            </t>
+                                        </td>
                                     </tr>
-                                </thead>
-                                <tbody>
-                                    <t t-set="i" t-value="1" />
-                                    <t t-foreach="declaration_list" t-as="item">
-                                        <tr>
-                                            <th scope="row">
-                                                <t t-esc="i" />
-                                            </th>
-                                            <td> <a t-attf-href="/my/productions/detail/{{item.id}}">
-                                                    <t t-esc="item.name" /></a></td>
-                                            <td>
-                                                <t t-esc="item.area" />
-                                            </td>
-                                            <td>
-                                                <t t-esc="item.tree_id.name" />
-                                            </td>
-                                            <td>
-                                                <t t-esc="item.export_to.name" />
-                                            </td>
-                                            <td>
-                                                <t t-esc="item.three_years_average_production" />
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-info px-2 py-1"><t t-esc="item.state" /></span>  
-                                            </td>
-                                            <td class="text-right">
-                                             <a class="text-info text-decoration-none" t-attf-href="/my/productions/edit/{{item.id}}" ><i class="fa fa-edit" /> Sửa đổi</a>
-                                            </td>
-                                        </tr>
-                                        <t t-set="i" t-value="i+1" />
+                                    <t t-set="i" t-value="i+1" />
 
-                                    </t>
+                                </t>
 
-                                </tbody>
-                            </table>
-                            <div class="row mx-0"> 
-                                <div class="col-6 offset-6 text-right"><a class="btn btn-info"  href="/my/productions/register" ><i class="fa fa-edit" /> Đăng ký mới</a></div>
+                            </tbody>
+                        </table>
+                        <div class="row mx-0">
+                            <div class="col-6 offset-6 text-right">
+                                <a class="btn btn-info" href="/my/productions/register">
+                                    <i class="fa fa-edit" />
+                                    Đăng ký mới</a>
                             </div>
-                        
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -65,46 +80,66 @@
     </template>
 
     <template id="portal_my_puc_detailview" name="My Portal">
-        <t t-call="g_production_place.portal_layout">  
+        <t t-call="g_production_place.portal_layout">
             <t t-set="additional_title">Chi tiết tờ khai</t>
             <div class="o_portal_my_home">
-                <div class="card">
-                    <div class="card-body">   
-                            <div class="row mx-0"> 
-                                <div class="col-6 text-center"><a class="btn btn-info"  href="/my/productions/register" ><i class="fa fa-edit" /> Đăng ký mới</a></div>
-                            </div> 
-
-                            <input class="form-control" t-att-value="name or declaration_detail.name " t-att-disabled="page_name!='edit'" />
- 
-                            <input class="form-control" t-att-value="registered_owner_name or declaration_detail.registered_owner_name " t-att-disabled="page_name!='edit'" />
-                            <br/>
-                               
-                            <div class="row mx-0"> 
-                                <div class="col-6 offset-6 text-right"> <a class="btn btn-info" t-attf-href="/my/productions/edit/{{declaration_detail.id}}" ><i class="fa fa-edit" /> Sửa đổi</a> </div>
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h4 class="m-0">Thông tin tờ khai</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="name">Tên vùng trồng</label>
+                                    <input class="form-control" t-att-value="name or declaration_detail.name "
+                                        name="name" t-att-disabled="page_name!='edit'" />
+                                </div>
                             </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="registered_owner_name">Tên vùng trồng</label>
+                                    <input class="form-control" name="registered_owner_name"
+                                        t-att-value="registered_owner_name or declaration_detail.registered_owner_name "
+                                        t-att-disabled="page_name!='edit'" />
+
+                                </div>
+                            </div>  
+                        </div> 
+                        <br /> 
+                        <div class="row mx-0">
+                            <div class="col-6 text-right">
+                                <a class="btn btn-info" href="/my/productions/register">
+                                    <i class="fa fa-edit" />
+                                    Đăng ký mới</a>
+                            </div>
+                            <div class="col-6 text-right">
+                                <a class="btn btn-info" t-attf-href="/my/productions/edit/{{declaration_detail.id}}">
+                                    <i class="fa fa-edit" />
+                                    Sửa đổi</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="oe_structure" id="oe_structure_portal_my_home_2" />
         </t>
     </template>
-    
+
     <template id="portal_my_puc_create_view" name="My Portal">
-        <t t-call="g_production_place.portal_layout">  
+        <t t-call="g_production_place.portal_layout">
             <t t-set="additional_title">Tờ khai mới</t>
             <div class="o_portal_my_home">
                 <div class="card">
-                    <div class="card-body">  
-                            <div>
-                                <input type="text" class="form-control"/>
-                            </div>
-                         
+                    <div class="card-body">
+                        <div>
+                            <input type="text" class="form-control" />
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="oe_structure" id="oe_structure_portal_my_home_2" />
         </t>
-    </template>
-
-  
+    </template> 
 </odoo>
