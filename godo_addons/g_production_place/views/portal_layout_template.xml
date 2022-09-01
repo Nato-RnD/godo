@@ -1,34 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <template id="portal_breadcrumbs" name="GPortal Breadcrumbs" >
+        <xpath expr="//div[@class='breadcrumb-item']" position="after">
+            <ol t-if="page_name != 'home'" class="o_portal_submenu breadcrumb mb-0 py-2 flex-grow-1 row"> 
+                <li class="breadcrumb-item ml-1"><a href="/my/home" aria-label="Home" title="Home"><i class="fa fa-home"/></a></li>
+                <li t-if="page_name == 'my_details'" class="breadcrumb-item">Details</li>
+                <li t-if="page_name == 'declaration'" class="breadcrumb-item">Tờ khai vùng trồng</li> 
+                <t t-if="page_name =='detail' or page_name =='edit' or page_name =='create'">
+                    <li  class="breadcrumb-item"><a href="/my/productions" aria-label="Home" title="Home">Tờ khai vùng trồng</a></li> 
+                    <li t-if="page_name == 'detail'" class="breadcrumb-item">Chi tiết</li>
+                    <li t-if="page_name == 'edit'" class="breadcrumb-item">Cập nhật</li>
+                    <li t-if="page_name == 'create'" class="breadcrumb-item">Tạo mới</li>  
+                    
+                </t>  
+            </ol>
+        </xpath> 
+    </template> 
+
     <template id="portal_layout" name="Portal Layout" inherit_id="portal.portal_layout">
-        <xpath expr="//div[@id='o_my_sidebar']" position="replace">
-            <div id="o_my_sidebar" class="pt-3 pt-lg-0 col-12 col-md col-lg-4 col-xl-3 o_my_sidebar">
-                <div class="list-group">
-                    <div class="list-group-item list-group-item-action active">
-                       <h5 class="m-0">Thông tin tài khoản</h5>
-                    </div>
-                    <a href="/my/productions" class="list-group-item list-group-item-action">
-                        <i class="fa fa-list-alt mr-2 text-muted" /> Tờ khai vùng trồng</a>
-                    <a href="/my/puc" class="list-group-item list-group-item-action"> <i class="fa fa-map-signs mr-2 text-muted" /> Vùng trồng</a>
-                    <a href="#" class="list-group-item list-group-item-action"> <i class="fa fa-flask mr-2 text-muted" /> Danh mục phân bón</a>
-                    <a href="#" class="list-group-item list-group-item-action"> <i class="fa fa-bug mr-2 text-muted" /> Danh mục thuốc BVTV</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled"> <i class="fa fa-tree mr-2 text-muted" /> Danh mục cây giống</a>
-                </div>
-                <div class="card mt24">
-                    <div class="card-head bg-primary px-4 py-2"><h5 class="m-0"><div t-field="user_id.partner_id.name" /> </h5></div> 
-                    <div class="card-body pt-0"> 
-                        <div t-field="user_id.partner_id" t-options='{"widget": "contact", "fields": ["email", "phone"]}'/> 
-                        <div class="row mt-2">
-                            <div class="col-6 px-0">  
-                                <a href="/my/account" class="btn btn-muted">
-                               Tài khoản <i class="fa fa-pencil" /> 
-                            </a></div>
-                            <div class="col-6 px-0">  <a href="/my/account" class="btn btn-muted">
-                               Bảo mật <i class="fa fa-lock" />  
-                            </a></div>
+        <xpath expr="//div[@class='o_portal container mt-3']" position="replace"> 
+            <div t-if="not no_breadcrumbs and not my_details and not breadcrumbs_searchbar" class="o_portal container mt-3" style="max-width: 1350px">
+                    <div class="row align-items-center bg-white no-gutters border rounded">
+                        <div class="col-10">
+                            <t t-call="g_production_place.portal_breadcrumbs"></t>
+                        </div>
+                        <div t-if="prev_record or next_record" class="col-2 flex-grow-0 text-center">
+                            <t t-call='portal.record_pager'/>
                         </div>
                     </div>
+            </div>
+
+        </xpath>
+        <xpath expr="//div[@class='o_portal_wrap']" position="replace"> 
+            <div id="wrap" class='o_portal_wrap'>
+                <div class="container mb64" style="max-width: 1350px">
+                    <t t-if="my_details">
+                        <div class="row justify-content-between mt-4">
+                            <div t-attf-class="col-12 col-md col-lg-9">
+                                <t t-out="0" />
+                            </div>
+                            <div id="o_my_sidebar" class="pt-3 pt-lg-0 col-12 col-md col-lg-4 col-xl-3 o_my_sidebar">
+                                <div class="list-group">
+                                    <div class="list-group-item list-group-item-action active">
+                                        <h5 class="m-0">Thông tin tài khoản</h5>
+                                    </div>
+                                    <a href="/my/productions" class="list-group-item list-group-item-action">
+                                        <i class="fa fa-list-alt mr-2 text-muted" /> Tờ khai vùng trồng</a>
+                                    <a href="/my/puc" class="list-group-item list-group-item-action"> <i
+                                            class="fa fa-map-signs mr-2 text-muted" /> Vùng trồng</a>
+                                    <a href="#" class="list-group-item list-group-item-action"> <i
+                                            class="fa fa-flask mr-2 text-muted" /> Danh mục phân bón</a>
+                                    <a href="#" class="list-group-item list-group-item-action"> <i
+                                            class="fa fa-bug mr-2 text-muted" /> Danh mục thuốc BVTV</a>
+                                    <a href="#" class="list-group-item list-group-item-action disabled"> <i
+                                            class="fa fa-tree mr-2 text-muted" /> Danh mục cây giống</a>
+                                </div>
+                                <div class="card mt24">
+                                    <div class="card-head bg-primary px-4 py-2">
+                                        <h5 class="m-0">
+                                            <div t-field="user_id.partner_id.name" />
+                                        </h5>
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <div t-field="user_id.partner_id"
+                                            t-options='{"widget": "contact", "fields": ["email", "phone"]}' />
+                                        <div class="row mt-2">
+                                            <div class="col-6 px-0">
+                                                <a href="/my/account" class="btn btn-muted">
+                                                    Tài khoản <i class="fa fa-pencil" />
+                                                </a></div>
+                                            <div class="col-6 px-0"> <a href="/my/security" class="btn btn-muted">
+                                                    Bảo mật <i class="fa fa-lock" />
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <t t-out="0" />
+                    </t>
                 </div>
             </div>
         </xpath>
@@ -40,30 +93,40 @@
             <div class="row o_portal_details">
                 <div class="col-lg-8">
                     <div class="row">
-                        <t t-set="partner_can_edit_vat" t-value="partner.can_edit_vat()"/>
+                        <t t-set="partner_can_edit_vat" t-value="partner.can_edit_vat()" />
                         <div class="col-lg-12">
-                          <div t-if="error_message" class="alert alert-danger" role="alert">
-                              <t t-foreach="error_message" t-as="err"><t t-esc="err"/><br /></t>
-                          </div>
+                            <div t-if="error_message" class="alert alert-danger" role="alert">
+                                <t t-foreach="error_message" t-as="err">
+                                    <t t-esc="err" /><br /></t>
+                            </div>
                         </div>
                         <div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''} col-xl-6">
                             <label class="col-form-label" for="name">Name</label>
-                            <input type="text" name="name" t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}" t-att-value="name or partner.name" />
+                            <input type="text" name="name"
+                                t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}"
+                                t-att-value="name or partner.name" />
                         </div>
                         <div t-attf-class="form-group #{error.get('email') and 'o_has_error' or ''} col-xl-6">
                             <label class="col-form-label" for="email">Email</label>
-                            <input type="email" name="email" t-attf-class="form-control #{error.get('email') and 'is-invalid' or ''}" t-att-value="email or partner.email" />
+                            <input type="email" name="email"
+                                t-attf-class="form-control #{error.get('email') and 'is-invalid' or ''}"
+                                t-att-value="email or partner.email" />
                         </div>
 
                         <div class="clearfix" />
-                        <div t-attf-class="form-group mb-1 #{error.get('company_name') and 'o_has_error' or ''} col-xl-6">
+                        <div
+                            t-attf-class="form-group mb-1 #{error.get('company_name') and 'o_has_error' or ''} col-xl-6">
                             <label class="col-form-label label-optional" for="company_name">Company Name</label>
                             <!-- The <input> use "disabled" attribute to avoid sending an unauthorized value on form submit.
                                  The user might not have rights to change company_name but should still be able to see it.
                             -->
-                            <input type="text" name="company_name" t-attf-class="form-control #{error.get('company_name') and 'is-invalid' or ''}" t-att-value="company_name or partner.commercial_company_name" t-att-disabled="None if partner_can_edit_vat else '1'" />
+                            <input type="text" name="company_name"
+                                t-attf-class="form-control #{error.get('company_name') and 'is-invalid' or ''}"
+                                t-att-value="company_name or partner.commercial_company_name"
+                                t-att-disabled="None if partner_can_edit_vat else '1'" />
                             <small t-if="not partner_can_edit_vat" class="form-text text-muted d-block d-xl-none">
-                                Changing company name is not allowed once document(s) have been issued for your account. Please contact us directly for this operation.
+                                Changing company name is not allowed once document(s) have been issued for your account.
+                                Please contact us directly for this operation.
                             </small>
                         </div>
                         <div t-attf-class="form-group mb-1 #{error.get('vat') and 'o_has_error' or ''} col-xl-6">
@@ -71,29 +134,43 @@
                             <!-- The <input> use "disabled" attribute to avoid sending an unauthorized value on form submit.
                                  The user might not have rights to change company_name but should still be able to see it.
                             -->
-                            <input type="text" name="vat" t-attf-class="form-control #{error.get('vat') and 'is-invalid' or ''}" t-att-value="vat or partner.vat" t-att-disabled="None if partner_can_edit_vat else '1'" />
-                            <small t-if="not partner_can_edit_vat" class="form-text text-muted d-block d-xl-none">Changing VAT number is not allowed once document(s) have been issued for your account. Please contact us directly for this operation.</small>
+                            <input type="text" name="vat"
+                                t-attf-class="form-control #{error.get('vat') and 'is-invalid' or ''}"
+                                t-att-value="vat or partner.vat"
+                                t-att-disabled="None if partner_can_edit_vat else '1'" />
+                            <small t-if="not partner_can_edit_vat"
+                                class="form-text text-muted d-block d-xl-none">Changing VAT number is not allowed once
+                                document(s) have been issued for your account. Please contact us directly for this
+                                operation.</small>
                         </div>
                         <div t-if="not partner_can_edit_vat" class="col-12 d-none d-xl-block">
-                            <small class="form-text text-muted">Changing company name or VAT number is not allowed once document(s) have been issued for your account. <br/>Please contact us directly for this operation.</small>
+                            <small class="form-text text-muted">Changing company name or VAT number is not allowed once
+                                document(s) have been issued for your account. <br />Please contact us directly for this
+                                operation.</small>
                         </div>
                         <div t-attf-class="form-group #{error.get('phone') and 'o_has_error' or ''} col-xl-6">
                             <label class="col-form-label" for="phone">Phone</label>
-                            <input type="tel" name="phone" t-attf-class="form-control #{error.get('phone') and 'is-invalid' or ''}" t-att-value="phone or partner.phone" />
+                            <input type="tel" name="phone"
+                                t-attf-class="form-control #{error.get('phone') and 'is-invalid' or ''}"
+                                t-att-value="phone or partner.phone" />
                         </div>
 
                         <div class="clearfix" />
                         <div t-attf-class="form-group #{error.get('street') and 'o_has_error' or ''} col-xl-6">
                             <label class="col-form-label" for="street">Street</label>
-                            <input type="text" name="street" t-attf-class="form-control #{error.get('street') and 'is-invalid' or ''}" t-att-value="street or partner.street"/>
+                            <input type="text" name="street"
+                                t-attf-class="form-control #{error.get('street') and 'is-invalid' or ''}"
+                                t-att-value="street or partner.street" />
                         </div>
-                        
+
                         <div t-attf-class="form-group #{error.get('province_id') and 'o_has_error' or ''} col-xl-6">
                             <label class="col-form-label" for="province_id">Tỉnh/Thành</label>
-                            <select name="province_id" t-attf-class="form-control #{error.get('province_id') and 'is-invalid' or ''}">
+                            <select name="province_id"
+                                t-attf-class="form-control #{error.get('province_id') and 'is-invalid' or ''}">
                                 <option value="">Chọn tỉnh/thành...</option>
                                 <t t-foreach="provinces or []" t-as="province">
-                                    <option t-att-value="province.id" t-att-selected="province.id == int(province_id) if province_id else province.id == partner.province_id.id">
+                                    <option t-att-value="province.id"
+                                        t-att-selected="province.id == int(province_id) if province_id else province.id == partner.province_id.id">
                                         <t t-esc="province.name" />
                                     </option>
                                 </t>
@@ -101,16 +178,19 @@
                         </div>
                         <div t-attf-class="form-group #{error.get('district_id') and 'o_has_error' or ''} col-xl-6">
                             <label class="col-form-label label-optional" for="district_id">Quận/Huyện</label>
-                            <select name="district_id" t-attf-class="form-control #{error.get('district_id') and 'is-invalid' or ''}">
+                            <select name="district_id"
+                                t-attf-class="form-control #{error.get('district_id') and 'is-invalid' or ''}">
                                 <option value="">Chọn quận/huyện...</option>
                                 <t t-foreach="districts or []" t-as="district">
-                                    <option t-att-value="district.id" style="display:none;" t-att-data-province_id="district.depend_province.id" t-att-selected="district.id == partner.district_id.id">
+                                    <option t-att-value="district.id" style="display:none;"
+                                        t-att-data-province_id="district.depend_province.id"
+                                        t-att-selected="district.id == partner.district_id.id">
                                         <t t-esc="district.name" />
                                     </option>
                                 </t>
                             </select>
                         </div>
-                        <input type="hidden" name="redirect" t-att-value="redirect"/>
+                        <input type="hidden" name="redirect" t-att-value="redirect" />
                     </div>
                     <div class="clearfix">
                         <button type="submit" class="btn btn-primary float-right mb32 ">
@@ -120,6 +200,6 @@
                     </div>
                 </div>
             </div>
-        </xpath> 
+        </xpath>
     </template>
 </odoo>
