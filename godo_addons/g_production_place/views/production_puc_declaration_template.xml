@@ -53,8 +53,8 @@
                                             <t t-if="item.state=='draft'">
                                                 <a class="text-info text-decoration-none"
                                                     t-attf-href="/my/productions/edit/{{item.id}}">
-                                                    <i class="fa fa-edit" />
-                                                    Sửa đổi</a>
+                                                    <i class="fa fa-edit  mr-1" />
+                                                    Sửa</a>
                                             </t>
                                         </td>
                                     </tr>
@@ -67,7 +67,7 @@
                         <div class="row mx-0">
                             <div class="col-6 offset-6 text-right">
                                 <a class="btn btn-info" href="/my/productions/register">
-                                    <i class="fa fa-edit" />
+                                    <i class="fa fa-plus-circle mr-1" />
                                     Đăng ký mới</a>
                             </div>
                         </div> 
@@ -81,38 +81,193 @@
     <template id="portal_my_puc_detailview" name="My Portal">
         <t t-call="g_production_place.portal_layout">
             <t t-set="additional_title">Chi tiết tờ khai</t>
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
             <div class="o_portal_my_home">
                 <div class="card mt-3">
                     <div class="card-header">
                         <h4 class="m-0">Thông tin tờ khai</h4>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body"> 
                         <div class="row">
                             <div class="col-6">
-                                <div class="form-group">
-                                    <label for="name">Tên vùng trồng</label>
-                                    <input class="form-control" t-att-value="name or declaration_detail.name "
-                                        name="name" t-att-disabled="page_name!='edit'" />
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="registered_owner_name">Tên vùng trồng</label>
-                                    <input class="form-control" name="registered_owner_name"
-                                        t-att-value="registered_owner_name or declaration_detail.registered_owner_name "
-                                        t-att-disabled="page_name!='edit'" />
+                                <fieldset class="border p-2">
+                                    <legend  class="w-auto">Thông tin tổ chức/cá nhân đăng ký</legend>
+                                    <div class="form-group">
+                                        <label for="username">Người dùng</label>
+                                        <input class="form-control" t-att-value="username or declaration_detail.registered_user_id.name"
+                                            name="username" t-att-disabled="page_name!='edit'" />
+                                            <input type="hidden" t-att-value="userid or declaration_detail.registered_user_id.id" /> 
+                                    </div>
 
-                                </div>
-                            </div>  
+                                    <div class="form-group">
+                                        <label for="registered_owner_name">Tổ chức/cá nhân đăng ký</label>
+                                        <input class="form-control" name="registered_owner_name"
+                                            t-att-value="registered_owner_name or declaration_detail.registered_owner_name "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="registered_owner_type">Loại hình hoạt động</label>
+                                        <input class="form-control" name="registered_owner_type"
+                                            t-att-value="registered_owner_type or declaration_detail.registered_owner_type "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="registered_owner_representer">Đại diện</label>
+                                        <input class="form-control" name="registered_owner_representer"
+                                            t-att-value="registered_owner_representer or declaration_detail.registered_owner_representer "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="registered_owner_address">Địa chỉ liên hệ</label>
+                                        <input class="form-control" name="registered_owner_address"
+                                            t-att-value="registered_owner_address or declaration_detail.registered_owner_address "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="registered_owner_code">Mã số DN/CCCD</label>
+                                        <input class="form-control" name="registered_owner_code"
+                                            t-att-value="registered_owner_code or declaration_detail.registered_owner_code "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label for="phone">Điện thoại</label>
+                                        <input class="form-control" name="phone"
+                                            t-att-value="phone or declaration_detail.phone "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="fax">Fax</label>
+                                        <input class="form-control" name="fax"
+                                            t-att-value="fax or declaration_detail.fax "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input class="form-control" name="email"
+                                            t-att-value="email or declaration_detail.email "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div> 
+                                </fieldset>  
+                            </div> 
+
+                            <div class="col-6">
+                                <fieldset class="border p-2">
+                                    <legend  class="w-auto">Thông tin vùng trồng</legend>
+                                    <div class="form-group">
+                                        <label for="name">Tên vùng trồng</label>
+                                        <input class="form-control" t-att-value="name or declaration_detail.name "
+                                            name="name" t-att-disabled="page_name!='edit'" />
+                                    </div>
+
+                                    <div t-attf-class="form-group">
+                                        <label class="col-form-label" for="tree_id">Loại cây trồng</label>
+                                        <select name="tree_id" t-attf-class="form-control" t-att-disabled="page_name!='edit'" >
+                                            <option value="">Loại cây trồng...</option>
+                                            <t t-foreach="trees or []" t-as="tree">
+                                                <option t-att-value="tree.id" t-att-selected="tree.id == int(tree_id) if tree_id else tree.id == declaration_detail.tree_id.id">
+                                                    <t t-esc="tree.name" />
+                                                </option>
+                                            </t>
+                                        </select>
+                                    </div> 
+
+                                    <div t-attf-class="form-group">
+                                        <label class="col-form-label" for="export_to">Thị trường xuất khẩu</label>
+                                        <select name="export_to" t-attf-class="form-control" t-att-disabled="page_name!='edit'" >
+                                            <option value="">Thị trường...</option>
+                                            <t t-foreach="countries or []" t-as="country">
+                                                <option t-att-value="country.id" t-att-selected="country.id == int(export_to) if export_to else country.id == declaration_detail.export_to.id">
+                                                    <t t-esc="country.name" />
+                                                </option>
+                                            </t>
+                                        </select>
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label for="area">Diện tích</label>
+                                        <input class="form-control" name="area" type="number"
+                                            t-att-value="area or declaration_detail.area "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label for="annual_harvest_time">Số lần thu hoạch/năm</label>
+                                        <input class="form-control" name="annual_harvest_time" type="number"
+                                            t-att-value="annual_harvest_time or declaration_detail.annual_harvest_time "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label for="plant_farm_num">Số nông hộ</label>
+                                        <input class="form-control" name="plant_farm_num"  type="number"
+                                            t-att-value="plant_farm_num or declaration_detail.plant_farm_num "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label for="three_years_average_production">Sản lượng (tấn/ha/năm)</label>
+                                        <input class="form-control" name="three_years_average_production"  type="number"
+                                            t-att-value="three_years_average_production or declaration_detail.three_years_average_production "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div> 
+                                    <div class="form-group">
+                                        <label for="has_vietgap_global_gap">Có chứng nhận Viet Gap, Global Gap</label>
+                                        <input class="form-control" name="has_vietgap_global_gap"
+                                            t-att-value="has_vietgap_global_gap or declaration_detail.has_vietgap_global_gap "
+                                            t-att-disabled="page_name!='edit'" /> 
+                                    </div> 
+
+                                </fieldset>  
+                            </div> 
+
+                            <div class="col-12">
+                                <fieldset class="border p-2">
+                                    <legend  class="w-auto">Danh sách  hộ cá nhân</legend>
+                                    <div class="form-group">
+                                        <label for="name">Tên vùng trồng</label>
+                                        <input class="form-control" t-att-value="name or declaration_detail.name "
+                                            name="name" t-att-disabled="page_name!='edit'" />
+                                    </div>  
+                                </fieldset>  
+                            </div> 
+
+                            <div class="col-12">
+                          
+                                <fieldset class="border p-2">
+                                    <legend  class="w-auto">Chứng chỉ/chứng nhận</legend>
+                                    <div class="row">
+                                        <div class="col-6">  
+                                            <input type="file" name="cert" id="cert" class="file" multiple="true" data-show-upload="true" data-show-caption="true" lass="file" data-show-preview="true"  />
+                                            <button type="submit" name="Upload" style="margin-top:20px;" class="fa fa-upload">Upload</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="file" name="image" id="image" class="file" multiple="true" data-show-upload="true" data-show-caption="true" lass="file" data-show-preview="true"  />
+                                            <button type="submit" name="Upload" style="margin-top:20px;" class="fa fa-upload">Upload</button> 
+                                        </div> 
+                                    </div>
+
+                                    <script type="text/javascript" >
+                                     var cert = $("#cert").val()
+                                     console.log(cert)
+                                    </script>
+                                    
+                                </fieldset>  
+                            </div> 
                         </div> 
                         <br /> 
-                        <div class="row mx-0">
-                            <div class="col-6 text-right">
-                                <a class="btn btn-info" href="/my/productions/register">
+                        <div class="row mx-0"> 
+                            <div class="col-6 offset-6 text-right">
+                                <a class="btn btn-info mr-4" href="/my/productions/register">
                                     <i class="fa fa-edit" />
                                     Đăng ký mới</a>
-                            </div>
-                            <div class="col-6 text-right">
+
                                 <a class="btn btn-info" t-attf-href="/my/productions/edit/{{declaration_detail.id}}">
                                     <i class="fa fa-edit" />
                                     Sửa đổi</a>

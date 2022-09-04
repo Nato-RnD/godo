@@ -38,9 +38,14 @@ class GPucPortal(CustomerPortal):
         _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id)
         values['detailview'] = True
         values['declaration_detail'] = _declaration
+        trees = request.env['godo.production.item'].sudo().search([])
+        countries = request.env['res.country'].sudo().search([]) 
         values.update({ 
             'declaration_detail': _declaration,
-            'page_name': 'detail' 
+            'page_name': 'detail' ,
+            'user': request.env.user,
+            'countries': countries,
+            'trees': trees
         })
         response = request.render("g_production_place.portal_my_puc_detailview", values)
         response.headers['X-Frame-Options'] = 'DENY'
@@ -51,9 +56,14 @@ class GPucPortal(CustomerPortal):
     def declaration_edit(self,declaration_id, **kw):
         values = self._prepare_portal_layout_values()
         _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id)
+        trees = request.env['godo.production.item'].sudo().search([])
+        countries = request.env['res.country'].sudo().search([]) 
         values.update({ 
             'declaration_detail': _declaration,
-            'page_name': 'edit' 
+            'page_name': 'edit' ,
+            'user': request.env.user,
+            'countries': countries,
+            'trees': trees
         })
         response = request.render("g_production_place.portal_my_puc_detailview", values)
         response.headers['X-Frame-Options'] = 'DENY'
