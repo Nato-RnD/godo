@@ -36,10 +36,14 @@ class LogisticBillCheck(models.Model):
         if self.search_text != '' and self.search_text is not None:
             _bill_id = self.env['godo.logistic.bill'].sudo().search(['|',('name','like',self.search_text),('origin_code','like',self.search_text)],limit=1)
             if _bill_id:
-                self.bill_ids =[(4,_bill_id.id)]
-                self.bill_count = len(self.bill_ids)
-                
+                self.bill_ids =[(4,_bill_id.id)]  
         return {}
+    
+    @api.onchange('bill_ids')
+    def _bills_change(self):
+        self.ensure_one()
+        self.bill_count = len(self.bill_ids)
+    
 
 
  
