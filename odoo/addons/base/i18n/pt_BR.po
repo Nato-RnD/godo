@@ -10900,8 +10900,8 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mail_bot
-msgid "Add OdooBot in discussions"
-msgstr "Adicione OdooBot nas discussões"
+msgid "Add Smodo Android in discussions"
+msgstr "Adicione Smodo Android nas discussões"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_crm_sms
@@ -11015,8 +11015,8 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_im_livechat_mail_bot
-msgid "Add livechat support for OdooBot"
-msgstr "Adicione suporte ao livechat para OdooBot"
+msgid "Add livechat support for Smodo Android"
+msgstr "Adicione suporte ao livechat para Smodo Android"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_social_sale
@@ -24039,13 +24039,13 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mail_bot
-msgid "OdooBot"
-msgstr "OdooBot"
+msgid "Smodo Android"
+msgstr "Smodo Android"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_im_livechat_mail_bot
-msgid "OdooBot for livechat"
-msgstr "OdooBot for livechat"
+msgid "Smodo Android for livechat"
+msgstr "Smodo Android for livechat"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_12
@@ -29910,10 +29910,10 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_mail_bot_hr
 msgid ""
-"This module adds the OdooBot state and notifications in the user form "
+"This module adds the Smodo Android state and notifications in the user form "
 "modified by hr."
 msgstr ""
-"Este módulo adiciona o estado OdooBot e notificações no formulário do "
+"Este módulo adiciona o estado Smodo Android e notificações no formulário do "
 "usuário modificado por hr."
 
 #. module: base

@@ -139,8 +139,8 @@ msgstr ""
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
-msgid "OdooBot Status"
-msgstr "OdooBot 狀態"
+msgid "Smodo Android Status"
+msgstr "Smodo Android 狀態"
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_failed
@@ -183,10 +183,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_odoobot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_odoobot_command\">@Smodo Android</span> and select me."
 msgstr ""
 "對不起，我不聽。要引起某人的注意，請<b>ping 他</b>。寫<span "
-"class=\"o_odoobot_command\">@OdooBot</span>並選擇我。"
+"class=\"o_odoobot_command\">@Smodo Android</span>並選擇我。"
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -235,10 +235,10 @@ msgstr "使用者"
 msgid ""
 "Wow you are a natural!<br/>Ping someone with @username to grab their "
 "attention. <b>Try to ping me using</b> <span "
-"class=\"o_odoobot_command\">@OdooBot</span> in a sentence."
+"class=\"o_odoobot_command\">@Smodo Android</span> in a sentence."
 msgstr ""
 "哇，你是個天才！<br/>用@username 某人以引起他們的注意。嘗試在一個句子中<span "
-"class=\"o_odoobot_command\">使用 @OdooBot</span> <b>ping 我。</b>"
+"class=\"o_odoobot_command\">使用 @Smodo Android</span> <b>ping 我。</b>"
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0

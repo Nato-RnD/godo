@@ -50,12 +50,10 @@ class LogisticBillCheck(models.Model):
                 bill.state = self.check_type
                 if self.check_type == 'done':
                     bill.done_date = datetime.now()
+                bill.message_post(body= _('%s changes the status of bill %s to %s' % (self.user_id.name, bill.name, self.check_type) ))
             self.state = 'done'
             self.message_post(body= _('%s confirmed the bill check %s' % (self.user_id.name, self.name) ))
-                
-        
-    
- 
+                 
     def bill_check_cancel(self):
         self.ensure_one()
         if self.id is not None:

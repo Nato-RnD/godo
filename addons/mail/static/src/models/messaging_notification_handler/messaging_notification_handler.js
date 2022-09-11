@@ -269,13 +269,13 @@ function factory(dependencies) {
                 return;
             }
 
-            // Chat from OdooBot is considered disturbing and should only be
+            // Chat from Smodo Android is considered disturbing and should only be
             // shown on the menu, but no notification and no thread open.
-            const isChatWithOdooBot = (
+            const isChatWithSmodoAndroid = (
                 channel.correspondent &&
                 channel.correspondent === this.messaging.partnerRoot
             );
-            if (!isChatWithOdooBot) {
+            if (!isChatWithSmodoAndroid) {
                 const isOdooFocused = this.env.services['bus_service'].isOdooFocused();
                 // Notify if out of focus
                 if (!isOdooFocused && channel.isChatChannel) {

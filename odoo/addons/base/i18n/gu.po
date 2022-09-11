@@ -5988,7 +5988,7 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mail_bot
-msgid "Add OdooBot in discussions"
+msgid "Add Smodo Android in discussions"
 msgstr ""
 
 #. module: base
@@ -6038,7 +6038,7 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_im_livechat_mail_bot
-msgid "Add livechat support for OdooBot"
+msgid "Add livechat support for Smodo Android"
 msgstr ""
 
 #. module: base
@@ -16091,12 +16091,12 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mail_bot
-msgid "OdooBot"
+msgid "Smodo Android"
 msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_im_livechat_mail_bot
-msgid "OdooBot for livechat"
+msgid "Smodo Android for livechat"
 msgstr ""
 
 #. module: base

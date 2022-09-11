@@ -23,9 +23,9 @@ QUnit.module('messaging_initializer_tests.js', {
 });
 
 
-QUnit.test('OdooBot initialized at init', async function (assert) {
+QUnit.test('Smodo Android initialized at init', async function (assert) {
     // TODO this test should be completed in combination with
-    // implementing _mockMailChannelInitOdooBot task-2300480
+    // implementing _mockMailChannelInitSmodo Android task-2300480
     assert.expect(2);
 
     await this.start({
@@ -44,7 +44,7 @@ QUnit.test('OdooBot initialized at init', async function (assert) {
 
     assert.verifySteps(
         ['init_odoobot'],
-        "should have initialized OdooBot at init"
+        "should have initialized Smodo Android at init"
     );
 });
 

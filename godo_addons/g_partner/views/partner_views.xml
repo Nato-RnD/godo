@@ -9,7 +9,8 @@
                 <tree string="Contacts" sample="1" multi_edit="1"> 
                     <field name="display_name" string="Name" />
                     <field name="function" invisible="1" />
-                    <field name="phone" class="o_force_ltr" optional="show" />
+                    <field name="mobile" class="o_force_ltr" optional="show" />
+                    <field name="phone" class="o_force_ltr" optional="hide" />
                     <field name="email" optional="show" />  
                     <field name="vat" optional="hide" readonly="1" /> 
                     <field name="customer_rank"  optional="show"  />
@@ -90,7 +91,7 @@
                                     attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
                             </div>
                             <field name="vat" placeholder="01235468970" attrs="{'readonly': [('parent_id','!=',False)]}"/>
-                            <field name="customer_rank"  />
+                            <field name="customer_rank"    />
                         </group>
                         <group>
                             <field name="function" placeholder="e.g. Sales Director"

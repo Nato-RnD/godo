@@ -7,8 +7,12 @@
             <form string="Bill Report">
                 <sheet>
                     <group> 
-                        <field name="date_from"/>
-                        <field name="date_to"/>
+                        <group >
+                            <field name="date_from"/> 
+                        </group>
+                        <group  > 
+                            <field name="date_to"/>
+                        </group> 
                     </group>
                 </sheet>
                 <footer> 

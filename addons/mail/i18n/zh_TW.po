@@ -1189,8 +1189,8 @@ msgstr "頭像 512"
 #. openerp-web
 #: code:addons/mail/static/src/components/notification_request/notification_request.xml:0
 #, python-format
-msgid "Avatar of OdooBot"
-msgstr "OdooBot 頭像"
+msgid "Avatar of Smodo Android"
+msgstr "Smodo Android 頭像"
 
 #. module: mail
 #. openerp-web

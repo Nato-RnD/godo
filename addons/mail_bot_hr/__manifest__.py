@@ -2,7 +2,7 @@
 {
     'name': "mail_bot_hr",
     'summary': """Bridge module between hr and mailbot.""",
-    'description': """This module adds the OdooBot state and notifications in the user form modified by hr.""",
+    'description': """This module adds the Smodo Android state and notifications in the user form modified by hr.""",
     'website': "https://smartlifevn.com/app/discuss",
     'category': 'Productivity/Discuss',
     'version': '1.0',

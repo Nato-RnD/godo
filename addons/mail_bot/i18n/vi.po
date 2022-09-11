@@ -150,8 +150,8 @@ msgstr ""
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
-msgid "OdooBot Status"
-msgstr "Trạng thái của OdooBot"
+msgid "Smodo Android Status"
+msgstr "Trạng thái của Smodo Android"
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_failed
@@ -196,10 +196,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_odoobot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_odoobot_command\">@Smodo Android</span> and select me."
 msgstr ""
 "Xin lỗi tôi không chú ý nghe. Để thu hút sự chú ý của ai đó, hãy <b>ping "
-"người đó</b>. Viết <span class=\"o_odoobot_command\">@OdooBot</span> và chọn"
+"người đó</b>. Viết <span class=\"o_odoobot_command\">@Smodo Android</span> và chọn"
 " tôi."
 
 #. module: mail_bot
@@ -246,7 +246,7 @@ msgstr "Người dùng"
 msgid ""
 "Wow you are a natural!<br/>Ping someone with @username to grab their "
 "attention. <b>Try to ping me using</b> <span "
-"class=\"o_odoobot_command\">@OdooBot</span> in a sentence."
+"class=\"o_odoobot_command\">@Smodo Android</span> in a sentence."
 msgstr ""
 
 #. module: mail_bot

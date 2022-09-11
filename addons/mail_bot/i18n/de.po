@@ -148,8 +148,8 @@ msgstr ""
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
-msgid "OdooBot Status"
-msgstr "OdooBot Status"
+msgid "Smodo Android Status"
+msgstr "Smodo Android Status"
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_failed
@@ -193,11 +193,11 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_odoobot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_odoobot_command\">@Smodo Android</span> and select me."
 msgstr ""
 "Entschuldigung, ich habe nicht zugehört. <b>Pingen Sie jemanden an</b>, um "
 "auf sich aufmerksam zu machen. Schreiben Sie <span "
-"class=\"o_odoobot_command\">@OdooBot</span> und wählen Sie mich aus."
+"class=\"o_odoobot_command\">@Smodo Android</span> und wählen Sie mich aus."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -248,11 +248,11 @@ msgstr "Benutzer"
 msgid ""
 "Wow you are a natural!<br/>Ping someone with @username to grab their "
 "attention. <b>Try to ping me using</b> <span "
-"class=\"o_odoobot_command\">@OdooBot</span> in a sentence."
+"class=\"o_odoobot_command\">@Smodo Android</span> in a sentence."
 msgstr ""
 "Wow, Sie sind ein Naturtalent!<br/>Pingen Sie jemanden an (@username) um auf"
 " sich aufmerksam zu machen. <b>Versuchen Sie, mich anzupingen, indem Sie</b>"
-" <span class=\"o_odoobot_command\">@OdooBot</span> in einem Satz verwenden."
+" <span class=\"o_odoobot_command\">@Smodo Android</span> in einem Satz verwenden."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0

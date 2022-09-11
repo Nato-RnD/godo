@@ -1229,8 +1229,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail/static/src/components/notification_request/notification_request.xml:0
 #, python-format
-msgid "Avatar of OdooBot"
-msgstr "Awatar OdooBota"
+msgid "Avatar of Smodo Android"
+msgstr "Awatar Smodo Androida"
 
 #. module: mail
 #. openerp-web

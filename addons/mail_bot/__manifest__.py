@@ -2,10 +2,10 @@
 # Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'OdooBot',
+    'name': 'Smodo Android',
     'version': '1.2',
     'category': 'Productivity/Discuss',
-    'summary': 'Add OdooBot in discussions',
+    'summary': 'Add Smodo Android in discussions',
     'description': "",
     'website': 'https://smartlifevn.com/app/discuss',
     'depends': ['mail'],

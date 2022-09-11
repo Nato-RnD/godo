@@ -1231,8 +1231,8 @@ msgstr "Hình đại diện 512"
 #. openerp-web
 #: code:addons/mail/static/src/components/notification_request/notification_request.xml:0
 #, python-format
-msgid "Avatar of OdooBot"
-msgstr "Ảnh đại diện OdooBot"
+msgid "Avatar of Smodo Android"
+msgstr "Ảnh đại diện Smodo Android"
 
 #. module: mail
 #. openerp-web

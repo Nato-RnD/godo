@@ -175,14 +175,14 @@ msgstr ""
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
-msgid "OdooBot Status"
+msgid "Smodo Android Status"
 msgstr ""
 
 #. module: mail_bot
 #. openerp-web
 #: code:addons/mail_bot/static/src/js/mailbot_service.js:39
 #, python-format
-msgid "OdooBot has a request"
+msgid "Smodo Android has a request"
 msgstr ""
 
 #. module: mail_bot
@@ -269,7 +269,7 @@ msgstr "Korisnici"
 #, python-format
 msgid ""
 "Wow you are a natural!<br/>Ping someone to grab its attention with "
-"@nameoftheuser. <b>Try to ping me using @OdooBot</b> in a sentence."
+"@nameoftheuser. <b>Try to ping me using @Smodo Android</b> in a sentence."
 msgstr ""
 
 #. module: mail_bot
@@ -290,7 +290,7 @@ msgstr ""
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:79
 #, python-format
-msgid "Yep, OdooBot is in the place!"
+msgid "Yep, Smodo Android is in the place!"
 msgstr ""
 
 #. module: mail_bot

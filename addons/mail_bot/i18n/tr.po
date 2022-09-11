@@ -149,8 +149,8 @@ msgstr ""
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
-msgid "OdooBot Status"
-msgstr "OdooBot Durumu"
+msgid "Smodo Android Status"
+msgstr "Smodo Android Durumu"
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_failed
@@ -194,10 +194,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_odoobot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_odoobot_command\">@Smodo Android</span> and select me."
 msgstr ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_odoobot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_odoobot_command\">@Smodo Android</span> and select me."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -243,11 +243,11 @@ msgstr "Kullanıcılar"
 msgid ""
 "Wow you are a natural!<br/>Ping someone with @username to grab their "
 "attention. <b>Try to ping me using</b> <span "
-"class=\"o_odoobot_command\">@OdooBot</span> in a sentence."
+"class=\"o_odoobot_command\">@Smodo Android</span> in a sentence."
 msgstr ""
 "Vay canına, doğal birisin! <br/>Dikkatini çekmek için birine @ kullanıcı adı"
 " ile ping atın.<b> Cümle içinde</b> <span "
-"class=\"o_odoobot_command\">@OdooBot</span> kullanarak bana ping atmayı "
+"class=\"o_odoobot_command\">@Smodo Android</span> kullanarak bana ping atmayı "
 "dene."
 
 #. module: mail_bot

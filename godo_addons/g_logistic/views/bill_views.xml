@@ -36,37 +36,41 @@
                 <field name="state" widget="statusbar"   statusbar_visible="sent,received,forward,done"/>
               </header>
               <sheet>  
+                <widget name="web_ribbon" title="Done" bg_color="bg-success"
+                attrs="{'invisible': [('state', '!=', 'done')]}" />
+                <widget name="web_ribbon" title="Cancelled" bg_color="bg-danger"
+                attrs="{'invisible': [('state', '!=', 'cancelled')]}" />
+
                 <field name="id" invisible="True" /> 
                 <div class="oe_title"> 
                   <h1>
                     <div class="d-flex"> 
-                      <field class="o_text_overflow" name="name" placeholder="Bill code" />
+                      <field class="o_text_overflow" name="name" placeholder="Bill code" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"   />
                     </div>
                   </h1>
                 </div> 
                     <group>
                       <group > 
-                        <field name="origin_code" />
-                        <field name="bill_date" />  
-                        <field name="customer_id" />   
-                        <field name="customer_mobile" />
-                        <field name="package_weight" />  
-                        <field name="unit_quantity" />
+                        <field name="origin_code" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  />
+                        <field name="bill_date" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  />  
+                        <field name="customer_id" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  />   
+                        <field name="customer_mobile" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  />
+                        <field name="package_weight" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  />  
+                        <field name="unit_quantity" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  />
                       </group>
     
                       <group>  
-                        <field name="packing_code" /> 
-                        <field name="done_date" /> 
-                        <field name="customer_address"  />  
-                        <field name="goods_name"  /> 
-                        <field name="unit_price" />
-                        <field name="total_amount" />
+                        <field name="packing_code" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  /> 
+                        <field name="done_date" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  /> 
+                        <field name="customer_address"  attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  />  
+                        <field name="goods_name"  attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  /> 
+                        <field name="unit_price" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  />
+                        <field name="total_amount" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"  />
                       </group> 
-                    </group>
-
-                    <group> 
-                      <field name="note" />
-                    </group>
+                    </group> 
+                    
+                    <field name="note" attrs="{'readonly': ['&amp;', ('state', '!=', 'received'),('state', '!=', 'sent')]}"   />
+                   
               </sheet>
               <div class="oe_chatter">
                 <field name="message_follower_ids" />

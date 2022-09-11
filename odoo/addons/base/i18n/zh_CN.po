@@ -11558,8 +11558,8 @@ msgstr "在专案任务和标签模型的上下文菜单中增加合并操作."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mail_bot
-msgid "Add OdooBot in discussions"
-msgstr "在讨论中加入OdooBot"
+msgid "Add Smodo Android in discussions"
+msgstr "在讨论中加入Smodo Android"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_crm_sms
@@ -11667,8 +11667,8 @@ msgstr "在群发简讯中增加潜在客户/机会信息"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_im_livechat_mail_bot
-msgid "Add livechat support for OdooBot"
-msgstr "增加OdooBot及时聊天支持"
+msgid "Add livechat support for Smodo Android"
+msgstr "增加Smodo Android及时聊天支持"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_social_sale
@@ -25452,12 +25452,12 @@ msgstr "Odoo将自动增加几个「0」在「下一个数字」的左侧以满�
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mail_bot
-msgid "OdooBot"
+msgid "Smodo Android"
 msgstr "Odoo机器人"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_im_livechat_mail_bot
-msgid "OdooBot for livechat"
+msgid "Smodo Android for livechat"
 msgstr "即时聊天使用 Odoo机器人"
 
 #. module: base
@@ -31406,9 +31406,9 @@ msgstr "此模块向交易账户内部统计代码添加到期功能。"
 #. module: base
 #: model:ir.module.module,description:base.module_mail_bot_hr
 msgid ""
-"This module adds the OdooBot state and notifications in the user form "
+"This module adds the Smodo Android state and notifications in the user form "
 "modified by hr."
-msgstr "该模块在hr修改的用户表单中增加OdooBot状态和通知."
+msgstr "该模块在hr修改的用户表单中增加Smodo Android状态和通知."
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_hr_recruitment

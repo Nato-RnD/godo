@@ -462,8 +462,8 @@ msgstr "提示：使用快捷键来加快你的工作流"
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_3
 msgid ""
 "Type \"@\" to notify someone in a message, or \"#\" to link to a channel. "
-"Try to notify @OdooBot to test the feature."
-msgstr "键入 \"@\" 来在一个消息中引起某人的注意，或通过 \"#\"来链接到一个频道。尝试用 @OdooBot 来测试这个特性。"
+"Try to notify @Smodo Android to test the feature."
+msgstr "键入 \"@\" 来在一个消息中引起某人的注意，或通过 \"#\"来链接到一个频道。尝试用 @Smodo Android 来测试这个特性。"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form

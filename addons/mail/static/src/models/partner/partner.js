@@ -184,7 +184,7 @@ function factory(dependencies) {
                     partner.id <= 0 ||
                     this.messaging.publicPartners.includes(partner)
                 ) {
-                    // ignore archived partners (except OdooBot), temporary
+                    // ignore archived partners (except Smodo Android), temporary
                     // partners (livechat guests), public partners (technical)
                     continue;
                 }

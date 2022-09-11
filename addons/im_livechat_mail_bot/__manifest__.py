@@ -2,10 +2,10 @@
 # Part of Godo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'OdooBot for livechat',
+    'name': 'Smodo Android for livechat',
     'version': '1.0',
     'category': 'Productivity/Discuss',
-    'summary': 'Add livechat support for OdooBot',
+    'summary': 'Add livechat support for Smodo Android',
     'description': "",
     'website': 'https://smartlifevn.com/app/discuss',
     'depends': ['mail_bot', 'im_livechat'],
