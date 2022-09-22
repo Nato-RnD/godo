@@ -22,7 +22,7 @@
 
 {
     "name": "Hue Backend Theme v15",
-    "description": """Minimalist and elegant backend theme for Odoo 15, Backend Theme, Theme""",
+    "description": """Minimalist and elegant backend theme for Godo 15, Backend Theme, Theme""",
     "summary": "Hue backed Theme V15 is an attractive theme for backend",
     "category": "Themes/Backend",
     "version": "15.0.1.0.0",
