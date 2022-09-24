@@ -182,7 +182,7 @@
                                 t-attf-class="form-control #{error.get('district_id') and 'is-invalid' or ''}">
                                 <option value="">Chọn quận/huyện...</option>
                                 <t t-foreach="districts or []" t-as="district">
-                                    <option t-att-value="district.id" style="display:none;"
+                                    <option t-att-value="district.id" t-att-style="'display:block;' if province_id else 'display:none'"
                                         t-att-data-province_id="district.depend_province.id"
                                         t-att-selected="district.id == partner.district_id.id">
                                         <t t-esc="district.name" />

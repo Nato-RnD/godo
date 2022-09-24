@@ -46,6 +46,9 @@
             'g_production_place/static/src/xml/**/*',
            
         ],
+    'web.assets_frontend': [ 
+            'g_production_place/static/src/js/portal.js', 
+        ],
     },
  
 }
