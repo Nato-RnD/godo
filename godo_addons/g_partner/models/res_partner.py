@@ -16,7 +16,7 @@ class ResPartner(models.Model):
     province_id = fields.Many2one(comodel_name='res.province',string='Province')
     district_id = fields.Many2one(comodel_name='res.district', string='District')
     ward_id = fields.Many2one(comodel_name='res.ward',string='Ward')
-    # customer_rank = fields.Integer(string='Customer Rank', default=10,copy=False)
+    customer_rank = fields.Integer(string='Customer Rank', default=10,copy=False)
  
 
     @api.onchange('province_id')
