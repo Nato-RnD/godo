@@ -2,6 +2,7 @@
 from odoo.http import route,request 
 from odoo.addons.portal.controllers.portal import CustomerPortal
 class GPucPortal(CustomerPortal):  
+    MANDATORY_BILLING_FIELDS = ["name", "phone", "email", "street",  "province_id","district_id"]
     def _prepare_portal_layout_values(self):
         """Values for /my/* templates rendering.
 
@@ -39,7 +40,7 @@ class GPucPortal(CustomerPortal):
         values['detailview'] = True
         values['declaration_detail'] = _declaration
         trees = request.env['godo.production.item'].sudo().search([])
-        countries = request.env['res.country'].sudo().search([]) 
+        countries = request.env['res.country'].sudo().search([('target_country','=',True)]) 
         values.update({ 
             'declaration_detail': _declaration,
             'page_name': 'detail' ,
@@ -57,7 +58,7 @@ class GPucPortal(CustomerPortal):
         values = self._prepare_portal_layout_values()
         _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id)
         trees = request.env['godo.production.item'].sudo().search([])
-        countries = request.env['res.country'].sudo().search([]) 
+        countries = request.env['res.country'].sudo().search([('target_country','=',True)]) 
         values.update({ 
             'declaration_detail': _declaration,
             'page_name': 'edit' ,

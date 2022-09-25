@@ -5,7 +5,7 @@
     'version': '1.0',
     'description':
         """
-Odoo Dashboard View.
+Godo Dashboard View.
 ========================
 
 This module defines the Dashboard view, a new type of reporting view. This view

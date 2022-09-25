@@ -22,7 +22,7 @@
     'application':True,
 
     # any module necessary for this one to work correctly
-    'depends': ['base','g_production'],
+    'depends': ['base','g_production','g_partner','portal'],
 
     # always loaded
     'data': [
@@ -33,6 +33,7 @@
         'views/production_puc_inspection_views.xml',
         'views/portal_layout_template.xml',
         'views/production_puc_declaration_template.xml',
+        'views/production_puc_target_country_views.xml',
         'views/menu_views.xml',
     ],
     
@@ -45,6 +46,9 @@
     'web.assets_qweb': [
             'g_production_place/static/src/xml/**/*',
            
+        ],
+    'web.assets_frontend': [ 
+            'g_production_place/static/src/js/portal.js', 
         ],
     },
  

@@ -30,6 +30,11 @@
     <menuitem name="Sinh vật có hại" id="g_production_place.production_place_pest" parent="g_production_place.production_place_pest_management"  action="g_production_place.g_production_pest_action_window"/>
     <!-- Start Quan ly dịch bệnh -->
 
+  <!-- Start Thiet lap -->
+  <menuitem name="Thiết lập" id="g_production_place.production_place_setting" parent="g_production_place.menu_root" />
+  <menuitem name="Thị trường mục tiêu" id="g_production_place.production_place_target_country" parent="g_production_place.production_place_setting"  action="g_production_place.g_production_target_country_action_window"/>
+  <!-- Start Thiet lap -->
+
 
 
   </data>

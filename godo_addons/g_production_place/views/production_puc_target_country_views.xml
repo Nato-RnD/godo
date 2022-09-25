@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="g_production_target_country_tree_view" model="ir.ui.view">
+            <field name="name">g_production_target_country_tree_view</field>
+            <field name="model">res.country</field>
+            <field eval="8" name="priority" />
+            <field name="arch" type="xml">
+                <tree string="Thị trường mục tiêu" >
+                    <field name="name" />
+                    <field name="code" />
+                    <field name="phone_code" />
+                    <field name="currency_id" />
+                    <field name="name_position" />
+                    <field name="vat_label" />
+                    <field name="state_required" optional="hide" />
+                    <field name="zip_required" optional="hide" /> 
+                    <field name="target_country"></field>
+                </tree>
+            </field>
+        </record>
+
+        <record id="g_production_target_country_search_view" model="ir.ui.view">
+            <field name="name">g_production_target_country_search_view</field>
+            <field name="model">res.country</field>
+            <field name="arch" type="xml">
+                <search string="Thị trường mục tiêu">
+                    <field name="name" string="Tên thị trường" filter_domain="[ '|', ('name', 'ilike', self),('code', 'ilike', self)]" /> 
+                    <field name="currency_id" string="Đơn vị tiền tệ"
+                        filter_domain="[ ('currency_id', 'ilike', self)]" /> 
+                    <separator colspan="4" />
+                    <filter string="Thị trường mục tiêu" name="is_target_country" domain="[('target_country', '=', True)]" /> 
+
+                    <group expand="1" string="Tờ khai">
+                        <filter string="Theo thị trường mục tiêu" name="target_country" context="{'group_by':'target_country'}" />
+                        <filter string="Đơn vị tiền tệ" name="currency_id" context="{'group_by':'currency_id'}" /> 
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="g_production_target_country_form_view" model="ir.ui.view">
+            <field name="name">production_place_management_inspection_form_view</field>
+            <field name="inherit_id" ref="base.view_country_form"/>
+            <field name="model">res.country</field>
+            <field name="priority" eval="1" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='code']" position="after">
+                    <field name="target_country"></field>
+                 </xpath>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="g_production_target_country_action_window">
+            <field name="name">Thị trường mục tiêu</field>
+            <field name="res_model">res.country</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{ 'search_default_is_target_country': 1}</field>
+            <field name="search_view_id" ref="g_production_target_country_search_view" />
+        </record>
+
+        <record id="g_production_target_country_action_window_tree" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="g_production_target_country_action_window" />
+            <field name="sequence" eval="1" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="g_production_target_country_tree_view" />
+        </record>
+
+        <record id="g_production_target_country_action_window_form" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="g_production_target_country_action_window" />
+            <field name="sequence" eval="2" />
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="g_production_target_country_form_view" />
+        </record> 
+    </data>
+</odoo>

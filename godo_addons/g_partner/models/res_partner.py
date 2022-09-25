@@ -5,18 +5,19 @@ class ResPartner(models.Model):
     _inherit ='res.partner'
     _description = _('Partner')
 
-    # _customer_ranking = [
-    #    ( 0, 'Rank A'),
-    #    ( 1, 'Rank B'),
-    #    ( 2,'Rank C'),
-    #    ( 3, 'Rank D'),
-    #    ( 4,'Rank E')
-    # ]
+    _customer_ranking = [
+       ( 0, 'Rank A'),
+       ( 1, 'Rank B'),
+       ( 2,'Rank C'),
+       ( 3, 'Rank D'),
+       ( 4,'Rank E')
+    ]
 
     province_id = fields.Many2one(comodel_name='res.province',string='Province')
     district_id = fields.Many2one(comodel_name='res.district', string='District')
     ward_id = fields.Many2one(comodel_name='res.ward',string='Ward')
-    customer_rank = fields.Integer(string='Customer Rank', default=10,copy=False)
+    # customer_ranking = fields.Selection(string='Customer Ranking', selection=_customer_ranking, default=_customer_ranking[4][0])
+    customer_rank = fields.Integer(default=1, copy=False)
  
 
     @api.onchange('province_id')

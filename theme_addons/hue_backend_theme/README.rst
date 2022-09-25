@@ -1,6 +1,6 @@
 Hue Backend Theme
 ==================
-* Hue Backend Theme module for Odoo 15 community editions
+* Hue Backend Theme module for Godo 15 community editions
 
 Installation
 ============
