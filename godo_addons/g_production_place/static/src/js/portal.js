@@ -87,12 +87,17 @@ odoo.define('g_production_place.portal', function(require) {
 
         _onAddFarmer: function() {
             var index = this.$farmerWrapper.children().length + 1
-            var _index = `<input type="number" class="form-control text-center" value="${index}" disabled />`
+            var _index = `<div class="form-control border-0 text-center">${index}</div>`
             var _farmerName = `<input type="text" class="form-control" placeholder="Tên nông hộ" />`
             var _farmArea = `<input type="number" class="form-control" placeholder="Diện tích"/><div class="input-group-append">
             <div class="input-group-text"> (ha)</div>
           </div>`
-            $(`<div class="row"><div class="col-2">${_index}</div><div class="col-6">${_farmerName}</div><div class="col-4 input-group">${_farmArea}</div></div>`).appendTo(this.$farmerWrapper)
+            $(`<div id="farm-${index}" class="row my-2">
+            <div class="col-1">${_index}</div>
+            <div class="col-6">${_farmerName}</div>
+            <div class="col-4 input-group">${_farmArea}</div>
+            <div class="col-1"><a class="btn btn-danger"><i class="fa fa-remove" ></i></a> </div>
+            </div>`).appendTo(this.$farmerWrapper)
         },
 
         //--------------------------------------------------------------------------
