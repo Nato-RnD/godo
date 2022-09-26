@@ -10,7 +10,7 @@ odoo.define('g_production_place.portal', function(require) {
     publicWidget.registry.portalDetails = publicWidget.Widget.extend({
         selector: '.o_portal_details',
         events: {
-            'change select[name="province_id"]': '_onProvinceChange', 
+            'change select[name="province_id"]': '_onProvinceChange',
         },
 
         /**
@@ -57,8 +57,8 @@ odoo.define('g_production_place.portal', function(require) {
     publicWidget.registry.portalDetails = publicWidget.Widget.extend({
         selector: '.o_portal_my_home',
         events: {
-            'click button[id="btn-add-position"]': '_onAddLatLng', 
-            'click button[id="btn-add-farmer"]': '_onAddFarmer', 
+            'click button[id="btn-add-position"]': '_onAddLatLng',
+            'click button[id="btn-add-farmer"]': '_onAddFarmer',
         },
 
         /**
@@ -67,7 +67,7 @@ odoo.define('g_production_place.portal', function(require) {
         start: function() {
             var def = this._super.apply(this, arguments);
             this.$latlngWrapper = this.$('div[id="latlng"]');
-            this.$farmerWrapper = this.$('div[id="farmer"]'); 
+            this.$farmerWrapper = this.$('div[id="farmer-list"]');
 
             return def;
         },
@@ -79,18 +79,20 @@ odoo.define('g_production_place.portal', function(require) {
         /**
          * @private
          */
-         _onAddLatLng: function() { 
+        _onAddLatLng: function() {
             var _latInput = `<input type="number" class="form-control" />`
             var _lngInput = `<input type="number" class="form-control" />`
             $(`<div class="row"><div class="col-6">${_latInput}</div><div class="col-6">${_lngInput}</div></div>`).appendTo(this.$latlngWrapper)
         },
 
-        _onAddFarmer: function() { 
-            var index = this.$farmerWrapper.length+1
-            var _index = `<input type="number" class="form-control" value="${index}" disabled />`
-            var _farmerName = `<input type="number" class="form-control" placeholder="Tên nông hộ" />`
-            var _farmArea = `<input type="number" class="form-control" placeholder="Tên nông hộ"/>`
-            $(`<div class="row"><div class="col-2">${_index}</div><div class="col-6">${_farmerName}</div><div class="col-6">${_farmArea}</div></div>`).appendTo(this.$farmerWrapper)
+        _onAddFarmer: function() {
+            var index = this.$farmerWrapper.children().length + 1
+            var _index = `<input type="number" class="form-control text-center" value="${index}" disabled />`
+            var _farmerName = `<input type="text" class="form-control" placeholder="Tên nông hộ" />`
+            var _farmArea = `<input type="number" class="form-control" placeholder="Diện tích"/><div class="input-group-append">
+            <div class="input-group-text"> (ha)</div>
+          </div>`
+            $(`<div class="row"><div class="col-2">${_index}</div><div class="col-6">${_farmerName}</div><div class="col-4 input-group">${_farmArea}</div></div>`).appendTo(this.$farmerWrapper)
         },
 
         //--------------------------------------------------------------------------
@@ -105,7 +107,7 @@ odoo.define('g_production_place.portal', function(require) {
         },
     });
 
-  
+
     publicWidget.registry.PortalHomeCounters = publicWidget.Widget.extend({
         selector: '.o_portal_my_home',
 
