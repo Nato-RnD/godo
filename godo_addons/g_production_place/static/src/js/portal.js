@@ -59,6 +59,7 @@ odoo.define('g_production_place.portal', function(require) {
         events: {
             'click button[id="btn-add-position"]': '_onAddLatLng',
             'click button[id="btn-add-farmer"]': '_onAddFarmer',
+            'click a[class="btn btn-outline-danger farm-remove"]': '_onFarmRemove'
         },
 
         /**
@@ -85,6 +86,13 @@ odoo.define('g_production_place.portal', function(require) {
             $(`<div class="row"><div class="col-6">${_latInput}</div><div class="col-6">${_lngInput}</div></div>`).appendTo(this.$latlngWrapper)
         },
 
+        _onFarmRemove: function(e) {
+            console.log(this.$farmerWrapper.children())
+
+            console.log($(e.currentTarget.parentNode).parent())
+            this.$farmerWrapper.remove($(e.currentTarget.parentNode).parent())
+        },
+
         _onAddFarmer: function() {
             var index = this.$farmerWrapper.children().length + 1
             var _index = `<div class="form-control border-0 text-center">${index}</div>`
@@ -94,9 +102,9 @@ odoo.define('g_production_place.portal', function(require) {
           </div>`
             $(`<div id="farm-${index}" class="row my-2">
             <div class="col-1">${_index}</div>
-            <div class="col-6">${_farmerName}</div>
+            <div class="col-5">${_farmerName}</div>
             <div class="col-4 input-group">${_farmArea}</div>
-            <div class="col-1"><a class="btn btn-danger"><i class="fa fa-remove" ></i></a> </div>
+            <div class="col-2 pt-1"><a class="btn btn-outline-danger farm-remove"><i class="fa fa-trash" ></i></a> </div>
             </div>`).appendTo(this.$farmerWrapper)
         },
 
