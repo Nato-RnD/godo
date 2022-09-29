@@ -100,252 +100,294 @@
 
         <t t-call="g_production_place.portal_layout">
             <t t-set="additional_title">Chi tiết tờ khai</t>
-            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-            <div class="o_portal_my_home">
-                <div class="card mt-3">
-                    <div class="card-header">
-                        <h4 class="m-0">Thông tin tờ khai</h4>
-                    </div>
-                    <div class="card-body"> 
-                        <div class="row">
-                            <div class="col-6">
-                                <fieldset class="border p-2">
-                                    <legend  class="w-auto">Thông tin tổ chức/cá nhân đăng ký</legend>
-                                    <div class="form-group">
-                                        <label for="username">Người dùng</label>
-                                        <input class="form-control" t-att-value="username or declaration_detail.registered_user_id.name"
-                                            name="username" t-att-disabled="page_name!='edit'" />
-                                            <input type="hidden" t-att-value="userid or declaration_detail.registered_user_id.id" /> 
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="registered_owner_name">Tổ chức/cá nhân đăng ký</label>
-                                        <input class="form-control" name="registered_owner_name"
-                                            t-att-value="registered_owner_name or declaration_detail.registered_owner_name "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="registered_owner_type">Loại hình hoạt động</label>
-                                        <input class="form-control" name="registered_owner_type"
-                                            t-att-value="registered_owner_type or declaration_detail.registered_owner_type "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="registered_owner_representer">Đại diện</label>
-                                        <input class="form-control" name="registered_owner_representer"
-                                            t-att-value="registered_owner_representer or declaration_detail.registered_owner_representer "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="registered_owner_address">Địa chỉ liên hệ</label>
-                                        <input class="form-control" name="registered_owner_address"
-                                            t-att-value="registered_owner_address or declaration_detail.registered_owner_address "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="registered_owner_code">Mã số DN/CCCD</label>
-                                        <input class="form-control" name="registered_owner_code"
-                                            t-att-value="registered_owner_code or declaration_detail.registered_owner_code "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div> 
-
-                                    <div class="form-group">
-                                        <label for="phone">Điện thoại</label>
-                                        <input class="form-control" name="phone"
-                                            t-att-value="phone or declaration_detail.phone "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="fax">Fax</label>
-                                        <input class="form-control" name="fax"
-                                            t-att-value="fax or declaration_detail.fax "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input class="form-control" name="email"
-                                            t-att-value="email or declaration_detail.email "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div> 
-                                </fieldset>  
-                            </div> 
-
-                            <div class="col-6">
-                                <fieldset class="border p-2">
-                                    <legend  class="w-auto">Thông tin vùng trồng</legend>
-                                    <div class="form-group">
-                                        <label for="name">Tên vùng trồng</label>
-                                        <input class="form-control" t-att-value="name or declaration_detail.name "
-                                            name="name" t-att-disabled="page_name!='edit'" />
-                                    </div>
-
-                                    <div t-attf-class="form-group">
-                                        <label class="col-form-label" for="tree_id">Loại cây trồng</label>
-                                        <select name="tree_id" t-attf-class="form-control" t-att-disabled="page_name!='edit'" >
-                                            <option value="">Loại cây trồng...</option>
-                                            <t t-foreach="trees or []" t-as="tree">
-                                                <option t-att-value="tree.id" t-att-selected="tree.id == int(tree_id) if tree_id else tree.id == declaration_detail.tree_id.id">
-                                                    <t t-esc="tree.name" />
-                                                </option>
-                                            </t>
-                                        </select>
-                                    </div> 
-
-                                    <div t-attf-class="form-group">
-                                        <label class="col-form-label" for="export_to">Thị trường xuất khẩu</label>
-                                        <select name="export_to" t-attf-class="form-control" t-att-disabled="page_name!='edit'" >
-                                            <option value="">Thị trường...</option>
-                                            <t t-foreach="countries or []" t-as="country">
-                                                <option t-att-value="country.id" t-att-selected="country.id == int(export_to) if export_to else country.id == declaration_detail.export_to.id">
-                                                    <t t-esc="country.name" />
-                                                </option>
-                                            </t>
-                                        </select>
-                                    </div> 
-
-                                    <div class="form-group">
-                                        <label for="area">Diện tích</label>
-                                        <input class="form-control" name="area" type="number"
-                                            t-att-value="area or declaration_detail.area "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div> 
-
-                                    <div class="form-group">
-                                        <label for="annual_harvest_time">Số lần thu hoạch/năm</label>
-                                        <input class="form-control" name="annual_harvest_time" type="number"
-                                            t-att-value="annual_harvest_time or declaration_detail.annual_harvest_time "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div> 
-
-                                    <div class="form-group">
-                                        <label for="plant_farm_num">Số nông hộ</label>
-                                        <input class="form-control" name="plant_farm_num"  type="number"
-                                            t-att-value="plant_farm_num or declaration_detail.plant_farm_num "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div> 
-
-                                    <div class="form-group">
-                                        <label for="three_years_average_production">Sản lượng (tấn/ha/năm)</label>
-                                        <input class="form-control" name="three_years_average_production"  type="number"
-                                            t-att-value="three_years_average_production or declaration_detail.three_years_average_production "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                    </div>  
-                                      
-                                    <div class="form-group form-check">
-                                        
-                                        <input class="form-check-input" name="has_vietgap_global_gap" type="checkbox" id="has_vietgap_global_gap"
-                                            t-att-value="has_vietgap_global_gap or declaration_detail.has_vietgap_global_gap "
-                                            t-att-disabled="page_name!='edit'" /> 
-                                        <label for="has_vietgap_global_gap" class="form-check-label">Có chứng nhận Viet Gap, Global Gap</label>
-                                    </div> 
-
-                                </fieldset>  
-                            </div> 
-
-                            <div class="col-6">
-                                <fieldset class="border p-2">
-                                    <legend  class="w-auto">Danh sách các hộ nông dân</legend>
-                                    <div class="form-group">
+            <form t-att-action="'/my/productions/edit/%d' % declaration_detail.id" method="post" >
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <div class="o_portal_my_home">
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            <h4 class="m-0">Thông tin tờ khai</h4>
+                        </div>
+                        <div class="card-body"> 
+                            <div class="row">
+                                <div class="col-6">
+                                    <fieldset class="border p-2">
+                                        <legend  class="w-auto">Thông tin tổ chức/cá nhân đăng ký</legend>
                                         <div class="form-group">
-                                            <button id="btn-add-farmer" class="btn btn-primary" t-att-disabled="page_name!='edit'">Thêm hộ nông dân</button>
+                                            <label for="username">Người dùng</label>
+                                            <input class="form-control" t-att-value="username or declaration_detail.registered_user_id.name"
+                                                name="username" t-att-disabled="page_name!='edit'" />
+                                                <input type="hidden" t-att-value="userid or declaration_detail.registered_user_id.id" /> 
                                         </div>
+
                                         <div class="form-group">
-                                            <div id="farmer-list"></div>
-                                        </div>  
-
-                                        <!-- <label for="name">Tên vùng trồng</label>
-                                        <input class="form-control" t-att-value="farmers or declaration_detail.farmers "
-                                            name="farmers" t-att-disabled="page_name!='edit'" /> -->
-                                    </div>  
-                                </fieldset>  
-                            </div> 
-                            <div class="col-6">
-                                <fieldset class="border p-2">
-                                    <legend  class="w-auto">Dữ liệu bản đồ</legend>
-                                    <div class="form-group">
-                                        <button id="btn-add-position" class="btn btn-primary" t-att-disabled="page_name!='edit'">Thêm tọa độ</button>
-                                    </div>
-                                    <div class="form-group">
-                                        <div id="latlng"></div>
-                                    </div>  
-                                </fieldset>  
-                            </div> 
-
-                            <div class="col-12">
-                          
-                                <fieldset class="border p-2">
-                                    <legend  class="w-auto">Chứng chỉ/chứng nhận</legend>
-                                    <div class="row">
-                                        <div class="col-6">  
-                                            <!-- <input type="file" name="cert" class="file" multiple="true" data-show-upload="true" data-show-caption="true" lass="file" data-show-preview="true"  />
-                                            <button type="submit" id="btn-cert"  name="Upload" style="margin-top:20px;" class="fa fa-upload">Upload</button> -->
-
-                                            <div class="form-group">
-                                                <div class="file-loading">
-                                                    <label>Preview File Icon</label>
-                                                    <input id="file-3" type="file" multiple="true" />
-                                                </div>
-                                            </div>
-
+                                            <label for="registered_owner_name">Tổ chức/cá nhân đăng ký</label>
+                                            <input class="form-control" name="registered_owner_name"
+                                                t-att-value="registered_owner_name or declaration_detail.registered_owner_name "
+                                                t-att-disabled="page_name!='edit'" /> 
                                         </div>
-                                        <div class="col-6">
-                                            <!-- <input type="file" name="image" id="image" class="file" multiple="true" data-show-upload="true" data-show-caption="true" lass="file" data-show-preview="true"  />
-                                            <button type="submit" name="Upload" style="margin-top:20px;" class="fa fa-upload">Upload</button>  -->
+
+                                        <div class="form-group">
+                                            <label for="registered_owner_type">Loại hình hoạt động</label>
+                                            <input class="form-control" name="registered_owner_type"
+                                                t-att-value="registered_owner_type or declaration_detail.registered_owner_type "
+                                                t-att-disabled="page_name!='edit'" /> 
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="registered_owner_representer">Đại diện</label>
+                                            <input class="form-control" name="registered_owner_representer"
+                                                t-att-value="registered_owner_representer or declaration_detail.registered_owner_representer "
+                                                t-att-disabled="page_name!='edit'" /> 
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="registered_owner_address">Địa chỉ liên hệ</label>
+                                            <input class="form-control" name="registered_owner_address"
+                                                t-att-value="registered_owner_address or declaration_detail.registered_owner_address "
+                                                t-att-disabled="page_name!='edit'" /> 
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="registered_owner_code">Mã số DN/CCCD</label>
+                                            <input class="form-control" name="registered_owner_code"
+                                                t-att-value="registered_owner_code or declaration_detail.registered_owner_code "
+                                                t-att-disabled="page_name!='edit'" /> 
                                         </div> 
-                                    </div> 
-                                    <script type="text/javascript" >
-                                                console.log('Test da ok chua 1')
-                                                $(function(){
-                                                    console.log('Test da ok chua 2') 
-                                                    $("#file-3").fileinput({
-                                                        theme: 'fa5',
-                                                        showUpload: true,
-                                                        showCaption: true,
-                                                        browseClass: "btn btn-primary btn-lg",
-                                                        fileType: "any",
-                                                        previewFileIcon: '<i class="glyphicon glyphicon-king"></i>',
-                                                        overwriteInitial: false,
-                                                        initialPreviewAsData: true,
-                                                        initialPreview: [
-                                                            "http://lorempixel.com/1920/1080/transport/1",
-                                                            "http://lorempixel.com/1920/1080/transport/2",
-                                                            "http://lorempixel.com/1920/1080/transport/3"
-                                                        ],
-                                                        initialPreviewConfig: [
-                                                            {caption: "transport-1.jpg", size: 329892, width: "120px", url: "{$url}", key: 1},
-                                                            {caption: "transport-2.jpg", size: 872378, width: "120px", url: "{$url}", key: 2},
-                                                            {caption: "transport-3.jpg", size: 632762, width: "120px", url: "{$url}", key: 3}
-                                                        ]
-                                                    });
-                                                })
-                                              
-                                              
-                                    </script>
-                                    
-                                </fieldset>  
-                            </div> 
-                        </div> 
-                        <br /> 
-                        <div class="row mx-0"> 
-                            <div class="col-6 offset-6 text-right">
-                                <a class="btn btn-info mr-4" href="/my/productions/register">
-                                    <i class="fa fa-edit" />
-                                    Đăng ký mới</a>
 
-                                <a class="btn btn-info" t-attf-href="/my/productions/edit/{{declaration_detail.id}}">
-                                    <i class="fa fa-edit" />
-                                    Sửa đổi</a>
+                                        <div class="form-group">
+                                            <label for="phone">Điện thoại</label>
+                                            <input class="form-control" name="phone"
+                                                t-att-value="phone or declaration_detail.phone "
+                                                t-att-disabled="page_name!='edit'" /> 
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="fax">Fax</label>
+                                            <input class="form-control" name="fax"
+                                                t-att-value="fax or declaration_detail.fax "
+                                                t-att-disabled="page_name!='edit'" /> 
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input class="form-control" name="email"
+                                                t-att-value="email or declaration_detail.email "
+                                                t-att-disabled="page_name!='edit'" /> 
+                                        </div> 
+                                    </fieldset>  
+                                </div> 
+
+                                <div class="col-6">
+                                    <fieldset class="border p-2">
+                                        <legend  class="w-auto">Thông tin vùng trồng</legend>
+                                        <div class="form-group">
+                                            <label for="name">Tên vùng trồng</label>
+                                            <input class="form-control" t-att-value="name or declaration_detail.name "
+                                                name="name" t-att-disabled="page_name!='edit'" />
+                                        </div>
+
+                                        <div t-attf-class="form-group">
+                                            <label class="col-form-label" for="tree_id">Loại cây trồng</label>
+                                            <select name="tree_id" t-attf-class="form-control" t-att-disabled="page_name!='edit'" >
+                                                <option value="">Loại cây trồng...</option>
+                                                <t t-foreach="trees or []" t-as="tree">
+                                                    <option t-att-value="tree.id" t-att-selected="tree.id == int(tree_id) if tree_id else tree.id == declaration_detail.tree_id.id">
+                                                        <t t-esc="tree.name" />
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div> 
+
+                                        <div t-attf-class="form-group">
+                                            <label class="col-form-label" for="export_to">Thị trường xuất khẩu</label>
+                                            <select name="export_to" t-attf-class="form-control" t-att-disabled="page_name!='edit'" >
+                                                <option value="">Thị trường...</option>
+                                                <t t-foreach="countries or []" t-as="country">
+                                                    <option t-att-value="country.id" t-att-selected="country.id == int(export_to) if export_to else country.id == declaration_detail.export_to.id">
+                                                        <t t-esc="country.name" />
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div> 
+
+                                        <div class="form-group">
+                                            <label for="area">Diện tích</label>
+                                            <input class="form-control" name="area" type="number"
+                                                t-att-value="area or declaration_detail.area "
+                                                t-att-disabled="page_name!='edit'" /> 
+                                        </div> 
+
+                                        <div class="form-group">
+                                            <label for="annual_harvest_time">Số lần thu hoạch/năm</label>
+                                            <input class="form-control" name="annual_harvest_time" type="number"
+                                                t-att-value="annual_harvest_time or declaration_detail.annual_harvest_time "
+                                                t-att-disabled="page_name!='edit'" /> 
+                                        </div> 
+
+                                        <div class="form-group">
+                                            <label for="plant_farm_num">Số nông hộ</label>
+                                            <input class="form-control" name="plant_farm_num"  type="number"
+                                                t-att-value="plant_farm_num or declaration_detail.plant_farm_num "
+                                                t-att-disabled="page_name!='edit'" /> 
+                                        </div> 
+
+                                        <div class="form-group">
+                                            <label for="three_years_average_production">Sản lượng (tấn/ha/năm)</label>
+                                            <input class="form-control" name="three_years_average_production"  type="number"
+                                                t-att-value="three_years_average_production or declaration_detail.three_years_average_production"
+                                                t-att-disabled="page_name!='edit'" /> 
+                                        </div>  
+                                        
+                                        <div class="form-group form-check">
+                                            
+                                            <input class="form-check-input" name="has_vietgap_global_gap" type="checkbox" id="has_vietgap_global_gap"
+                                                t-att-value="has_vietgap_global_gap or declaration_detail.has_vietgap_global_gap "
+                                                t-att-disabled="page_name!='edit'" /> 
+                                            <label for="has_vietgap_global_gap" class="form-check-label">Có chứng nhận Viet Gap, Global Gap</label>
+                                        </div> 
+
+                                    </fieldset>  
+                                </div> 
+
+                                <div class="col-6">
+                                    <fieldset class="border p-2">
+                                        <legend  class="w-auto">Danh sách các hộ nông dân</legend>
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <button id="btn-add-farmer" type="button" class="btn btn-primary" t-att-disabled="page_name!='edit'">Thêm hộ nông dân</button>
+                                            </div>
+                                            <div class="form-group">
+                                                <div id="farmer-list">
+                                                <t t-set="i" t-value="1" />
+                                                <t t-foreach="farmers or []" t-as="farmer">
+                                                    <div t-att-id="'farm-%s' % i" class="row mx-0 my-2">
+                                                        <div class="col-1 px-0  text-center">
+                                                            <div class="form-control border-0 text-center"><t t-esc="i"/></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <input type="text" t-att-name="'farmer_name_%s' % i" class="form-control" placeholder="Tên nông hộ"
+                                                            t-att-value="farmer.split(':')[0]"
+                                                            />
+                                                        </div>
+                                                        <div class="col-5 input-group">
+                                                                <input type="number" step="any"  t-att-name="'farmer_area_%s' % i"   class="form-control" placeholder="Diện tích"
+                                                                 t-att-value="float(farmer.split(':')[1][:-2])"
+                                                                 />
+                                                                    <div class="input-group-append">
+                                                                        <div class="input-group-text"> (ha)</div>
+                                                                    </div>
+                                                        </div>
+                                                        <div class="col-1 px-0 pt-1 text-right">
+                                                                    <a class="btn btn-outline-danger farm-remove">
+                                                                        <i class="fa fa-trash"></i>
+                                                                    </a>
+                                                        </div>
+                                                    </div> 
+                                                     <t t-set="i" t-value="i+1" />
+                                                </t>
+                                            </div>
+                                        </div>   
+                                    </div>  
+                                    </fieldset>  
+                                </div> 
+                                <div class="col-6">
+                                    <fieldset class="border p-2">
+                                        <legend  class="w-auto">Dữ liệu bản đồ</legend>
+                                        <div class="form-group">
+                                            <button id="btn-add-position" type="button" class="btn btn-primary" t-att-disabled="page_name!='edit'">Thêm tọa độ</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <div id="latlng">
+                                                <t t-set="i" t-value="1" />
+                                                <t t-foreach="coords or []" t-as="coord">
+                                                    <div t-att-id="'farm-%s' % i" class="row mx-0 my-2">
+                                                        <div class="col-1 px-0 text-center">
+                                                            <div class="form-control border-0 text-center"><t t-esc="i"/></div>
+                                                        </div>
+                                                        <div class="col-5"><input type="number" step="any" t-att-name="'lat_%s' % i"
+                                                                class="form-control"
+                                                                placeholder="Vĩ độ (ví dụ: 20.2565)"  t-att-value="coord.split(',')[0]"  /></div>
+                                                        <div class="col-5"><input type="number" step="any" t-att-name="'lng_%s' % i"  
+                                                                class="form-control"
+                                                                placeholder="Kinh độ (ví dụ: 105.2156)"  t-att-value="coord.split(',')[1]"  /></div>
+                                                        <div class="col-1 pt-1 px-0 text-right"><a
+                                                                class="btn btn-outline-danger farm-remove"><i
+                                                                    class="fa fa-trash"></i></a> </div>
+                                                    </div>
+                                                    <t t-set="i" t-value="i+1" />
+                                                </t>
+                                            </div>
+                                        </div>  
+                                    </fieldset>  
+                                </div> 
+
+                                <div class="col-12">
+                            
+                                    <fieldset class="border p-2">
+                                        <legend  class="w-auto">Chứng chỉ/chứng nhận</legend>
+                                        <div class="row">
+                                            <div class="col-6">  
+                                                <!-- <input type="file" name="cert" class="file" multiple="true" data-show-upload="true" data-show-caption="true" lass="file" data-show-preview="true"  />
+                                                <button type="submit" id="btn-cert"  name="Upload" style="margin-top:20px;" class="fa fa-upload">Upload</button> -->
+
+                                                <div class="form-group">
+                                                    <div class="file-loading">
+                                                        <label>Preview File Icon</label>
+                                                        <input id="file-3" type="file" multiple="true" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-6">
+                                                <!-- <input type="file" name="image" id="image" class="file" multiple="true" data-show-upload="true" data-show-caption="true" lass="file" data-show-preview="true"  />
+                                                <button type="submit" name="Upload" style="margin-top:20px;" class="fa fa-upload">Upload</button>  -->
+                                            </div> 
+                                        </div> 
+                                        <script type="text/javascript" > 
+                                                    $(function(){ 
+                                                        $("#file-3").fileinput({
+                                                            theme: 'fa5',
+                                                            showUpload: true,
+                                                            showCaption: true,
+                                                            browseClass: "btn btn-primary btn-lg",
+                                                            fileType: "any",
+                                                            previewFileIcon: '<i class="glyphicon glyphicon-king"></i>',
+                                                            overwriteInitial: false,
+                                                            initialPreviewAsData: true,
+                                                            initialPreview: [ 
+                                                            ],
+                                                            initialPreviewConfig: [
+                                                                {caption: "transport-1.jpg", size: 329892, width: "120px", url: "{$url}", key: 1},
+                                                                {caption: "transport-2.jpg", size: 872378, width: "120px", url: "{$url}", key: 2},
+                                                                {caption: "transport-3.jpg", size: 632762, width: "120px", url: "{$url}", key: 3}
+                                                            ]
+                                                        });
+                                                    })
+                                                
+                                                
+                                        </script>
+                                        
+                                    </fieldset>  
+                                </div> 
+                            </div> 
+                            <br /> 
+                            <div class="row mx-0"> 
+                                <div class="col-6 offset-6 text-right">
+                                    <a class="btn btn-info mr-4" href="/my/productions/register">
+                                        <i class="fa fa-edit" />
+                                        Đăng ký mới</a>
+
+                                    <a class="btn btn-info" t-attf-href="/my/productions/edit/{{declaration_detail.id}}">
+                                        <i class="fa fa-edit" />
+                                        Sửa đổi</a>
+
+                                    <input class="btn btn-primary" type="submit" value="Cập nhật" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
             <div class="oe_structure" id="oe_structure_portal_my_home_2" />
         </t>
     </template>

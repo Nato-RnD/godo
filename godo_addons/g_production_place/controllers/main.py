@@ -58,14 +58,47 @@ class GPucPortal(CustomerPortal):
         values = self._prepare_portal_layout_values()
         _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id)
         trees = request.env['godo.production.item'].sudo().search([])
-        countries = request.env['res.country'].sudo().search([('target_country','=',True)]) 
+        countries = request.env['res.country'].sudo().search([('target_country','=',True)])  
+        farms = {}
+        farms_str = []
+        coord_str =[]
+        coordinates = {}
+        farmers = _declaration.farmers.split(';')
+        coords = _declaration.coordinates.split(';')
         values.update({ 
             'declaration_detail': _declaration,
             'page_name': 'edit' ,
             'user': request.env.user,
             'countries': countries,
-            'trees': trees
+            'trees': trees,
+            'farmers': farmers,
+            'coords': coords
         })
+        if kw and request.httprequest.method == 'POST':
+            for key,val in kw.copy().items():
+                if key.startswith('farmer_name_'):
+                    farms[key[12:]] = {'name': val} if key[12:] not in farms else dict(farms[key[12:]], name=val) # farms[key[12:]].update({'name': val})  
+                    del kw[key]
+                if key.startswith('farmer_area_'):
+                    farms[key[12:]] = {'area': val} if key[12:] not in farms else dict(farms[key[12:]], area=val) # farms[key[12:]].update({'area': val})  
+                    del kw[key]
+                if key.startswith('lat_'):
+                    coordinates[key[4:]] = {'lat': val} if key[4:] not in coordinates else dict(coordinates[key[4:]],lat=val)
+                    del kw[key]
+                if key.startswith('lng_'):
+                    coordinates[key[4:]] = {'lng': val} if key[4:] not in coordinates else dict(coordinates[key[4:]],lng=val)
+                    del kw[key] 
+
+            farms_str =  "; ".join('%s: %sha' % (v.get('name'),v.get('area')) for  v in farms.values())  
+            coord_str = "; ".join('%f,%f' % (float(v.get('lat')),float(v.get('lng'))) for  v in coordinates.values())  
+            kw.update({'farmers':farms_str, 'coordinates': coord_str, 'registered_user_id': request.env.user.id})
+            del kw['username']
+            _declaration.sudo().write(kw)
+            # partner.sudo().write(values)
+                 
+            print( farms_str, coord_str)
+            pass
+        
         response = request.render("g_production_place.portal_my_puc_detailview", values)
         response.headers['X-Frame-Options'] = 'DENY'
         return response

@@ -81,30 +81,38 @@ odoo.define('g_production_place.portal', function(require) {
          * @private
          */
         _onAddLatLng: function() {
-            var _latInput = `<input type="number" class="form-control" />`
-            var _lngInput = `<input type="number" class="form-control" />`
-            $(`<div class="row"><div class="col-6">${_latInput}</div><div class="col-6">${_lngInput}</div></div>`).appendTo(this.$latlngWrapper)
+            var index = this.$latlngWrapper.children().length + 1
+            var _index = `<div class="form-control border-0 text-center">${index}</div>`
+            var _latInput = `<input type="number" step="any" name="lat_${index}" class="form-control" placeholder="Vĩ độ (ví dụ: 20.2565)" />`
+            var _lngInput = `<input type="number" step="any"  name="lng_${index}" class="form-control" placeholder="Kinh độ (ví dụ: 105.2156)"/>`
+
+            $(`<div id="farm-${index}" class="row mx-0 my-2">
+            <div class="col-1 px-0 text-center">${_index}</div>
+            <div class="col-5">${_latInput}</div>
+            <div class="col-5">${_lngInput}</div>
+            <div class="col-1 pt-1 px-0 text-right"><a class="btn btn-outline-danger farm-remove"><i class="fa fa-trash" ></i></a> </div>
+            </div>`).appendTo(this.$latlngWrapper)
         },
 
         _onFarmRemove: function(e) {
             console.log(this.$farmerWrapper.children())
 
             console.log($(e.currentTarget.parentNode).parent())
-            this.$farmerWrapper.remove($(e.currentTarget.parentNode).parent())
+            $(e.currentTarget.parentNode).parent().remove()
         },
 
         _onAddFarmer: function() {
             var index = this.$farmerWrapper.children().length + 1
             var _index = `<div class="form-control border-0 text-center">${index}</div>`
-            var _farmerName = `<input type="text" class="form-control" placeholder="Tên nông hộ" />`
-            var _farmArea = `<input type="number" class="form-control" placeholder="Diện tích"/><div class="input-group-append">
+            var _farmerName = `<input type="text" name="farmer_name_${index}" class="form-control" placeholder="Tên nông hộ" />`
+            var _farmArea = `<input type="number" step="any"  name="farmer_area_${index}" class="form-control" placeholder="Diện tích"/><div class="input-group-append">
             <div class="input-group-text"> (ha)</div>
           </div>`
-            $(`<div id="farm-${index}" class="row my-2">
-            <div class="col-1">${_index}</div>
+            $(`<div id="farm-${index}" class="row mx-0 my-2">
+            <div class="col-1 px-0  text-center">${_index}</div>
             <div class="col-5">${_farmerName}</div>
-            <div class="col-4 input-group">${_farmArea}</div>
-            <div class="col-2 pt-1"><a class="btn btn-outline-danger farm-remove"><i class="fa fa-trash" ></i></a> </div>
+            <div class="col-5 input-group">${_farmArea}</div>
+            <div class="col-1 px-0 pt-1 text-right"><a class="btn btn-outline-danger farm-remove"><i class="fa fa-trash" ></i></a> </div>
             </div>`).appendTo(this.$farmerWrapper)
         },
 

@@ -110,7 +110,9 @@
                                 <field name="has_vietgap_global_gap" attrs="{'readonly': [('state', '!=', 'draft')]}"
                                     required="1" />
                                 <field name="map_kml_id" attrs="{'readonly': [('state', '!=', 'draft')]}"
-                                    required="1" />
+                                   invisible="1" />
+                                 <field name="coordinates" attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                    />
                             </group>
                             
                         </group> 

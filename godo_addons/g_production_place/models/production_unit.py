@@ -40,6 +40,7 @@ class GodoProductionUnitDeclaration(models.Model):
     certificate_attachment_ids = fields.Many2many(comodel_name='ir.attachment',relation='godo_production_unit_declaration_certification_attachment_rel', column1='declaration_id', column2='attachment_id', string='Bản sao chứng nhận')
     agreement_attachment_ids = fields.Many2many(comodel_name='ir.attachment',relation='godo_production_unit_declaration_agreement_attachment_rel', column1='declaration_id', column2='attachment_id', string='Cam kết')
     map_kml_id = fields.Binary(string='Bản đồ (file KML)')
+    coordinates = fields.Text('Tọa độ địa lý')
     form_uuid = fields.Char(string='Mã đăng ký', 
         compute='_form_uuid_gen', store=True )
     inspection_ids = fields.One2many(comodel_name='godo.production.unit.inspection', inverse_name='declaration_id', string='Danh sách Biên bản kiểm tra')
