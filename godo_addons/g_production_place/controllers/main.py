@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import base64
 from odoo.http import route,request 
 from odoo.addons.portal.controllers.portal import CustomerPortal
 class GPucPortal(CustomerPortal):  
@@ -63,8 +64,8 @@ class GPucPortal(CustomerPortal):
         farms_str = []
         coord_str =[]
         coordinates = {}
-        farmers = _declaration.farmers.split(';')
-        coords = _declaration.coordinates.split(';')
+        farmers =  [farmer.strip() for farmer in  _declaration.farmers.strip().split(';') if farmer]
+        coords = [coord.strip() for coord in  _declaration.coordinates.strip().split(';') if coord]
         values.update({ 
             'declaration_detail': _declaration,
             'page_name': 'edit' ,
@@ -94,7 +95,15 @@ class GPucPortal(CustomerPortal):
             kw.update({'farmers':farms_str, 'coordinates': coord_str, 'registered_user_id': request.env.user.id})
             del kw['username']
             _declaration.sudo().write(kw)
-            # partner.sudo().write(values)
+            
+            farmers =  [farmer.strip() for farmer in  _declaration.farmers.strip().split(';') if farmer]
+            coords = [coord.strip() for coord in  _declaration.coordinates.strip().split(';') if coord]
+            values.update({ 
+            'declaration_detail': _declaration, 
+            'farmers': farmers,
+            'coords': coords
+        })
+             
                  
             print( farms_str, coord_str)
             pass
@@ -164,3 +173,25 @@ class GPucPortal(CustomerPortal):
     def home(self, **kw):
         values = self._prepare_portal_layout_values()
         return request.render("portal.portal_my_home", values)
+    
+    
+    @route('/my/productions/uploaded', type='http', auth="user",csrf=False, website=True)
+    def upload_files(self, **post):
+        values = {}
+        _file = post.get('file_data') 
+        if _file:
+            Attachments = request.env['ir.attachment']        
+            attachment = _file.read() 
+            attachment_id = Attachments.sudo().create({
+                'name':_file.filename,
+                'store_fname': _file.filename,
+                'res_name': _file.filename,
+                'type': 'binary',   
+                'res_model': 'godo.production.unit.declaration',
+                #'res_id': project_id,
+                'datas': base64.b64encode(attachment) #.encode('base64'),
+            })
+            value = {
+                'attachment' : attachment_id
+            }
+            return value

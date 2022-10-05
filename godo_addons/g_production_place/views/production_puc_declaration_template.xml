@@ -270,8 +270,8 @@
                                                             />
                                                         </div>
                                                         <div class="col-5 input-group">
-                                                                <input type="number" step="any"  t-att-name="'farmer_area_%s' % i"   class="form-control" placeholder="Diện tích"
-                                                                 t-att-value="float(farmer.split(':')[1][:-2])"
+                                                                <input type="text"  t-att-name="'farmer_area_%s' % i"   class="form-control" placeholder="Diện tích"
+                                                                 t-att-value="farmer.split(':')[1][:-2]"
                                                                  />
                                                                     <div class="input-group-append">
                                                                         <div class="input-group-text"> (ha)</div>
@@ -304,10 +304,10 @@
                                                         <div class="col-1 px-0 text-center">
                                                             <div class="form-control border-0 text-center"><t t-esc="i"/></div>
                                                         </div>
-                                                        <div class="col-5"><input type="number" step="any" t-att-name="'lat_%s' % i"
+                                                        <div class="col-5"><input type="text"   t-att-name="'lat_%s' % i"
                                                                 class="form-control"
                                                                 placeholder="Vĩ độ (ví dụ: 20.2565)"  t-att-value="coord.split(',')[0]"  /></div>
-                                                        <div class="col-5"><input type="number" step="any" t-att-name="'lng_%s' % i"  
+                                                        <div class="col-5"><input type="text"   t-att-name="'lng_%s' % i"  
                                                                 class="form-control"
                                                                 placeholder="Kinh độ (ví dụ: 105.2156)"  t-att-value="coord.split(',')[1]"  /></div>
                                                         <div class="col-1 pt-1 px-0 text-right"><a
@@ -346,7 +346,8 @@
                                         <script type="text/javascript" > 
                                                     $(function(){ 
                                                         $("#file-3").fileinput({
-                                                            theme: 'fa5',
+                                                            theme: 'fas',
+                                                            uploadUrl:'/my/productions/uploaded',
                                                             showUpload: true,
                                                             showCaption: true,
                                                             browseClass: "btn btn-primary btn-lg",
@@ -356,11 +357,11 @@
                                                             initialPreviewAsData: true,
                                                             initialPreview: [ 
                                                             ],
-                                                            initialPreviewConfig: [
+                                                            <!-- initialPreviewConfig: [
                                                                 {caption: "transport-1.jpg", size: 329892, width: "120px", url: "{$url}", key: 1},
                                                                 {caption: "transport-2.jpg", size: 872378, width: "120px", url: "{$url}", key: 2},
                                                                 {caption: "transport-3.jpg", size: 632762, width: "120px", url: "{$url}", key: 3}
-                                                            ]
+                                                            ] -->
                                                         });
                                                     })
                                                 

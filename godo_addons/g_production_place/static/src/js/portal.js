@@ -83,8 +83,8 @@ odoo.define('g_production_place.portal', function(require) {
         _onAddLatLng: function() {
             var index = this.$latlngWrapper.children().length + 1
             var _index = `<div class="form-control border-0 text-center">${index}</div>`
-            var _latInput = `<input type="number" step="any" name="lat_${index}" class="form-control" placeholder="Vĩ độ (ví dụ: 20.2565)" />`
-            var _lngInput = `<input type="number" step="any"  name="lng_${index}" class="form-control" placeholder="Kinh độ (ví dụ: 105.2156)"/>`
+            var _latInput = `<input type="text" step="any" name="lat_${index}" class="form-control" placeholder="Vĩ độ (ví dụ: 20.2565)" />`
+            var _lngInput = `<input type="text" step="any"  name="lng_${index}" class="form-control" placeholder="Kinh độ (ví dụ: 105.2156)"/>`
 
             $(`<div id="farm-${index}" class="row mx-0 my-2">
             <div class="col-1 px-0 text-center">${_index}</div>
@@ -105,7 +105,7 @@ odoo.define('g_production_place.portal', function(require) {
             var index = this.$farmerWrapper.children().length + 1
             var _index = `<div class="form-control border-0 text-center">${index}</div>`
             var _farmerName = `<input type="text" name="farmer_name_${index}" class="form-control" placeholder="Tên nông hộ" />`
-            var _farmArea = `<input type="number" step="any"  name="farmer_area_${index}" class="form-control" placeholder="Diện tích"/><div class="input-group-append">
+            var _farmArea = `<input type="text" step="any"  name="farmer_area_${index}" class="form-control" placeholder="Diện tích"/><div class="input-group-append">
             <div class="input-group-text"> (ha)</div>
           </div>`
             $(`<div id="farm-${index}" class="row mx-0 my-2">
