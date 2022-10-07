@@ -124,6 +124,8 @@ class GPucPortal(CustomerPortal):
         farms_str = []
         coord_str =[]
         coordinates = {} 
+        certs =[]
+        agreements = []
         values.update({  
             'page_name': 'create' ,
             'user': request.env.user,
@@ -145,15 +147,32 @@ class GPucPortal(CustomerPortal):
                 if key.startswith('lng_'):
                     coordinates[key[4:]] = {'lng': val} if key[4:] not in coordinates else dict(coordinates[key[4:]],lng=val)
                     del kw[key] 
+                    
+                if key.startswith('certificate_uploaded_image'): 
+                    certs = [ (4,pid) for pid in val.split(',')],
+                    del kw[key]
+                if key.startswith('agreement_uploaded_image'):
+                    agreements = [ (4,pid) for pid in val.split(',')],
+                    del kw[key]
 
             farms_str =  "; ".join('%s: %sha' % (v.get('name'),v.get('area')) for  v in farms.values())  
             coord_str = "; ".join('%f,%f' % (float(v.get('lat')),float(v.get('lng'))) for  v in coordinates.values())  
-            kw.update({'farmers':farms_str, 'coordinates': coord_str, 'registered_user_id': request.env.user.id, 'registered_owner_type':'personal'})
+            kw.update(
+                {
+                    'farmers':farms_str, 
+                    'coordinates': coord_str, 
+                    'registered_user_id': request.env.user.id, 
+                    'registered_owner_type':'personal'
+                    })
             del kw['username']  
             try:
                 res = request.env['godo.production.unit.declaration'].sudo().create(kw)
                 request.env.cr.commit() 
                 if res:
+                    res.write({
+                         'certificate_attachment_ids': certs,
+                          'agreement_attachment_ids':  agreements
+                    }) 
                     return request.redirect('/my/productions')
                 
             except Exception as e:
@@ -218,7 +237,7 @@ class GPucPortal(CustomerPortal):
     
     
     @route('/my/productions/uploaded', type='http', auth="user",csrf=False, website=True)
-    def upload_files(self,type,id, **post):
+    def upload_files(self,type,id=0, **post):
      
         _declaration = request.env['godo.production.unit.declaration'].browse(int(id))
         _file = post.get('file_data') 
@@ -235,12 +254,14 @@ class GPucPortal(CustomerPortal):
             
             if attachment_id:
                 if type == 'cert':
-                    _declaration.write({
+                    if id:
+                        _declaration.write({
                         'certificate_attachment_ids': [(4,attachment_id.id)]
-                    })
-                if type == 'agreement':
-                    _declaration.write({
-                        'agreement_attachment_ids': [(4,attachment_id.id)]
                     }) 
-            response = request.render("g_production_place.upload_response", {'result': 'true' if attachment_id else 'false' }) 
+                if type == 'agreement':
+                    if id:
+                        _declaration.write({
+                        'agreement_attachment_ids': [(4,attachment_id.id)]
+                    })  
+            response = request.render("g_production_place.upload_response", {'result': 'true' if attachment_id else 'false', 'fileId': attachment_id.id }) 
             return response
