@@ -60,8 +60,11 @@
                         <button string="Đăng ký" type="object" name="puc_declaration_post" class="oe_highlight"
                             attrs="{'invisible': [('state', '!=', 'draft')]}" />
 
-                        <button string="Biên bản" type="object" name="puc_declaration_inspection" data-hotkey="z"
+                        <button string="Biên bản" type="object" name="puc_declaration_inspection" data-hotkey="b" class="oe_highlight"
                             attrs="{'invisible': ['|',('state', '!=', 'post'),('has_inspection','=',True)]}" />
+
+                        <button string="Cấp mã số vùng trồng" type="object" name="puc_declaration_code_issue" data-hotkey="d" 
+                            attrs="{'invisible': ['|',('state', '!=', 'post'),('has_vietgap_global_gap','!=',True)]}" />
 
                         <field name="state" widget="statusbar" statusbar_visible="draft,post,done,rejected" />
                         <field name="has_inspection" invisible="1"></field>

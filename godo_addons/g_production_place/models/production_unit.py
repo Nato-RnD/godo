@@ -22,9 +22,7 @@ class GodoProductionUnitDeclaration(models.Model):
     area = fields.Float(string='Diện tích')
     plant_farm_num = fields.Integer(string='Số nông hộ')
     three_years_average_production = fields.Float('Sản lượng tấn/ha/năm')
-    
     registered_user_id = fields.Many2one(comodel_name='res.users', string='Người dùng')
-
     registered_owner_name = fields.Char(string='Tổ chức/cá nhân đăng ký')
     registered_owner_type= fields.Selection(selection=[('personal','Cá nhân'),('company','Tổ chức/Doanh nghiệp')], default='company' ,required=True, string='Loại hình hoạt động')
     registered_owner_representer = fields.Char(string='Đại diện')
@@ -78,6 +76,23 @@ class GodoProductionUnitDeclaration(models.Model):
                     'activated': self.id
                 }
         }
+        
+    def puc_declaration_code_issue(self):
+        self.ensure_one()
+        # self.state = 'done'
+        # self.message_post(body= _('%s đã cấp mã số vùng trồng %s' % (self.env.user.name or self.registered_owner_name, self.name) ))
+        
+        return {
+        'name': _('Mã vùng trồng'),
+        'view_type': 'form',
+        'view_mode': 'form', 
+        'res_model': 'godo.production.unit.code',
+        'type': 'ir.actions.act_window',
+        'target': 'current',
+                'context': {
+                    'activated': self.id
+                }
+        }
 
 
     @api.model
@@ -111,7 +126,6 @@ class GodoProductionUnitCode(models.Model):
     area = fields.Float(string='Diện tích')
     plant_farm_num = fields.Integer(string='Số nông hộ')
     three_years_average_production = fields.Float('Sản lượng tấn/ha/năm')
-
     registered_owner_id = fields.Many2one(comodel_name='res.partner', string='Tổ chức/cá nhân đăng ký')
     registered_owner_type= fields.Selection(selection=[('personal','Cá nhân'),('company','Tổ chức/Doanh nghiệp')], default='company' ,required=True, string='Loại hình hoạt động')
     registered_owner_representer = fields.Char(string='Đại diện')
@@ -121,9 +135,28 @@ class GodoProductionUnitCode(models.Model):
     fax = fields.Char(string='Fax')
     email = fields.Char(string='Email')
     has_vietgap_global_gap = fields.Boolean(string='Có chứng nhận Viet Gap, Global Gap')
-    map_kml = fields.Binary('Bản đồ (file KML)')
-    state = fields.Selection(selection=_STATE_SELECTIONS,default='active',string='Trạng thái')
+    map_kml = fields.Binary('Bản đồ (file KML)') 
+    farmers = fields.Text(string='Danh sách các hộ nông dân')
+    coordinates = fields.Text('Tọa độ địa lý') 
+    state = fields.Selection(selection=_STATE_SELECTIONS,default='draft',string='Trạng thái')
     
+    
+    def _puc_issue(self, **kw):
+        pass
+    
+    @api.model
+    def default_get(self, default_fields):
+
+        _active_id =  self.env.context.get('active_id')
+ 
+        _declaration = self.env['godo.production.unit.declaration'].browse(_active_id)
+        res = super(GodoProductionUnitCode, self).default_get(default_fields) 
+        res['name'] = _declaration.name
+        res['code'] = 'VN'
+        res['address'] = _declaration.address
+        res['tree_id'] = _declaration.tree_id.id
+        res['declaration_id'] = _active_id
+        return res
 
 
 

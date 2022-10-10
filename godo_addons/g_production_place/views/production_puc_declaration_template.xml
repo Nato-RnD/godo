@@ -114,12 +114,12 @@
                                 <div class="col-6">
                                     <fieldset class="border p-2">
                                         <legend  class="w-auto">Thông tin tổ chức/cá nhân đăng ký</legend>
-                                        <div class="form-group">
-                                            <label for="username">Người dùng</label>
-                                            <input class="form-control" t-att-value="user.display_name or declaration_detail.registered_user_id.name"
+                                        <!-- <div class="form-group"> -->
+                                            <!-- <label for="username">Người dùng</label> -->
+                                            <input type="hidden" class="form-control" t-att-value="user.display_name or declaration_detail.registered_user_id.name"
                                                 name="username" t-att-disabled="page_name!='edit'" />
-                                                <input type="hidden" t-att-value="userid or declaration_detail.registered_user_id.id" /> 
-                                        </div>
+                                            <input type="hidden" t-att-value="userid or declaration_detail.registered_user_id.id" /> 
+                                        <!-- </div> -->
 
                                         <div class="form-group">
                                             <label for="registered_owner_name">Tổ chức/cá nhân đăng ký</label>
@@ -129,10 +129,14 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="registered_owner_type">Loại hình hoạt động</label>
-                                            <input class="form-control" name="registered_owner_type"
-                                                t-att-value="registered_owner_type or declaration_detail.registered_owner_type "
-                                                t-att-disabled="page_name!='edit'" /> 
+                                            <label for="registered_owner_type">Loại hình hoạt động</label> 
+                                            <select name="registered_owner_type" t-attf-class="form-control" t-att-disabled="page_name!='edit'" > 
+                                                <t t-foreach="[{'id':'personal', 'name':'Cá nhân'},{'id':'company','name':'Doanh nghiệp'}]" t-as="type">
+                                                    <option t-att-value="type['id']" t-att-selected="type['id'] ==  declaration_detail.registered_owner_type">
+                                                        <t t-esc="type['name']" />
+                                                    </option>
+                                                </t>
+                                            </select>
                                         </div>
 
                                         <div class="form-group">
@@ -243,6 +247,7 @@
                                         <div class="form-group form-check">
                                             
                                             <input class="form-check-input" name="has_vietgap_global_gap" type="checkbox" id="has_vietgap_global_gap"
+                                                t-att-checked = "declaration_detail.has_vietgap_global_gap"
                                                 t-att-value="has_vietgap_global_gap or declaration_detail.has_vietgap_global_gap "
                                                 t-att-disabled="page_name!='edit'" /> 
                                             <label for="has_vietgap_global_gap" class="form-check-label">Có chứng nhận Viet Gap, Global Gap</label>
@@ -268,12 +273,12 @@
                                                         </div>
                                                         <div class="col-5">
                                                             <input type="text" t-att-name="'farmer_name_%s' % i" class="form-control" placeholder="Tên nông hộ"
-                                                            t-att-value="farmer.split(':')[0]"
+                                                            t-att-value="farmer.split(':')[0]"  t-att-disabled="page_name!='edit'" 
                                                             />
                                                         </div>
                                                         <div class="col-5 input-group">
                                                                 <input type="text"  t-att-name="'farmer_area_%s' % i"   class="form-control" placeholder="Diện tích"
-                                                                 t-att-value="farmer.split(':')[1][:-2]"
+                                                                 t-att-value="farmer.split(':')[1][:-2].strip()"  t-att-disabled="page_name!='edit'" 
                                                                  />
                                                                     <div class="input-group-append">
                                                                         <div class="input-group-text"> (ha)</div>
@@ -306,12 +311,12 @@
                                                         <div class="col-1 px-0 text-center">
                                                             <div class="form-control border-0 text-center"><t t-esc="i"/></div>
                                                         </div>
-                                                        <div class="col-5"><input type="text"   t-att-name="'lat_%s' % i"
-                                                                class="form-control"
-                                                                placeholder="Vĩ độ (ví dụ: 20.2565)"  t-att-value="coord.split(',')[0]"  /></div>
+                                                        <div class="col-5"><input type="text" t-att-name="'lat_%s' % i"
+                                                                class="form-control"  t-att-disabled="page_name!='edit'" 
+                                                                placeholder="Vĩ độ (ví dụ: 20.2565)"  t-att-value="coord.split(',')[0].strip()"  /></div>
                                                         <div class="col-5"><input type="text"   t-att-name="'lng_%s' % i"  
-                                                                class="form-control"
-                                                                placeholder="Kinh độ (ví dụ: 105.2156)"  t-att-value="coord.split(',')[1]"  /></div>
+                                                                class="form-control"  t-att-disabled="page_name!='edit'" 
+                                                                placeholder="Kinh độ (ví dụ: 105.2156)"  t-att-value="coord.split(',')[1].strip()"  /></div>
                                                         <div class="col-1 pt-1 px-0 text-right"><a
                                                                 class="btn btn-outline-danger farm-remove"><i
                                                                     class="fa fa-trash"></i></a> </div>
@@ -394,17 +399,19 @@
                             <br /> 
                             <div class="row mx-0"> 
                                 <div class="col-8 offset-4 text-right">
-                                    <a class="btn btn-info mr-4" href="/my/productions/register">
-                                        <i class="fa fa-plus" />
-                                        Đăng ký mới
-                                    </a>
+                                    <t t-if="page_name!='edit'">
+                                        <a class="btn btn-info mr-4" href="/my/productions/register">
+                                            <i class="fa fa-plus" />
+                                            Đăng ký mới
+                                        </a>
+                                    </t>
 
                                     <t t-if="page_name=='edit'">
-                                        <input type="checkbox" data-size="normal"  data-onstyle="success" data-offstyle="danger" data-on="Đăng ký" data-off="Lưu tạm" name="confirmed" data-toggle="toggle" /> 
+                                        <input  type="checkbox" data-size="normal"  data-onstyle="success" data-offstyle="danger" data-on="Đăng ký" data-off="Lưu tạm" name="confirmed" data-toggle="toggle" /> 
                                         <input class="btn btn-primary mr-2" type="submit" value="Cập nhật" /> 
                                     </t>
 
-                                    <t t-if="page_name=='detail'">
+                                    <t t-if="page_name=='detail' and declaration_detail.state == 'draft' ">
                                         <a class="btn btn-primary" t-attf-href="/my/productions/edit/{{declaration_detail.id}}">
                                             <i class="fa fa-edit  mr-1" />
                                             Sửa lại
@@ -451,12 +458,9 @@
                                 <div class="col-6">
                                     <fieldset class="border p-2">
                                         <legend  class="w-auto">Thông tin tổ chức/cá nhân đăng ký</legend>
-                                        <div class="form-group">
-                                            <label for="username">Người dùng</label>
-                                            <input class="form-control" t-att-value="username"
+                                        <input   type="hidden" class="form-control" t-att-value="username"
                                                 name="username"  />
                                                 <input type="hidden" t-att-value="userid" /> 
-                                        </div>
 
                                         <div class="form-group">
                                             <label for="registered_owner_name">Tổ chức/cá nhân đăng ký</label>
@@ -466,10 +470,14 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="registered_owner_type">Loại hình hoạt động</label>
-                                            <input class="form-control" name="registered_owner_type"
-                                                t-att-value="registered_owner_type"
-                                                 /> 
+                                            <label for="registered_owner_type">Loại hình hoạt động</label> 
+                                            <select name="registered_owner_type" t-attf-class="form-control"  > 
+                                                <t t-foreach="[{'id':'personal', 'name':'Cá nhân'},{'id':'company','name':'Doanh nghiệp'}]" t-as="type">
+                                                    <option t-att-value="type['id']" >
+                                                        <t t-esc="type['name']" />
+                                                    </option>
+                                                </t>
+                                            </select>
                                         </div>
 
                                         <div class="form-group">
@@ -668,7 +676,7 @@
                                                 <div class="form-group card border-0">
                                                     <div calss="card-header">Giấy chứng nhận</div>
                                                     <!-- <div id="certificate_uploaded_img"></div> -->
-                                                    <input type="hidden" id="certificate_uploaded_image" ></input>
+                                                    <input type="hidden" id="certificate_uploaded_image" name="certificate_uploaded_image" ></input>
                                                     <div class="file-loading"> 
                                                         <input id="certificate-upload" type="file" multiple="true" />
                                                         
@@ -679,7 +687,7 @@
                                                 <div class="form-group card border-0">
                                                     <div calss="card-header">Cam kết</div>
                                                     <!-- <div id="agreement_uploaded_img"></div> -->
-                                                    <input type="hidden" id="agreement_uploaded_image" ></input>
+                                                    <input type="hidden" id="agreement_uploaded_image" name="agreement_uploaded_image" ></input>
                                                     <div class="file-loading"> 
                                                         <input id="agreement-upload" type="file" multiple="true" />
                                                     </div>
@@ -704,8 +712,7 @@
                                                                 let _val = $('#certificate_uploaded_image').val()
                                                                 $('#certificate_uploaded_image').val(`${_val},${_picId}`)
                                                         });
-                                                       
-
+                                                         
 
                                                         $("#agreement-upload").fileinput({
                                                             theme: 'fas',

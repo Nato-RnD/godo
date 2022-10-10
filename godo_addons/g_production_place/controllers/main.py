@@ -69,6 +69,9 @@ class GPucPortal(CustomerPortal):
     def declaration_edit(self,declaration_id, **kw):
         values = self._prepare_portal_layout_values()
         _declaration = request.env['godo.production.unit.declaration'].browse(declaration_id)
+        if _declaration.state == 'post':
+            return request.redirect('/my/productions/detail/%d' % _declaration.id)
+        
         trees = request.env['godo.production.item'].sudo().search([])
         countries = request.env['res.country'].sudo().search([('target_country','=',True)])  
         farms = {}
@@ -103,12 +106,13 @@ class GPucPortal(CustomerPortal):
 
             farms_str =  "; ".join('%s: %sha' % (v.get('name'),v.get('area')) for  v in farms.values())  
             coord_str = "; ".join('%f,%f' % (float(v.get('lat')),float(v.get('lng'))) for  v in coordinates.values())  
-            kw.update({'farmers':farms_str, 'coordinates': coord_str, 'registered_user_id': request.env.user.id}) 
-            self._del_key(kw,'username')
+            kw.update({'farmers':farms_str, 'coordinates': coord_str, 'registered_user_id': request.env.user.id, 'state': 'draft' if not kw.get('confirmed') else 'post' }) 
+            self._del_key(kw,'username','confirmed')
+            
             
             _declaration.sudo().write(kw)
 
-            return request.redirect('/my/productions/edit/%d' % _declaration.id)
+            return request.redirect('/my/productions/detail/%d' % _declaration.id)
             
         #     farmers =  [farmer.strip() for farmer in  _declaration.farmers.strip().split(';') if farmer]
         #     coords = [coord.strip() for coord in  _declaration.coordinates.strip().split(';') if coord]
@@ -163,10 +167,10 @@ class GPucPortal(CustomerPortal):
                     del kw[key] 
                     
                 if key.startswith('certificate_uploaded_image'): 
-                    certs = [ (4,pid) for pid in val.split(',')],
+                    certs = [ (4, int(pid)) for pid in val.split(',') if pid !=''],
                     del kw[key]
                 if key.startswith('agreement_uploaded_image'):
-                    agreements = [ (4,pid) for pid in val.split(',')],
+                    agreements = [ (4,int(pid)) for pid in val.split(',') if pid !=''],
                     del kw[key]
 
             farms_str =  "; ".join('%s: %sha' % (v.get('name'),v.get('area')) for  v in farms.values())  
@@ -176,18 +180,15 @@ class GPucPortal(CustomerPortal):
                     'farmers':farms_str, 
                     'coordinates': coord_str, 
                     'registered_user_id': request.env.user.id, 
-                    'registered_owner_type':'personal'
+                    'registered_owner_type':'personal',
+                    'certificate_attachment_ids': certs,
+                    'agreement_attachment_ids':  agreements
                     })
             del kw['username']  
             try:
-                res = request.env['godo.production.unit.declaration'].sudo().create(kw)
-                request.env.cr.commit() 
-                if res:
-                    res.write({
-                         'certificate_attachment_ids': certs,
-                          'agreement_attachment_ids':  agreements
-                    }) 
-                    return request.redirect('/my/productions')
+                request.env['godo.production.unit.declaration'].sudo().create(kw)
+                request.env.cr.commit()  
+                return request.redirect('/my/productions')
                 
             except Exception as e:
                 pass
@@ -283,4 +284,5 @@ class GPucPortal(CustomerPortal):
 
     def _del_key (self, dict, *key):
         for k in key:
-            del dict[k]
+            if dict.get(k):
+                del dict[k]
