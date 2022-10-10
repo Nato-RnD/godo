@@ -41,10 +41,14 @@ class GPucPortal(CustomerPortal):
         values['detailview'] = True
         values['declaration_detail'] = _declaration
         trees = request.env['godo.production.item'].sudo().search([])
-        countries = request.env['res.country'].sudo().search([('target_country','=',True)]) 
-        farmers =  [farmer.strip() for farmer in  _declaration.farmers.strip().split(';') if farmer]
-        coords = [coord.strip() for coord in  _declaration.coordinates.strip().split(';') if coord]
-        values.update({ 
+        if _declaration:
+            _coords = _declaration.coordinates.strip() if  _declaration.coordinates else ''
+            _farmers = _declaration.farmers.strip() if _declaration.farmers else ''
+
+            countries = request.env['res.country'].sudo().search([('target_country','=',True)]) 
+            farmers =  [farmer.strip() for farmer in _farmers.split(';')  if farmer]
+            coords = [coord.strip() for coord in _coords.split(';')   if coord ]
+            values.update({ 
             'declaration_detail': _declaration,
             'page_name': 'detail' ,
             'user': request.env.user,
@@ -53,8 +57,11 @@ class GPucPortal(CustomerPortal):
              'farmers': farmers,
             'coords': coords
         })
+             
+
         response = request.render("g_production_place.portal_my_puc_detailview", values)
         response.headers['X-Frame-Options'] = 'DENY'
+
         return response 
      
 
@@ -96,17 +103,24 @@ class GPucPortal(CustomerPortal):
 
             farms_str =  "; ".join('%s: %sha' % (v.get('name'),v.get('area')) for  v in farms.values())  
             coord_str = "; ".join('%f,%f' % (float(v.get('lat')),float(v.get('lng'))) for  v in coordinates.values())  
-            kw.update({'farmers':farms_str, 'coordinates': coord_str, 'registered_user_id': request.env.user.id})
-            del kw['username']
-            _declaration.sudo().write(kw)
+            kw.update({'farmers':farms_str, 'coordinates': coord_str, 'registered_user_id': request.env.user.id}) 
+            self._del_key(kw,'username')
             
-            farmers =  [farmer.strip() for farmer in  _declaration.farmers.strip().split(';') if farmer]
-            coords = [coord.strip() for coord in  _declaration.coordinates.strip().split(';') if coord]
-            values.update({ 
-            'declaration_detail': _declaration, 
-            'farmers': farmers,
-            'coords': coords
-        })
+            _declaration.sudo().write(kw)
+
+            return request.redirect('/my/productions/edit/%d' % _declaration.id)
+            
+        #     farmers =  [farmer.strip() for farmer in  _declaration.farmers.strip().split(';') if farmer]
+        #     coords = [coord.strip() for coord in  _declaration.coordinates.strip().split(';') if coord]
+        #     values.update({ 
+        #         'declaration_detail': _declaration,
+        #         'page_name': 'edit' ,
+        #         'user': request.env.user,
+        #         'countries': countries,
+        #         'trees': trees,
+        #         'farmers': farmers,
+        #         'coords': coords
+        # })
              
           
         
@@ -265,3 +279,8 @@ class GPucPortal(CustomerPortal):
                     })  
             response = request.render("g_production_place.upload_response", {'result': 'true' if attachment_id else 'false', 'fileId': attachment_id.id }) 
             return response
+
+
+    def _del_key (self, dict, *key):
+        for k in key:
+            del dict[k]
