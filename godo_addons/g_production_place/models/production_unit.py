@@ -139,6 +139,7 @@ class GodoProductionUnitCode(models.Model):
     farmers = fields.Text(string='Danh sách các hộ nông dân')
     coordinates = fields.Text('Tọa độ địa lý') 
     state = fields.Selection(selection=_STATE_SELECTIONS,default='draft',string='Trạng thái')
+    note = fields.Text('Ghi chú')
     
     
     def _puc_issue(self, **kw):
@@ -154,9 +155,40 @@ class GodoProductionUnitCode(models.Model):
         res['name'] = _declaration.name
         res['code'] = 'VN'
         res['address'] = _declaration.address
+        res['registered_owner_address'] = _declaration.registered_owner_address
         res['tree_id'] = _declaration.tree_id.id
-        res['declaration_id'] = _active_id
+        res['declaration_id'] = _active_id  
+        res['export_to'] = _declaration.export_to.id
+        res['annual_harvest_time'] = _declaration.annual_harvest_time
+        res['area'] = _declaration.area
+        res['plant_farm_num'] =_declaration.plant_farm_num
+        res['three_years_average_production'] = _declaration.three_years_average_production
+        res['registered_owner_id'] = _declaration.registered_user_id.id
+        res['registered_owner_type']= _declaration.registered_owner_type
+        res['registered_owner_representer'] = _declaration.registered_owner_representer
+        res['registered_owner_address'] = _declaration.registered_owner_address
+        res['registered_owner_code'] = _declaration.registered_owner_code
+        res['phone'] = _declaration.phone
+        res['fax'] = _declaration.fax
+        res['email'] = _declaration.email
+        res['has_vietgap_global_gap'] = _declaration.has_vietgap_global_gap 
+        res['farmers'] = _declaration.farmers
+        res['coordinates'] = _declaration.coordinates
+        res['state'] = 'suspend'
+        
         return res
+    
+    def puc_issue_activate(self):
+        self.ensure_one()
+        self.state = 'active'
+        
+    def puc_issue_deactivate(self):
+        self.ensure_one()
+        self.state = 'suspend'
+        
+    def puc_issue_recall(self):
+        self.ensure_one()
+        self.state = 'cancelled'
 
 
 

@@ -28,5 +28,11 @@ class LogisticBill(models.Model):
    note = fields.Text(string='Note')
    state = fields.Selection(string='Status', selection=_bill_selection, default='sent')
    bill_check_ids = fields.Many2many(comodel_name='godo.logistic.bill.check', relation='godo_logistic_bill_check_rel',  column1='bill_id_rec', column2='check_id', string='Bill Checks')
+   
+   @api.onchange('customer_id')
+   def customer_id_onchange(self):
+          if self.customer_id:
+            self.customer_mobile = self.customer_id.mobile
+            self.customer_address = '%s %s %s %s' % (self.customer_id.street or '', self.customer_id.ward_id.name or '', self.customer_id.district_id.name or '' , self.customer_id.province_id.name or '')
 
   

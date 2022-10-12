@@ -39,6 +39,7 @@
     
     'assets': {
         'web.assets_backend': [
+            'g_production_place/static/src/css/map.css',
             'g_production_place/static/src/vendors/leaflet/leaflet.css',
             'g_production_place/static/src/vendors/leaflet/leaflet.js',
             'g_production_place/static/src/js/map.js', 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
+<link href="/g_production_place/static/src/css/map.css" media="all" rel="stylesheet" type="text/css"/>
 <t t-name="puc_map_container">
     <div style="text-align:center;width:100%; height: 100%">
         <!-- <t t-if="widget.url">

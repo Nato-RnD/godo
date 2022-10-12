@@ -68,6 +68,96 @@
       </field>
     </record> -->
 
+            <record id="production_place_management_code_action_window_form_view" model="ir.ui.view">
+            <field name="name">production_place_management_code_action_window_form_view</field>
+            <field name="model">godo.production.unit.code</field>
+            <field name="priority" eval="1" />
+            <field name="arch" type="xml">
+                <form string="Vùng trồng">
+                    <header>
+                    
+                        <button string="Kích hoạt mã số" type="object" name="puc_issue_activate" class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'suspend')]}" />
+                        
+                        <button string="Đình chỉ mã số" type="object" name="puc_issue_deactivate" class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'active')]}" />
+
+                        <button string="Thu hồi mã số" type="object" name="puc_issue_recall" class="oe_highlight"
+                            attrs="{'invisible': [('state', '!=', 'active')]}" />
+                        <!-- 
+
+                        <button string="Biên bản" type="object" name="puc_declaration_inspection" data-hotkey="b" class="oe_highlight"
+                            attrs="{'invisible': ['|',('state', '!=', 'post'),('has_inspection','=',True)]}" />
+
+                        <button string="Cấp mã số vùng trồng" type="object" name="puc_declaration_code_issue" data-hotkey="d" 
+                            attrs="{'invisible': ['|',('state', '!=', 'post'),('has_vietgap_global_gap','!=',True)]}" /> -->
+
+                        <field name="state" widget="statusbar" statusbar_visible="active,suspend,cancelled" /> 
+                    </header>
+                    <sheet>
+                        <widget name="web_ribbon" title="Done" bg_color="bg-success"
+                            attrs="{'invisible': [('state', '!=', 'active')]}" />
+
+                        <widget name="web_ribbon" title="Cancelled" bg_color="bg-danger"
+                            attrs="{'invisible': [('state', '!=', 'cancelled')]}" />
+
+                        <div class="oe_title mb24">
+                            <h1> 
+                                <field id="name" required="1" class="o_text_overflow" name="name" default_focus="1"
+                                  placeholder="Tên vùng trồng"    attrs="{'readonly': [('state', '!=', 'suspend')]}" />  <br/>
+                                <field id="code" required="1" class="o_text_overflow" name="code"  
+                                   placeholder="Mã số vùng trồng"   attrs="{'readonly': [('state', '!=', 'suspend')]}" />
+                            </h1>
+                        </div>
+
+                        <group>
+                            <group string="Thông tin tổ chức/cá nhân đăng ký">
+                                <field name="registered_owner_id" /> 
+                                <field name="registered_owner_type" required="1"
+                                    attrs="{'readonly': [('state', '!=', 'suspend')]}" />
+                                <field name="registered_owner_representer" required="1"
+                                    attrs="{'readonly': [('state', '!=', 'suspend')]}" />
+                                <field name="registered_owner_address" required="1"
+                                    attrs="{'readonly': [('state', '!=', 'suspend')]}" />
+                                <field name="registered_owner_code" required="1"
+                                    attrs="{'readonly': [('state', '!=', 'suspend')]}" />
+                                <field name="phone" required="1" attrs="{'readonly': [('state', '!=', 'suspend')]}" />
+                                <field name="fax"  attrs="{'readonly': [('state', '!=', 'suspend')]}" />
+                                <field name="email"  attrs="{'readonly': [('state', '!=', 'suspend')]}" />
+                            </group>
+                            <group string="Thông tin vùng trồng">
+                                <field name="tree_id" attrs="{'readonly': [('state', '!=', 'suspend')]}" />
+                                <field name="export_to" attrs="{'readonly': [('state', '!=', 'suspend')]}" required="1" />
+                                <field name="area" attrs="{'readonly': [('state', '!=', 'suspend')]}" required="1" />
+                                <field name="annual_harvest_time" attrs="{'readonly': [('state', '!=', 'suspend')]}"
+                                    required="1" />
+                                <field name="plant_farm_num" attrs="{'readonly': [('state', '!=', 'suspend')]}"
+                                    required="1" />
+                                <field name="three_years_average_production"
+                                    attrs="{'readonly': [('state', '!=', 'suspend')]}" required="1" />
+                                <field name="has_vietgap_global_gap" attrs="{'readonly': [('state', '!=', 'suspend')]}"
+                                    required="1" /> 
+                                 <field name="coordinates" attrs="{'readonly': [('state', '!=', 'suspend')]}"
+                                    />
+                            </group>
+                            
+                        </group> 
+
+                        <label for="farmers">Danh sách nông hộ canh tác</label>
+                        <field name="farmers" nolabel="1" col="4" colspan="4"  placeholder="Tên nông hộ 1: 50ha; Tên nông hộ 2: 20ha" /> 
+                        <label for="note">Ghi chú</label>
+                        <field name="note" nolabel="1" col="4" colspan="4"  placeholder="Nội dung ghi chú" /> 
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" />
+                        <field name="activity_ids" />
+                        <field name="message_ids" />
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
         <record model="ir.actions.act_window" id="production_place_management_code_action_window">
             <field name="name">Vùng trồng</field>
             <field name="res_model">godo.production.unit.code</field>
@@ -82,14 +172,16 @@
             <field name="view_id" ref="production_place_management_code_action_window_tree_view" />
         </record>
 
-        <!-- 
-
-        <record id="g_production_pest_action_window_form" model="ir.actions.act_window.view">
-            <field name="act_window_id" ref="g_production_pest_action_window" />
+         <record id="production_place_management_code_action_window_form" model="ir.actions.act_window.view">
+            <field name="act_window_id" ref="production_place_management_code_action_window" />
             <field name="sequence" eval="2" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="g_production_pest_form_view" />
+            <field name="view_id" ref="production_place_management_code_action_window_form_view" />
         </record>
+
+        <!-- 
+
+       
 
 
         <record id="g_production_puc_map_action_windows" model="ir.actions.client">

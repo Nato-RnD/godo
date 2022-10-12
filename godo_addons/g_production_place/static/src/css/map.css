@@ -1,0 +1,23 @@
+.leaflet-popup-content-wrapper {
+    padding: 0px!important;
+}
+
+.leaflet-popup-content {
+    min-width: 560px!important;
+    font-size: 15px!important;
+    margin: 0px 0px 0px 0px!important;
+}
+
+.card {
+    border-radius: 12px!important;
+}
+
+.popup-header {
+    border-top-left-radius: 12px!important;
+    border-top-right-radius: 12px!important;
+}
+
+.card-body {
+    border-bottom-left-radius: 12px!important;
+    border-bottom-right-radius: 12px!important;
+}

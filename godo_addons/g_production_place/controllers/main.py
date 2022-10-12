@@ -286,3 +286,28 @@ class GPucPortal(CustomerPortal):
         for k in key:
             if dict.get(k):
                 del dict[k]
+
+
+    @route('/web/puc/coordinates', type='json', auth="user",csrf=False, website=True)
+    def load_coordinates(self, **post): 
+        _pucs = request.env['godo.production.unit.code'].sudo().search([('state','=','active')])
+        pucs =[]
+        
+        for record in _pucs:
+            _coords = record.coordinates.strip().split(';')
+            pucs.append({
+                'name': record.name,
+                'code': record.code,
+                'area': record.area,
+                'tree': record.tree_id.name,
+                'export_to': record.export_to.name,
+                'years_average_production': record.three_years_average_production,
+                'plant_farm_num':record.plant_farm_num,
+                'registered_owner': record.registered_owner_id.name,
+                'registered_owner_address':record.registered_owner_address,
+                'farmers': record.farmers, 
+                'coordinates': [ [float(item.split(',')[0]), float(item.split(',')[1])]  for item in _coords]
+            })
+            
+        return pucs
+            
