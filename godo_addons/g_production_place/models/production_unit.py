@@ -181,6 +181,7 @@ class GodoProductionUnitCode(models.Model):
     def puc_issue_activate(self):
         self.ensure_one()
         self.state = 'active'
+        self.declaration_id.state = 'done'
         
     def puc_issue_deactivate(self):
         self.ensure_one()

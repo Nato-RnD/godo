@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo> 
+    <data>    
+
+        <record model="ir.ui.view" id="res_apps_view_tree">
+            <field name="name">app.registers.tree</field>
+            <field name="model">res.apps</field>
+            <field name="arch" type="xml">
+                <tree >  
+                    <field name="app_code" />
+                    <field name="name" />
+                    <field name="app_version" /> 
+                    <field name="registered_date" />
+                    <field name="status" />  
+                </tree>
+            </field>
+        </record> 
+
+        <record id="res_apps_view_form" model="ir.ui.view">
+            <field name="name">app.registers.form</field>
+            <field name="model">res.apps</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <field name="app_icon" widget='image' class="oe_avatar" options='{"preview_image": "image_256"}'/>
+                        <div class="oe_title"> 
+                            <h1>
+                                <field name="name" default_focus="1" placeholder="App name" />
+                            </h1> 
+                        </div>
+                        <group>
+                            <group>
+                                <field name="app_version" /> 
+                                <field name="registered_date" readonly="1" />
+                                
+                            </group>
+
+                            <group> 
+                                <field name="app_code" readonly="1" /> 
+                                <field name="status" />
+                                
+                            </group> 
+                           
+                        </group>
+                        <group  >
+                            <field name="private_key" />
+                            <field name="public_key" />  
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="activity_ids" widget="mail_activity" />
+
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+
+                </form>
+            </field>
+        </record>
+    
+        
+        <record model="ir.actions.act_window" id="res_apps_action_window">
+            <field name="name">Apps Register</field>
+            <field name="res_model">res.apps</field>
+            <field name="view_mode">tree,form</field>
+        </record> 
+
+          <record model="ir.actions.act_window.view" id="res_account_action_window_form">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="res_apps_view_form"/> 
+            <field name="act_window_id" ref="res_apps_action_window"/>
+        </record>
+    
+        <record model="ir.actions.act_window.view" id="res_account_action_window_tree">
+            <field name="sequence" eval="1"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="res_apps_view_tree"/> 
+            <field name="act_window_id" ref="res_apps_action_window"/>
+        </record> 
+        
+    </data>
+</odoo>

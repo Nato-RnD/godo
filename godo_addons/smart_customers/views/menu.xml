@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <!-- Top menu item --> 
+        <menuitem name="Customers &#38; Services" id="smart_customers.menu_root"  web_icon="smart_customers,static/description/icon.png"/> 
+
+
+        <!-- Overviews -->
+        <menuitem name="Overviews" id="res_cus_menu_overview" sequence="-1" parent="smart_customers.menu_root"/>
+        <menuitem name="Dasboard" id="res_cus_menu_overview_dashboard" parent="smart_customers.res_cus_menu_overview"  action="smart_customers.res_cus_menu_overview_dashboard_action_window"/>
+
+        <!-- Categories -->
+        <menuitem name="Categories" id="menu_categories" parent="smart_customers.menu_root"/> 
+        <menuitem name="Customers" id="menu_customer" parent="smart_customers.menu_categories" action="smart_customers.res_partner_action_window"  />
+        <menuitem name="Accounts" id="menu_account" parent="smart_customers.menu_categories" action="smart_customers.res_account_action_window"  />
+        <menuitem name="Software Products" id="menu_application" parent="smart_customers.menu_categories" action="smart_customers.product_template_action_window"  /> 
+        <menuitem name="Price list" id="menu_pricelist" parent="smart_customers.menu_categories" action="product.product_pricelist_action2"  /> 
+
+
+        <!-- Services -->
+        <menuitem name="Services" id="menu_service" parent="smart_customers.menu_root"/> 
+        <menuitem name="Contracts" id="menu_contract" parent="smart_customers.menu_service"  action="smart_customers.res_sm_contract_action_window" />
+        <menuitem name="Award Points" id="menu_award_point" parent="smart_customers.menu_service"  />  
+
+        <!-- Customer Funds -->
+        <menuitem name="Awart Points" id="menu_point" parent="smart_customers.menu_root"/> 
+        <menuitem name="Wallets" id="menu_wallet" parent="smart_customers.menu_point" action="smart_customers.res_sm_wallet_action_window"  />
+        <menuitem name="Transactions" id="menu_transaction" parent="smart_customers.menu_point" action="smart_customers.res_sm_transaction_action_window"  /> 
+
+        <!-- Services -->
+        <menuitem name="Configuration" id="menu_configuration" parent="smart_customers.menu_root"/> 
+        <menuitem name="Setting" id="menu_general_setting" parent="smart_customers.menu_configuration"  action="smart_customers.grpc_service_configuration" />
+        <menuitem name="Award Points" id="menu_award_point" parent="smart_customers.menu_configuration"  />  
+
+        
+    </data>
+
+</odoo>

@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_smart_customers_res_account,smart_customers.res_account,model_res_account,,1,1,1,1
+access_smart_customers_res_partner,smart_customers.res_partner,model_res_partner,,1,1,1,1
+access_smart_customers_res_sm_wallet,smart_customers.res_sm_wallet,model_res_sm_wallet,,1,1,1,1
+access_smart_customers_res_sm_transaction,smart_customers.res_sm_transaction,model_res_sm_transaction,,1,1,1,1
+access_smart_customers_product_pricelist,smart_customers.product_pricelist,model_product_pricelist,,1,1,1,1 

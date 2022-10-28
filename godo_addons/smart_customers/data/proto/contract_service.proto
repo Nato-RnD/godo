@@ -1,0 +1,91 @@
+syntax = "proto3";
+package  service_contract;
+
+
+message AccountSyncRequest {
+string acc_code =  1;
+string user_name = 2;
+string profile_code = 3;
+string last_name = 4;
+string first_name = 5;
+int32 date_of_birth = 6; 
+string gender = 7;
+string email = 8;
+string mobile = 9;
+string avatar = 10;
+string wall_background = 11; 
+int32 register_date = 12;
+string province =13;
+string district =14; 
+string ward = 15;
+bool status = 16;
+}
+ 
+
+message AccountSyncResponse {
+    bool synced =1; 
+}
+
+
+service AccountSync {
+    rpc AccountSyncMethod(AccountSyncRequest) returns (AccountSyncResponse) {}
+    rpc AccountUpdateMethod (AccountSyncRequest) returns (AccountSyncResponse) {}
+}
+ 
+enum ContractState {
+    CONTRACT_OPEN = 0;
+    CONTRACT_IN_PROGRESS = 1;
+    CONTRACT_SIGNED = 2;
+    CONTRACT_EXPIRED = 3;
+    CONTRACT_CANCEL = 4;
+    CONTRACT_DONE = 5;
+}
+
+
+message ContractInfoRegisterRequest {
+    string account_profile = 1;
+    string app_id = 2;
+    bool contract_type = 3;
+    string business_name = 4;
+    string business_tax = 5;
+    string business_address = 6;
+    int32 contact_duration = 7;
+    int32 contact_user_count = 8;
+    int32 contract_date = 9;  
+} 
+
+message ContractInfoRegisterResponse { 
+    string contract_id = 1;
+    string contract_code = 2;
+    int32 contract_date = 3;
+    ContractState contract_status = 4;
+}
+
+message ContractInfoRequest {
+    string contract_code =1;
+}
+
+message ContractInfoResponse {
+    string account_profile = 1;
+    string app_id = 2;
+    bool contract_type = 3;
+    string business_name = 4;
+    string business_tax = 5;
+    string business_address = 6;
+    int32 contact_duration = 7;
+    int32 contact_user_count = 8;
+    int32 contract_date = 9;  
+    string contract_id = 10;
+    string contract_code = 11; 
+    ContractState contract_status = 12; 
+}
+
+message ContractDetailRequest {
+    string contract_code = 1; 
+}
+
+
+service ContractRegister {
+    rpc ContractRegisterMethod(ContractInfoRegisterRequest) returns (ContractInfoRegisterResponse) {}
+    rpc GetContractByCode(ContractDetailRequest) returns (ContractInfoResponse) {} 
+}
