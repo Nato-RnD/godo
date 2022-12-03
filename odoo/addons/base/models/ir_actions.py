@@ -319,7 +319,9 @@ class IrActionsActWindowView(models.Model):
 
     sequence = fields.Integer()
     view_id = fields.Many2one('ir.ui.view', string='View')
-    view_mode = fields.Selection(VIEW_TYPES, string='View Type', required=True)
+    view_mode = fields.Selection(VIEW_TYPES, string='View Type', required=True, 
+    ondelete='cascade'
+    )
     act_window_id = fields.Many2one('ir.actions.act_window', string='Action', ondelete='cascade')
     multi = fields.Boolean(string='On Multiple Doc.', help="If set to true, the action will not be displayed on the right toolbar of a form view.")
 

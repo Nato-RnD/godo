@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<templates> 
-        <t t-name='buildingDashboard.buttons'> 
-                <label for="building">Building Select Input</label> 
-                <t t-esc="headers" name="building" /> 
-                <!-- <div class="building_dashboard_block_input" /> -->
-        </t> 
-</templates>

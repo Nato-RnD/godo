@@ -5,6 +5,9 @@ class BillSearch(http.Controller):
    @http.route(['/bill-search'], type="json", auth="public")
    def bill_search(self, **kw):
          _bill_selection = [
+       ( 'draft',_('Order'), _('The order has created')),
+       ( 'delivery',_('Delivery from Shop'), _('The goods has deliveried from Shop')),
+       ( 'fullfil',_('Fulfillment'), _('The goods has fulfilled to warehouse in China')),
        ( 'sent',_('Sent from China'), _('The goods has sent from China')),
        ( 'received',_('Received'), _('Vietnam warehouse has received the goods')),
        ( 'forward',_('Forwarded'),_('Delivered via third-party')),
@@ -12,6 +15,9 @@ class BillSearch(http.Controller):
        ( 'cancelled',_('Cancelled'),_('The bill has been cancelled'))
     ] 
          _color_selection =   [
+       ( 'draft', 'alert alert-warning'),
+       ( 'delivery', 'alert alert-info'),
+       ( 'fullfil', 'alert alert-secondary'),
        ( 'sent', 'alert alert-primary'),
        ( 'received', 'alert alert-info'),
        ( 'forward','alert alert-danger'),
@@ -19,6 +25,9 @@ class BillSearch(http.Controller):
        ( 'cancelled','alert alert-secondary')
     ]
          _icon_selection =   [
+        ( 'draft', 'fa fa-shopping-cart'),
+         ( 'delivery', 'fa fa-truck'),
+         ( 'fullfil', 'fa fa-database'),
        ( 'sent', 'fa fa-send'),
        ( 'received', 'fa fa-calendar-check-o'),
        ( 'forward','fa fa-truck'),
@@ -28,26 +37,47 @@ class BillSearch(http.Controller):
          
          bill_code = kw.get('code',None)
          if bill_code is not None:
-            bill = request.env['godo.logistic.bill'].sudo().search(['|',('origin_code','=',bill_code),('name','=',bill_code)],limit=1)
+            bill = request.env['godo.logistic.bill'].sudo().search(['|',('name','=',bill_code),('origin_code','=', bill_code)],limit=1)
+            print(bill)
             if bill: 
-               transfer_history = [{ 
-                   'date': bill.bill_date,
-                   'name': _bill_selection[0][2], 
-                   'bgcolor': '',
-                   'icon': _icon_selection[0][1]
+               transfer_history = [] 
+              #  #[{ 
+              #      'date': bill.bill_date,
+              #      'name': self._find__array(_bill_selection,bill.state)[2] or '', #_bill_selection[0][2], 
+              #      'bgcolor': '',
+              #      'icon':  self._find__array(_icon_selection,bill.state)[1] or None #  [0][1]
                    
-               }]
+              #  }]
                
+               i = 0
                for bill_check in bill.bill_check_ids:
-                   transfer_history.insert(0,{
-                        'date': bill_check.date,
-                        'name': next(_c[2] for _c in _bill_selection if bill_check.check_type == _c[0]), 
+                   if i == 0:
+                      transfer_history.insert(0,{
+                        'date': bill.bill_date,
+                        'name': _bill_selection[_bill_selection.index(self._find__array(_bill_selection,bill_check.check_type))-1][2] or None , # next(_c[2] for _c in _bill_selection if bill_check.check_type == _c[0]), 
                         'processor': bill_check.user_id.name,
                         'bgcolor':'',
-                        'icon': next(_c[1] for _c in _icon_selection if bill_check.check_type == _c[0])
+                        'icon': _icon_selection[_icon_selection.index(self._find__array(_icon_selection,bill_check.check_type))-1][1] #next(_c[1] for _c in _icon_selection if bill_check.check_type == _c[0])
+                      })
+                         
+                   transfer_history.insert(0,{
+                        'date': bill_check.date,
+                        'name':  next(_c[2] for _c in _bill_selection if bill_check.check_type == _c[0]), #self._find__array(_bill_selection,bill_check.check_type)[2] , #
+                        'processor': bill_check.user_id.name,
+                        'bgcolor':'',
+                        'icon': next(_c[1] for _c in _icon_selection if bill_check.check_type == _c[0]) #self._find__array(_icon_selection,bill_check.check_type)[1]  #
                    })
+                   i = i+1
+                   
+               if len(transfer_history) == 0:
+                    transfer_history.insert(0,{
+                        'date': bill.bill_date,
+                        'name': self._find__array(_bill_selection,bill.state)[2] ,
+                        'bgcolor':'',
+                        'icon': self._find__array(_icon_selection,bill.state)[1]
+                      })
                     
-               transfer_history[0]['bgcolor']='bg-success'
+               transfer_history[0]['bgcolor']='bg-success' if len(transfer_history)>0 else {}
                # search the check of this bill
                 
                return {
@@ -70,5 +100,17 @@ class BillSearch(http.Controller):
                    'color': next(c[1] for c in _color_selection if c[0] == bill.state),
                    'transfer_history': transfer_history or []
                } 
-        
+         
          return {}
+       
+   def  _find__array(self,array,state):
+        return next( item  for item in array if item[0] ==state)
+      
+  #  def  _find__previous_index_array(self,array,state):
+  #        i = 0
+  #        for st in array:
+  #           if st[0] == state:
+  #             return               
+         
+  #       index = next( item  for item in array if item[0] ==state)
+    

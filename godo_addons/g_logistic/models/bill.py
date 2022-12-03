@@ -5,11 +5,14 @@ class LogisticBill(models.Model):
    _description = _('Logistic Bill')
    _inherit =['mail.thread', 'mail.activity.mixin'] 
    _bill_selection = [
-       ( 'sent', 'Sent from China'),
-       ( 'received', 'Received'),
-       ( 'forward','Forwarded'),
-       ( 'done', 'Done'),
-       ( 'cancelled','Cancelled')
+      ( 'draft', _('Order')),
+      ( 'delivery', _('Delivery from Shop')),
+      ( 'fullfil', _('Fullfilment')),
+      ( 'sent', _('Sent from China')),
+      ( 'received', _('Received')),
+      ( 'forward',_('Forwarded')),
+      ( 'done', 'Done'),
+      ( 'cancelled',_('Cancelled'))
     ]
 
    name = fields.Char(string='Bill code')
@@ -35,4 +38,19 @@ class LogisticBill(models.Model):
             self.customer_mobile = self.customer_id.mobile
             self.customer_address = '%s %s %s %s' % (self.customer_id.street or '', self.customer_id.ward_id.name or '', self.customer_id.district_id.name or '' , self.customer_id.province_id.name or '')
 
-  
+   @api.model
+   def create(self, vals):
+      _is_import = self.env.context.get('import_file')
+      if _is_import is True:
+             vals.update({'state':'sent'})
+      else:
+             vals.update({'state':'draft'}) 
+      return super().create(vals)
+   
+   @api.model
+   def default_get(self, fields_list):
+         res = super().default_get(fields_list) 
+         res.update({
+            'state': 'draft'
+         })
+         return res

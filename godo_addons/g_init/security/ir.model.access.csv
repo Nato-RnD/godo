@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_res_province,province,model_res_province,,1,1,1,1
-access_res_district,district,model_res_district,,1,1,1,1
-access_res_ward,ward,model_res_ward,,1,1,1,1

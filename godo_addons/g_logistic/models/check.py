@@ -14,7 +14,11 @@ class LogisticBillCheck(models.Model):
        ( 'cancelled','Cancelled')
     ]
     
-    _bill_status = [( 'received', 'Received'),
+    _bill_status = [ 
+       ( 'delivery', 'Delivery from Shop'),
+       ( 'fullfil', 'Fulfillment'),
+        ( 'sent', 'Sent from China'),
+       ( 'received', 'Received'),
        ( 'forward','Forwarded'),
        ( 'done', 'Done'),
        ( 'cancelled','Cancelled')]
